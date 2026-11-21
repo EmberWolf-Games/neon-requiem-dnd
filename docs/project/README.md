@@ -14,7 +14,9 @@ This folder holds **project-owned design decisions, development instructions, an
 
 - [Character Identity Creator & Animated Scene Tokens — approved GDD addendum, revision 2](gdd/Neon_Requiem_GDD_Character_Creator_Animation_Addendum_v2.md): true-overhead rotatable tokens, four Human/Synth body bases, selectable heads, independent skin/hair masks, transparent WebM animations, local-PC validation and a future self-hosted encoder worker.
 
-**Status:** The linked addendum records an **approved design requirement**, **not an implemented feature**. It is not yet merged into the canonical GDD; the authoritative GDD location/version must be established first.
+- [Technology Systems Foundation — approved GDD addendum](gdd/Neon_Requiem_GDD_Technology_Systems_Foundation.md): 5e chassis with no traditional magic; Cyberware = hardware, Augmentations = firmware, Hacks = software; six body-owned augmentation slots, hardware-granted expansion slots, color/type matching, and source-specific loss when Cyberware is removed.
+
+**Status:** These linked addenda record **approved design requirements**, **not implemented features**. They are not yet merged into the canonical GDD; the authoritative GDD location/version must be established first.
 
 ## Approved project instructions
 
