@@ -31,5 +31,25 @@
 
     </div>
 
+    <section class="neon-slot-prototype" aria-labelledby="neon-slots-heading">
+        <h2 id="neon-slots-heading">Equipment &amp; Augmentations</h2>
+        <p>Read-only prototype: example topology only; no equipment or augmentations are installed here.</p>
+        <h3>Physical equipment positions</h3>
+        <ul class="neon-slot-list">
+            {{#each neonPrototype.positions}}
+            <li><span>{{label}}</span> <span>Capacity: {{capacity}}</span></li>
+            {{/each}}
+        </ul>
+        <h3>Body-owned Augmentation slots</h3>
+        <ul class="neon-slot-list">
+            {{#each neonPrototype.categories}}
+            <li><span class="neon-slot-indicator neon-slot-{{id}}" aria-hidden="true"></span>
+                <span>{{label}} ({{colorName}})</span></li>
+            {{/each}}
+        </ul>
+        <h3>Example Cyberware expansion</h3>
+        <p>Example only: a Cyberware item may grant an Interface (Cyan) expansion slot. This is not actor data.</p>
+        <p>Equipment attachment sockets are separate from body Augmentation slots. Equipment does not change token appearance.</p>
+    </section>
     {{> "systems/neon-requiem-dnd/templates/inventory/inventory.hbs" }}
 </section>

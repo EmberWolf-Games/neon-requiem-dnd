@@ -5,6 +5,7 @@ import ContextMenu5e from "../context-menu.mjs";
 import BaseActorSheet from "./api/base-actor-sheet.mjs";
 import Item5e from "../../documents/item.mjs";
 import * as Trait from "../../documents/actor/trait.mjs";
+import { AUGMENTATION_CATEGORIES, EQUIPMENT_POSITIONS } from "../../neon/slots.mjs";
 
 const TextEditor = foundry.applications.ux.TextEditor.implementation;
 
@@ -513,6 +514,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
   async _prepareInventoryContext(context, options) {
     context.itemCategories.inventory = context.itemCategories.inventory?.filter(i => i.type !== "container");
     context = await super._prepareInventoryContext(context, options);
+    context.neonPrototype = { categories: AUGMENTATION_CATEGORIES, positions: EQUIPMENT_POSITIONS };
     context.size = {
       label: CONFIG.DND5E.actorSizes[this.actor.system.traits.size]?.label ?? this.actor.system.traits.size,
       abbr: CONFIG.DND5E.actorSizes[this.actor.system.traits.size]?.abbreviation ?? "—",
