@@ -114,7 +114,7 @@ The three subclass identities are **Longshot** (sniping/long-range precision), *
 
 - **10 ASI/feat choices:** levels **4, 8, 12, 16, 20, 24, 28, 32, 36, 40**.
 - **10 subclass milestones:** levels **3, 7, 11, 15, 19, 23, 27, 31, 35, 39**.
-- The subclass milestones are **reserved only**; exact Longshot/Gunslinger/Demolitionist feature effects and numerical tuning are **not yet approved**.
+- Longshot, Gunslinger and Demolitionist now have full draft feature tables. Their exact numerical tuning is still open.
 
 ### Focus Dice scaling
 
@@ -136,9 +136,6 @@ The three subclass identities are **Longshot** (sniping/long-range precision), *
 - Firearms, magazines, ammunition, reload costs, armor penetration, burst fire, and damage are not yet system-wide-approved. **Combat Reload and related features must integrate with those future rules.**
 - System-wide 21–40 proficiency bonuses, ability-score caps, feat rules, and multiclass mechanics remain unresolved. Do not silently extend 5e's level 1–20 math.
 
-## 6. Design and implementation status
+## Balance review
 
-- The **Deadeye v1 progression concept is approved**; it is documented rather than implemented or validated.
-- The three subclass feature tables have since been drafted and pre-approved for refinement.
-- Do not alter Foundry dnd5e source or publish a system build based solely on this design approval.
-- **Next class for review: Ghost**, a stealth/infiltration/mobility specialist with subclasses **Phantom**, **Blade Dancer**, and **Saboteur**, using the same reserved ASI/feat and subclass milestone structure.
+Test Focus Dice and conditional Bonus Action shots against the Vanguard's higher attack count, the Ghost's Precision Strike and the finalized firearm rules. The three Deadeye subclass tracks are recorded separately. This remains a design specification, not a shipped feature.
