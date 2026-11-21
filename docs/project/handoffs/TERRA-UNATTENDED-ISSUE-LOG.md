@@ -55,13 +55,13 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 ### TERRA-005
 
 - **Severity:** Non-blocking
-- **Status:** Resolved in English; runtime verification pending
+- **Status:** Resolved in English; other locales deferred
 - **Area:** Inherited first-run welcome
 - **Problem:** The welcome presents the derivative as the official D&D 5e system and links to upstream issue reporting.
 - **Evidence:** Foundry 14.369 displayed the inherited D&D 5e welcome on creation of the disposable world.
 - **Attempted resolution:** Inspected the runtime behavior; no unrelated branding changes made in this sprint.
 - **Result:** Misleading copy remains.
-- **Next action:** Verify the revised welcome in Foundry; audit other translations separately before release.
+- **Next action:** Audit other translations separately before release. The revised English welcome and project support links were verified in Foundry 14.369.
 - **Dependency:** Accurate derivative presentation before public distribution.
 
 ### TERRA-006
@@ -79,13 +79,13 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 ### TERRA-007
 
 - **Severity:** Non-blocking
-- **Status:** Resolved locally; hosted verification pending
+- **Status:** Resolved
 - **Area:** GitHub Actions on dependent draft PR
 - **Problem:** The existing CI workflow does not trigger for this branch or a pull request targeting PR #7's branch.
 - **Evidence:** `.github/workflows/ci.yml` limits pull requests to `main` and pushes to `main` and `setup/**`; GitHub reported no workflow runs for the feature branch.
 - **Attempted resolution:** Checked the trigger and GitHub run list; all documented checks were run locally.
 - **Result:** Local validation passed, but GitHub-hosted CI is not yet verified for this draft.
-- **Next action:** The Wave 2 branch adds `feature/**` push coverage; verify its GitHub Actions run after pushing. PRs targeting other feature branches still do not independently trigger the pull-request event; push checks run on their feature heads.
+- **Next action:** Wave 2 `feature/**` push coverage ran successfully on commit `4d00eca`; PRs targeting other feature branches still do not independently trigger the pull-request event, so verify each updated feature head's push check.
 - **Dependency:** GitHub-hosted verification of the draft.
 
 ### TERRA-008
@@ -104,17 +104,17 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 
 ### TERRA-010
 
-- **Severity:** Non-blocking; **Status:** Fix applied, runtime recheck pending; **Workstream:** C.
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** C.
 - **Problem and evidence:** The Foundry settings sidebar labeled upstream D&D 5e release notes, issues, wiki and Discord as system links after the revised welcome loaded.
 - **Attempted fix and result:** Repointed notes, issues and documentation to the Neon Requiem repository and removed the misleading upstream Discord link. Upstream attribution remains elsewhere. This does not block other work.
-- **Next action:** Rebuild and verify the sidebar in the disposable world.
+- **Next action:** Retain upstream attribution and review other locales before release. The rebuilt sidebar displayed the three intended project links in Foundry 14.369.
 
 ### TERRA-011
 
-- **Severity:** Non-blocking; **Status:** Fix applied, runtime recheck pending; **Workstream:** D.
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** D.
 - **Problem and evidence:** At 1024 × 768, the expanded preview took most of the visible inventory area, pushing inherited controls below the fold.
 - **Attempted fix and result:** Wrapped the preview in a native collapsed `details` element, keeping the original inventory readily accessible; no gameplay data changed.
-- **Next action:** Recheck keyboard access and compact layout in Foundry. Other work can continue.
+- **Next action:** Extend accessibility testing when a full sheet mode exists. At 1024 × 768 the rebuilt preview was collapsed by default, inventory controls appeared in the accessibility tree, and Enter expanded the preview.
 
 ### TERRA-012
 
@@ -122,6 +122,20 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Problem and evidence:** A character token was placed in a new scene, but an attempted drag did not clearly show a position change; selecting the token darkened the blank canvas. Movement and persistence after restart were not established.
 - **Attempted fix and result:** Tried a drag and an arrow key; the visual result was inconclusive. No repeated speculative fixes or campaign data changes were attempted.
 - **Next action:** Use a lit disposable scene to verify movement and restart persistence; other independent work can continue.
+
+### TERRA-013
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** E.
+- **Problem and evidence:** The initial pure functions returned new arrays but shared untouched nested slot and position objects, so a caller could mutate a previous configuration through a later result.
+- **Attempted fix and result:** Copy all known nested model objects on install and removal; added tests that mutate the returned occupant and position and confirm the earlier configuration remains unchanged.
+- **Next action:** Keep future schema extensions included in the copy and immutability tests. Other work continues independently.
+
+### TERRA-014
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** validation.
+- **Problem and evidence:** A sandboxed `npm ci --ignore-scripts` stalled with no output during the final clean install.
+- **Attempted fix and result:** Interrupted that attempt and repeated the same locked install with approved network access; 218 packages installed and npm reported zero vulnerabilities.
+- **Next action:** Run final checks against the restored dependencies. Other work can continue.
 
 ## Completed Work
 

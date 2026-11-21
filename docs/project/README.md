@@ -24,6 +24,7 @@ This folder holds **project-owned design decisions, development instructions, an
 
 - [Foundry v14 local preflight](handoffs/2026-11-21-foundry-preflight-terra-to-luna.md): runtime findings, experimental compatibility work, and outstanding checks.
 - [Unattended sprint report](handoffs/2026-11-21-terra-unattended-sprint-report.md) and [issue ledger](handoffs/TERRA-UNATTENDED-ISSUE-LOG.md): prototype results, dependencies, and deferred decisions.
+- [Wave 2 report](handoffs/2026-11-21-terra-wave-2-report.md) and [persistence and migration proposal](handoffs/2026-11-21-persistence-migration-proposal.md): scoped implementation, test evidence, and decisions awaiting review.
 
 ## Working conventions
 
