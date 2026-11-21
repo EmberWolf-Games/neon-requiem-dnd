@@ -144,3 +144,10 @@ Screenshots:
 ```
 
 Mark the live smoke test complete only after these steps have actually been performed in Foundry v14 and the results have been reviewed.
+
+## Official Foundry references
+
+- [Application Configuration and User Data paths](https://foundryvtt.com/article/configuration/)
+- [System Development and manifest installation](https://foundryvtt.com/article/system-development/)
+- [Game Worlds](https://foundryvtt.com/article/game-worlds/)
+- [Troubleshooting](https://foundryvtt.com/article/troubleshooting/)
