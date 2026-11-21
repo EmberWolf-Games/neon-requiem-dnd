@@ -24,4 +24,9 @@ Use a branch and pull request for review; don't merge to `main` or publish witho
 
 The owner currently validates on a local Foundry v14 instance. The later hosting setup and optional media worker require their own deployment review.
 
+## Development handoffs
+
+- [Foundry v14 local preflight](handoffs/2026-11-21-foundry-preflight-terra-to-luna.md): Flag-scope, compendium, migration guard and disposable-world runtime findings.
+- [Terra readiness audit](handoffs/2026-11-21-pre-implementation-readiness-audit-luna.md): Open decisions and staged implementation planning.
+
 See the [agent working agreement](instructions/README.md) and [handoff format](handoffs/README.md). Technical build and release documentation remains under the repository's top-level `docs/`.

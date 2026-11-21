@@ -6,6 +6,7 @@ import * as YAML from "js-yaml";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
+import { adaptCompendiumReferences } from "./compendium-references.mjs";
 
 
 /**
@@ -186,6 +187,8 @@ async function cleanPacks(packName, entryName) {
  * - `npm run build:db -- classes` - Only compile the specified pack.
  */
 async function compilePacks(packName) {
+  const manifest = JSON.parse(fs.readFileSync("system.json", "utf8"));
+  const localPacks = new Set(manifest.packs.map(pack => pack.name));
   // Determine which source folders to process
   const folders = fs.readdirSync(PACK_SRC, { withFileTypes: true }).filter(file =>
     file.isDirectory() && ( !packName || (packName === file.name) )
@@ -195,7 +198,10 @@ async function compilePacks(packName) {
     const src = path.join(PACK_SRC, folder.name);
     const dest = path.join(PACK_DEST, folder.name);
     logger.info(`Compiling pack ${folder.name}`);
-    await compilePack(src, dest, { recursive: true, log: true, transformEntry: cleanPackEntry, yaml: true });
+    await compilePack(src, dest, { recursive: true, log: true, yaml: true, transformEntry: entry => {
+      cleanPackEntry(entry);
+      Object.assign(entry, adaptCompendiumReferences(entry, localPacks));
+    } });
   }
 }
 

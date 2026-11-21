@@ -41,7 +41,7 @@ This runs the upstream steps in order:
 2. Less compiles `less/dnd5e.less` to `dnd5e.css`.
 3. The Foundry CLI compiles the YAML under `packs/_source/` into local pack data.
 
-Build output is ignored by Git. Run `npm run build:clean` to remove generated compendium output before rebuilding.
+Build output is ignored by Git. The upstream `npm run build:clean` command rewrites YAML files under `packs/_source/`; it does not remove generated compendium output. Do not use it as a build-output cleanup command.
 
 ## Create and verify a local package
 
@@ -58,4 +58,4 @@ For a release candidate, the workflow calls `npm run package:release -- vM.m.r.b
 
 Follow the [Local Foundry v14 smoke-test guide](SMOKE-TESTING.md) for the remote-manifest test procedure, test checklist, and diagnostic evidence to collect. The guide distinguishes a local package/layout check from the owner-approved live acceptance test, which must install from GitHub.
 
-No live Foundry v14 runtime test has been performed. Do not describe the system as installable or playable until the remote installation and smoke-test checklist have been completed successfully.
+A limited disposable-world preflight has been performed in Foundry 14.369 (see the project handoff). The formal remote-manifest installation and full smoke-test checklist remain incomplete. Do not describe the system as publicly installable or fully playable until those acceptance checks pass.

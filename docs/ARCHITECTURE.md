@@ -4,7 +4,7 @@
 
 Neon Requiem is a standalone Foundry Game System. The root `system.json` declares ID `neon-requiem-dnd`; `foundryvtt.json` declares `project.type` as `system`. The manifest has no dependency relationship to the official `dnd5e` system.
 
-The source starts from official Foundry D&D 5e v6.1.1. It retains the upstream entry point name `dnd5e.mjs`, language keys, document schemas, migration code, and internal `dnd5e` flag namespace to avoid breaking data and code that uses these values. The package ID, compendium `system` fields, and static `systems/neon-requiem-dnd/...` runtime asset paths were adapted to the Neon Requiem system folder. Internal `dnd5e` keys are not installation dependencies.
+The source starts from official Foundry D&D 5e v6.1.1. It retains the upstream entry point name `dnd5e.mjs`, language keys, document schemas, migration code, and internal `dnd5e` flag namespace to avoid breaking data and code that uses these values. The package ID, compendium `system` fields, and static `systems/neon-requiem-dnd/...` runtime asset paths were adapted to the Neon Requiem system folder. Internal `dnd5e` keys are not installation dependencies. Foundry v14 validates flag scopes against active package IDs, so the derivative registers the inherited scope with the client database backend; this compatibility bridge requires review against future Foundry releases.
 
 ## Runtime source and build
 
@@ -21,6 +21,8 @@ The source starts from official Foundry D&D 5e v6.1.1. It retains the upstream e
 
 The upstream build uses Rollup for JavaScript, Less for CSS, and `@foundryvtt/foundryvtt-cli` through `utils/packs.mjs` for compendia. `npm run build` keeps that sequence. Generated CSS, compiled JavaScript, maps, and packed compendium data are ignored and created locally or in CI.
 
+During pack compilation, references to upstream `Compendium.dnd5e` packs are adapted only when the pack name exists in this system's manifest. Editable YAML remains unchanged. External and unrecognized pack references are not rewritten.
+
 `scripts/package.mjs` stages only files referenced by the system manifest and `foundryvtt.json`. It writes a deterministic ZIP with sorted root-relative paths and a fixed timestamp. The archive contains `system.json` at its root and does not include npm or Git metadata.
 
 ## Upstream adaptation boundary
@@ -29,7 +31,7 @@ The initial derivative change is limited to package identity, Foundry installati
 
 Some upstream code and content refer to the official dnd5e folder path. The asset adaptation script replaces specific source path prefixes; it does not replace every occurrence of the string `dnd5e`. Review each new path change before upstream updates.
 
-The system code is intended to operate without the official dnd5e system installed, but this has not yet been confirmed in a live Foundry v14 world. Treat that smoke test as a release gate.
+The standalone system has been exercised in a local Foundry v14 test world, but the full smoke test is not complete. In particular, remaining upstream compendium references require an audit, and all inherited upstream migrations are now blocked for missing, legacy, or mismatched derivative version markers; a distinct Neon Requiem migration policy must be designed before saved-data upgrades. Treat a complete live smoke test and the remote installation test as release gates. See the [preflight handoff](project/handoffs/2026-11-21-foundry-preflight-terra-to-luna.md).
 
 ## Data and licensing boundary
 
