@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { AUGMENTATION_CATEGORIES, EQUIPMENT_POSITIONS, createSlotConfiguration, installAugmentation,
-  removeCyberware } from "../module/neon/slots.mjs";
+  removeCyberware, assignEquipment } from "../module/neon/slots.mjs";
 
 test("body owns exactly the six approved category slots", () => {
   const c = createSlotConfiguration();
@@ -10,6 +10,26 @@ test("body owns exactly the six approved category slots", () => {
   assert.equal(new Set(c.augmentationSlots.map(s => s.id)).size, 6);
   assert.ok(c.augmentationSlots.every(s => s.source === "body" && s.ownerId === null && s.augmentation === null));
   assert.deepEqual(AUGMENTATION_CATEGORIES.map(c => c.colorName), ["Red", "Amber", "Cyan", "Violet", "Green", "Blue"]);
+});
+
+test("loadouts enforce positions, capacity and item identity without mutating inputs", () => {
+  const empty = [];
+  const pistol = assignEquipment(empty, { itemId: "pistol", positions: ["left-hand"] });
+  assert.deepEqual(empty, []);
+  assert.throws(() => assignEquipment(pistol, { itemId: "pistol", positions: ["right-hand"] }), /Duplicate item/);
+  assert.throws(() => assignEquipment(pistol, { itemId: "rifle", positions: ["left-hand", "right-hand"] }), /capacity/);
+  assert.throws(() => assignEquipment(empty, { itemId: "x", positions: ["unsupported"] }), /Unsupported/);
+  assert.throws(() => assignEquipment(empty, { itemId: "", positions: ["head"] }), /nonempty/);
+  assert.throws(() => assignEquipment(empty, { itemId: "x", positions: [] }), /At least one/);
+  const rifle = assignEquipment(empty, { itemId: "rifle", positions: ["left-hand", "right-hand"] });
+  assert.throws(() => assignEquipment(rifle, { itemId: "shield", positions: ["right-hand"] }), /capacity/);
+  const helmet = assignEquipment(rifle, { itemId: "helmet", positions: ["head", "face"] });
+  assert.throws(() => assignEquipment(helmet, { itemId: "mask", positions: ["face"] }), /capacity/);
+  const one = assignEquipment([], { itemId: "a", positions: ["sidearm-holster"] });
+  const two = assignEquipment(one, { itemId: "b", positions: ["sidearm-holster"] });
+  assert.throws(() => assignEquipment(two, { itemId: "c", positions: ["sidearm-holster"] }), /capacity/);
+  two[0].positions.push("head");
+  assert.deepEqual(one[0].positions, ["sidearm-holster"]);
 });
 
 test("physical capacities and attachment sockets remain separate from body slots", () => {
