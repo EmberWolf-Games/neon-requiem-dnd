@@ -20,7 +20,7 @@ The upstream build commands are `build:code`, `build:css`, and `build:db`, combi
 
 - The Foundry system ID and title are `neon-requiem-dnd` and `Neon Requiem`.
 - Pack declarations identify the Neon Requiem system.
-- Static `systems/neon-requiem-dnd/...` installation paths were adapted to `systems/neon-requiem-dnd/...`.
+- Static `systems/dnd5e/...` installation paths were adapted to `systems/neon-requiem-dnd/...`.
 - Upstream `dnd5e` data flags, migration keys, localization keys, and internal APIs are retained where they define the inherited schema.
 - The manifest does not declare a runtime dependency on the official dnd5e system.
 
