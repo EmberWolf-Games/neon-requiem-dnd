@@ -1,12 +1,9 @@
-# NEON REQUIEM — GDD Addendum: Ghost Level 1–40 Progression
+# Ghost — Base Class Progression (Levels 1–40)
 
-**Decision status:** OWNER-APPROVED PROGRESSION DRAFT (concept/cadence accepted; precise numerical balance pending)  
-**Decision date:** 2026-11-21  
-**Base class:** Ghost  
-**Approved subclass roster:** Phantom, Blade Dancer, Saboteur  
-**Scope:** The complete Ghost 1–40 base-class advancement table, Precision Strike scaling, ASI/feat and subclass positions, and proposed base-class abilities  
-**Implementation status:** NOT IMPLEMENTED; no authorization for gameplay code, release, or version change  
-**Approval provenance:** Owner reviewed the Ghost v1 level 1–40 proposal and replied: "approved."
+**Status:** Approved design; numerical balance pending  
+**Recorded:** 21 Nov 2026  
+**Subclasses:** See [Ghost subclass features](Neon_Requiem_GDD_Ghost_Subclasses_1-40.md)  
+**Build status:** Design only; no game-system implementation yet.
 
 ## 1. Class foundation
 
@@ -118,7 +115,7 @@
 **Ten ASI/feat selections:** levels **4, 8, 12, 16, 20, 24, 28, 32, 36, 40**.  
 **Ten subclass milestones:** levels **3, 7, 11, 15, 19, 23, 27, 31, 35, 39**.
 
-The positions are reserved for all three subclasses. **Actual Phantom, Blade Dancer, and Saboteur abilities are not yet designed or approved.**
+The positions are reserved for all three subclasses. Phantom, Blade Dancer and Saboteur now have pre-approved feature tables; final balance is still outstanding.
 
 ## 6. Important boundaries / open implementation questions
 
@@ -128,6 +125,6 @@ The positions are reserved for all three subclasses. **Actual Phantom, Blade Dan
 - Feature text above records the approved *draft concepts*, not finished technical rules ready to implement or a claim of game testing.
 - Ghost's strengths should come from creating openings, exploiting them, and escaping, rather than frontlining like Vanguard or copying Deadeye's Focus Dice and attack progression.
 
-## 7. Next step
+## Next design work
 
-Next proposed class for owner review: **Cipher** (Intruder / Puppeteer / Handler), software/Hacks/electronic warfare/coordination. Do not invent general Hack resource or capacity rules before owner approval; Cipher may have its own class abilities, but those must respect the still-undesigned shared hacking framework.
+Resolve system-wide scaling and remaining cross-class mechanics, then test the base class and its subclasses together. This document records the approved progression, not a finished balance pass.
