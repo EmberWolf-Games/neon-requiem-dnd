@@ -144,7 +144,7 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Attempted fix and result:** Preserved existing action versions and permissions to keep this sprint's CI change narrowly scoped; all validation steps passed.
 - **Next action:** Review supported action upgrades and pinning in a separate CI maintenance change. Other work can continue.
 
-Wave 3 investigation: official action metadata for v5 declares Node 24. The CI-only action references are updated to v5, with no release workflow or permission change; GitHub-hosted testing is pending. Keep this issue open until that run succeeds without the warning.
+Wave 3 investigation: official action metadata for v5 declares Node 24. The CI-only action references are updated to v5, with no release workflow or permission change. GitHub run 44960223321 passed on `6841891` with no check annotations; this resolves the observed warning for that run, pending final-head verification.
 
 ### TERRA-016
 
@@ -188,10 +188,39 @@ Wave 3 investigation: official action metadata for v5 declares Node 24. The CI-o
 - **Attempted fix and result:** Started a separate licensed Foundry 14.369 instance with a fresh test-only data directory and created a new world; no old world or credentials were modified.
 - **Next action:** Continue runtime testing only in the new disposable world. **Dependency:** Isolated runtime regression.
 
+### TERRA-022
+
+- **Severity:** Blocking; **Status:** Open; **Workstream:** A / G.
+- **Problem and evidence:** Fresh main package on Foundry 14.369 emitted server-side compendium migration errors: `Documents from a core version newer than the running version cannot be migrated`, including `classes24`, `spells24`, and `equipment24`. Source records such as `packs/_source/spells24/cantrips/true-strike.yml` and `packs/_source/classes24/warlock/eldritch-invocation-options/pact-of-the-tome.yml` declare `coreVersion: '14.370'`. The server log contains 26 such record errors. Manifest minimum is 14.367.
+- **Attempted fix and result:** Traced the failing records back to committed inherited source; did not downgrade metadata, modify packs, or run a migration. One character and item still opened, but this does not establish compendium safety.
+- **Next action:** Compare exact official upstream records and Foundry compatibility behavior, test an appropriately licensed 14.370+ runtime, and determine a reviewed compatibility/remediation policy before release. **Dependency:** Reliable compendium access and minimum Foundry compatibility; pure-function work can continue.
+
+### TERRA-023
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** A.
+- **Problem and evidence:** After returning the fresh disposable world to Setup and stopping its verified server process, the restart failed because `Config/options.json.lock` remained; the log reports the directory locked.
+- **Attempted fix and result:** Verified the listener PID and its isolated data-path command line before shutdown, and checked that no matching process remains. No existing campaign data was touched.
+- **Next action:** None for this test. After verifying no process used the test path, moved the stale lock aside inside the disposable directory, restarted the server, relaunched the world, and confirmed the token remained at (400, 200). **Dependency:** Full server restart regression; independent work continues.
+
+### TERRA-024
+
+- **Severity:** Non-blocking; **Status:** Deferred; **Workstream:** A / B / C.
+- **Problem and evidence:** This run did not complete NPC, separate equipment sheet, chat roll, compendium document/link, item move, non-owner visibility or animation/media monitoring checks against the final branch. A weapon was created and equipped/unequipped in the disposable world, and static texture was checked, but these do not prove those remaining paths.
+- **Attempted fix and result:** Tested the independently available character, weapon, scene, restart, static texture and compact keyboard paths and documented the server-side compendium errors separately.
+- **Next action:** Run the missing checks in an isolated world after diagnosing TERRA-022, including a non-owner session and media-process observation. **Dependency:** Full end-to-end acceptance; fixtures and code review remain independent.
+
+### TERRA-025
+
+- **Severity:** Blocking; **Status:** Needs Owner Decision; **Workstream:** E / H.
+- **Problem and evidence:** The fixture model demonstrates referential validation, but cannot establish approved persisted namespaces, item compatibility, clone remapping, backup policy, or disposition of removed Cyberware occupants.
+- **Attempted fix and result:** Built plain-JSON validation, explicit clone remap and before/after dry-run snapshots without touching Foundry documents.
+- **Next action:** Review and approve those data lifecycle decisions before persistent schema or migration implementation. **Dependency:** Persistent loadouts and migrations; read-only presentation can continue.
+
 ## Completed Work
 
 - Wave 3 baseline: Windows, Node 24.15.0, npm 11.7.0, base `0658889ba34f297aeb335a467fb6e4eadf85fca2`; clean `npm ci --ignore-scripts`, version, manifest, assets, 21 tests, lint (one pre-existing warning), build, package and package verification passed (exit 0; 732 entries).
 - Wave 3: Baseline `main` created and opened a character in a new disposable Foundry 14.369 world. The branch registered as an opt-in sheet, showed a real owned weapon and updated its inherited equipped state after the normal inventory button was clicked; browser error/warning log after the branch reload was empty.
+- Wave 3: In a nonblank globally illuminated test scene with token vision disabled, a named token moved from (300, 200) to (400, 200) pixels; the latter coordinates persisted after client reload and after world shutdown, isolated server restart and world relaunch. Unequipping the linked actor's weapon left the token image path `systems/neon-requiem-dnd/icons/svg/actors/character.svg` unchanged. Animation/export behavior was not tested.
 
 - Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
 - Wave 2: English welcome identifies Neon Requiem D&D and EmberWolf Games, points to project support and documentation, and identifies upstream content as unverified for this derivative. JSON parsing and lint passed; live verification remains pending.
