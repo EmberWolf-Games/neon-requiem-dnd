@@ -26,3 +26,17 @@ export function projectInventory(snapshot) {
   }
   return items.sort((a, b) => a.name.localeCompare(b.name, "en") || a.id.localeCompare(b.id, "en"));
 }
+
+/** Group projected items by their inherited type without classifying Neon equipment.
+ * @param {object[]} items Previously projected display records.
+ * @returns {object[]} Deterministically ordered display groups.
+ */
+export function groupInventory(items) {
+  const groups = new Map();
+  for ( const item of items ) {
+    if ( !groups.has(item.type) ) groups.set(item.type, []);
+    groups.get(item.type).push({ ...item });
+  }
+  return [...groups].sort(([a], [b]) => a.localeCompare(b, "en"))
+    .map(([type, entries]) => ({ type, items: entries }));
+}

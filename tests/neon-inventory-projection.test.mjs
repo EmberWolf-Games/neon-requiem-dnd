@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { projectInventory } from "../module/neon/inventory-projection.mjs";
+import { groupInventory, projectInventory } from "../module/neon/inventory-projection.mjs";
 
 test("projects only explicit visible owned snapshots, sorted without mutation", () => {
   const source = [
@@ -15,6 +15,7 @@ test("projects only explicit visible owned snapshots, sorted without mutation", 
   assert.equal(result[0].type, "container");
   assert.equal(result[1].equipped, false);
   assert.equal(result[1].containerName, "Rope");
+  assert.deepEqual(groupInventory(result).map(group => group.type), ["container", "loot"]);
   assert.equal(result[0].quantity, null);
   result[0].name = "changed";
   assert.deepEqual(source, before);
