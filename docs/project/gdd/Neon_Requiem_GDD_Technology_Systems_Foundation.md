@@ -1,134 +1,123 @@
-# NEON REQUIEM — GDD Addendum: Technology Systems Foundation
+# Technology Systems — Cyberware, Augmentations and Hacks
 
-**Decision status:** OWNER-APPROVED DESIGN REQUIREMENTS — implementation pending  
-**Decision date:** 2026-11-21  
-**System:** Neon Requiem, a standalone Foundry VTT v14+ Game System derived from D&D 5e  
-**Scope:** Magic replacement concept; Cyberware, Augmentations, and Hacks; augmentation slot ownership and loss rules  
-**Canonical GDD:** This is a project-level approved addendum. Incorporation into the authoritative GDD remains pending confirmation of that document's location/version.  
-**Design authority:** The owner's rules decisions in the Neon Requiem design conversation. This file is not evidence that these mechanics have been implemented or tested.
+**Status:** Approved design rules; implementation and detailed mechanics pending  
+**Recorded:** 21 Nov 2026  
+**Scope:** The replacement for traditional 5e magic, augmentation slots and equipment ownership
 
-## 1. Foundation: D&D 5e rules, without traditional magic
+## The model
 
-- **D&D 5e remains the overall rules and mechanics foundation** for Neon Requiem, subject to explicit Neon Requiem changes.
-- **Traditional fantasy magic is absent** from the intended Neon Requiem setting/rules experience.
-- The traditional **spellcasting and spell-slot system is to be replaced or substantially repurposed** around three technological systems: **Hacks, Augmentations, and Cyberware**.
-- The owner qualified the spellcasting removal with **"kinda"**. The precise extent of underlying spell-slot/spellcasting code removal, reuse, replacement, and migration is **not yet defined**. Do not interpret this requirement as authorization to delete inherited 5e source code, data, or spell APIs before detailed rules and compatibility work is approved.
-- The technology systems are not merely three labels for one resource. Their individual roles and mechanics must remain distinct.
+Neon Requiem keeps 5e as its rules foundation, but its setting has **no traditional fantasy magic**. The spellcasting and spell-slot system will be replaced or substantially reworked around three forms of technology.
 
-## 2. Foundational vocabulary (locked)
-
-| Neon Requiem system | Conceptual role | Owner-approved meaning |
+| System | Analogy | What the player is using |
 | --- | --- | --- |
-| **Cyberware** | **Hardware** | Physical cybernetic modifications to the body, including implanted devices and replacement body parts |
-| **Augmentations** | **Firmware** | Installed enhancements which modify a character's capabilities through compatible, color/type-matched augmentation slots |
-| **Hacks** | **Software** | Learned and installed executable programs that require appropriate Cyberware and provide combat or utility effects |
+| **Cyberware** | Hardware | Physical implants, replacement limbs and installed devices |
+| **Augmentations** | Firmware | Enhancements fitted into type-matched slots |
+| **Hacks** | Software | Programs learned and installed on compatible hardware |
 
-**Canonical mnemonic:** **Cyberware = hardware; Augmentations = firmware; Hacks = software.**
+The three systems serve different purposes, and a character may use more than one together. Their detailed resource and action rules are not settled yet.
 
-The analogy is a conceptual model, not permission to invent technical limitations or a universal shared resource.
+**Spellcasting implementation remains open.** The owner described removing the existing spell-slot and casting rules with a deliberate "kinda" qualification. That establishes the design direction, not a decision to delete inherited 5e fields, code or spell data before a replacement and compatibility plan exists.
 
-## 3. Hacks — software (locked concept)
+## Hacks: software
 
-- Hacks are **programs** a user may **learn and install**.
-- A user needs the **proper Cyberware** installed to use compatible Hacks.
-- Hacks can aid in **combat** and as **utility/environmental interactions**.
-- Owner-provided examples include disabling cameras, blinding an enemy with cybernetic eyes, creating distractions, hacking ATMs, and opening electronically locked doors or containers.
-- Criminal actions remain possible in the setting, including using hacking for unlawful access or theft.
+A Hack is a program the character can **learn and install**, provided they have suitable Cyberware. It must be compatible with the hardware that will run it.
 
-**Not yet specified:** Learning procedure, installation capacity, activation actions, range, target eligibility, skill checks/DCs, costs/RAM, cooldowns, cybersecurity countermeasures, item taxonomy, legal consequences, and detailed compatibility rules.
+Hacks have uses in and out of combat. Established examples include:
 
-## 4. Augmentations — firmware (locked concept)
+- Blinding an opponent through compatible cybernetic eyes.
+- Disabling security cameras or using connected equipment to create a distraction.
+- Opening electronically locked doors and containers.
+- Accessing an ATM or other electronic system, including for criminal purposes.
 
-- Augmentations are enhancements installed into **compatible augmentation slots**, serving the design role that traditional 5e **attunement slots** occupied.
-- Every **Human or Synth body** provides **exactly six baseline augmentation slots**.
-- **Each slot is color-coded by its augmentation type.** A selected Augmentation must match the slot's type/color to be installed there.
-- Augmentations can modify character capabilities. Owner-provided examples include strength, lifting/carrying ability, agility, movement speed, and Dexterity.
-- **Some Augmentations may require particular Cyberware** before installation is allowed.
-- The game is expected to offer **hundreds of augmentation options** over time, creating meaningful configuration choices.
+Hacking is part of the setting's ordinary security and criminal economy; it is not limited to combat encounters.
 
-**Important:** Six is the number of **body-owned baseline slots**, not an absolute cap on all augmentation slots available to a character.
+**To specify later:** how Hacks are learned, stored and installed; compatible hardware; targeting and network access; resource costs (including whether RAM is used); actions, checks, defenses, range, duration, cooldowns, tracing and consequences. Learning a program, installing it and executing it should remain distinct operations unless a later rule combines them.
 
-**Not yet specified:** Slot color names and type taxonomy, the mix of the six baseline slot colors, individual augmentation effects, stacking, availability/progression, install/remove procedure, swap cost, and exact attunement-rule interactions.
+## Augmentations: firmware
 
-## 5. Cyberware — hardware (locked concept)
+Augmentations are enhancements installed in **color-coded, type-specific slots**. They fill the character-customization role that 5e attunement slots once served, with stricter installation constraints.
 
-- Cyberware is a **physical cybernetic modification** installed into or replacing part of the body.
-- Owner-provided examples include:
-  - cybernetic eyes with enhanced vision;
-  - integrated communication devices in the ear or jaw;
-  - cybernetic replacement limbs or body parts;
-  - replacing both human legs with cybernetic legs to improve movement and reflexes;
-  - an internal nanobot dispenser aiding healing or recovery.
-- Some **higher-end Cyberware** provides **additional augmentation slots**.
-- The **number and color/type of those extra slots depend on the specific Cyberware**. They are not universal upgrades and are **in addition to** the six body-owned baseline slots.
-- The presence of extra augmentation slots does **not** imply that Cyberware itself occupies or consumes baseline augmentation slots.
+- Every **Human and Synth body starts with six body-owned Augmentation slots**.
+- Each slot has a **type, represented by a color**. An Augmentation can only occupy a compatible slot.
+- Augmentations can improve Strength, Dexterity, movement speed, lifting/carrying capacity, agility and other capabilities.
+- Some Augmentations also require particular Cyberware before they can be installed.
+- The eventual catalog is expected to contain **hundreds of options**. Characters therefore choose among many possible upgrades but have limited space to install them.
 
-**Not yet specified:** Cyberware body-location categories, installation/surgery rules, baseline hardware limits, maintenance, failure, damage, costs, exact slot grants, and detailed mechanical effects.
+**Six is the baseline, not the character's absolute capacity.** Advanced Cyberware can supply additional slots.
 
-## 6. Augmentation slot ownership, persistence, and removal (locked)
+**To specify later:** the color/type categories, which colors appear in the baseline six, individual effects and stacking, how Augmentations are acquired or moved between slots, and which Cyberware prerequisites apply.
 
-**Core ownership rule: An Augmentation is tied to the particular slot in which it is installed, and that slot is tied to its specific source.**
+## Cyberware: hardware
 
-### 6.1 Body-owned baseline slots
+Cyberware physically changes the body. It includes implants and replacement parts, from small communication units to substantial cybernetic limbs or internal medical systems.
 
-- A Human or Synth body is the owner/source of its **six baseline slots**.
-- The baseline slots belong to the body itself, not to a currently installed Cyberware item.
+Examples already established for the setting:
 
-### 6.2 Cyberware-owned expansion slots
+- Eyes with enhanced vision.
+- Communication units implanted in the ear or jaw.
+- Entire replacement limbs or other body parts.
+- Cybernetic legs that can improve movement and reflexes.
+- Internal nanobot dispensers that assist healing and recovery.
 
-- A piece of Cyberware owns **each additional slot it provides**.
-- Each such slot keeps the color/type assigned by that specific piece of hardware.
-- An Augmentation installed in one of those slots is specifically associated with **that slot and its owning Cyberware**.
-- Expansion slots are **not** an anonymous interchangeable pool that survives independently of the granting hardware.
+Some higher-end Cyberware grants **additional Augmentation slots**. The item itself specifies **how many slots** and **which slot types/colors** it provides. Those slots are added to the body's six baseline slots.
 
-### 6.3 Removing the owning Cyberware
+Cyberware is not automatically an Augmentation and does not implicitly consume one of the body's six slots. Its physical installation and other prerequisites are separate rules to be developed.
 
-When a Cyberware item that grants additional augmentation slots is **removed from the character**:
+## Slot ownership: the binding rule
 
-1. The specific augmentation slots granted by that Cyberware are **lost** from the character.
-2. **Any Augmentations installed in those particular slots are lost with those slots** from the character's active installed configuration.
-3. **Unrelated slots and Augmentations remain unaffected**, including the body's six baseline slots and slots supplied by other installed Cyberware.
+**An Augmentation belongs to the exact slot where it was installed. The slot belongs to its source.**
 
-**Owner's example:** A character has an Augmentation installed in a slot supplied by a set of cybernetic legs. Remove those cybernetic legs: their granted slots disappear, along with the Augmentations installed in those slots.
+There are two kinds of source:
 
-**Scope of "lost":** The owner has explicitly established the loss of slots and their slotted Augmentations when the hardware is removed. Whether the physical Augmentation items are destroyed, detached with the hardware, recoverable, or returned to inventory has **not** yet been defined. Do not invent a salvage policy.
+1. **Body-owned:** The six baseline slots provided by the Human or Synth body.
+2. **Cyberware-owned:** Any additional slots supplied by a particular installed Cyberware item.
 
-### 6.4 Requirement for future implementation
+Cyberware-owned slots do not become permanent body slots. They remain associated with the item that grants them.
 
-To implement the locked behavior correctly, the system must be able to distinguish **which source owns each slot** and **which exact slot contains each Augmentation**. Stable identity and provenance for slot grants are an engineering requirement implied by the approved rules; the final Actor/Item data model remains for future design and review.
+### Removing Cyberware
 
-Removing Cyberware must not silently reassign its slotted Augmentations to unrelated available slots. Any future explicit relocation or recovery procedure requires a separately approved rule.
+When a piece of Cyberware is physically removed from a character:
 
-## 7. Explicitly unresolved interactions
+1. All Augmentation slots granted by **that specific item** disappear from the character.
+2. Every Augmentation installed in **those specific slots** is lost from the character's active installed configuration.
+3. The six body-owned slots and any slots from other Cyberware remain unchanged, along with their installed Augmentations.
 
-Do **not** decide these without a further owner ruling:
+**Example:** A character installs an Augmentation into a slot supplied by cybernetic legs. When those legs are removed, that slot and its installed Augmentation leave the active configuration. The body's baseline slots are unaffected.
 
-- What happens to physical Augmentation items after removal of their owning Cyberware (destruction vs. recovery/storage)?
-- What happens if Cyberware is **disabled, hacked, damaged, or temporarily suppressed**, rather than physically removed?
-- What happens when Cyberware is upgraded, replaced with an identical component, or swapped for different hardware?
-- May a character voluntarily transfer an Augmentation between slots, and at what cost/procedure?
-- What color/type categories exist, and what six baseline colors each Human/Synth body starts with?
-- How does Cyberware installation interact with biological versus Synth bodies?
-- How do Hacks, Augmentations, and Cyberware change 5e action economy, resources, checks, saving throws, conditions, and combat balance?
-- How precisely is the inherited spellcasting/spell-slot implementation retained, adapted, hidden, or replaced?
+**What "lost" means physically is still undecided.** The rule establishes removal from the active configuration; it does **not** establish whether the Augmentation was destroyed, stays attached to the removed hardware, can be salvaged or returns to inventory. This distinction must be settled separately.
 
-## 8. Acceptance criteria for a future implementation
+Removing Cyberware must not silently move its Augmentations into available slots elsewhere.
 
-These are **requirements for testing when implementation is authorized**, not claims of passing tests:
+### Other hardware states
 
-1. Human and Synth characters expose six body-owned augmentation slots, with stable type/color restrictions.
-2. An Augmentation can be installed only into a compatible type/color slot, subject to any approved Cyberware prerequisite.
-3. Cyberware grants only the number and colors/types of expansion slots explicitly defined for that item.
-4. Slotted Augmentations maintain an explicit association with their **particular** slot and source.
-5. Physically removing Cyberware eliminates only the slots it provides and their installed Augmentations from the active configuration.
-6. The six body slots and unrelated Cyberware-owned slots survive removal of some other piece of Cyberware.
-7. The system does not silently treat an expansion slot as a permanent body slot.
-8. Undecided salvage, disabling, replacement, and reinstallation behavior must be blocked or explicitly flagged pending rules approval, not invented.
+**Removal is not the same as damage or temporary disabling.** No decision has yet been made about how slots behave when the owning Cyberware is hacked, malfunctioning, damaged, suppressed or replaced with an identical component. Until those rules exist, implementation should not assume they behave like physical removal.
 
-## 9. Implementation status and handoff
+## Data and implementation requirements
 
-**Status: Design only. No gameplay implementation is authorized by this addendum.**
+When gameplay implementation is authorized, each Augmentation installation must retain two identifiable relationships:
 
-Luna is the project's documentation/bookkeeping lead; Terra is the primary code implementation agent; Sol is the Tier 2 engineering escalation; Astra is the final escalation option.
+- The **particular slot** containing it, including that slot's type/color.
+- The **source** of that slot: the body or a specific Cyberware item.
 
-When implementation is separately approved, Terra should propose a data model and migration plan that preserve inherited 5e behavior until the new technology systems are ready, and Luna should track decisions and open questions. Do not release or bump versions merely because this addendum is documented.
+This source tracking is required to implement precise hardware removal and keep unrelated installations intact. The final Foundry Actor/Item schema, stable identifiers, migrations and rollback behavior still need engineering review.
+
+The technology framework must also preserve the existing distinction between **Human and Synth** bodies; their six baseline slots are the same, but other racial rules and starting Cyberware differ under the separate character-design decisions.
+
+## Acceptance checks for eventual gameplay work
+
+1. A Human or Synth begins with six body-owned slots.
+2. An Augmentation fits only a compatible type/color slot and meets any defined Cyberware requirement.
+3. A Cyberware item grants exactly its specified number and types of slots.
+4. Every installation is linked to one particular slot and its owner.
+5. Removing Cyberware removes **only its own** slots and the Augmentations installed there from the character's active configuration.
+6. Baseline slots and slots granted by other hardware survive unaffected.
+7. No operation silently promotes an expansion slot to a permanent body slot or relocates its installed Augmentation.
+8. Salvage, damage, disabling, hardware replacement and reinstallation must follow later owner-approved rules, not implied default behavior.
+
+## Open design work
+
+The big remaining decisions are the common Hack resource and execution model; Augmentation categories and individual effects; Cyberware installation and repair; how damaged or disabled hardware affects firmware; salvage/recovery; and integration with 5e's action economy, saving throws, conditions and level progression.
+
+The class and subclass designs now reference these systems, but **they do not settle the underlying technology rules by themselves**. Ripperdoc surgery, Engineer device features and Cipher's hacking abilities must eventually use the same shared model.
+
+**Build status:** Design documented. No rules implementation, playtest or release is claimed.
