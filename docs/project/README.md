@@ -16,6 +16,10 @@ This folder holds **project-owned design decisions, development instructions, an
 
 **Status:** The linked addendum records an **approved design requirement**, **not an implemented feature**. It is not yet merged into the canonical GDD; the authoritative GDD location/version must be established first.
 
+## Approved project instructions
+
+- [Visual direction](instructions/VISUAL-DIRECTION.md): owner-approved GitHub branding and a visual reference for future Foundry interface work.
+
 ## Working conventions
 
 1. **Read before acting.** Check this index and relevant `gdd/`, `instructions/`, and `handoffs/` files before related implementation work.
