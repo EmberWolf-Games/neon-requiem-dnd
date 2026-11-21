@@ -1,38 +1,27 @@
-# Neon Requiem — Project Documentation Hub
+# Neon Requiem — Project Notes
 
-This folder holds **project-owned design decisions, development instructions, and team handoffs** for the Neon Requiem Foundry VTT v14+ **Game System**.
+This is the working home for Neon Requiem's design decisions, developer instructions and team handoffs. The system is a standalone Foundry VTT v14+ game system built from the D&D 5e rules chassis.
 
-## Directory layout
-
-| Folder | Purpose |
+| Folder | Contents |
 | --- | --- |
-| [`gdd/`](gdd/) | User-approved design requirements and GDD addenda, pending integration into the authoritative GDD |
-| [`instructions/`](instructions/) | Standing project/developer/assistant conventions and implementation guidance |
-| [`handoffs/`](handoffs/) | Bounded task handoffs, results, blockers, tests, and integration notes |
+| [`gdd/`](gdd/) | Approved game design and feature requirements |
+| [`instructions/`](instructions/) | Shared working conventions and visual direction |
+| [`handoffs/`](handoffs/) | Assigned work, test results, blockers and handover notes |
 
-## Current design decision
+## Design references
 
-- [Character Identity Creator & Animated Scene Tokens — approved GDD addendum, revision 2](gdd/Neon_Requiem_GDD_Character_Creator_Animation_Addendum_v2.md): true-overhead rotatable tokens, four Human/Synth body bases, selectable heads, independent skin/hair masks, transparent WebM animations, local-PC validation and a future self-hosted encoder worker.
+- [Character Identity Creator and animated tokens](gdd/Neon_Requiem_GDD_Character_Creator_Animation_Addendum_v2.md): Four Human/Synth art bases; true-overhead animation; skin/hair recoloring; local media export and optional later hosted encoding.
+- [Technology systems](gdd/Neon_Requiem_GDD_Technology_Systems_Foundation.md): Cyberware is hardware, Augmentations are firmware, Hacks are software. Includes the six body-owned slots and the rule for removing hardware-owned slots.
+- [Visual direction](instructions/VISUAL-DIRECTION.md): Gunmetal, charcoal, magenta and cyan; the approved GitHub branding is the visual reference for future interface work.
 
-**Status:** The linked addendum records an **approved design requirement**, **not an implemented feature**. It is not yet merged into the canonical GDD; the authoritative GDD location/version must be established first.
+These are **design decisions**, not a claim that the features are playable. The consolidated authoritative GDD has not yet been identified; these files remain the working record.
 
-## Approved project instructions
+## How we work
 
-- [Visual direction](instructions/VISUAL-DIRECTION.md): owner-approved GitHub branding and a visual reference for future Foundry interface work.
+Read the relevant decision before proposing implementation. If a technical plan conflicts with an approved rule, flag it instead of silently changing the rule. Keep proposals separate from approved mechanics and test results separate from assumptions.
 
-## Working conventions
+Use a branch and pull request for review; don't merge to `main` or publish without approval. Preserve the inherited dnd5e license notices, schema compatibility and four-part versioning policy. Never commit private deployment data, restricted artwork, personalized token packs or secrets.
 
-1. **Read before acting.** Check this index and relevant `gdd/`, `instructions/`, and `handoffs/` files before related implementation work.
-2. **Design authority.** Owner-approved decisions are design requirements. A technical proposal or agent suggestion is not approved simply because it was written here.
-3. **Keep provenance.** Note date, status, scope, source/decision context, dependencies, and open questions. Do not silently change previously approved rules.
-4. **Reviewable changes.** Follow protected-branch workflow: use a feature/docs branch and PR. Do not force-push or bypass required checks. Coordinate with the ongoing setup PR.
-5. **Separate design from code.** This folder is documentation, not executable system assets. Runtime code belongs in its established source directories.
-6. **Small, linkable files.** Prefer Markdown, descriptive filenames, relative links, and focused addenda. Record status as *proposed*, *approved*, *implemented*, or *validated* as appropriate.
-7. **Do not make up implementation results.** Any outstanding Foundry v14 runtime smoke tests, media compatibility tests, asset-license review, or hosted-worker validation must remain explicitly pending until verified.
-8. **Attribution/security.** Preserve upstream license notices and third-party credit; keep secrets and personally identifying server configuration out of the repository.
+The owner currently validates on a local Foundry v14 instance. The later hosting setup and optional media worker require their own deployment review.
 
-The existing top-level `docs/` contains technical manuals such as architecture, development, releases, upstream tracking and versioning. Maintain those manuals in place; use `docs/project/` for project-level GDD decisions, instructions and handoffs.
-
-## For Luna, Terra, Sol and Astra
-
-Use [instructions/README.md](instructions/README.md) as the common operating guide and [handoffs/README.md](handoffs/README.md) as the handoff format. If requirements conflict with existing implementation, report the discrepancy rather than altering the approved design without the owner's decision.
+See the [agent working agreement](instructions/README.md) and [handoff format](handoffs/README.md). Technical build and release documentation remains under the repository's top-level `docs/`.
