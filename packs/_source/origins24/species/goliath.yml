@@ -1,0 +1,109 @@
+name: Goliath
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGoliath0000
+      inline classes="free-rules-embed"]</p><h3
+      data-anchor="goliath-traits">Goliath Traits</h3><p><strong>Creature Type:
+      </strong>Humanoid<br><strong>Size: </strong>Medium (about 7–8 feet
+      tall)<br><strong>Speed:</strong> 35 feet</p><p>As a Goliath, you have
+      these special traits.</p><div
+      class="hide-secrets"><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptGiantAnces
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptLargeForm0
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptPowerfulBu
+      caption=false cite=false nameStyle=inline]</p></div>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  advancement:
+    LETPMtBLvmzWUUb0:
+      _id: LETPMtBLvmzWUUb0
+      type: Size
+      configuration:
+        sizes:
+          - med
+      level: 0
+      hint: Medium (about 7-8 feet tall)
+      value: {}
+      name: ''
+      flags: {}
+    PZxMcT5tVtvvf62P:
+      _id: PZxMcT5tVtvvf62P
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptGiantAnces
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptPowerfulBu
+        optional: false
+        spell: null
+        sorting: a
+      value: {}
+      level: 0
+      hint: ''
+      name: Goliath Traits
+      flags: {}
+    9cKoMls1KVDsdD4A:
+      _id: 9cKoMls1KVDsdD4A
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptLargeForm0
+        optional: false
+        spell: null
+        sorting: a
+      value: {}
+      level: 5
+      hint: ''
+      name: Goliath Traits
+      flags: {}
+  movement:
+    units: null
+    hover: false
+    speeds:
+      walk: '35'
+    ignoredDifficultTerrain: []
+  senses:
+    units: null
+    special: ''
+    ranges:
+      darkvision: null
+      blindsight: null
+      tremorsense: null
+      truesight: null
+  type:
+    value: humanoid
+    custom: ''
+    subtype: ''
+  identifier: goliath
+_id: phbspGoliath0000
+type: race
+folder: Ulvo8nbygUegLa59
+img: icons/creatures/magical/construct-iron-stomping-yellow.webp
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791577738701
+  modifiedTime: 1791577738701
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbspGoliath0000'

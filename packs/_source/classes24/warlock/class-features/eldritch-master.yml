@@ -1,0 +1,51 @@
+_id: phbwlkEldritchMa
+name: Eldritch Master
+type: feat
+folder: UQiLTq4nLQpaM0Q5
+img: icons/magic/lightning/orb-ball-purple.webp
+system:
+  description:
+    value: >-
+      <p>When you use your Magical Cunning feature, you regain all your expended
+      Pact Magic spell slots.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 20
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Warlock
+  activities: {}
+  enchant: {}
+  identifier: eldritch-master
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793665206277
+  modifiedTime: 1793665206277
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbwlkEldritchMa'

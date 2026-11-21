@@ -1,0 +1,309 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish_release:
+        description: Publish the validated GitHub Release and stable manifest
+        type: boolean
+        required: true
+        default: false
+      major_change_approved:
+        description: Explicitly approve a Major version transition
+        type: boolean
+        required: true
+        default: false
+      major_minor_decision:
+        description: Choose whether Major carries Minor forward or resets it
+        type: choice
+        required: true
+        default: not-applicable
+        options:
+          - not-applicable
+          - carry
+          - reset
+      foundry_smoke_test_passed:
+        description: Confirm the exact candidate passed a clean Foundry v14 in-app smoke test
+        type: boolean
+        required: true
+        default: false
+      foundry_version_comparison_verified:
+        description: Confirm Foundry v14 compares four-part versions and zero-padded Builds correctly
+        type: boolean
+        required: true
+        default: false
+      asset_provenance_reviewed:
+        description: Confirm the packaged assets and attribution were reviewed for this release
+        type: boolean
+        required: true
+        default: false
+
+concurrency:
+  group: neon-requiem-release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-package:
+    name: Validate and build release candidate
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: read
+    outputs:
+      version: ${{ steps.release-metadata.outputs.version }}
+      tag: ${{ steps.release-metadata.outputs.tag }}
+    steps:
+      - name: Check out all tags and history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Validate source
+        run: |
+          npm run check:version
+          npm run check:manifest
+          npm run check:assets
+          npm test
+          npm run lint
+
+      - name: Build and check the Foundry package
+        run: |
+          npm run build
+          VERSION="$(node -p "JSON.parse(require('node:fs').readFileSync('system.json', 'utf8')).version")"
+          TAG="v${VERSION}"
+          npm run package:release -- "${TAG}"
+          npm run check:package
+
+      - name: Validate published version sequence
+        id: release-metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MAJOR_CHANGE_APPROVED: ${{ inputs.major_change_approved }}
+          MAJOR_MINOR_DECISION: ${{ inputs.major_minor_decision }}
+          PUBLISH_RELEASE: ${{ inputs.publish_release }}
+          FOUNDRY_SMOKE_TEST_PASSED: ${{ inputs.foundry_smoke_test_passed }}
+          FOUNDRY_VERSION_COMPARISON_VERIFIED: ${{ inputs.foundry_version_comparison_verified }}
+          ASSET_PROVENANCE_REVIEWED: ${{ inputs.asset_provenance_reviewed }}
+        run: |
+          set -euo pipefail
+          if [[ "${GITHUB_REF}" != "refs/heads/main" ]]; then
+            echo "Releases can only be dispatched from main." >&2
+            exit 1
+          fi
+          if [[ "${PUBLISH_RELEASE}" == "true" && "${FOUNDRY_SMOKE_TEST_PASSED}" != "true" ]]; then
+            echo "Publishing requires confirmation of a passing Foundry v14 in-app smoke test." >&2
+            exit 1
+          fi
+          if [[ "${PUBLISH_RELEASE}" == "true" && "${FOUNDRY_VERSION_COMPARISON_VERIFIED}" != "true" ]]; then
+            echo "Publishing requires confirmation that Foundry v14 correctly compares four-part versions and zero-padded Builds." >&2
+            exit 1
+          fi
+          if [[ "${PUBLISH_RELEASE}" == "true" && "${ASSET_PROVENANCE_REVIEWED}" != "true" ]]; then
+            echo "Publishing requires confirmation of the release asset and attribution review." >&2
+            exit 1
+          fi
+
+          VERSION="$(node -p "JSON.parse(require('node:fs').readFileSync('system.json', 'utf8')).version")"
+          TAG="v${VERSION}"
+          gh release list --exclude-drafts --exclude-pre-releases --limit 1000 --json tagName > published-releases.json
+
+          VERSION_ARGS=(verify-release published-releases.json "--major-minor-decision=${MAJOR_MINOR_DECISION}")
+          if [[ "${MAJOR_CHANGE_APPROVED}" == "true" ]]; then
+            VERSION_ARGS+=(--authorize-major)
+          fi
+
+          if gh release view "${TAG}" --json isDraft >/dev/null 2>&1; then
+            TAG_COMMIT="$(git rev-list -n 1 "${TAG}")"
+            if [[ "${TAG_COMMIT}" != "${GITHUB_SHA}" ]]; then
+              echo "Existing release ${TAG} points at a different commit." >&2
+              exit 1
+            fi
+            VERSION_ARGS+=(--resume-existing)
+          elif git show-ref --verify --quiet "refs/tags/${TAG}"; then
+            echo "Tag ${TAG} exists without a matching GitHub Release; inspect it before proceeding." >&2
+            exit 1
+          fi
+
+          node scripts/version.mjs "${VERSION_ARGS[@]}"
+          echo "version=${VERSION}" >> "${GITHUB_OUTPUT}"
+          echo "tag=${TAG}" >> "${GITHUB_OUTPUT}"
+
+      - name: Stage release assets
+        run: |
+          mkdir -p release-assets
+          cp dist/neon-requiem-dnd.zip dist/package/system.json release-assets/
+          sha256sum release-assets/neon-requiem-dnd.zip release-assets/system.json
+
+      - name: Upload validated release assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: neon-requiem-release-assets
+          path: release-assets/*
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    name: Publish release and stable manifest
+    if: ${{ inputs.publish_release }}
+    needs: validate-and-package
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.validate-and-package.outputs.version }}
+      TAG: ${{ needs.validate-and-package.outputs.tag }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out the exact validated commit and tags
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+
+      - name: Download validated release assets
+        uses: actions/download-artifact@v4
+        with:
+          name: neon-requiem-release-assets
+          path: release-assets
+
+      - name: Verify release manifest matches the tag
+        run: |
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const manifest = JSON.parse(fs.readFileSync("release-assets/system.json", "utf8"));
+            const expected = `https://github.com/${process.env.GITHUB_REPOSITORY}/releases/download/${process.env.TAG}/neon-requiem-dnd.zip`;
+            if (manifest.id !== "neon-requiem-dnd" || manifest.version !== process.env.VERSION || manifest.download !== expected) {
+              throw new Error("Release manifest, version, or ZIP URL does not match the validated release.");
+            }
+          '
+
+      - name: Create or resume the draft and upload assets
+        id: release-status
+        run: |
+          set -euo pipefail
+          if gh release view "${TAG}" --json isDraft >/dev/null 2>&1; then
+            DRAFT="$(gh release view "${TAG}" --json isDraft --jq '.isDraft')"
+            TAG_COMMIT="$(git rev-list -n 1 "${TAG}")"
+            if [[ "${TAG_COMMIT}" != "${GITHUB_SHA}" ]]; then
+              echo "Existing release ${TAG} points at a different commit." >&2
+              exit 1
+            fi
+            if [[ "${DRAFT}" != "true" ]]; then
+              echo "already_published=true" >> "${GITHUB_OUTPUT}"
+              gh release view "${TAG}" --json assets --jq '.assets[].name' | grep -Fxq 'neon-requiem-dnd.zip'
+              gh release view "${TAG}" --json assets --jq '.assets[].name' | grep -Fxq 'system.json'
+            else
+              echo "already_published=false" >> "${GITHUB_OUTPUT}"
+              gh release upload "${TAG}" release-assets/neon-requiem-dnd.zip release-assets/system.json --clobber
+            fi
+          else
+            echo "already_published=false" >> "${GITHUB_OUTPUT}"
+            if git show-ref --verify --quiet "refs/tags/${TAG}"; then
+              TAG_COMMIT="$(git rev-list -n 1 "${TAG}")"
+              if [[ "${TAG_COMMIT}" != "${GITHUB_SHA}" ]]; then
+                echo "Tag ${TAG} points at a different commit." >&2
+                exit 1
+              fi
+            fi
+            gh release create "${TAG}" \
+              --draft \
+              --target "${GITHUB_SHA}" \
+              --title "Neon Requiem ${VERSION}" \
+              --notes "Neon Requiem ${VERSION}. See the attached Foundry system manifest and package."
+            gh release upload "${TAG}" release-assets/neon-requiem-dnd.zip release-assets/system.json
+          fi
+
+      - name: Publish the GitHub Release
+        if: ${{ steps.release-status.outputs.already_published != 'true' }}
+        run: |
+          RELEASE_ID="$(gh release view "${TAG}" --json databaseId --jq '.databaseId')"
+          gh api --method PATCH "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
+            -F draft=false \
+            -F prerelease=false \
+            -F make_latest=true
+
+      - name: Validate public release asset URLs and bytes
+        run: |
+          set -euo pipefail
+          BASE="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}"
+          curl --fail --location --silent --show-error "${BASE}/neon-requiem-dnd.zip" --output downloaded-neon-requiem-dnd.zip
+          curl --fail --location --silent --show-error "${BASE}/system.json" --output downloaded-system.json
+          cmp release-assets/neon-requiem-dnd.zip downloaded-neon-requiem-dnd.zip
+          cmp release-assets/system.json downloaded-system.json
+
+      - name: Update the stable manifest branch
+        uses: actions/github-script@v7
+        env:
+          VERSION: ${{ env.VERSION }}
+        with:
+          script: |
+            const fs = require("node:fs");
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const content = fs.readFileSync("release-assets/system.json", "utf8");
+            const manifest = JSON.parse(content);
+            if (manifest.version !== process.env.VERSION) throw new Error("Stable manifest version changed unexpectedly.");
+
+            const blob = await github.rest.git.createBlob({ owner, repo, content, encoding: "utf-8" });
+            let parentSha;
+            let baseTree;
+            try {
+              const ref = await github.rest.git.getRef({ owner, repo, ref: "heads/stable" });
+              parentSha = ref.data.object.sha;
+              const parent = await github.rest.git.getCommit({ owner, repo, commit_sha: parentSha });
+              baseTree = parent.data.tree.sha;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+
+            const tree = await github.rest.git.createTree({
+              owner,
+              repo,
+              ...(baseTree ? { base_tree: baseTree } : {}),
+              tree: [{ path: "system.json", mode: "100644", type: "blob", sha: blob.data.sha }]
+            });
+            const commit = await github.rest.git.createCommit({
+              owner,
+              repo,
+              message: `chore(release): publish ${manifest.version} manifest`,
+              tree: tree.data.sha,
+              parents: parentSha ? [parentSha] : []
+            });
+
+            if (parentSha) {
+              await github.rest.git.updateRef({ owner, repo, ref: "heads/stable", sha: commit.data.sha, force: false });
+            } else {
+              await github.rest.git.createRef({ owner, repo, ref: "refs/heads/stable", sha: commit.data.sha });
+            }
+
+      - name: Verify the stable manifest is publicly current
+        run: |
+          set -euo pipefail
+          URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/stable/system.json"
+          for attempt in 1 2 3 4 5; do
+            curl --fail --location --silent --show-error "${URL}" --output stable-system.json
+            if node --input-type=module -e '
+              import fs from "node:fs";
+              const manifest = JSON.parse(fs.readFileSync("stable-system.json", "utf8"));
+              const expected = `https://github.com/${process.env.GITHUB_REPOSITORY}/releases/download/${process.env.TAG}/neon-requiem-dnd.zip`;
+              process.exit(manifest.version === process.env.VERSION && manifest.download === expected ? 0 : 1);
+            '; then
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Stable manifest did not update to ${TAG}." >&2
+          exit 1

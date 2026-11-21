@@ -1,0 +1,553 @@
+_id: phbdrdNaturesSan
+name: Nature's Sanctuary
+type: feat
+folder: WJ4IXskgADlprLEA
+img: icons/magic/nature/vines-thorned-curled-glow-green.webp
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdNaturesSan.Activity.dnd5eactivity000
+      inline]</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdNaturesSan.Activity.oV51RLBkYFH4MPrS
+      inline]</p><section id="secret-OyXlvV2zR9s0WXyn"
+      class="secret"><p><strong>Foundry Note</strong></p><p>This feature
+      includes an activity for each land type. Select the one matching your
+      current land type and it will automatically apply the appropriate effects
+      to your allies within the placed region.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+    items: []
+    repeatable: false
+  properties:
+    - mgc
+  requirements: Circle of Land
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:wild-shape
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>As a &amp;Reference[Magic] action, you can expend a use of your
+          Wild Shape and cause spectral trees and vines to appear in a 15-foot
+          Cube on the ground within 120 feet of yourself. They last there for 1
+          minute or until you have the &amp;Reference[Incapacitated apply=false]
+          condition or die. You and your allies have &amp;Reference[Half Cover]
+          while in that area, and your allies gain the current
+          &amp;Reference[Resistance] of your Nature's Ward while there.</p>
+      duration:
+        value: '1'
+        units: minute
+        special: ''
+        override: false
+        expiry: null
+        concentration: false
+      effects:
+        - _id: h0xW0mOYF8frKgHf
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 7YVMASgXswIFXNs2
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Gqgjm2NswU6f7qVL
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: LKxwXqkEIXJR2XAa
+          uuid: null
+          level:
+            min: null
+            max: null
+      range:
+        value: '120'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: cube
+          size: '15'
+          width: ''
+          height: ''
+          units: ft
+          stationary: false
+        affects:
+          count: ''
+          type: ally
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: Place Sanctuary (Arid)
+      img: icons/environment/wilderness/cave-entrance-rocky.webp
+      behaviors:
+        - name: ''
+          _id: owuq3E3cykFcG8g7
+          type: applyActiveEffect
+          config:
+            effects:
+              - Compendium.dnd5e.effects.ActiveEffect.friVsjzOLAFEmdaF
+              - Compendium.dnd5e.effects.ActiveEffect.QM7b36MGNpZhgazC
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: true
+        identifier: ''
+    oV51RLBkYFH4MPrS:
+      type: utility
+      _id: oV51RLBkYFH4MPrS
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>As a Bonus Action, you can move the Cube up to 60 feet to ground
+          within 120 feet of yourself.</p>
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: ft
+        special: ''
+        value: '120'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 400000
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Move
+      img: systems/neon-requiem-dnd/icons/svg/action/move.svg
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: true
+        identifier: ''
+    aNIM3GrB97GSNZHG:
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:wild-shape
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdNaturesSan.Activity.dnd5eactivity000
+          inline]</p>
+      duration:
+        value: '1'
+        units: minute
+        special: ''
+        override: false
+        expiry: null
+        concentration: false
+      effects:
+        - _id: h0xW0mOYF8frKgHf
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 7YVMASgXswIFXNs2
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Gqgjm2NswU6f7qVL
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: LKxwXqkEIXJR2XAa
+          uuid: null
+          level:
+            min: null
+            max: null
+      range:
+        value: '120'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: cube
+          size: '15'
+          width: ''
+          height: ''
+          units: ft
+          stationary: false
+        affects:
+          count: ''
+          type: ally
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 100000
+      name: Place Sanctuary (Polar)
+      img: icons/magic/water/water-iceberg-bubbles.webp
+      behaviors:
+        - name: ''
+          _id: owuq3E3cykFcG8g7
+          type: applyActiveEffect
+          config:
+            effects:
+              - Compendium.dnd5e.effects.ActiveEffect.friVsjzOLAFEmdaF
+              - Compendium.dnd5e.effects.ActiveEffect.O9xghs0pD5GnHYhZ
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: true
+        identifier: ''
+      _id: aNIM3GrB97GSNZHG
+    G1htmQaxEZ0kwRK0:
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:wild-shape
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdNaturesSan.Activity.dnd5eactivity000
+          inline]</p>
+      duration:
+        value: '1'
+        units: minute
+        special: ''
+        override: false
+        expiry: null
+        concentration: false
+      effects:
+        - _id: h0xW0mOYF8frKgHf
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 7YVMASgXswIFXNs2
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Gqgjm2NswU6f7qVL
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: LKxwXqkEIXJR2XAa
+          uuid: null
+          level:
+            min: null
+            max: null
+      range:
+        value: '120'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: cube
+          size: '15'
+          width: ''
+          height: ''
+          units: ft
+          stationary: false
+        affects:
+          count: ''
+          type: ally
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 200000
+      name: Place Sanctuary (Temperate)
+      img: icons/environment/wilderness/tree-spruce.webp
+      behaviors:
+        - name: ''
+          _id: owuq3E3cykFcG8g7
+          type: applyActiveEffect
+          config:
+            effects:
+              - Compendium.dnd5e.effects.ActiveEffect.friVsjzOLAFEmdaF
+              - Compendium.dnd5e.effects.ActiveEffect.ReKGnHejsakwCPu6
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: true
+        identifier: ''
+      _id: G1htmQaxEZ0kwRK0
+    0FT3EzkaLnht95Eo:
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:wild-shape
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdNaturesSan.Activity.dnd5eactivity000
+          inline]</p>
+      duration:
+        value: '1'
+        units: minute
+        special: ''
+        override: false
+        expiry: null
+        concentration: false
+      effects:
+        - _id: h0xW0mOYF8frKgHf
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 7YVMASgXswIFXNs2
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Gqgjm2NswU6f7qVL
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: LKxwXqkEIXJR2XAa
+          uuid: null
+          level:
+            min: null
+            max: null
+      range:
+        value: '120'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: cube
+          size: '15'
+          width: ''
+          height: ''
+          units: ft
+          stationary: false
+        affects:
+          count: ''
+          type: ally
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 300000
+      name: Place Sanctuary (Tropical)
+      img: icons/environment/wilderness/island.webp
+      behaviors:
+        - name: ''
+          _id: owuq3E3cykFcG8g7
+          type: applyActiveEffect
+          config:
+            effects:
+              - Compendium.dnd5e.effects.ActiveEffect.friVsjzOLAFEmdaF
+              - Compendium.dnd5e.effects.ActiveEffect.ym9IrYvM7nCXrS7w
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: true
+        identifier: ''
+      _id: 0FT3EzkaLnht95Eo
+  enchant: {}
+  identifier: natures-sanctuary
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793647063852
+  modifiedTime: 1793647063852
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 400000
+ownership:
+  default: 0
+_key: '!items!phbdrdNaturesSan'

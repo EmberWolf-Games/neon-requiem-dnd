@@ -1,0 +1,157 @@
+_id: phbPrimalOrderMa
+name: 'Primal Order: Magician'
+type: feat
+img: icons/magic/nature/leaf-hand-green.webp
+system:
+  description:
+    value: >-
+      <p>You know one extra cantrip from the
+      @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU#cantrip]{Druid
+      spell list}. In addition, your mystical connection to nature gives you a
+      bonus to your Intelligence (Arcana or Nature) checks. The bonus equals
+      your Wisdom modifier (minimum bonus of +1).</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 1
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Druid
+  activities: {}
+  enchant: {}
+  identifier: primal-order-magician
+  advancement:
+    5q6BGNFGfbiofo4a:
+      name: Extra Druid Cantrip
+      type: ItemChoice
+      _id: 5q6BGNFGfbiofo4a
+      configuration:
+        allowDrops: true
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool: []
+        restriction:
+          list:
+            - class:druid
+          school: []
+          level: '0'
+        sorting: a
+        spell:
+          ability:
+            - wis
+          method: spell
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+          prepared: 2
+        type: spell
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: <p>You know one extra cantrip from the druid spell list.</p>
+  crewed: false
+effects:
+  - name: Magician Checks & Cantrip
+    origin: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    disabled: false
+    flags:
+      dnd5e:
+        riders: {}
+    img: icons/magic/nature/leaf-hand-green.webp
+    _id: IqjrvuQ2ORv65hxB
+    type: base
+    system:
+      changes:
+        - key: system.scale.druid.cantrips-known.value
+          value: 1
+          priority: null
+          type: add
+          phase: initial
+          _id: UYE3E5CCxDZx7mr5
+          conditions: '{}'
+          replacement: ''
+        - key: system.skills.arc.roll.bonus
+          value: max(1, @abilities.wis.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: XeZnMHylW05siYZo
+          conditions: '{}'
+          replacement: ''
+        - key: system.skills.nat.roll.bonus
+          value: max(1, @abilities.wis.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: FZVGKxvO4CyUjcMj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.phbPrimalOrderMa
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    description: >-
+      <p>Your mystical connection to nature gives you a bonus to your
+      Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom
+      modifier (minimum bonus of +1).</p>
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.370'
+      systemId: dnd5e
+      systemVersion: 6.1.0
+      createdTime: 1794349983570
+      modifiedTime: 1794349983570
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbPrimalOrderMa.IqjrvuQ2ORv65hxB'
+folder: EXYmwRGoNyMbByN1
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1794349983570
+  modifiedTime: 1794349983570
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 1100000
+ownership:
+  default: 0
+_key: '!items!phbPrimalOrderMa'

@@ -1,0 +1,50 @@
+_id: phbbrbInstinctiv
+name: Instinctive Pounce
+type: feat
+img: icons/creatures/mammals/wolf-shadow-black.webp
+system:
+  description:
+    value: >-
+      <p>As part of the Bonus Action you take to enter your Rage, you can move
+      up to half your Speed.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 7
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Barbarian
+  activities: {}
+  enchant: {}
+  identifier: instinctive-pounce
+  advancement: {}
+  crewed: false
+effects: []
+folder: p6WDpW0gzmKfhGad
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088967434
+  modifiedTime: 1792088967434
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbInstinctiv'

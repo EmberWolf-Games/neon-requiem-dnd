@@ -1,0 +1,660 @@
+_id: phbmnkMonk000000
+name: Monk
+type: class
+folder: Dq7BWtsgu2yi7Ld2
+img: systems/neon-requiem-dnd/icons/classes/monk.webp
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000
+      inline classes="free-rules-embed"]</p><p
+      class="hide-in-embed"><em>@UUID[Compendium.dnd5e.content24.JournalEntry.phbMonk000000000]{Class
+      Details}</em></p><h3>Becoming a Monk …</h3><h4>As a Level 1
+      Character</h4><ul><li><p>Gain all the traits in the Core Monk Traits
+      table.</p></li><li><p>Gain the Monk's level 1 features, which are listed
+      in the Monk Features table.</p></li></ul><h4>As a Multiclass
+      Character</h4><ul><li><p>Gain the Hit Point Die trait from the Core Monk
+      Traits table.</p></li><li><p>Gain the Monk's level 1 features, which are
+      listed in the Monk Features table.</p></li></ul>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: z3xcULs5Q70zNQ2D
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000
+      requiresProficiency: false
+      _id: O0MjTQnMYC8Xq3AM
+      group: z3xcULs5Q70zNQ2D
+      sort: 200000
+    - type: linked
+      count: 5
+      key: Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000
+      requiresProficiency: false
+      _id: 0ZcOXGUX7x39CPpk
+      group: z3xcULs5Q70zNQ2D
+      sort: 300000
+    - type: OR
+      requiresProficiency: false
+      _id: ncjqhMc9uV04Fsot
+      group: z3xcULs5Q70zNQ2D
+      sort: 400000
+    - type: tool
+      count: null
+      key: art
+      requiresProficiency: false
+      _id: OXoYOVMKJDenBZFc
+      group: ncjqhMc9uV04Fsot
+      sort: 500000
+    - type: tool
+      count: null
+      key: music
+      requiresProficiency: false
+      _id: RF2oOqFXh93aM6dA
+      group: ncjqhMc9uV04Fsot
+      sort: 600000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa
+      requiresProficiency: false
+      _id: YZ87ItdbDaRpBDQ2
+      group: z3xcULs5Q70zNQ2D
+      sort: 700000
+    - type: currency
+      count: 11
+      key: gp
+      requiresProficiency: false
+      _id: D3hBKF0H6yke5QlC
+      group: z3xcULs5Q70zNQ2D
+      sort: 800000
+  identifier: monk
+  levels: 1
+  advancement:
+    LfwDqrjK9TQZpwDU:
+      _id: LfwDqrjK9TQZpwDU
+      type: HitPoints
+      configuration: {}
+      value: {}
+      flags: {}
+      hint: ''
+    IeCvD9wvP0cOa6kt:
+      _id: IeCvD9wvP0cOa6kt
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkMartialArt
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkUnarmoredD
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkUnarmedStr
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 1
+      flags: {}
+      hint: ''
+      name: Class Features
+    mrRoW8wNhjYbeqH1:
+      _id: mrRoW8wNhjYbeqH1
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkMonksFocus
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkUnarmoredM
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkUncannyMet
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 2
+      flags: {}
+      hint: ''
+      name: Class Features
+    ms2HaCjkdW9DV3KG:
+      _id: ms2HaCjkdW9DV3KG
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkDeflectAtt
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 3
+      flags: {}
+      hint: ''
+      name: Class Features
+    8tQG3hCcquAKQaPI:
+      _id: 8tQG3hCcquAKQaPI
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkSlowFall00
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 4
+      flags: {}
+      hint: ''
+      name: Class Features
+    W4pBCGfpgL3LjHT0:
+      _id: W4pBCGfpgL3LjHT0
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.classes24.Item.phbmnkExtraAttac
+            sort: 0
+          - optional: false
+            uuid: Compendium.dnd5e.classes24.Item.phbmnkStunningSt
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 5
+      flags: {}
+      hint: ''
+      name: Class Features
+    TIzNw6t61wYmtj6V:
+      _id: TIzNw6t61wYmtj6V
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkEmpoweredS
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 6
+      flags: {}
+      hint: ''
+      name: Class Features
+    Rfq6ZXQhdFm3Zmjx:
+      _id: Rfq6ZXQhdFm3Zmjx
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkEvasion000
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 7
+      flags: {}
+      hint: ''
+      name: Class Features
+    26AlznyWcDuaFTCY:
+      _id: 26AlznyWcDuaFTCY
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkAcrobaticM
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 9
+      flags: {}
+      hint: ''
+      name: Class Features
+    H32KYn1ozuG9jgYH:
+      _id: H32KYn1ozuG9jgYH
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkHeightened
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkSelfrestor
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 10
+      flags: {}
+      hint: ''
+      name: Class Features
+    p4M4GK8yYVPY4Nsc:
+      _id: p4M4GK8yYVPY4Nsc
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.classes24.Item.phbmnkDeflectEne
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 13
+      flags: {}
+      hint: ''
+      name: Class Features
+    l5WJg41iXSVd88sd:
+      _id: l5WJg41iXSVd88sd
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkDiscipline
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 14
+      flags: {}
+      hint: ''
+      name: Class Features
+    9EzbkaZcskpZqLAv:
+      _id: 9EzbkaZcskpZqLAv
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkPerfectFoc
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 15
+      flags: {}
+      hint: ''
+      name: Class Features
+    BJBdi5OYKS2pvCeV:
+      _id: BJBdi5OYKS2pvCeV
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkSuperiorDe
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 18
+      flags: {}
+      hint: ''
+      name: Class Features
+    DOmTqz4RzFr3Scvj:
+      _id: DOmTqz4RzFr3Scvj
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbmnkBodyAndMin
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 20
+      flags: {}
+      hint: ''
+      name: Class Features
+    bwCLOdauuzoHofil:
+      _id: bwCLOdauuzoHofil
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 4
+      flags: {}
+      hint: ''
+      name: ''
+    mRSh9oUVjLU33e7p:
+      _id: mRSh9oUVjLU33e7p
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 8
+      flags: {}
+      hint: ''
+      name: ''
+    mhZh3LfLMa15tXee:
+      _id: mhZh3LfLMa15tXee
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 12
+      flags: {}
+      hint: ''
+      name: ''
+    FOf5CkGnSs0OlppY:
+      _id: FOf5CkGnSs0OlppY
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 16
+      flags: {}
+      hint: ''
+      name: ''
+    ddtuQmULKmXOQU4i:
+      _id: ddtuQmULKmXOQU4i
+      type: ScaleValue
+      configuration:
+        identifier: die
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '1':
+            faces: 6
+          '5':
+            faces: 8
+          '11':
+            faces: 10
+          '17':
+            faces: 12
+      value: {}
+      hint: ''
+      flags: {}
+      name: Martial Arts
+      classRestriction: ''
+    wMwMS7RC49lh1hp2:
+      _id: wMwMS7RC49lh1hp2
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: distance
+        distance:
+          units: ft
+        scale:
+          '2':
+            value: 10
+          '6':
+            value: 15
+          '10':
+            value: 20
+          '14':
+            value: 25
+          '18':
+            value: 30
+      value: {}
+      hint: ''
+      flags: {}
+      name: Unarmored Movement
+    OGo9kMbx7cFuGx00:
+      _id: OGo9kMbx7cFuGx00
+      type: Subclass
+      configuration: {}
+      value:
+        document: null
+        uuid: null
+      level: 3
+      hint: >-
+        <p>You gain a Monk subclass of your choice. The Warrior of Mercy,
+        Warrior of Shadow, Warrior of the Elements, and Warrior of the Open Hand
+        subclasses are detailed after this class’s description. A subclass is a
+        specialization that grants you features at certain Monk levels. For the
+        rest of your career, you gain each of your subclass’s features that are
+        of your Monk level or lower.</p>
+      flags: {}
+      classRestriction: ''
+      name: ''
+    Sz3XH2IWUeXzTNib:
+      _id: Sz3XH2IWUeXzTNib
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:str
+          - saves:dex
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      flags: {}
+      name: Saving Throw Proficiencies
+    LD3eEVw9tmZUHaXO:
+      _id: LD3eEVw9tmZUHaXO
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:acr
+              - skills:ath
+              - skills:his
+              - skills:ins
+              - skills:rel
+              - skills:ste
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      flags: {}
+      name: Skill Proficiencies
+    iohrMAJkjQtDeSXa:
+      _id: iohrMAJkjQtDeSXa
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+          - weapon:mar:handcrossbow
+          - weapon:mar:scimitar
+          - weapon:mar:shortsword
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      flags: {}
+      name: Weapon Proficiencies
+    XoLzEcH6CBYyK9qz:
+      _id: XoLzEcH6CBYyK9qz
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - tool:art:*
+              - tool:music:*
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      flags: {}
+      name: Tool Proficiencies
+    lWLJqkOpz8hzx5Vo:
+      _id: lWLJqkOpz8hzx5Vo
+      type: ScaleValue
+      configuration:
+        identifier: focus
+        type: number
+        distance:
+          units: ''
+        scale:
+          '2':
+            value: 2
+          '3':
+            value: 3
+          '4':
+            value: 4
+          '5':
+            value: 5
+          '6':
+            value: 6
+          '7':
+            value: 7
+          '8':
+            value: 8
+          '9':
+            value: 9
+          '10':
+            value: 10
+          '11':
+            value: 11
+          '12':
+            value: 12
+          '13':
+            value: 13
+          '14':
+            value: 14
+          '15':
+            value: 15
+          '16':
+            value: 16
+          '17':
+            value: 17
+          '18':
+            value: 18
+          '19':
+            value: 19
+          '20':
+            value: 20
+      value: {}
+      hint: ''
+      flags: {}
+      classRestriction: ''
+      name: Focus Points
+    29Ufd0MpG7PBckVs:
+      type: AbilityScoreImprovement
+      _id: 29Ufd0MpG7PBckVs
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+        recommendation: Compendium.dnd-players-handbook.feats.Item.phbBoonofIrresis
+        max: null
+      value:
+        type: asi
+      level: 19
+      hint: ''
+      flags: {}
+      name: Epic Boon
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+  wealth: '50'
+  primaryAbility:
+    value:
+      - dex
+      - wis
+    all: true
+  hd:
+    denomination: d8
+    spent: 0
+    additional: ''
+  properties: []
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792691451176
+  modifiedTime: 1792691451176
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbmnkMonk000000'

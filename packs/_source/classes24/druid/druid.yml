@@ -1,0 +1,552 @@
+_id: phbdrdDruid00000
+name: Druid
+type: class
+folder: 5WSAEI5S847BwZ8e
+img: systems/neon-requiem-dnd/icons/classes/druid.webp
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000
+      inline classes="free-rules-embed"]</p><p
+      class="hide-in-embed"><em>@UUID[Compendium.dnd5e.content24.JournalEntry.phbDruid00000000]{Class
+      Details}</em></p><h3>Becoming a Druid …</h3><h4>As a Level 1
+      Character</h4><ul><li><p>Gain all the traits in the Core Druid Traits
+      table.</p></li><li><p>Gain the Druid's level 1 features, which are listed
+      in the Druid Features table.</p></li></ul><h4>As a Multiclass
+      Character</h4><ul><li><p>Gain the following traits from the Core Druid
+      Traits table: Hit Point Die and training with Light armor and
+      Shields.</p></li><li><p>Gain the Druid's level 1 features, which are
+      listed in the Druid Features table. See the multiclassing rules in chapter
+      2 to determine your available spell slots.</p></li></ul>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 3
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: SE7gQkJVBVBLku2Z
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbarmLeatherArm
+      requiresProficiency: false
+      _id: rkPZmPWx6nzImWwC
+      group: SE7gQkJVBVBLku2Z
+      sort: 200000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbarmShield0000
+      requiresProficiency: false
+      _id: 9zoKn2Wfan8s4Zrw
+      group: SE7gQkJVBVBLku2Z
+      sort: 300000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbwepSickle0000
+      requiresProficiency: false
+      _id: CVZKjmb4PIYJViPx
+      group: SE7gQkJVBVBLku2Z
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa
+      requiresProficiency: false
+      _id: anr8GUJzm5gPRqAR
+      group: SE7gQkJVBVBLku2Z
+      sort: 600000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbdfcWoodenstaf
+      requiresProficiency: false
+      _id: QSpEE9Vk7jat3iJF
+      group: SE7gQkJVBVBLku2Z
+      sort: 650000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbtulHerbalismK
+      requiresProficiency: false
+      _id: f6RriL1CTIForH9O
+      group: SE7gQkJVBVBLku2Z
+      sort: 700000
+    - type: currency
+      count: 9
+      key: gp
+      requiresProficiency: false
+      _id: EZFqH0UpNQQAdtA3
+      group: SE7gQkJVBVBLku2Z
+      sort: 800000
+  identifier: druid
+  levels: 1
+  advancement:
+    wp38UtjwG71SVceB:
+      _id: wp38UtjwG71SVceB
+      type: HitPoints
+      configuration: {}
+      value: {}
+      flags: {}
+      hint: ''
+    P65WodekLKSPQLGZ:
+      _id: P65WodekLKSPQLGZ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdSpellcasti
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdDruidic000
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdPrimalOrde
+            optional: false
+            sort: 0
+        optional: false
+        spell:
+          ability: []
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+          prepared: 0
+        sorting: m
+      value: {}
+      level: 1
+      hint: ''
+      name: ''
+      flags: {}
+    hmO24ovOBpmXAb4U:
+      _id: hmO24ovOBpmXAb4U
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdWildShape0
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdWildCompan
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 2
+      name: ''
+      flags: {}
+      hint: ''
+    J2JpbQEZhVD3Dnjz:
+      _id: J2JpbQEZhVD3Dnjz
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdWildResurg
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 5
+      name: ''
+      flags: {}
+      hint: ''
+    2G5tFifGdMns95Jw:
+      _id: 2G5tFifGdMns95Jw
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdElementalF
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 7
+      name: ''
+      flags: {}
+      hint: ''
+    uNjxqZQ9lZuOKmU7:
+      _id: uNjxqZQ9lZuOKmU7
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdImprovedEl
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 15
+      name: ''
+      flags: {}
+      hint: ''
+    3DZ1Olv41g5BzP4z:
+      _id: 3DZ1Olv41g5BzP4z
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.classes24.Item.phbdrdBeastSpell
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 18
+      name: ''
+      flags: {}
+      hint: ''
+    K72jypxSpzVJRXDh:
+      _id: K72jypxSpzVJRXDh
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdArchdruid0
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 20
+      name: ''
+      flags: {}
+      hint: ''
+    bwCLOdauuzoHofil:
+      _id: bwCLOdauuzoHofil
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 4
+      name: ''
+      flags: {}
+      hint: ''
+    mRSh9oUVjLU33e7p:
+      _id: mRSh9oUVjLU33e7p
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 8
+      name: ''
+      flags: {}
+      hint: ''
+    mhZh3LfLMa15tXee:
+      _id: mhZh3LfLMa15tXee
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 12
+      name: ''
+      flags: {}
+      hint: ''
+    FOf5CkGnSs0OlppY:
+      _id: FOf5CkGnSs0OlppY
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 16
+      name: ''
+      flags: {}
+      hint: ''
+    JoHnvnMWRhadHGwf:
+      _id: JoHnvnMWRhadHGwf
+      type: ScaleValue
+      configuration:
+        identifier: cantrips-known
+        type: number
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: 2
+          '4':
+            value: 3
+          '10':
+            value: 4
+      value: {}
+      hint: ''
+      name: Cantrips
+      flags: {}
+      classRestriction: ''
+    VmNGSY7Jbmy4AwBb:
+      _id: VmNGSY7Jbmy4AwBb
+      type: ScaleValue
+      configuration:
+        identifier: max-prepared
+        type: number
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: 4
+          '2':
+            value: 5
+          '3':
+            value: 6
+          '4':
+            value: 7
+          '5':
+            value: 9
+          '6':
+            value: 10
+          '7':
+            value: 11
+          '8':
+            value: 12
+          '9':
+            value: 14
+          '10':
+            value: 15
+          '11':
+            value: 16
+          '13':
+            value: 17
+          '15':
+            value: 18
+          '17':
+            value: 19
+          '18':
+            value: 20
+          '19':
+            value: 21
+          '20':
+            value: 22
+      value: {}
+      hint: ''
+      name: Prepared Spells
+      flags: {}
+      classRestriction: ''
+    MIVwoANGkc6gmUWN:
+      _id: MIVwoANGkc6gmUWN
+      type: ScaleValue
+      configuration:
+        identifier: wild-shape-uses
+        type: usage
+        distance:
+          units: ''
+        scale:
+          '2':
+            value: 2
+          '6':
+            value: 3
+          '17':
+            value: 4
+      value: {}
+      hint: ''
+      name: Wild Shape
+      flags: {}
+      classRestriction: ''
+    jOMGuG8a0KfmaeJd:
+      _id: jOMGuG8a0KfmaeJd
+      type: Subclass
+      configuration: {}
+      value:
+        document: null
+        uuid: null
+      level: 3
+      hint: >-
+        <p>You gain a Druid subclass of your choice. The Circle of the Land,
+        Circle of the Moon, Circle of the Sea, and Circle of the Stars
+        subclasses are detailed after this class’s description. A subclass is a
+        specialization that grants you features at certain Druid levels. For the
+        rest of your career, you gain each of your subclass’s features that are
+        of your Druid level or lower.</p>
+      name: ''
+      flags: {}
+      classRestriction: ''
+    Kx19MYNjomUt6m4p:
+      _id: Kx19MYNjomUt6m4p
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:int
+          - saves:wis
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      name: Saving Throw Proficiencies
+      flags: {}
+    ail7EZ56O8d037cL:
+      _id: ail7EZ56O8d037cL
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ani
+              - skills:arc
+              - skills:ins
+              - skills:med
+              - skills:nat
+              - skills:prc
+              - skills:rel
+              - skills:sur
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      name: Skill Proficiencies
+      flags: {}
+    Eq4uHvKtlKorid7h:
+      _id: Eq4uHvKtlKorid7h
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      name: Weapon Proficiencies
+      flags: {}
+    wB9ulPjnFnueTfr5:
+      _id: wB9ulPjnFnueTfr5
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - tool:herb
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      name: Tool Proficiencies
+      flags: {}
+    iqdFykNhppeEsmtM:
+      _id: iqdFykNhppeEsmtM
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - armor:lgt
+          - armor:shl
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      name: Armor Training
+      flags: {}
+    rXdhQDJgZhG0AXRZ:
+      type: AbilityScoreImprovement
+      _id: rXdhQDJgZhG0AXRZ
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+        recommendation: Compendium.dnd-players-handbook.feats.Item.phbBoonofDimensi
+        max: null
+      value:
+        type: asi
+      level: 19
+      hint: ''
+      name: Epic Boon
+      flags: {}
+  spellcasting:
+    progression: full
+    ability: wis
+    preparation:
+      formula: '@scale.druid.max-prepared'
+  wealth: '50'
+  primaryAbility:
+    value:
+      - wis
+    all: true
+  hd:
+    denomination: d8
+    spent: 0
+    additional: ''
+  properties: []
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793647058188
+  modifiedTime: 1793647058188
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbdrdDruid00000'

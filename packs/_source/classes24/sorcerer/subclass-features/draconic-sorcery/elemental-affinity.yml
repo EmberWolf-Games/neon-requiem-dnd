@@ -1,0 +1,86 @@
+_id: phbscrElementalA
+name: Elemental Affinity
+type: feat
+folder: wwMlXikGly63a6go
+img: icons/magic/symbols/elements-air-earth-fire-water.webp
+system:
+  description:
+    value: >-
+      <p>Your draconic magic has an affinity with a damage type associated with
+      dragons. Choose one of those types: Acid, Cold, Fire, Lightning, or
+      Poison.</p><p>You have &amp;Reference[Resistance] to that damage type, and
+      when you cast a spell that deals damage of that type, you can add your
+      Charisma modifier to one damage roll of that spell.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 6
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Draconic Sorcery
+  activities: {}
+  enchant: {}
+  identifier: elemental-affinity
+  advancement:
+    tIEBqrBkIEA8fkPQ:
+      name: Choose Elemental Affinity
+      type: ItemChoice
+      _id: tIEBqrBkIEA8fkPQ
+      configuration:
+        allowDrops: false
+        choices:
+          '6':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.dnd5e.classes24.Item.phbscrElemAffAci
+          - sort: 0
+            uuid: Compendium.dnd5e.classes24.Item.phbscrElemAffCol
+          - sort: 0
+            uuid: Compendium.dnd5e.classes24.Item.phbscrElemAffFir
+          - sort: 0
+            uuid: Compendium.dnd5e.classes24.Item.phbscrElemAffLig
+          - uuid: Compendium.dnd5e.classes24.Item.phbscrElemAffPoi
+            sort: 0
+        restriction:
+          list: []
+          school: []
+        sorting: m
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: <p>@Embed[Compendium.dnd5e.classes24.Item.phbscrElementalA inline]</p>
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792004148303
+  modifiedTime: 1792004148303
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbscrElementalA'

@@ -1,0 +1,50 @@
+_id: phbbrdSuperiorIn
+name: Superior Inspiration
+type: feat
+folder: nP3HNXn7rem24IST
+img: icons/magic/sonic/explosion-impact-shock-wave.webp
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.classes24.Item.phbbrdBardicInsp.Activity.ZVcQ7fRwFSESRA2N
+      inline]</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 18
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Bard
+  activities: {}
+  enchant: {}
+  identifier: superior-inspiration
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793220715225
+  modifiedTime: 1793220715225
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrdSuperiorIn'

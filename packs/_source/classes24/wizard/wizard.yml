@@ -1,0 +1,452 @@
+_id: phbwzdWizard0000
+name: Wizard
+type: class
+folder: 5UciSMNOwLY83syr
+img: systems/neon-requiem-dnd/icons/classes/wizard.webp
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000
+      inline classes="free-rules-embed"]</p><p
+      class="hide-in-embed"><em>@UUID[Compendium.dnd5e.content24.JournalEntry.phbWizard0000000]{Class
+      Details}</em></p><h3>Becoming a Wizard …</h3><h4>As a Level 1
+      Character</h4><ul><li><p>Gain all the traits in the Core Wizard Traits
+      table.</p></li><li><p>Gain the Wizard's level 1 features, which are listed
+      in the Wizard Features table.</p></li></ul><h4>As a Multiclass
+      Character</h4><ul><li><p>Gain the Hit Point Die from the Core Wizard
+      Traits table.</p></li><li><p>Gain the Wizard's level 1 features, which are
+      listed in the Wizard Features table. See the
+      @UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing
+      rules} to determine your available spell slots.</p></li></ul>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 3
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: zcKhKDfR6l9mjjo0
+      group: ''
+      sort: 100000
+    - type: linked
+      count: 2
+      key: Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000
+      requiresProficiency: false
+      _id: Ac2gEqPAS8Y0xgxs
+      group: zcKhKDfR6l9mjjo0
+      sort: 200000
+    - type: OR
+      requiresProficiency: false
+      _id: lVKJqhzrzUJbCutg
+      group: zcKhKDfR6l9mjjo0
+      sort: 300000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbafcStaffalsoa
+      requiresProficiency: false
+      _id: WuhfdgDOMfGFoprm
+      group: lVKJqhzrzUJbCutg
+      sort: 600000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000
+      requiresProficiency: false
+      _id: 01FYjSGd8b9I8peX
+      group: zcKhKDfR6l9mjjo0
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagScholarsPac
+      requiresProficiency: false
+      _id: ipKkaDAn6KnKgpVH
+      group: zcKhKDfR6l9mjjo0
+      sort: 500000
+    - type: currency
+      count: 5
+      key: gp
+      requiresProficiency: false
+      _id: uRme8DfH5eDcVOy0
+      group: zcKhKDfR6l9mjjo0
+      sort: 700000
+  identifier: wizard
+  levels: 1
+  advancement:
+    a16u6wgnJQq8HMoq:
+      _id: a16u6wgnJQq8HMoq
+      type: HitPoints
+      configuration: {}
+      value: {}
+      flags: {}
+      hint: ''
+    2whBHO3s8fBYBEWi:
+      _id: 2whBHO3s8fBYBEWi
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwzdSpellcasti
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbwzdRitualAdep
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbwzdArcaneReco
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 1
+      name: ''
+      flags: {}
+      hint: ''
+    JTCSb4dfm8Auy6WD:
+      _id: JTCSb4dfm8Auy6WD
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwzdScholar000
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 2
+      name: ''
+      flags: {}
+      hint: ''
+    tQSiUAW1DhfY3Idi:
+      _id: tQSiUAW1DhfY3Idi
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwzdMemorizeSp
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 5
+      name: ''
+      flags: {}
+      hint: ''
+    rZqSZS149KxDBwjI:
+      _id: rZqSZS149KxDBwjI
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwzdSpellMaste
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 18
+      name: ''
+      flags: {}
+      hint: ''
+    ssLPH7qn9DUncfJ1:
+      _id: ssLPH7qn9DUncfJ1
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwzdSignatureS
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 20
+      name: ''
+      flags: {}
+      hint: ''
+    bwCLOdauuzoHofil:
+      _id: bwCLOdauuzoHofil
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 4
+      name: ''
+      flags: {}
+      hint: ''
+    mRSh9oUVjLU33e7p:
+      _id: mRSh9oUVjLU33e7p
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 8
+      name: ''
+      flags: {}
+      hint: ''
+    mhZh3LfLMa15tXee:
+      _id: mhZh3LfLMa15tXee
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 12
+      name: ''
+      flags: {}
+      hint: ''
+    FOf5CkGnSs0OlppY:
+      _id: FOf5CkGnSs0OlppY
+      type: AbilityScoreImprovement
+      configuration:
+        points: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        cap: 2
+        locked: []
+        recommendation: null
+      value:
+        type: asi
+      level: 16
+      name: ''
+      flags: {}
+      hint: ''
+    EvuUhx2TrDAsAxgN:
+      _id: EvuUhx2TrDAsAxgN
+      type: ScaleValue
+      configuration:
+        identifier: max-prepared
+        type: number
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: 4
+          '2':
+            value: 5
+          '3':
+            value: 6
+          '4':
+            value: 7
+          '5':
+            value: 9
+          '6':
+            value: 10
+          '7':
+            value: 11
+          '8':
+            value: 12
+          '9':
+            value: 14
+          '10':
+            value: 15
+          '11':
+            value: 16
+          '13':
+            value: 17
+          '14':
+            value: 18
+          '15':
+            value: 19
+          '16':
+            value: 21
+          '17':
+            value: 22
+          '18':
+            value: 23
+          '19':
+            value: 24
+          '20':
+            value: 25
+      value: {}
+      hint: ''
+      name: Prepared Spells
+      flags: {}
+      classRestriction: ''
+    ZTnATJgznTj4W6ZG:
+      _id: ZTnATJgznTj4W6ZG
+      type: ScaleValue
+      configuration:
+        identifier: cantrips-known
+        type: number
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: 3
+          '4':
+            value: 4
+          '10':
+            value: 5
+      value: {}
+      hint: ''
+      name: Cantrips
+      flags: {}
+      classRestriction: ''
+    KTYjh1MKLvOtrZ3u:
+      _id: KTYjh1MKLvOtrZ3u
+      type: Subclass
+      configuration: {}
+      value:
+        document: null
+        uuid: null
+      level: 3
+      hint: >-
+        <p>You gain a Wizard subclass of your choice. The Abjurer, Diviner,
+        Evoker, and Illusionist subclasses are detailed after this class’s
+        description. A subclass is a specialization that grants you features at
+        certain Wizard levels. For the rest of your career, you gain each of
+        your subclass’s features that are of your Wizard level or lower.</p>
+      name: ''
+      flags: {}
+      classRestriction: ''
+    4ImCjedK6yWbC2ni:
+      _id: 4ImCjedK6yWbC2ni
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:int
+          - saves:wis
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      name: Saving Throw Proficiencies
+      flags: {}
+    73lag0NN0ElcSq94:
+      _id: 73lag0NN0ElcSq94
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:arc
+              - skills:his
+              - skills:ins
+              - skills:inv
+              - skills:med
+              - skills:nat
+              - skills:rel
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      name: Skill Proficiencies
+      flags: {}
+    IxWyp7l1BPCaw3jl:
+      _id: IxWyp7l1BPCaw3jl
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:sim
+        choices: []
+      value:
+        chosen: []
+      level: 1
+      hint: ''
+      classRestriction: primary
+      name: Weapon Proficiencies
+      flags: {}
+    29Ufd0MpG7PBckVs:
+      type: AbilityScoreImprovement
+      _id: 29Ufd0MpG7PBckVs
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+        recommendation: Compendium.dnd-players-handbook.feats.Item.phbBoonofSpellRe
+        max: null
+      value:
+        type: asi
+      level: 19
+      hint: ''
+      name: Epic Boon
+      flags: {}
+  spellcasting:
+    progression: full
+    ability: int
+    preparation:
+      formula: '@scale.wizard.max-prepared'
+  wealth: '55'
+  primaryAbility:
+    value:
+      - int
+    all: true
+  hd:
+    denomination: d6
+    spent: 0
+    additional: ''
+  properties: []
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793656986114
+  modifiedTime: 1793656986114
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 50000
+ownership:
+  default: 0
+_key: '!items!phbwzdWizard0000'

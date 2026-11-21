@@ -1,0 +1,240 @@
+_id: phbdrdLandsAid00
+name: Land's Aid
+type: feat
+folder: WJ4IXskgADlprLEA
+img: icons/magic/nature/root-vines-grow-brown.webp
+system:
+  description:
+    value: >-
+      <p>As a &amp;Reference[Magic] action, you can expend a use of your Wild
+      Shape and choose a point within 60 feet of yourself. Vitality-giving
+      flowers and life-draining thorns appear for a moment in a 10-foot-radius
+      Sphere centered on that point. Each creature of your choice in the Sphere
+      must make a Constitution saving throw against your spell save DC, taking
+      2d6 Necrotic damage on a failed save or half as much damage on a
+      successful one. One creature of your choice in that area regains 2d6 Hit
+      Points.</p><p>The damage and healing increase by 1d6 when you reach Druid
+      levels 10 (3d6) and 14 (4d6).</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 3
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    items: []
+    repeatable: false
+  properties:
+    - mgc
+  requirements: Circle of Land
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:wild-shape
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        value: ''
+        units: inst
+        special: ''
+        override: false
+        expiry: null
+        concentration: false
+      effects: []
+      range:
+        value: '60'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: sphere
+          size: '10'
+          width: ''
+          height: ''
+          units: ft
+          stationary: false
+        affects:
+          count: ''
+          type: creature
+          choice: true
+          special: ''
+        prompt: true
+        override: false
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.lands-aid.roll'
+            number: null
+            denomination: 0
+            bonus: ''
+            modifiers: []
+            types:
+              - necrotic
+            scaling:
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+        visible: true
+        bonus: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: true
+        identifier: ''
+    LI4RB1gsoHK0bS5n:
+      type: heal
+      _id: LI4RB1gsoHK0bS5n
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: spec
+        special: Within the Sphere of damage
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          size: '10'
+          count: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@scale.lands-aid.roll'
+        scaling:
+          number: 1
+        bonus: ''
+        modifiers: []
+      name: ''
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: true
+        identifier: ''
+  enchant: {}
+  identifier: lands-aid
+  advancement:
+    3QzkY4MkeL5QLWfM:
+      _id: 3QzkY4MkeL5QLWfM
+      type: ScaleValue
+      configuration:
+        identifier: roll
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '3':
+            number: 2
+            faces: 6
+          '10':
+            number: 3
+          '14':
+            number: 4
+      value: {}
+      hint: ''
+      name: Damage & Healing
+      flags: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793647063851
+  modifiedTime: 1793647063851
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 100000
+ownership:
+  default: 0
+_key: '!items!phbdrdLandsAid00'

@@ -1,0 +1,121 @@
+_id: phbmmoTwinnedSpe
+name: Twinned Spell
+type: feat
+img: icons/magic/lightning/bolts-forked-large-orange.webp
+system:
+  description:
+    value: >-
+      <div class="item-entry-details"><p class="item-entry-tag">Cost: 1 Sorcery
+      Point</p></div><p>When you cast a spell, such as
+      <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCharmPerso]{Charm
+      Person}</em>, that can be cast with a higher-level spell slot to target an
+      additional creature, you can spend 1 Sorcery Point to increase the spell's
+      effective level by 1.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: metamagic
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties:
+    - mgc
+  requirements: ''
+  activities:
+    WsG9JmGU7gRGiTRq:
+      type: utility
+      name: Twinned Spell
+      _id: WsG9JmGU7gRGiTRq
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: >-
+          When you cast a spell that can be upcast to target an additional
+          creature
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:font-of-magic
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      img: systems/neon-requiem-dnd/icons/svg/action/magic.svg
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireMagic: true
+        requireAttunement: false
+        requireIdentification: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: twinned-spell
+  advancement: {}
+  crewed: false
+effects: []
+folder: 6RKLEZHPbdWG3fZe
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792004130666
+  modifiedTime: 1792004130666
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbmmoTwinnedSpe'

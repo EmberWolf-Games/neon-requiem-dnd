@@ -1,0 +1,57 @@
+_id: phbmnkHeightened
+name: Heightened Focus
+type: feat
+folder: kK77WX8hVJHRQRda
+img: icons/skills/movement/arrows-up-trio-red.webp
+system:
+  description:
+    value: >-
+      <p>Your Flurry of Blows, Patient Defense, and Step of the Wind gain the
+      following benefits.</p><p><em><strong>Flurry of Blows.</strong></em> You
+      can expend 1 Focus Point to use Flurry of Blows and make three Unarmed
+      Strikes with it instead of
+      two.</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbmnkMonksFocus.Activity.KpoKztsxm5yuJWk6
+      caption=false cite=false nameStyle=inline]{Patient
+      Defense}</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbmnkMonksFocus.Activity.R3sqnBDwAjve0FvW
+      caption=false cite=false nameStyle=inline]{Step of the Wind}</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 10
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Monk
+  activities: {}
+  enchant: {}
+  identifier: heightened-focus
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792443355975
+  modifiedTime: 1792443355975
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 1000000
+ownership:
+  default: 0
+_key: '!items!phbmnkHeightened'

@@ -1,0 +1,97 @@
+name: Dwarf
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDwarf000000
+      inline classes="free-rules-embed"]</p><h3 data-anchor="dwarf-traits">Dwarf
+      Traits</h3><p><strong>Creature Type: </strong>Humanoid<br><strong>Size:
+      </strong>Medium (about 4–5 feet tall)<br><strong>Speed:</strong> 30
+      feet</p><p>As a Dwarf, you have these special traits.</p><div
+      class="hide-secrets"><p><em><strong>Darkvision.</strong></em><strong>
+      </strong>You have &amp;Reference[Darkvision] with a range of 120
+      feet.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptDwarvenRes
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptDwarvenTou
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptStonecunni
+      caption=false cite=false nameStyle=inline]</p></div>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  advancement:
+    6HdONjMD4UozXSfC:
+      _id: 6HdONjMD4UozXSfC
+      type: Size
+      configuration:
+        sizes:
+          - med
+      level: 0
+      hint: Medium (about 4–5 feet tall)
+      value: {}
+      name: ''
+      flags: {}
+    PphNMhWLl5mEgAZf:
+      _id: PphNMhWLl5mEgAZf
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptDwarvenRes
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptDwarvenTou
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptStonecunni
+        optional: false
+        spell: null
+        sorting: a
+      value: {}
+      level: 0
+      hint: ''
+      name: Dwarf Traits
+      flags: {}
+  movement:
+    units: null
+    hover: false
+    speeds:
+      walk: '30'
+    ignoredDifficultTerrain: []
+  senses:
+    units: null
+    special: ''
+    ranges:
+      darkvision: 120
+      blindsight: null
+      tremorsense: null
+      truesight: null
+  type:
+    value: humanoid
+    custom: ''
+    subtype: ''
+  identifier: dwarf
+_id: phbspDwarf000000
+type: race
+folder: Ulvo8nbygUegLa59
+img: icons/environment/wilderness/mine-interior-dungeon-door.webp
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791577388393
+  modifiedTime: 1791577388393
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbspDwarf000000'

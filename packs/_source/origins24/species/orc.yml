@@ -1,0 +1,91 @@
+name: Orc
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspOrc00000000
+      inline classes="free-rules-embed"]</p><h3 data-anchor="orc-traits">Orc
+      Traits</h3><p><strong>Creature Type:</strong> Humanoid<br><strong>Size:
+      </strong>Medium (about 6–7 feet tall)<br><strong>Speed:</strong> 30
+      feet</p><p>As an Orc, you have these special
+      traits.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptAdrenaline
+      caption=false cite=false
+      nameStyle=inline]</p><p><em><strong>Darkvision.</strong></em> You have
+      &amp;Reference[Darkvision] with a range of 120
+      feet.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptRelentless
+      caption=false cite=false nameStyle=inline]</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  advancement:
+    B2sUOuY0KhoULqlX:
+      _id: B2sUOuY0KhoULqlX
+      type: Size
+      configuration:
+        sizes:
+          - med
+      level: 0
+      hint: <p>Medium (about 6-7 feet tall)</p>
+      value: {}
+      name: ''
+      flags: {}
+    C2ehwp5W2SMJ88Wy:
+      _id: C2ehwp5W2SMJ88Wy
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptAdrenaline
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptRelentless
+        optional: false
+        spell: null
+        sorting: a
+      value: {}
+      level: 0
+      hint: ''
+      name: Orc Traits
+      flags: {}
+  movement:
+    units: null
+    hover: false
+    speeds:
+      walk: '30'
+    ignoredDifficultTerrain: []
+  senses:
+    units: null
+    special: ''
+    ranges:
+      darkvision: 120
+      blindsight: null
+      tremorsense: null
+      truesight: null
+  type:
+    value: humanoid
+    custom: ''
+    subtype: ''
+  identifier: orc
+_id: phbspOrc00000000
+type: race
+folder: Ulvo8nbygUegLa59
+img: icons/commodities/bones/skull-tusked-grey.webp
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791578061041
+  modifiedTime: 1791578061041
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbspOrc00000000'

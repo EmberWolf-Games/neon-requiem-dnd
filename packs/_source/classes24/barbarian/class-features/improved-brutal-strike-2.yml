@@ -1,0 +1,51 @@
+_id: phbbrbImp2Brutal
+name: Improved Brutal Strike (2)
+type: feat
+img: icons/skills/melee/strike-axe-blood-red.webp
+system:
+  description:
+    value: >-
+      <p>The extra damage of your Brutal Strike increases to 2d10. In addition,
+      you can use two different Brutal Strike effects whenever you use your
+      Brutal Strike feature.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 17
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Barbarian
+  activities: {}
+  enchant: {}
+  identifier: improved-brutal-strike-2
+  advancement: {}
+  crewed: false
+effects: []
+folder: p6WDpW0gzmKfhGad
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088967434
+  modifiedTime: 1792088967434
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbImp2Brutal'

@@ -1,0 +1,159 @@
+_id: phbdrdWildCompan
+name: Wild Companion
+type: feat
+img: icons/creatures/mammals/spirit-deer-herd-blue.webp
+system:
+  description:
+    value: >-
+      <p>You can summon a nature spirit that assumes an animal form to aid you.
+      As a &amp;Reference[Magic] action, you can expend a spell slot or a use of
+      Wild Shape to cast the
+      <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili]{Find
+      Familiar}</em> spell without Material components.</p><p>When you cast the
+      spell in this way, the familiar is Fey and disappears when you finish a
+      Long Rest.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 2
+    items: []
+    repeatable: false
+  properties:
+    - mgc
+  requirements: Druid
+  activities:
+    iS5gQuNiriMwrrWg:
+      type: cast
+      spell:
+        uuid: Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili
+        challenge:
+          override: false
+        properties:
+          - material
+        spellbook: false
+        ability: ''
+        level: 1
+      _id: iS5gQuNiriMwrrWg
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: true
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: '9'
+        spellSlot: true
+        targets:
+          - type: spellSlots
+            value: '1'
+            target: '1'
+            scaling:
+              mode: level
+              formula: ''
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: longRest
+        concentration: false
+        override: true
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      name: Find Familiar
+    DAfohNzTZ8clKwXi:
+      type: forward
+      name: Cast with Wild Shape
+      _id: DAfohNzTZ8clKwXi
+      img: ''
+      sort: 200000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:wild-shape
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      flags: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      activity:
+        id: iS5gQuNiriMwrrWg
+  enchant: {}
+  identifier: wild-companion
+  advancement: {}
+  crewed: false
+effects: []
+folder: EXYmwRGoNyMbByN1
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793658066697
+  modifiedTime: 1793658066697
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 900000
+ownership:
+  default: 0
+_key: '!items!phbdrdWildCompan'

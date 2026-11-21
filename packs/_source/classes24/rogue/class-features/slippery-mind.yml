@@ -1,0 +1,67 @@
+_id: phbrgeSlipperyMi
+name: Slippery Mind
+type: feat
+folder: ymTkGscp5QEOwDlv
+img: icons/magic/perception/third-eye-blue-red.webp
+system:
+  description:
+    value: >-
+      <p>Your cunning mind is exceptionally difficult to control. You gain
+      proficiency in Wisdom and Charisma saving throws.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Rogue
+  activities: {}
+  enchant: {}
+  identifier: slippery-mind
+  advancement:
+    FiaNLovfP6tnY4tD:
+      _id: FiaNLovfP6tnY4tD
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - saves:wis
+          - saves:cha
+        choices: []
+      value:
+        chosen: []
+      level: 15
+      hint: <p>@Embed[Compendium.dnd5e.classes24.Item.phbrgeSlipperyMi inline]</p>
+      name: ''
+      flags: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793387103833
+  modifiedTime: 1793387103833
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbrgeSlipperyMi'

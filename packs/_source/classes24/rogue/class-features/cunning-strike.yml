@@ -1,0 +1,289 @@
+_id: phbrgeCunningStr
+name: Cunning Strike
+type: feat
+folder: ymTkGscp5QEOwDlv
+img: icons/skills/melee/blade-tip-acid-poison-green.webp
+system:
+  description:
+    value: >-
+      <p>You've developed cunning ways to use your Sneak Attack. When you deal
+      Sneak Attack damage, you can add one of the following Cunning Strike
+      effects. Each effect has a die cost, which is the number of Sneak Attack
+      damage dice you must forgo to add the effect. You remove the die before
+      rolling, and the effect occurs immediately after the attack's damage is
+      dealt. For example, if you add the Poison effect, remove 1d6 from the
+      Sneak Attack's damage before rolling.</p><p>If a Cunning Strike effect
+      requires a saving throw, the DC equals 8 plus your Dexterity modifier and
+      Proficiency
+      Bonus.</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbrgeCunningStr.Activity.n64fvJMT9fPUy7DH
+      caption=false cite=false nameStyle=inline]{Poison (Cost:
+      1d6)}</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbrgeCunningStr.Activity.dWcCw1vTWRMx4YzD
+      caption=false cite=false nameStyle=inline]{Trip (Cost:
+      1d6)}</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbrgeCunningStr.Activity.m2bRZ1YeD3yf9nV7
+      caption=false cite=false nameStyle=inline]{Withdraw (Cost:
+      1d6)}</p><section id="secret-kCs7nMVrTvJRlkCy"
+      class="secret"><p><strong>Foundry Note</strong></p><p>After using Cunning
+      Strike effects use the <strong>Cunning Sneak Attack</strong> activity on
+      the Sneak Attack feature. It will prompt you to select how many dice you
+      expended on effects and deduct them from your Sneak Attack roll
+      automatically.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 5
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Rogue
+  activities:
+    n64fvJMT9fPUy7DH:
+      type: save
+      name: Poison
+      _id: n64fvJMT9fPUy7DH
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>You add a toxin to your strike, forcing the target to make a
+          Constitution saving throw. On a failed save, the target has the
+          &amp;Reference[Poisoned apply=false] condition for 1 minute. At the
+          end of each of its turns, the Poisoned target repeats the save, ending
+          the effect on itself on a success.</p><p>To use this effect, you must
+          have a Poisoner’s Kit on your person.</p>
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        expiry: null
+        value: '1'
+      effects:
+        - _id: DeiwvVBHEbREMOTE
+          uuid: Compendium.dnd5e.effects.ActiveEffect.wAnw5y4atBxNJHUP
+          onSave: false
+          level:
+            min: null
+            max: null
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 100000
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability:
+          - con
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      img: systems/neon-requiem-dnd/icons/svg/damage/poison.svg
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+    dWcCw1vTWRMx4YzD:
+      type: save
+      name: Trip
+      _id: dWcCw1vTWRMx4YzD
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When you deal Snack Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>If the target is Large or smaller, it must succeed on a Dexterity
+          saving throw or have the &amp;Reference[Prone apply=false]
+          condition.</p>
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: L4bvlNSJ5oREMOTE
+          uuid: Compendium.dnd5e.effects.ActiveEffect.UVtVRNlaslbMIsuH
+          onSave: false
+          level:
+            min: null
+            max: null
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: Larger or smaller
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 200000
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      img: systems/neon-requiem-dnd/icons/svg/action/trip.svg
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+    m2bRZ1YeD3yf9nV7:
+      type: utility
+      name: Withdraw
+      _id: m2bRZ1YeD3yf9nV7
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When you deal Sneak Attack damage
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>Immediately after the attack, you move up to half your
+          &amp;Reference[Speed] without provoking Opportunity Attacks.</p>
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 300000
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      img: systems/neon-requiem-dnd/icons/svg/action/move.svg
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+  enchant: {}
+  identifier: cunning-strike
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793404477101
+  modifiedTime: 1793404477101
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbrgeCunningStr'
