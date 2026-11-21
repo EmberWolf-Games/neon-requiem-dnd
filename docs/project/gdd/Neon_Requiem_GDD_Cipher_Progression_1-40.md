@@ -1,12 +1,9 @@
-# NEON REQUIEM — GDD Addendum: Cipher Level 1–40 Progression
+# Cipher — Base Class Progression (Levels 1–40)
 
-**Decision status:** OWNER-APPROVED PROGRESSION DRAFT (concepts/cadence accepted; precise rules and balance pending)  
-**Decision date:** 2026-11-21  
-**Base class:** Cipher  
-**Approved subclass roster:** Intruder, Puppeteer, Handler  
-**Scope:** Complete level 1–40 Cipher base-class feature progression, subclass and ASI/feat milestones, and conceptual electronic warfare/Hack features  
-**Implementation status:** NOT IMPLEMENTED; this approval does not authorize code changes, a release, or a version bump  
-**Approval provenance:** Owner reviewed the complete Cipher v1 progression and replied "approved."
+**Status:** Approved design; numerical balance pending  
+**Recorded:** 21 Nov 2026  
+**Subclasses:** See [Cipher subclass features](Neon_Requiem_GDD_Cipher_Subclasses_1-40.md)  
+**Build status:** Design only; no game-system implementation yet.
 
 ## 1. Class foundation and hard design boundary
 
@@ -142,7 +139,7 @@ The approved progression reserves **one subclass selection and nine later featur
 | 35 | Legendary offensive feature | Legendary network feature | Legendary support feature |
 | 39 | Intruder Mastery | Puppeteer Mastery | Handler Mastery |
 
-**These entries reserve subclass roles only.** The precise abilities of Intruder, Puppeteer and Handler have not yet been designed or approved.
+Full Intruder, Puppeteer and Handler feature tables are available in the linked subclass document. They are starting points for playtesting.
 
 ## 6. ASI/feat cadence and unresolved balance
 
