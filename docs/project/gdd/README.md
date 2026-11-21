@@ -30,6 +30,6 @@ All six base classes reserve **ASI/feat choices at 4, 8, 12, 16, 20, 24, 28, 32,
 
 Common proficiency and ability-score scaling past level 20; Hack resources and execution; firearms and ammunition; device and drone action economy; healing supplies and Human/Synth medical compatibility; specific damage, DCs and recovery values.
 
-[Editorial review notes](EDITORIAL_REVIEW_NOTES.md) track text cleanup and rules issues that should be resolved before these working drafts become implementation specifications.
+[Editorial review notes](EDITORIAL_REVIEW_NOTES.md) track outstanding mechanics and consistency checks. The [rules writing guide](../instructions/WRITING-STYLE.md) sets the editorial standard for future GDD work.
 
 **No gameplay code is changed by these GDD files.** Consult the [project documentation hub](../README.md) for implementation instructions and handoffs.
