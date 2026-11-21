@@ -13,3 +13,19 @@ export function registerLegacyFlagScope(database) {
 export function isDerivativeMigrationVersion(version) {
   return typeof version === "string" && /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)\.\d{3}$/.test(version);
 }
+
+/**
+ * Never route Neon Requiem worlds through upstream D&D 5e migrations.
+ * The derivative has no approved world-schema migrator yet.
+ * @param {unknown} storedVersion World migration marker, if available.
+ * @param {string} activeVersion Current four-part derivative version.
+ * @param {number} documentCount Number of existing world actors, items, and scenes.
+ * @returns {string} Migration safety action to perform.
+ */
+export function planDerivativeMigration(storedVersion, activeVersion, documentCount) {
+  if ( !storedVersion && documentCount === 0 ) return "initialize";
+  if ( isDerivativeMigrationVersion(storedVersion) ) {
+    return storedVersion === activeVersion ? "no-op" : "unsupported-upgrade";
+  }
+  return "unknown-or-upstream";
+}
