@@ -100,6 +100,7 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
 - Wave 2: English welcome identifies Neon Requiem D&D and EmberWolf Games, points to project support and documentation, and identifies upstream content as unverified for this derivative. JSON parsing and lint passed; live verification remains pending.
 - Wave 2: In-memory equipment assignment validates explicit multi-position occupancy, capacity, duplicate items, unknown positions, and retains independent prior arrays; unit tests passed.
+- Wave 2: Static metadata records the approved races, starting Cyberware counts, class/subclass names and milestones, hybrid prerequisites, backgrounds, and augmentation categories. Exact Ripperdoc tool names remain pending; isolated metadata tests passed.
 
 - Created a separate branch from the verified PR #7 head and established this ledger before implementation.
 - Windows; Node `24.15.0`, npm `11.7.0`; licensed Foundry v14 executable is present. `npm ci --ignore-scripts`, `check:version`, `check:manifest`, `check:assets`, `npm test` (14 passed), `lint`, `build`, `package`, and `check:package` (732 entries) all passed at baseline.
