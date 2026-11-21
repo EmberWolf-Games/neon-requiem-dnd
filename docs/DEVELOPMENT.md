@@ -56,6 +56,6 @@ For a release candidate, the workflow calls `npm run package:release -- vM.m.r.b
 
 ## Foundry smoke test
 
-No live Foundry runtime is bundled or configured in this workspace. Before calling the derivative installable, copy a built package into a clean Foundry v14 data folder under `systems/neon-requiem-dnd/`, start Foundry without the official `dnd5e` system installed, and check system registration, a new world, core actor/item sheets, rolls, compendium access, and a basic world reload. Also run the version comparison checks in [Versioning](VERSIONING.md).
+Follow the [Local Foundry v14 smoke-test guide](SMOKE-TESTING.md) for the remote-manifest test procedure, test checklist, and diagnostic evidence to collect. The guide distinguishes a local package/layout check from the owner-approved live acceptance test, which must install from GitHub.
 
-Record the exact Foundry version and results in the release review. Until this is completed, the app remains unvalidated as a playable derivative.
+No live Foundry v14 runtime test has been performed. Do not describe the system as installable or playable until the remote installation and smoke-test checklist have been completed successfully.
