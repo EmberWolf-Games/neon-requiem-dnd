@@ -1,5 +1,6 @@
 export {default as BastionAttackDialog} from "./bastion-attack-dialog.mjs";
 export {default as CharacterActorSheet} from "./character-sheet.mjs";
+export {default as NeonCharacterSheet} from "./neon-character-sheet.mjs";
 export {default as EncounterActorSheet} from "./encounter-sheet.mjs";
 export {default as FactionActorSheet} from "./faction-sheet.mjs";
 export {default as GroupActorSheet} from "./group-sheet.mjs";

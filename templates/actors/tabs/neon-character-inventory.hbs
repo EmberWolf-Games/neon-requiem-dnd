@@ -1,0 +1,36 @@
+<section class="tab {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
+  <section class="neon-slot-prototype neon-overview" aria-label="Neon Requiem overview">
+    <h2>Neon Requiem • Character Overview</h2>
+    <p>Read-only presentation of owned items. Use Configure Sheet to return to the inherited sheet.</p>
+    <p>Saved attributes, hit points, rolls, combat controls and biography remain available in the inherited sheet.</p>
+    <p>Neon identity fields are planned; no new identity selections are saved by this view.</p>
+    <h3>Owned items</h3>
+    <p>Current embedded items visible to you. Item names and inherited states are not Neon slot assignments.</p>
+    {{#if neonOwnedItems.length}}
+    <ul class="neon-owned-items">
+      {{#each neonOwnedItems}}
+      <li><strong>{{name}}</strong> <span>{{type}}</span>{{#if (eq equipped true)}} <span>Equipped (inherited)</span>{{/if}}
+        {{#if (eq equipped false)}} <span>Not equipped (inherited)</span>{{/if}}
+        {{#if containerName}} <span>In: {{containerName}}</span>{{/if}}
+        {{#if (ne quantity null)}} <span>Quantity: {{quantity}}</span>{{/if}}</li>
+      {{/each}}
+    </ul>
+    {{else}}<p>No visible owned items.</p>{{/if}}
+    <details><summary>Physical positions — not assigned</summary>
+    <ul class="neon-slot-list">{{#each neonPrototype.positions}}<li>{{label}} — capacity {{capacity}}</li>{{/each}}</ul>
+    </details>
+    <details><summary>Cyberware &amp; Augmentations</summary>
+    <p>Six body-owned categories; actual installation is not represented here.</p>
+    <ul class="neon-slot-list">{{#each neonPrototype.categories}}
+      <li><span class="neon-slot-indicator neon-slot-{{id}}" aria-hidden="true"></span> {{label}} ({{colorName}})</li>
+    {{/each}}</ul>
+    <p>Example only: one Cyberware item may grant an Interface expansion slot. This is not saved actor data.</p>
+    </details>
+    <h3>Hacks — planned</h3><p>No installed Hack software is represented here yet.</p>
+    <p>Equipment does not change token appearance.</p>
+  </section>
+  <h2>Inherited inventory controls</h2>
+  {{> "systems/neon-requiem-dnd/templates/inventory/encumbrance.hbs" encumbrance=system.attributes.encumbrance hasBreakpoints=true }}
+  {{> "systems/neon-requiem-dnd/templates/inventory/containers.hbs" }}
+  {{> "systems/neon-requiem-dnd/templates/inventory/inventory.hbs" }}
+</section>
