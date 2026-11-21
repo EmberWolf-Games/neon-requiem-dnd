@@ -28,5 +28,6 @@ The owner currently validates on a local Foundry v14 instance. The later hosting
 
 - [Foundry v14 local preflight](handoffs/2026-11-21-foundry-preflight-terra-to-luna.md): Flag-scope, compendium, migration guard and disposable-world runtime findings.
 - [Terra readiness audit](handoffs/2026-11-21-pre-implementation-readiness-audit-luna.md): Open decisions and staged implementation planning.
+- [First unattended sprint](handoffs/2026-11-21-terra-unattended-sprint-report.md) and [issue ledger](handoffs/TERRA-UNATTENDED-ISSUE-LOG.md): prototype test evidence, known dependencies and deferred decisions.
 
 See the [agent working agreement](instructions/README.md) and [handoff format](handoffs/README.md). Technical build and release documentation remains under the repository's top-level `docs/`.
