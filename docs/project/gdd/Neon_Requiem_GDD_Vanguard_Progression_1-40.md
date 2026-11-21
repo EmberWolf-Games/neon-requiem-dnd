@@ -9,7 +9,7 @@
 
 - **Vanguard:** the frontline bruiser/tank, a specialist in physical combat, survival, close-quarters pressure, and protection.
 - **5e mechanic references:** Fighter for fighting styles, Second Wind-like self-recovery, Action Surge-like action bursts, Extra Attack; Barbarian for endurance and damage mitigation; Paladin for the *protective martial role* without magic.
-- **Suggested starting chassis from the approved draft:** d12 Hit Die; Strength and Constitution as the major attributes; heavy-armor proficiency.
+- **Class chassis:** d12 Hit Die; Strength and Constitution as the major attributes; heavy-armor proficiency.
 - Magic, spell slots, divine abilities, and other traditional spellcasting remain excluded from Vanguard's feature concepts.
 - **ASI/Feat** refers to the 5e Ability Score Improvement / feat choice. The final ASI/feat terminology and caps will be set in the shared advancement rules.
 
@@ -63,7 +63,7 @@
 | 39 | — | Subclass Mastery | — |
 | 40 | Apex Vanguard | — | ASI/Feat |
 
-## 4. Conceptual feature definitions from the accepted draft
+## 4. Base-class features
 
 ### Levels 1–10
 
@@ -106,7 +106,7 @@
 - **Extra Attack milestones:** levels 5 (2 attacks), 13 (3), 29 (4). The accepted concept caps normal Vanguard Attack-action attacks at four through level 40, with later identity emerging from defense, control and versatility.
 - **No proficiency-bonus progression or ability-score caps are set here.** These must be designed consistently across all six classes as part of a system-wide 40-level math review.
 - **No hard-coded damage dice, DC formulas, exact Grit scaling, Pain Suppression resistance values, Defiant Recovery amounts, or exact action costs beyond the conceptual descriptions already listed.** These require separate mechanics/balance approval.
-- **All numbers not explicitly named in the accepted concept remain TBD.** Balance and Foundry runtime behavior have not yet been verified.
+- Values not specified in this document remain open. Balance and Foundry runtime behavior have not yet been verified.
 
 ## Next design work
 
