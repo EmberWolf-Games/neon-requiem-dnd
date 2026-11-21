@@ -1,15 +1,13 @@
-# NEON REQUIEM — GDD Addendum: Ripperdoc Special Hybrid Class (Levels 1–20)
+# Ripperdoc — Special Hybrid Class (Levels 1–20)
 
-**Decision status:** OWNER-APPROVED HYBRID CLASS PROGRESSION DRAFT — implementation and detailed mechanics pending  
-**Decision date:** 2026-11-21  
-**Class:** Ripperdoc, an earned prestige-style hybrid of Engineer and Lifeline  
-**Scope:** Entry prerequisites, character-level accounting, twenty hybrid levels, Surgical Protocols, conceptual surgery features, and 20th-level capstone  
-**Implementation status:** NOT IMPLEMENTED. No approval to rewrite multiclassing, player data, Cyberware installation, game code, or publish a release.  
-**Approval provenance:** Owner identified **Ripperdoc** as the intended Engineer+Lifeline special hybrid; reviewed the proposed 20-level Ripperdoc class and replied: **"approved, next class"**.
+**Status:** Approved working design; procedure and multiclass details pending  
+**Recorded:** 21 Nov 2026  
+**Entry:** Engineer 5 / Lifeline 5, with ability and tool prerequisites  
+**Build status:** Design only; not implemented.
 
-## 1. Core approved structure and entry requirements
+## 1. Entry requirements and class levels
 
-**Ripperdoc is NOT a seventh starting base class.** It is a **special hybrid class** earned by developing both Engineer and Lifeline. Ripperdocs specialize in cybernetic surgery, implant installation, biomedical and mechanical integration, patient recovery, and implant diagnostics.
+Ripperdoc is an earned hybrid, not a seventh starting class. A character must first develop both Engineer and Lifeline. Ripperdocs specialize in cybernetic surgery, implant installation, biomedical and mechanical integration, patient recovery, and implant diagnostics.
 
 ### Minimum prerequisites before taking Ripperdoc level 1
 
@@ -31,12 +29,12 @@ Example approved design progression: **Engineer 5 / Lifeline 5 / Ripperdoc 20 / 
 
 - Taking a Ripperdoc level **does not** automatically increase the Engineer or Lifeline class level.
 - Ripperdoc levels **do not** independently advance the Rigger/Fabricator/Architect or Trauma Tech/Nanomedic/Combat Responder subclass milestones.
-- The user approved Ripperdoc as a **single dedicated special hybrid class, without its own three subclass choices**.
+- Ripperdoc has its own 20-level track and no separate subclass choices.
 - Exact class-level accounting in Foundry's inherited 5e engine, multiclass prerequisites beyond those listed, HP/Hit Die progression, overall class-level caps and abilities/proficiency scaling require dedicated implementation design.
 
 ## 2. Hybrid mechanic: Surgical Protocols
 
-The approved core idea is **Dual-System Intervention**: specialized Ripperdoc procedures integrate Engineering and Lifeline knowledge and can consume **both** an Engineer **Deployment Charge** and a Lifeline **Treatment Die**.
+The central feature is **Dual-System Intervention**: specialized Ripperdoc procedures integrate Engineering and Lifeline knowledge and can consume **both** an Engineer **Deployment Charge** and a Lifeline **Treatment Die**.
 
 - Surgical Protocols are medical/technical procedures involving Cyberware, implants and patient condition; they are **not** fantasy spells, ordinary Hacks or software programs.
 - They use **previously earned Engineer and Lifeline resources**, rather than requiring a third generic spell-slot-equivalent pool.
@@ -72,7 +70,7 @@ The approved core idea is **Dual-System Intervention**: specialized Ripperdoc pr
 
 This standalone 20-level class progression has **five ASI/feat choices** at Ripperdoc class levels **4, 8, 12, 16 and 20**, and **no separate subclass progression slots**.
 
-## 4. Conceptual feature definitions from the accepted proposal
+## 4. Class features
 
 ### Ripperdoc levels 1–5: Cybernetic Surgeon
 
@@ -121,7 +119,7 @@ The separately owner-approved technology systems establish:
 - Whether a lost Augmentation item is destroyed, detached intact, recoverable, or moved to inventory remains **undecided**. A future Ripperdoc salvage procedure must be explicitly approved separately rather than assumed.
 - Temporary Cyberware disabling, replacement, repair and malfunction have not yet been comprehensively defined for this ownership rule.
 
-## 6. Implementation/balance decisions still needed
+## 6. Open rules
 
 - Exact Surgical Protocol menu and costs; minimum surgical facility requirements, procedure checks, surgical complications, healing/repair timing, and operation risks.
 - How Ripperdoc's Surgical Protocols interact with Engineer Deployment Charges, Lifeline Treatment Dice, and hybrid rest/resource rules.
@@ -131,6 +129,6 @@ The separately owner-approved technology systems establish:
 - Finalized conditions, patient targeting and action economy in Foundry v14+.
 - No gameplay source change or published release from this document alone.
 
-## 7. Project status
+## Integration notes
 
-The originally deferred Engineer+Lifeline twist is **now disclosed and approved: the Ripperdoc earned hybrid class**. Engineer and Lifeline remain distinct base classes. The approved six-class roster remains intact. **Ripperdoc is an additional special 20-level hybrid class, not a replacement base class**.
+Ripperdoc sits alongside the six base classes as an earned hybrid. Engineer and Lifeline still have their own progression, resources and specializations.
