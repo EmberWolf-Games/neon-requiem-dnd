@@ -18,3 +18,7 @@ A separate local Foundry 14.369 instance and new disposable world were used. Cha
 ## Decisions and next actions
 
 Persistent Actor/Item schema, item prerequisites, detached augmentation disposition and derivative migrations remain unresolved; no rule or migration was invented. Reconcile the category wording across the pending design documents. First review and validate PR #7, then review this dependent draft and exercise compendiums, scenes, tokens, reloads and accessibility in a disposable world. Formal GitHub-manifest installation, character identity and animated token development remain separate future work.
+
+## Post-review integration note (21 Nov 2026)
+
+PRs #7, #8 and #9 are now merged into `main`. This draft prototype has been reconciled with that baseline and retargeted directly to `main`; its original local Foundry 14.369 test results remain **historical evidence**, not a new runtime pass on the reconciled branch. Automated validation must pass again on this integration head before merging PR #10. No persistent Actor/Item data model, migrations or release are introduced.

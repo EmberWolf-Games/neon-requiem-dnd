@@ -1,7 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { isDerivativeMigrationVersion, registerLegacyFlagScope } from "../module/neon-compatibility.mjs";
+import { isDerivativeMigrationVersion, planDerivativeMigration, registerLegacyFlagScope }
+  from "../module/neon-compatibility.mjs";
 import { adaptCompendiumReferences } from "../utils/compendium-references.mjs";
 
 test("preserves existing active scopes and registers the inherited namespace once", () => {
@@ -29,6 +30,15 @@ test("distinguishes derivative versions from upstream migration versions", () =>
   assert.equal(isDerivativeMigrationVersion("6.1.1"), false);
   assert.equal(isDerivativeMigrationVersion("0.1.1.00"), false);
   assert.equal(isDerivativeMigrationVersion(undefined), false);
+});
+
+test("derivative migration gate refuses inherited or ambiguous world versions", () => {
+  assert.equal(planDerivativeMigration(null, "0.1.1.000", 0), "initialize");
+  assert.equal(planDerivativeMigration(undefined, "0.1.1.000", 2), "unknown-or-upstream");
+  assert.equal(planDerivativeMigration("6.1.1", "0.1.1.000", 2), "unknown-or-upstream");
+  assert.equal(planDerivativeMigration("0.1.1.000", "0.1.1.000", 3), "no-op");
+  assert.equal(planDerivativeMigration("0.1.1.000", "0.1.2.000", 3), "unsupported-upgrade");
+  assert.equal(planDerivativeMigration("not-a-version", "0.1.1.000", 1), "unknown-or-upstream");
 });
 
 test("adapted configuration UUIDs target packs in the system manifest", () => {

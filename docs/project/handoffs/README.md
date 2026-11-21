@@ -2,6 +2,11 @@
 
 Use this folder for reviewable coordination between Luna, Terra, Sol, Astra, and other project contributors.
 
+## Current pre-implementation handoffs
+
+- [Luna's readiness audit](2026-11-21-pre-implementation-readiness-audit-luna.md): Repository, rules, Foundry v14 compatibility, test readiness and implementation sequencing.
+- [Terra's proposed first unattended sprint](2026-11-21-terra-first-unattended-sprint-draft.md): Safe branch dependency, automated checks, reversible read-only slot prototype, stop conditions and deliverables. **Draft, not dispatched.**
+
 ## Recommended file name
 
 `YYYY-MM-DD-topic-owner-to-recipient.md`

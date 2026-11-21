@@ -11,7 +11,7 @@
 
 // Import Configuration
 import DND5E from "./module/config.mjs";
-import { isDerivativeMigrationVersion, registerLegacyFlagScope } from "./module/neon-compatibility.mjs";
+import { planDerivativeMigration, registerLegacyFlagScope } from "./module/neon-compatibility.mjs";
 import {
   applyLegacyRules, disableExhaustionAutomation, registerDeferredSettings, registerSystemKeybindings,
   registerSystemSettings
@@ -667,30 +667,20 @@ async function _handleMigration() {
 
   const cv = dnd5e.settings.systemMigrationVersion || game.world.flags.dnd5e?.version;
   const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
-  if ( !cv && totalDocuments === 0 ) return game.settings.set("dnd5e", "systemMigrationVersion", game.system.version);
-  // Neon Requiem versions are independent of upstream dnd5e's migration versions.
-  // Never interpret a derivative version such as 0.1.1.000 as an ancient dnd5e world.
-  // A separate derivative migration policy is required before data migrations are introduced.
-  if ( isDerivativeMigrationVersion(cv) ) {
-    if ( cv !== game.system.version ) {
-      ui.notifications.warn("Neon Requiem data migration between system versions is not yet supported.",
-        { permanent: true });
-    }
-    return;
+  const action = planDerivativeMigration(cv, game.system.version, totalDocuments);
+  if ( action === "initialize" ) {
+    return game.settings.set("dnd5e", "systemMigrationVersion", game.system.version);
   }
-  if ( cv && !foundry.utils.isNewerVersion(game.system.flags.needsMigrationVersion, cv) ) return;
-
-  // Compendium pack folder migration.
-  if ( foundry.utils.isNewerVersion("3.0.0", cv) ) {
-    migrations.reparentCompendiums("DnD5e SRD Content", "D&D SRD Content");
+  // The inherited D&D 5e migration runner must never execute against this derivative's worlds.
+  // This is an explicit safety gate, not an implemented Neon Requiem migration system.
+  if ( action === "unsupported-upgrade" ) {
+    ui.notifications.warn("Neon Requiem world migration between system versions is not yet supported. "
+      + "Back up the world and review migration requirements before upgrading.", { permanent: true });
+  } else if ( action === "unknown-or-upstream" ) {
+    ui.notifications.warn("Neon Requiem found a missing or non-derivative world migration marker. "
+      + "Upstream D&D 5e migrations have been disabled to protect world data.", { permanent: true });
   }
-
-  // Perform the migration
-  if ( cv && foundry.utils.isNewerVersion(game.system.flags.compatibleMigrationVersion, cv) ) {
-    ui.notifications.error("MIGRATION.DND5E.Warning.VersionTooOld", { localize: true, permanent: true });
-  }
-
-  await migrations.migrateWorld();
+  return;
 }
 
 /* -------------------------------------------- */
