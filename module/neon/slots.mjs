@@ -26,6 +26,20 @@ export const EQUIPMENT_POSITIONS = Object.freeze([
 
 const CATEGORIES = new Set(AUGMENTATION_CATEGORIES.map(category => category.id));
 
+/** Copy the known prototype model so later mutations remain isolated.
+ * @param {object} configuration Current configuration.
+ * @returns {object} Independent copy.
+ */
+function copyConfiguration(configuration) {
+  return {
+    augmentationSlots: configuration.augmentationSlots.map(slot => ({
+      ...slot, augmentation: slot.augmentation ? { ...slot.augmentation } : null
+    })),
+    equipmentPositions: configuration.equipmentPositions.map(position => ({ ...position })),
+    attachmentSockets: configuration.attachmentSockets.map(socket => ({ ...socket }))
+  };
+}
+
 /** Validate a stable identifier.
  * @param {unknown} value Candidate identifier.
  * @param {string} name Identifier description.
@@ -88,9 +102,11 @@ export function installAugmentation(configuration, slotId, augmentation) {
   if ( configuration.augmentationSlots.some(slot => slot.augmentation?.id === augmentation.id) ) {
     throw new Error("Augmentation is already installed");
   }
-  return { ...configuration, augmentationSlots: configuration.augmentationSlots.map(slot =>
-    slot.id === slotId ? { ...slot, augmentation: { id: augmentation.id, category: augmentation.category } } : slot
-  ) };
+  const result = copyConfiguration(configuration);
+  result.augmentationSlots.find(slot => slot.id === slotId).augmentation = {
+    id: augmentation.id, category: augmentation.category
+  };
+  return result;
 }
 
 /**
@@ -103,10 +119,12 @@ export function installAugmentation(configuration, slotId, augmentation) {
 export function removeCyberware(configuration, ownerId) {
   requiredId(ownerId, "Cyberware owner ID");
   const removed = configuration.augmentationSlots.filter(slot => slot.source === "cyberware" && slot.ownerId === ownerId);
+  const result = copyConfiguration(configuration);
+  result.augmentationSlots = result.augmentationSlots.filter(slot =>
+    !(slot.source === "cyberware" && slot.ownerId === ownerId)
+  );
   return {
-    configuration: { ...configuration, augmentationSlots: configuration.augmentationSlots.filter(slot =>
-      !(slot.source === "cyberware" && slot.ownerId === ownerId)
-    ) },
+    configuration: result,
     detachedAugmentations: removed.filter(slot => slot.augmentation)
       .map(slot => ({ ...slot.augmentation, slotId: slot.id }))
   };

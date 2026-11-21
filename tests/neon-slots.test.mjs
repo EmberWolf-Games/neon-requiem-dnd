@@ -30,6 +30,9 @@ test("loadouts enforce positions, capacity and item identity without mutating in
   assert.throws(() => assignEquipment(two, { itemId: "c", positions: ["sidearm-holster"] }), /capacity/);
   two[0].positions.push("head");
   assert.deepEqual(one[0].positions, ["sidearm-holster"]);
+  let quick = [];
+  for ( let i = 0; i < 4; i++ ) quick = assignEquipment(quick, { itemId: `q${i}`, positions: ["quick-access"] });
+  assert.throws(() => assignEquipment(quick, { itemId: "q4", positions: ["quick-access"] }), /capacity/);
 });
 
 test("physical capacities and attachment sockets remain separate from body slots", () => {
@@ -38,6 +41,11 @@ test("physical capacities and attachment sockets remain separate from body slots
   assert.equal(c.augmentationSlots.length, 6);
   assert.deepEqual(c.attachmentSockets, [{ id: "rifle:optic", ownerId: "rifle", label: "Optic" }]);
   assert.throws(() => installAugmentation(c, "rifle:optic", { id: "a", category: "force" }), /not found/);
+  assert.throws(() => createSlotConfiguration({ attachmentSockets: [{ id: "x", ownerId: "", label: "Optic" }] }),
+    /nonempty/);
+  assert.throws(() => createSlotConfiguration({ attachmentSockets: [
+    { id: "x", ownerId: "rifle", label: "Optic" }, { id: "x", ownerId: "armor", label: "Mount" }
+  ] }), /Duplicate/);
 });
 
 test("rejects duplicate identities, wrong categories, and implicit moves", () => {
@@ -45,6 +53,10 @@ test("rejects duplicate identities, wrong categories, and implicit moves", () =>
     /Duplicate/);
   assert.throws(() => createSlotConfiguration({ expansionSlots: [{ id: "x", ownerId: "x", category: "unknown" }] }),
     /Unknown/);
+  assert.throws(() => createSlotConfiguration({ expansionSlots: [{ id: "x", category: "force" }] }), /nonempty/);
+  assert.throws(() => createSlotConfiguration({ expansionSlots: [
+    { id: "same", ownerId: "a", category: "force" }, { id: "same", ownerId: "b", category: "mobility" }
+  ] }), /Duplicate/);
   const base = createSlotConfiguration();
   assert.throws(() => installAugmentation(base, "body:force", { id: "a", category: "sensory" }), /does not match/);
   const installed = installAugmentation(base, "body:force", { id: "a", category: "force" });
@@ -72,4 +84,9 @@ test("removing one Cyberware source detaches only its occupants without migratin
   assert.deepEqual(result.detachedAugmentations,
     [{ id: "neural-aug", category: "interface", slotId: "neural:interface" }]);
   assert.equal(removeCyberware(c, "missing").configuration.augmentationSlots.length, 9);
+  result.configuration.augmentationSlots.find(s => s.id === "body:force").augmentation.id = "changed";
+  assert.equal(c.augmentationSlots.find(s => s.id === "body:force").augmentation.id, "body-aug");
+  result.configuration.equipmentPositions[0].capacity = 99;
+  assert.equal(c.equipmentPositions[0].capacity, 1);
+  assert.throws(() => removeCyberware(c, ""), /nonempty/);
 });
