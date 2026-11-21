@@ -1,6 +1,6 @@
 # NEON REQUIEM — GDD Addendum: Engineer Level 1–40 Progression
 
-**Decision status:** OWNER-APPROVED PROGRESSION DRAFT — **SUBJECT TO OWNER'S PENDING TWIST**  
+**Decision status:** OWNER-APPROVED PROGRESSION DRAFT — deferred hybrid addition now disclosed and approved  
 **Decision date:** 2026-11-21  
 **Class:** Engineer  
 **Approved subclass roster:** Rigger, Fabricator, Architect  
@@ -8,11 +8,11 @@
 **Implementation status:** NOT IMPLEMENTED. No authorization to change gameplay code, publish, or bump the system version.  
 **Approval provenance:** After reviewing Engineer v1, the owner replied: **"approved... with a twist.. but the twist needs to wait till the lifeline class is done"**.
 
-> **Important deferred design decision:** The owner has **not yet described the twist**. The Engineer table below is accepted **as presented**, pending the owner's further addition after the Lifeline class design. Do not assume its nature, treat the current Engineer/Lifeline relationship as final, or implement this class until the eventual twist is resolved.
+> **Update — owner-approved twist:** The deferred addition has been revealed as **Ripperdoc**, a special prestige-style hybrid class requiring **Engineer 5 + Lifeline 5**, with its own 20-level progression within the overall 40-level cap. See [Ripperdoc Hybrid Class](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md). The original Engineer v1 progression remains accepted and independent; no gameplay implementation is yet authorized.
 
 ## 1. Class foundation
 
-**Engineer** is the physical-technology expert: gadgets, robotics, equipment modifications, deployable defenses, field repairs, and changing the terrain with machinery. The current design separates the Engineer's mechanical/equipment role from Lifeline's medical/healing role; **this boundary may be changed by the owner-supplied twist**.
+**Engineer** is the physical-technology expert: gadgets, robotics, equipment modifications, deployable defenses, field repairs, and changing the terrain with machinery. Engineer and Lifeline retain distinct base-class roles; their skills can be combined through the separately approved **Ripperdoc** hybrid class.
 
 - **Mechanical references:** 5e Artificer-style equipment enhancement, Ranger-style companions, and Fighter battlefield tactics, without magic or spellcasting.
 - **Hit Die:** d8.
@@ -90,7 +90,7 @@ This class grants technical deployment expertise; it does **not** automatically 
 - **Deployment Charges (2):** Gain **four charges**, restored on a Short or Long Rest. Most class-powered gadget deployments consume **one** charge; maintain **one active deployable** at a time unless a feature says otherwise.
 - **Deployable Protocol (2):** Deploy an eligible prepared gadget with an **action**. Physical deployables can occupy space, have durability, and be disabled, damaged or destroyed.
 - **Quick Deployment (5):** **Once per Short Rest**, deploy an eligible gadget with a Bonus Action rather than an action; pay the normal charge cost.
-- **Emergency Patch (6):** **Once per Short Rest**, emergency repair of damaged equipment or a physically repairable construct. **As pitched**, this is distinct from Lifeline's healing of living/artificial characters; revisit after the owner's deferred twist.
+- **Emergency Patch (6):** **Once per Short Rest**, emergency repair of damaged equipment or a physically repairable construct. This is distinct from Lifeline's direct patient healing. **Ripperdoc** later combines both areas through earned multiclass prerequisites and surgical features.
 - **Targeting Scanner (9):** Use appropriate scanning equipment to identify a physical object, mechanical threat or fortification's structural weakness, improving an appropriate later technical assessment.
 - **Modular Tuning (10):** During a Short Rest, reconfigure one prepared gadget's approved property, such as range or durability; gadget-specific modification lists to be designed.
 
@@ -145,11 +145,11 @@ The **actual Rigger, Fabricator and Architect subclass abilities** are only conc
 - Charges are **not spell slots**, **not Hack RAM**, and **not Augmentation slots**. They gate class-powered physical gadget use; ordinary equipment remains available to other characters.
 - Gadget duration, physical materials, reload/storage, deployment range, action costs, resilience, theft, hacking interactions and total active attack limits require system rules.
 - Physical drones and gadgets are not made invulnerable or unlimited by the class feature text.
-- HP restoration, Synth/Human medical compatibility and equipment-vs-patient repair interactions are **not finalized**—the owner's **deliberately undisclosed twist** may change this relationship after the Lifeline design.
+- HP restoration, Synth/Human medical compatibility and equipment-versus-patient repair interactions remain **not finalized**. The now-approved **Ripperdoc** hybrid introduces integrated medical/technical procedures, without replacing either base class or setting universal patient-repair rules.
 - System-wide levels 21–40 proficiency progression, ability-score caps, multiclassing, feats and encounter scaling remain unresolved.
 
-## 7. Deferred twist and next step
+## 7. Approved hybrid addition — Ripperdoc
 
-**Do not propose, infer, or implement the twist.** Preserve this document as the accepted Engineer v1 design **pending that owner's addition**.
+The owner's deferred Engineer/Lifeline twist is resolved as the **Ripperdoc**: a dedicated, earned special hybrid class requiring **at least five class levels in Engineer and five in Lifeline**, along with proposed ability/tool prerequisites. Ripperdoc supports its own **20-level** advancement track within the **total level-40** cap. See [the approved Ripperdoc GDD addendum](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md).
 
-Proceed next to **Lifeline** as a fresh 1–40 class proposal, with subclasses **Trauma Tech, Nanomedic, Combat Responder**, the same ten ASI/feat and ten subclass advancement reservations. After reviewing Lifeline, return to the owner's deferred Engineer-related twist and revise whichever approved class/system texts it affects.
+**This does not change Engineer's 1–40 base-class feature table.** Engineer does not become a generic healer; Lifeline remains the medical base class; Ripperdoc carries the integration/surgery role. Exact hybrid multiclass logic, resource interactions, implant procedures and universal medical rules remain for separate design/implementation review. No code changes are authorized.
