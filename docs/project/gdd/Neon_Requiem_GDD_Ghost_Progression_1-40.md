@@ -69,7 +69,7 @@
 | 39 | — | 20d6 | Subclass Mastery | — |
 | 40 | Urban Legend | 20d6 | — | ASI / Feat |
 
-## 4. Proposed base-class features (accepted conceptual draft)
+## 4. Base-class features
 
 ### Levels 1–10
 
@@ -119,10 +119,10 @@ The positions are reserved for all three subclasses. Phantom, Blade Dancer and S
 
 ## 6. Important boundaries / open implementation questions
 
-- The user approved this draft's full progression; exact damage balance and combat DCs still need tuning against firearm damage, enemy HP, and the other five classes for 1–40 play.
+- Tune Precision Strike damage and combat DCs against firearm damage, enemy HP, and the other five classes at representative levels.
 - A Ghost does **not** gain an automatic Hack, Cyberware prerequisite bypass, or free optical camouflage just by being a Ghost. Cyberware = hardware, Augmentations = firmware, Hacks = software remains authoritative.
 - Universal proficiency progression beyond level 20, ASI/feat rules, ability-score caps, encounter scaling, skill/DC conventions, stealth/perception rules, firearm ranges, and surprise mechanics all require cross-class / system-wide design.
-- Feature text above records the approved *draft concepts*, not finished technical rules ready to implement or a claim of game testing.
+- The feature values are working rules; edge cases and playtesting remain open.
 - Ghost's strengths should come from creating openings, exploiting them, and escaping, rather than frontlining like Vanguard or copying Deadeye's Focus Dice and attack progression.
 
 ## Next design work
