@@ -31,7 +31,7 @@ These are not copyediting errors; they need actual game-design decisions.
 | **Cyberware removal** | What happens to installed Augmentations after hardware removal: destroyed, salvaged, or still attached? What happens when hardware is merely disabled? | Slot ownership is settled; item recovery and temporary hardware failure are not |
 | **Ripperdoc resources** | Surgical Protocol costs, resource scaling with multiclass levels, procedure time, supplies and facility quality | The hybrid combines Deployment Charges with Treatment Dice and needs a consistent cost model |
 | **Human / Synth race traits** | Starting Cyberware count is known (Human 1, Synth 2), but racial bonuses and disadvantages are not | Class balance should not assume unapproved racial traits |
-| **Backgrounds** | Existing 5e backgrounds will be replaced, but no Neon Requiem background list has been selected | Character creation is not yet a complete rules package |
+| **Backgrounds** | Twelve Neon Requiem backgrounds are approved for initial testing; skill/tool mappings, Edge adjudication and starting equipment are provisional | Test each background's utility and contact hooks without granting extra Cyberware or free class features |
 
 ## Copy and implementation standards
 
