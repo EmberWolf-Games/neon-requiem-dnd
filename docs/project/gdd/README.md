@@ -10,7 +10,9 @@ Approved design decisions live here, separately from speculative drafts and impl
 | [Deadeye Level 1–40 Progression](Neon_Requiem_GDD_Deadeye_Progression_1-40.md) | Owner-accepted progression concept; implementation pending | Focus Dice, precision firearm features, ten ASI/feat choices, ten subclass slots, and level-40 capstone |
 | [Ghost Level 1–40 Progression](Neon_Requiem_GDD_Ghost_Progression_1-40.md) | Owner-accepted progression concept; implementation pending | Precision Strike progression, 10 ASI/feat selections, 10 subclass milestones, and Urban Legend capstone |
 | [Cipher Level 1–40 Progression](Neon_Requiem_GDD_Cipher_Progression_1-40.md) | Owner-accepted progression concept; implementation pending | Hacking expertise, tactical Uplink, 10 ASI/feat selections, 10 subclass milestones; universal Hack rules TBD |
-| [Engineer Level 1–40 Progression](Neon_Requiem_GDD_Engineer_Progression_1-40.md) | Owner-accepted draft **pending deferred twist**; implementation pending | Gadget Schematics, Deployment Charges, 10 ASI/feat and 10 subclass milestones; owner addition awaits Lifeline review |
+| [Engineer Level 1–40 Progression](Neon_Requiem_GDD_Engineer_Progression_1-40.md) | Approved progression; implementation pending | Gadget Schematics, Deployment Charges, 10 ASI/feat and 10 subclass milestones; Ripperdoc hybrid documented separately |
+| [Lifeline Level 1–40 Progression](Neon_Requiem_GDD_Lifeline_Progression_1-40.md) | Approved progression; implementation pending | Treatment Dice, technological medical interventions, 10 ASI/feat and 10 subclass milestone positions |
+| [Ripperdoc Special Hybrid (Levels 1–20)](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md) | Approved earned hybrid progression; implementation pending | Requires Engineer 5 + Lifeline 5; 20 hybrid levels within 40 total, Surgical Protocols and cybernetic surgery |
 
 The [Technology Systems Foundation](https://github.com/EmberWolf-Games/neon-requiem-dnd/pull/8) (hardware/firmware/software and augmentation slot provenance) is being reviewed in a separate documentation PR.
 
