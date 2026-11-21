@@ -1,24 +1,18 @@
-# Neon Requiem — Pre-Approved Subclass Advancement Index
+# Neon Requiem — Subclass Advancement Index
 
-**Status:** OWNER-PRE-APPROVED **DESIGN DRAFTS**, 18 subclasses and **180 milestone features**. Values, behavior and balance can be changed later.  
-**Date:** 2026-11-21  
-**Scope:** All six base classes, three subclasses each; class-level subclass slots at 3, 7, 11, 15, 19, 23, 27, 31, 35 and 39.  
-**Implementation:** NOT IMPLEMENTED. No code, release, migration or version increment approved by this design record.
+**Status:** Pre-approved feature drafts; open to balance changes  
+**Recorded:** 21 Nov 2026  
+**Coverage:** Six classes, eighteen subclasses, 180 features
 
-## Design promise
+Every subclass gains a feature or improvement at class levels **3, 7, 11, 15, 19, 23, 27, 31, 35 and 39**. These are **class levels**, not total character levels. ASI/feat choices remain on the base-class progression at 4, 8, 12, 16, 20, 24, 28, 32, 36 and 40.
 
-- The owner explicitly pre-approved designing **all 18 subclasses** for later tuning.
-- All features below are **class-level milestones**, not overall character-level milestones; multiclass totals and the level 40 cap follow separately approved system design.
-- Every base class maintains its own **ASI/feat selection opportunities at 4, 8, 12, 16, 20, 24, 28, 32, 36 and 40**. This subclass layer does not replace or add ASI levels.
-- Subclasses do not override the mandatory **Cyberware = hardware; Augmentations = firmware; Hacks = software** rules and related hardware-slot provenance.
-- Cross-class concepts (HP and death saves, actions/reactions, conditions, proficiencies, resources and rest recovery) remain anchored in the approved class tables.
-- Exact 21–40 proficiency and ability cap curves, firearm rules, Hack resources, tool taxonomy, Synth-vs-Human medicine, drone action economy, hardware-specific augmentation compatibility and detailed balance need global design review.
+The tables below are a quick reference. Follow each class link for the feature's full working text. Numbers and edge cases may change during playtesting.
 
-## Master milestone matrix
+## Milestone tables
 
 ### Vanguard
 
-Full mechanical definitions: [Vanguard subclass design](Neon_Requiem_GDD_Vanguard_Subclasses_1-40.md). Parent class: [Vanguard levels 1–40](Neon_Requiem_GDD_Vanguard_Progression_1-40.md).
+Feature text: [Vanguard subclass design](Neon_Requiem_GDD_Vanguard_Subclasses_1-40.md). Base class: [Vanguard levels 1–40](Neon_Requiem_GDD_Vanguard_Progression_1-40.md).
 
 | Class level | Juggernaut | Reaver | Warden |
 | ---: | --- | --- | --- |
@@ -35,7 +29,7 @@ Full mechanical definitions: [Vanguard subclass design](Neon_Requiem_GDD_Vanguar
 
 ### Deadeye
 
-Full mechanical definitions: [Deadeye subclass design](Neon_Requiem_GDD_Deadeye_Subclasses_1-40.md). Parent class: [Deadeye levels 1–40](Neon_Requiem_GDD_Deadeye_Progression_1-40.md).
+Feature text: [Deadeye subclass design](Neon_Requiem_GDD_Deadeye_Subclasses_1-40.md). Base class: [Deadeye levels 1–40](Neon_Requiem_GDD_Deadeye_Progression_1-40.md).
 
 | Class level | Longshot | Gunslinger | Demolitionist |
 | ---: | --- | --- | --- |
@@ -52,7 +46,7 @@ Full mechanical definitions: [Deadeye subclass design](Neon_Requiem_GDD_Deadeye_
 
 ### Ghost
 
-Full mechanical definitions: [Ghost subclass design](Neon_Requiem_GDD_Ghost_Subclasses_1-40.md). Parent class: [Ghost levels 1–40](Neon_Requiem_GDD_Ghost_Progression_1-40.md).
+Feature text: [Ghost subclass design](Neon_Requiem_GDD_Ghost_Subclasses_1-40.md). Base class: [Ghost levels 1–40](Neon_Requiem_GDD_Ghost_Progression_1-40.md).
 
 | Class level | Phantom | Blade Dancer | Saboteur |
 | ---: | --- | --- | --- |
@@ -69,7 +63,7 @@ Full mechanical definitions: [Ghost subclass design](Neon_Requiem_GDD_Ghost_Subc
 
 ### Cipher
 
-Full mechanical definitions: [Cipher subclass design](Neon_Requiem_GDD_Cipher_Subclasses_1-40.md). Parent class: [Cipher levels 1–40](Neon_Requiem_GDD_Cipher_Progression_1-40.md).
+Feature text: [Cipher subclass design](Neon_Requiem_GDD_Cipher_Subclasses_1-40.md). Base class: [Cipher levels 1–40](Neon_Requiem_GDD_Cipher_Progression_1-40.md).
 
 | Class level | Intruder | Puppeteer | Handler |
 | ---: | --- | --- | --- |
@@ -86,7 +80,7 @@ Full mechanical definitions: [Cipher subclass design](Neon_Requiem_GDD_Cipher_Su
 
 ### Engineer
 
-Full mechanical definitions: [Engineer subclass design](Neon_Requiem_GDD_Engineer_Subclasses_1-40.md). Parent class: [Engineer levels 1–40](Neon_Requiem_GDD_Engineer_Progression_1-40.md).
+Feature text: [Engineer subclass design](Neon_Requiem_GDD_Engineer_Subclasses_1-40.md). Base class: [Engineer levels 1–40](Neon_Requiem_GDD_Engineer_Progression_1-40.md).
 
 | Class level | Rigger | Fabricator | Architect |
 | ---: | --- | --- | --- |
@@ -103,7 +97,7 @@ Full mechanical definitions: [Engineer subclass design](Neon_Requiem_GDD_Enginee
 
 ### Lifeline
 
-Full mechanical definitions: [Lifeline subclass design](Neon_Requiem_GDD_Lifeline_Subclasses_1-40.md). Parent class: [Lifeline levels 1–40](Neon_Requiem_GDD_Lifeline_Progression_1-40.md).
+Feature text: [Lifeline subclass design](Neon_Requiem_GDD_Lifeline_Subclasses_1-40.md). Base class: [Lifeline levels 1–40](Neon_Requiem_GDD_Lifeline_Progression_1-40.md).
 
 | Class level | Trauma Tech | Nanomedic | Combat Responder |
 | ---: | --- | --- | --- |
@@ -118,13 +112,12 @@ Full mechanical definitions: [Lifeline subclass design](Neon_Requiem_GDD_Lifelin
 | **35** | Golden Hour | Emergency Nanite Flush | Evacuation Screen |
 | **39** | Trauma Tech Mastery | Nanomedic Mastery | First Through Fire |
 
-## Special hybrid: Ripperdoc (no subclass tree)
+## Ripperdoc
 
-[Ripperdoc's separate 20-level hybrid progression](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md) is already owner-approved. It requires **Engineer 5 + Lifeline 5**, has dedicated **Ripperdoc class levels 1–20**, and occupies levels within the total **40-character-level cap**. It does **not** gain any of the eighteen subclass paths above as an additional choice. Taking a Ripperdoc level does not automatically advance an Engineer or Lifeline subclass.
+[Ripperdoc](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md) has a separate 20-level hybrid progression, unlocked by Engineer 5 and Lifeline 5 with additional ability/tool prerequisites. Its levels count toward the overall 40-level character cap. It has no subclass tree and does not advance Engineer or Lifeline subclasses automatically.
 
-## Next phases, not prerequisites to recording this approval
+## Open systems work
 
-1. Complete global 21–40 progression math, proficiency bonus scaling, ability-score and feat cap rules.
-2. Finalize global firearms/ammunition/cover/attack actions; Hack cost, installation, targeting and trace rules; device/drone/turret stat blocks and action economy; medical/supplies/recovery and Human/Synth treatment compatibility.
-3. Tune numerical subclass benefits and specific resource limits with staged encounter tests at representative levels.
-4. Review any changes with the owner; until then, these tables are **pre-approved concept specifications**, not independently validated rules or playable content.
+Finish the shared rules for proficiency and ability caps beyond level 20, equipment and ammunition, Hack resources and security, device action economy, medical supplies and Synth/Human treatment. Then tune the features against representative 1–40 encounters.
+
+**Design only:** This index does not claim that the rules have been coded, balanced or validated in Foundry.
