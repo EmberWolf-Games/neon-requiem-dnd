@@ -1,18 +1,26 @@
-# Project Instructions — Agent Working Agreement
+# Neon Requiem — Working Agreement
 
-**Scope:** Neon Requiem, a standalone Foundry VTT v14+ Game System derived from the official dnd5e v6.1.1 source.
+Neon Requiem is a standalone Foundry VTT v14+ game system derived from the official dnd5e v6.1.1 source. We keep its rules chassis where the owner has not approved a change, while building a distinct setting, class roster and technology systems.
 
-- Check [the project documentation index](../README.md) and applicable [GDD addenda](../gdd/) before writing gameplay, character-creator, animation, or UI code.
-- Do not confuse an approved design requirement with a tested or shipped feature.
-- Treat the canonical GDD, once identified, as the primary design authority. Until then, preserve these user-approved addenda verbatim and flag any conflicts for the owner.
-- For substantial tasks, produce a scoped plan, precise changed-file inventory, validation notes and outstanding questions.
-- Never merge to `main` or publish a release without the owner's instruction. Use existing branch protections and pull requests.
-- Preserve the underlying v6.1.1 dnd5e rules engine unless the owner explicitly authorizes a mechanics change. Never rename the inherited internal schema/flag namespace indiscriminately.
-- Maintain the project's strict four-part `M.m.r.b` versioning policy; documentation changes alone do not authorize a new release.
-- New visual assets must satisfy the licensing and attribution rules in the repository's upstream/third-party documentation.
-- Do not commit generated personalized token media, server secrets, private user data, or unreviewed restricted artwork.
-- Keep deployment decisions explicit: current tests are on the owner's local Foundry v14 PC; a future owner-controlled server will run Foundry instances and may host an authenticated separate media worker.
+## Before changing the system
 
-The [approved visual direction](VISUAL-DIRECTION.md) records the GitHub branding and reference for future Foundry interface work.
+Start with the [project notes](../README.md) and the relevant [game design files](../gdd/). The [writing guide](WRITING-STYLE.md) covers rulebook voice and feature formatting. The [visual direction](VISUAL-DIRECTION.md) is the reference for branding and future interface work.
 
-For scoped implementation notes, link the exact approved addendum rather than duplicating its design text.
+A recorded design choice is not a finished implementation. If a rule is incomplete or clashes with current code, flag the problem and propose a resolution; don't quietly make up an answer.
+
+For a substantial change, record what was assigned, which files changed, what was tested and what still needs a decision. Use the [handoff notes](../handoffs/) to keep the team aligned.
+
+## Development boundaries
+
+- Work through branches and pull requests. Don't merge into `main` or publish a release without the owner's approval.
+- Preserve the inherited 5e internal schema and flag namespaces until a compatible migration is designed and authorized. Don't delete old engine code just because gameplay options will eventually be replaced.
+- Follow the four-part `M.m.r.b` system versioning policy. Documentation edits do not call for a release.
+- Follow the project's artwork licensing and attribution rules. Never commit restricted art, private player files, secrets or generated personalized token packs.
+- Keep build results separate from assumptions. Foundry v14 runtime tests, alpha video support and future hosted encoder work must be validated in their actual environments.
+- Local Foundry testing comes first. A later owner-operated server may run separate authenticated media-generation workers, but that deployment has its own design and security review.
+
+## Team responsibilities
+
+**Luna** maintains the GDD, project records and handoffs. **Terra** leads implementation and flags design gaps. **Sol** and **Astra** are engineering escalation paths when needed. The owner remains the final authority on rules and feature scope.
+
+Link back to the specific GDD rule behind a code change. Keep implementation notes in the technical documentation or handoff; don't rewrite the design rationale into every source file.
