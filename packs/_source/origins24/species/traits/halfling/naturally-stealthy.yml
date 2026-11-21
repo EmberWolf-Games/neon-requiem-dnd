@@ -1,0 +1,49 @@
+_id: phbsptNaturallyS
+name: Naturally Stealthy
+type: feat
+img: icons/magic/perception/silhouette-stealth-shadow.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You can take the &amp;Reference[Hide] action even when you are obscured
+      only by a creature that is at least one size larger than you.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Halfling
+  identifier: naturally-stealthy
+  advancement: {}
+  crewed: false
+effects: []
+folder: zVLJosGQ7viZqH14
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791577895530
+  modifiedTime: 1791577895530
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbsptNaturallyS'

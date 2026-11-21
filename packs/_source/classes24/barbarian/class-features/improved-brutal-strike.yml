@@ -1,0 +1,55 @@
+_id: phbbrbImpBrutalS
+name: Improved Brutal Strike
+type: feat
+img: icons/skills/melee/strike-axe-blood-red.webp
+system:
+  description:
+    value: >-
+      <p>You have honed new ways to attack furiously. The following effects are
+      now among your Brutal Strike
+      options.</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbbrbBrutalStri.Activity.vcAdrcmUKQWA68QT
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbbrbBrutalStri.Activity.MP1qQsApCj19F2M5
+      caption=false cite=false nameStyle=inline]</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 13
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Barbarian
+  activities: {}
+  enchant: {}
+  identifier: improved-brutal-strike
+  advancement: {}
+  crewed: false
+effects: []
+folder: p6WDpW0gzmKfhGad
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088967437
+  modifiedTime: 1792088967437
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbImpBrutalS'

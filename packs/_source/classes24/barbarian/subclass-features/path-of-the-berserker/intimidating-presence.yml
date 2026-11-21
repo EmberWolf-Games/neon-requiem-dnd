@@ -1,0 +1,248 @@
+_id: phbbrbIntimidati
+name: Intimidating Presence
+type: feat
+img: icons/creatures/magical/construct-iron-stomping-yellow.webp
+system:
+  description:
+    value: >-
+      <p>As a Bonus Action, you can strike terror into others with your menacing
+      presence and primal power. When you do so, each creature of your choice in
+      a 30-foot Emanation originating from you must make a Wisdom saving throw
+      (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed
+      save, a creature has the &amp;Reference[Frightened apply=false] condition
+      for 1 minute. At the end of each of the Frightened creature's turns, the
+      creature repeats the save, ending the effect on itself on a
+      success.</p><p>Once you use this feature, you can't use it again until you
+      finish a Long Rest unless you expend a use of your Rage (no action
+      required) to restore your use of it.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: '1'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Path of the Berserker
+  activities:
+    ZRHT8mOlea6T8XpP:
+      type: save
+      _id: ZRHT8mOlea6T8XpP
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+        expiry: null
+      effects:
+        - _id: 3LofAPFLZJMQJirN
+          onSave: false
+          uuid: null
+          level: {}
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: radius
+          size: '30'
+          count: ''
+          stationary: false
+        affects:
+          choice: true
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      damage:
+        parts: []
+        onSave: half
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: custom
+          formula: 8 + @abilities.str.mod + @prof
+        visible: true
+      name: ''
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+    Qr0vi4CEDfbdMNMa:
+      type: utility
+      _id: Qr0vi4CEDfbdMNMa
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: feat:rage
+            scaling: {}
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: Recharge with Rage
+      img: systems/neon-requiem-dnd/icons/svg/action/restore-use.svg
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: intimidating-presence
+  advancement: {}
+  crewed: false
+effects:
+  - name: Intimidated
+    origin: Compendium.dnd5e.classes24.Item.phbbrbIntimidati
+    duration:
+      value: 1
+      units: minutes
+      expiry: null
+      expired: false
+    disabled: false
+    flags: {}
+    img: icons/creatures/magical/construct-iron-stomping-yellow.webp
+    _id: 3LofAPFLZJMQJirN
+    type: base
+    system:
+      changes: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    description: >-
+      <p>On a failed save, a creature has the &amp;Reference[Frightened
+      apply=false] condition for 1 minute. At the end of each of the Frightened
+      creature's turns, the creature repeats the save, ending the effect on
+      itself on a success.</p>
+    tint: '#ffffff'
+    transfer: false
+    statuses:
+      - frightened
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792088970509
+      modifiedTime: 1792088970509
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!phbbrbIntimidati.3LofAPFLZJMQJirN'
+folder: bEMqmmgGROsTGe0J
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088970509
+  modifiedTime: 1792088970509
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbIntimidati'

@@ -1,0 +1,211 @@
+_id: phbFuryPrimalStr
+name: 'Elemental Fury: Primal Strike'
+type: feat
+img: icons/magic/nature/hand-weapon-wood-bark-brown.webp
+system:
+  description:
+    value: >-
+      <p>Once on each of your turns when you hit a creature with an attack roll
+      using a weapon or a Beast form's attack in Wild Shape, you can cause the
+      target to take an extra 1d8 cold, fire, lightning, or thunder damage
+      (choose when you hit).</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 7
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Druid
+  activities:
+    lHdiTksQmeJBFrf7:
+      type: damage
+      name: Primal Strike
+      _id: lHdiTksQmeJBFrf7
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: >-
+          When you hit a creature with an attack roll using a weapon or a Beast
+          form's attack in Wild Shape
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - cold
+              - fire
+              - lightning
+              - thunder
+            scaling:
+              number: 1
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: 14
+        identifier: druid
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+    M1utqL6xPlIX9JX3:
+      type: damage
+      name: Improved Primal Strike
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: >-
+          When you hit a creature with an attack roll using a weapon or a Beast
+          form's attack in Wild Shape
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>Once on each of your turns when you hit a creature with an attack
+          roll using a weapon or a Beast form's attack in Wild Shape, you can
+          cause the target to take an extra 2d8 cold, fire, lightning, or
+          thunder damage (choose when you hit).</p>
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 100000
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - cold
+              - fire
+              - lightning
+              - thunder
+            scaling:
+              number: 1
+      img: ''
+      visibility:
+        level:
+          min: 15
+          max: null
+        identifier: druid
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+      _id: M1utqL6xPlIX9JX3
+  enchant: {}
+  identifier: primal-strike
+  advancement: {}
+  crewed: false
+effects: []
+folder: EXYmwRGoNyMbByN1
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793658071514
+  modifiedTime: 1793658071514
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 625000
+ownership:
+  default: 0
+_key: '!items!phbFuryPrimalStr'

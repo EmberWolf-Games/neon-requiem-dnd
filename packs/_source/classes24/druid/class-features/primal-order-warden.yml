@@ -1,0 +1,68 @@
+_id: phbPrimalOrderWa
+name: 'Primal Order: Warden'
+type: feat
+img: icons/magic/nature/barrier-shield-wood-vines.webp
+system:
+  description:
+    value: >-
+      <p>Trained for battle, you gain proficiency with Martial weapons and
+      training with Medium armor.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 1
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Druid
+  activities: {}
+  enchant: {}
+  identifier: primal-order-warden
+  advancement:
+    YdRJn38UHZKg0BO4:
+      type: Trait
+      _id: YdRJn38UHZKg0BO4
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:mar
+          - armor:med
+        mode: default
+      flags: {}
+      level: 1
+      hint: >-
+        <p>Trained for battle, you gain proficiency with Martial weapons and
+        training with Medium armor.</p>
+      name: Trained for Battle
+      value: {}
+  crewed: false
+effects: []
+folder: EXYmwRGoNyMbByN1
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793647058190
+  modifiedTime: 1793647058190
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 1050000
+ownership:
+  default: 0
+_key: '!items!phbPrimalOrderWa'

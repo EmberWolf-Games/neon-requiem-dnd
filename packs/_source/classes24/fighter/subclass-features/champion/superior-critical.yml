@@ -1,0 +1,101 @@
+_id: phbftrSuperiorCr
+name: Superior Critical
+type: feat
+folder: Amxh67Wqon1bSaHg
+img: icons/skills/melee/strike-sword-dagger-runes-red.webp
+system:
+  description:
+    value: >-
+      <p>Your attack rolls with weapons and Unarmed Strikes can now score a
+      Critical Hit on a roll of 18–20 on the d20.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Champion
+  activities: {}
+  enchant: {}
+  identifier: superior-critical
+  advancement: {}
+  crewed: false
+effects:
+  - name: Superior Critical
+    img: icons/skills/melee/strike-sword-dagger-runes-red.webp
+    _id: kKOE6KCEE0v4a5lw
+    type: base
+    system:
+      changes:
+        - key: flags.dnd5e.weaponCriticalThreshold
+          value: 18
+          priority: null
+          type: downgrade
+          phase: initial
+          _id: UrrYpgDAUhAeXUeN
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.dnd5e.classes24.Item.phbftrSuperiorCr
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.1.0
+      createdTime: 1793299629725
+      modifiedTime: 1793299629725
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbftrSuperiorCr.kKOE6KCEE0v4a5lw'
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793299629725
+  modifiedTime: 1793299629725
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbftrSuperiorCr'

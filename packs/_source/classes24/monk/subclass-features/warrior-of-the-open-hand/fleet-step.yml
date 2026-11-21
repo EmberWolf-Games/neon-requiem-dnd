@@ -1,0 +1,50 @@
+_id: phbmnkFleetStep0
+name: Fleet Step
+type: feat
+folder: 8keksVDATj5D9vYl
+img: icons/skills/movement/feet-winged-boots-brown.webp
+system:
+  description:
+    value: >-
+      <p>When you take a Bonus Action other than Step of the Wind, you can also
+      use Step of the Wind immediately after that Bonus Action.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 11
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Warrior of the Open Hand
+  activities: {}
+  enchant: {}
+  identifier: fleet-step
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792443358648
+  modifiedTime: 1792443358648
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbmnkFleetStep0'

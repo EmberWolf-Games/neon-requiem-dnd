@@ -1,0 +1,105 @@
+_id: phbinvVisionsOfD
+name: Visions of Distant Realms
+type: feat
+img: icons/magic/control/hypnosis-mesmerism-eye.webp
+system:
+  activities:
+    bTLS2ccOyKbiT1sN:
+      type: cast
+      spell:
+        uuid: Compendium.dnd-players-handbook.spells.Item.phbsplArcaneEye0
+        challenge:
+          override: false
+        properties: []
+        spellbook: true
+        ability: ''
+        level: 4
+      _id: bTLS2ccOyKbiT1sN
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: ''
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <div class="item-entry-details"><p class="item-entry-tag">Prerequisite:
+      Level 9+ Warlock</p></div><p>You can cast
+      <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplArcaneEye0]{Arcane
+      Eye}</em> without expending a spell slot.</p>
+    chat: ''
+  source:
+    rules: '2024'
+    custom: ''
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  enchant: {}
+  type:
+    value: class
+    subtype: eldritchInvocation
+  prerequisites:
+    level: 9
+    items: []
+    repeatable: false
+  properties: []
+  requirements: ''
+  identifier: visions-of-distant-realms
+  advancement: {}
+  crewed: false
+effects: []
+folder: BjeMHiqnKNWkWhox
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793665214340
+  modifiedTime: 1793665214340
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbinvVisionsOfD'

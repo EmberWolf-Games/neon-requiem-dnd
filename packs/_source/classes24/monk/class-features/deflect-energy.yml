@@ -1,0 +1,50 @@
+_id: phbmnkDeflectEne
+name: Deflect Energy
+type: feat
+folder: kK77WX8hVJHRQRda
+img: icons/magic/defensive/shield-barrier-deflect-teal.webp
+system:
+  description:
+    value: >-
+      <p>You can now use your Deflect Attacks feature against attacks that deal
+      any damage type, not just Bludgeoning, Piercing, or Slashing.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 13
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Monk
+  activities: {}
+  enchant: {}
+  identifier: deflect-energy
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792443355974
+  modifiedTime: 1792443355974
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 400000
+ownership:
+  default: 0
+_key: '!items!phbmnkDeflectEne'

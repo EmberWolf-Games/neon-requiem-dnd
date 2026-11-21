@@ -1,0 +1,139 @@
+_id: phbwzdEmpoweredE
+name: Empowered Evocation
+type: feat
+folder: ZHJ6ibjd1J4CSyNw
+img: icons/magic/fire/explosion-mushroom-nuke-orange.webp
+system:
+  description:
+    value: >-
+      <p>Whenever you cast a Wizard spell from the Evocation school, you can add
+      your Intelligence modifier to one damage roll of that spell.</p><section
+      id="secret-3cdT0RlurgG5XV4o" class="secret"><p><strong>Foundry
+      Note</strong></p><p>You can add your Intelligence modifier to the spell's
+      Situational Bonus in the damage dialog or use this feature's
+      <strong>Extra</strong> <strong>Damage</strong> activity which allows you
+      to select the type in the damage dialog.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 10
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Evoker
+  activities:
+    24lZHflqzcwoBev5:
+      type: damage
+      _id: 24lZHflqzcwoBev5
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: Whenever you cast a Wizard spell from the Evocation school
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@abilities.int.mod'
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - bludgeoning
+              - piercing
+              - slashing
+              - acid
+              - cold
+              - fire
+              - force
+              - lightning
+              - necrotic
+              - poison
+              - psychic
+              - radiant
+              - thunder
+            scaling:
+              number: 1
+      name: Extra Damage
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+  enchant: {}
+  identifier: empowered-evocation
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793656988851
+  modifiedTime: 1793656988851
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbwzdEmpoweredE'

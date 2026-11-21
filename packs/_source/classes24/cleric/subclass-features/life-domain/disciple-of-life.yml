@@ -1,0 +1,189 @@
+_id: phbclcDiscipleOf
+name: Disciple of Life
+type: feat
+folder: jWzqOsH9e7IW7WO7
+img: icons/magic/life/cross-beam-green.webp
+system:
+  description:
+    value: >-
+      <p>When a spell you cast with a spell slot restores Hit Points to a
+      creature, that creature regains additional Hit Points on the turn you cast
+      the spell. The additional Hit Points equal 2 plus the spell slot's
+      level.</p><section id="secret-Gy6bYP3AKuabnUlQ"
+      class="secret"><p><strong>Foundry Note</strong></p><p>Use the Enchant
+      Healing Spell activity to apply Disciple of Life to qualifying healing
+      spells on your character.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Life Domain
+  activities:
+    7BzRpy5Nw0guVN1y:
+      type: enchant
+      name: Enchant Healing Spell
+      _id: 7BzRpy5Nw0guVN1y
+      img: ''
+      sort: 100000
+      activation:
+        type: ''
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: >-
+          <p>Apply the Disciple of Life enchantment to a qualifying healing
+          spell on your character.</p>
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: SJswY9WWGfmNXW2E
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity: []
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: false
+        categories: []
+        properties: []
+        type: spell
+  enchant: {}
+  identifier: disciple-of-life
+  advancement: {}
+  crewed: false
+effects:
+  - type: enchantment
+    name: Disciple of Life
+    img: icons/magic/life/cross-beam-green.webp
+    disabled: true
+    transfer: false
+    _id: SJswY9WWGfmNXW2E
+    system:
+      changes:
+        - key: activities[heal].healing.bonus
+          type: add
+          value: 2 + @item.level
+          phase: initial
+          _id: WijaADyu08C6CTKe
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: name
+          type: override
+          value: '{} (Enchanted)'
+          phase: initial
+          _id: o0oHTXMwOBSUE1DJ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
+      rider:
+        activities: []
+        effects: []
+        items: []
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: dnd5e
+      systemVersion: 6.1.0
+      createdTime: 1794357072037
+      modifiedTime: 1794357072037
+      lastModifiedBy: dnd5ebuilder0000
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!phbclcDiscipleOf.SJswY9WWGfmNXW2E'
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1794357072037
+  modifiedTime: 1794357072037
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 300000
+ownership:
+  default: 0
+_key: '!items!phbclcDiscipleOf'

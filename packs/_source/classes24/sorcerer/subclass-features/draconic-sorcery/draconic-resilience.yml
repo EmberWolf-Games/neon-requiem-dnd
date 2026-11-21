@@ -1,0 +1,115 @@
+_id: phbscrDraconicRe
+name: Draconic Resilience
+type: feat
+folder: wwMlXikGly63a6go
+img: icons/creatures/claws/claw-scaled-red.webp
+system:
+  description:
+    value: >-
+      <p>The magic in your body manifests physical traits of your draconic gift.
+      Your Hit Point maximum increases by 3, and it increases by 1 whenever you
+      gain another Sorcerer level.</p><p>Parts of you are also covered by
+      dragon-like scales. While you aren't wearing armor, your base Armor Class
+      equals 10 plus your Dexterity and Charisma modifiers.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Draconic Sorcery
+  activities: {}
+  enchant: {}
+  identifier: draconic-resilience
+  advancement: {}
+  crewed: false
+effects:
+  - _id: ZoJYjZ3KGM30khz3
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.dnd5e.classes24.Item.phbscrDraconicRe
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    name: Draconic Resilience
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792004148305
+      modifiedTime: 1792004148305
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    img: icons/creatures/claws/claw-scaled-red.webp
+    type: base
+    system:
+      changes:
+        - key: system.attributes.ac.formulas
+          value:
+            formula: 10 + @abilities.dex.mod + @abilities.cha.mod
+            armored: false
+          priority: null
+          type: add
+          phase: initial
+          _id: iNv4TJmAAqTAlJXZ
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.hp.bonuses.overall
+          type: add
+          value: '@classes.sorcerer.levels'
+          phase: initial
+          _id: pdGnTmLf2sb5gkxy
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbscrDraconicRe.ZoJYjZ3KGM30khz3'
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792004148305
+  modifiedTime: 1792004148305
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbscrDraconicRe'

@@ -1,0 +1,309 @@
+_id: phbinvPactChain0
+name: Pact of the Chain
+type: feat
+img: icons/magic/control/debuff-chains-shackle-movement-red.webp
+system:
+  activities:
+    uehA2kfgOCKRIqAs:
+      type: summon
+      name: Find Familiar
+      sort: 0
+      activation:
+        type: action
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        value: '10'
+        units: ft
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: space
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes:
+        - celestial
+        - fey
+        - fiend
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+        disposition: true
+        ability: ''
+      profiles:
+        - count: '1'
+          cr: '0'
+          name: CR 0 Beast
+          _id: e5dWV5L2uBJ2KPAM
+          uuid: null
+          types:
+            - beast
+          level:
+            min: null
+            max: null
+      summon:
+        prompt: true
+        mode: cr
+      _id: uehA2kfgOCKRIqAs
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireMagic: true
+        requireAttunement: false
+        requireIdentification: false
+      tempHP: ''
+      behaviors: []
+      flags: {}
+    5W78W2Opzhax0Jcf:
+      type: summon
+      name: Find Familiar (Expanded Options)
+      sort: 0
+      activation:
+        type: action
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        value: ''
+        expiry: null
+      effects: []
+      range:
+        override: false
+        value: '10'
+        units: ft
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: space
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes:
+        - celestial
+        - fey
+        - fiend
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+        disposition: true
+        ability: ''
+      profiles:
+        - count: ''
+          name: ''
+          _id: Rr8F49wXgEzvI3Je
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmImp00000000000
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: Cg8B2qkwRo7qh7oZ
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmPseudodragon00
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: 8NAn0ZR5HRnRJvqs
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmQuasit00000000
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: Gik7lMg53Gno0nSf
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmSphinxOfWonder
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: m5hfZoWAcEjKrkxo
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmSkeleton000000
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: mDue5EQkMxi5G6Pf
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmSlaadTadpole00
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: U60QGv6hzjT15bFK
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmSprite00000000
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: ZtrQLBrDRmN97IvI
+          uuid: Compendium.dnd-monster-manual.actors.Actor.mmVenomousSnake0
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      _id: 5W78W2Opzhax0Jcf
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireMagic: true
+        requireAttunement: false
+        requireIdentification: false
+      tempHP: ''
+      behaviors: []
+      flags: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You learn the
+      <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili]{Find
+      Familiar}</em> spell and can cast it as a &amp;Reference[Magic] action
+      without expending a spell slot.</p><p>When you cast the spell, you choose
+      one of the normal forms for your familiar or one of the following special
+      forms:
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmImp00000000000]{Imp}</strong>,
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmPseudodragon00]{Pseudodragon}</strong>,
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmQuasit00000000]{Quasit}</strong>,
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmSkeleton000000]{Skeleton}</strong>,
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmSlaadTadpole00]{Slaad
+      Tadpole}</strong>,
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmSphinxOfWonder]{Sphinx
+      of Wonder}</strong>,
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmSprite00000000]{Sprite}</strong>,
+      or
+      <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmVenomousSnake0]{Venomous
+      Snake}</strong>.</p><p>Additionally, when you take the Attack action, you
+      can forgo one of your own attacks to allow your familiar to make one
+      attack of its own with its Reaction.</p><section
+      id="secret-aKbhLPfPD3R9Y1KL" class="secret"><p><strong>Foundry
+      Note</strong></p><p>The <strong>Summon Familiar</strong> activity includes
+      the normal summoning options and the <strong>Summon Familiar (Expanded
+      Options)</strong> activity includes the additional options.</p></section>
+    chat: ''
+  source:
+    rules: '2024'
+    custom: ''
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  enchant: {}
+  type:
+    value: class
+    subtype: eldritchInvocation
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties:
+    - mgc
+  requirements: ''
+  identifier: pact-of-the-chain
+  advancement: {}
+  crewed: false
+effects: []
+folder: BjeMHiqnKNWkWhox
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793728084034
+  modifiedTime: 1793728084034
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbinvPactChain0'

@@ -1,0 +1,287 @@
+_id: phbinvLifedrinke
+name: Lifedrinker
+type: feat
+img: icons/skills/melee/strike-sword-blood-red.webp
+system:
+  description:
+    value: >-
+      <div class="item-entry-details"><p class="item-entry-tag">Prerequisite:
+      Level 9+ Warlock,
+      @UUID[Compendium.dnd5e.classes24.Item.phbinvPactBlade0]{Pact of the Blade}
+      Invocation</p></div><p>Once per turn when you hit a creature with your
+      pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant
+      damage (your choice) to the creature, and you can expend one of your Hit
+      Point Dice to roll it and regain a number of Hit Points equal to the roll
+      plus your Constitution modifier (minimum of 1 Hit Point).</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: eldritchInvocation
+  prerequisites:
+    level: 9
+    items:
+      - feat:pact-of-the-blade
+    repeatable: false
+  properties: []
+  requirements: ''
+  activities:
+    LDIKT3JVs25qBVuL:
+      type: damage
+      name: Extra Damage
+      _id: LDIKT3JVs25qBVuL
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When you hit a creature with your pact weapon
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>Once per turn when you hit a creature with your pact weapon, you
+          can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your
+          choice) to the creature.</p>
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: any
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - necrotic
+              - psychic
+              - radiant
+            modifiers: []
+            scaling:
+              number: 1
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+    emx17h6kO4xmSqC6:
+      type: heal
+      name: Heal (Largest Hit Die)
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: Once per turn when you hit a creature with your pact weapon
+      consumption:
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+        targets:
+          - type: hitDice
+            value: '1'
+            target: largest
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>You can expend one of your Hit Point Dice to roll it and regain a
+          number of Hit Points equal to the roll plus your Constitution modifier
+          (minimum of 1 Hit Point).</p>
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@consumed.hd + max(1, @abilities.con.mod)'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+        modifiers: []
+      _id: emx17h6kO4xmSqC6
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+    oMHxbcnQh38wZEKU:
+      type: heal
+      name: Heal (Smallest Hit Die)
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: Once per turn when you hit a creature with your pact weapon
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: hitDice
+            value: '1'
+            target: smallest
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: >-
+          <p>You can expend one of your Hit Point Dice to roll it and regain a
+          number of Hit Points equal to the roll plus your Constitution modifier
+          (minimum of 1 Hit Point).</p>
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      healing:
+        number: null
+        denomination: null
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@consumed.hd + max(1, @abilities.con.mod)'
+        scaling:
+          number: 1
+        bonus: ''
+        modifiers: []
+      _id: oMHxbcnQh38wZEKU
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: lifedrinker
+  advancement: {}
+  crewed: false
+effects: []
+folder: BjeMHiqnKNWkWhox
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793665214340
+  modifiedTime: 1793665214340
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbinvLifedrinke'

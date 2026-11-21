@@ -1,0 +1,69 @@
+_id: phbsptKeenSenses
+name: Keen Senses
+type: feat
+img: icons/creatures/eyes/human-single-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: <p>You have proficiency in the Insight, Perception, or Survival skill.</p>
+    chat: ''
+  source:
+    revision: 2
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Elf
+  identifier: keen-senses
+  advancement:
+    nccRK77cXNtEHCHX:
+      _id: nccRK77cXNtEHCHX
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:ins
+              - skills:prc
+              - skills:sur
+      value:
+        chosen: []
+      level: 0
+      hint: >-
+        <p>You have proficiency in the Insight, Perception, or Survival
+        skill.</p>
+      name: ''
+      flags: {}
+  crewed: false
+effects: []
+folder: 3uafOaOCZJQeUNtw
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791576272360
+  modifiedTime: 1791576272360
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbsptKeenSenses'

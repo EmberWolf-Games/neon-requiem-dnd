@@ -1,0 +1,137 @@
+_id: phbbrbPersistent
+name: Persistent Rage
+type: feat
+img: icons/skills/social/intimidation-impressing.webp
+system:
+  description:
+    value: >-
+      <p>When you roll Initiative, you can regain all expended uses of Rage.
+      After you regain uses of Rage in this way, you can't do so again until you
+      finish a Long Rest.</p><p>In addition, your Rage is so fierce that it now
+      lasts for 10 minutes without you needing to do anything to extend it from
+      round to round. Your Rage ends early if you have the
+      &amp;Reference[Unconscious apply=false] condition (not just the
+      &amp;Reference[Incapacitated apply=false] condition) or don Heavy
+      armor.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 2
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: '1'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 15
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Barbarian
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: encounter
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+          - type: itemUses
+            value: -@scale.barbarian.rage
+            target: feat:rage
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        value: ''
+        units: inst
+        special: ''
+        override: false
+        concentration: false
+        expiry: null
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+          stationary: false
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery:
+          - period: lr
+            type: recoverAll
+        max: ''
+      sort: 0
+      name: Regain Rage
+      img: systems/neon-requiem-dnd/icons/svg/action/restore-use.svg
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: persistent-rage
+  advancement: {}
+  crewed: false
+effects: []
+folder: p6WDpW0gzmKfhGad
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088967434
+  modifiedTime: 1792088967434
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbPersistent'

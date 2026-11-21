@@ -1,0 +1,141 @@
+_id: phbftrIndomitabl
+name: Indomitable
+type: feat
+folder: xggTDaiQq26ZrVzJ
+img: icons/skills/melee/shield-block-fire-orange.webp
+system:
+  description:
+    value: >-
+      <p>If you fail a saving throw, you can reroll it with a bonus equal to
+      your Fighter level. You must use the new roll, and you can't use this
+      feature again until you finish a Long Rest.</p><p>You can use this feature
+      twice before a Long Rest starting at level 13 and three times before a
+      Long Rest starting at level 17.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: '@scale.indomitable.uses'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 9
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Fighter
+  activities:
+    84EBzlT1nDmNqhqM:
+      type: utility
+      _id: 84EBzlT1nDmNqhqM
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: When you fail a saving throw
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+        scaling:
+          allowed: false
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      roll:
+        prompt: false
+        visible: false
+        name: Bonus
+        formula: '@classes.fighter.levels'
+      name: Reroll
+      img: systems/neon-requiem-dnd/icons/svg/action/reroll.svg
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+  enchant: {}
+  identifier: indomitable
+  advancement:
+    iJ9JidHgTldknGgK:
+      _id: iJ9JidHgTldknGgK
+      type: ScaleValue
+      configuration:
+        identifier: uses
+        type: usage
+        distance:
+          units: ''
+        scale:
+          '9':
+            value: 1
+            period: lr
+          '13':
+            value: 2
+          '17':
+            value: 3
+      value: {}
+      hint: ''
+      name: Indomitable Uses
+      flags: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793404309996
+  modifiedTime: 1793404309996
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbftrIndomitabl'

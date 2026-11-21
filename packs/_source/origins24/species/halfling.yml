@@ -1,0 +1,100 @@
+name: Halfling
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHalfling000
+      inline classes="free-rules-embed"]</p><h3
+      data-anchor="halfling-traits">Halfling Traits</h3><p><strong>Creature
+      Type: </strong>Humanoid<br><strong>Size: </strong>Small (about 2–3 feet
+      tall)<br><strong>Speed:</strong> 30 feet</p><p>As a Halfling, you have
+      these special
+      traits.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptBrave00000
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptHalflingNi
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptLuck000000
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptNaturallyS
+      caption=false cite=false nameStyle=inline]</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  advancement:
+    GYp1vi82hSEoe3mO:
+      _id: GYp1vi82hSEoe3mO
+      type: Size
+      configuration:
+        sizes:
+          - sm
+      level: 0
+      hint: Small (about 2-3 feet tall)
+      value: {}
+      name: ''
+      flags: {}
+    GFHErdA52SfUBvB5:
+      _id: GFHErdA52SfUBvB5
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptBrave00000
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptHalflingNi
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptLuck000000
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptNaturallyS
+        optional: false
+        spell: null
+        sorting: a
+      value: {}
+      level: 0
+      hint: ''
+      name: Halfling Traits
+      flags: {}
+  movement:
+    units: null
+    hover: false
+    speeds:
+      walk: '30'
+    ignoredDifficultTerrain: []
+  senses:
+    units: null
+    special: ''
+    ranges:
+      darkvision: null
+      blindsight: null
+      tremorsense: null
+      truesight: null
+  type:
+    value: humanoid
+    custom: ''
+    subtype: ''
+  identifier: halfling
+_id: phbspHalfling000
+type: race
+folder: Ulvo8nbygUegLa59
+img: icons/equipment/feet/shoes-leather-simple-brown.webp
+effects: []
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791577895530
+  modifiedTime: 1791577895530
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbspHalfling000'

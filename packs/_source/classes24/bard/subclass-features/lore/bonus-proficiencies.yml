@@ -1,0 +1,66 @@
+_id: phbbrdBonusProfi
+name: Bonus Proficiencies
+type: feat
+folder: aA19yenZydaY6uu7
+img: icons/commodities/tech/cog-bronze.webp
+system:
+  description:
+    value: <p>You gain proficiency with three skills of your choice.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    items: []
+    repeatable: false
+  properties: []
+  requirements: College of Lore
+  activities: {}
+  enchant: {}
+  identifier: bonus-proficiencies
+  advancement:
+    zXNjqYhloLv46FqV:
+      _id: zXNjqYhloLv46FqV
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 3
+            pool:
+              - skills:*
+      value:
+        chosen: []
+      level: 3
+      name: ''
+      flags: {}
+      hint: <p>@Embed[Compendium.dnd5e.classes24.Item.phbbrdBonusProfi inline]</p>
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793220717311
+  modifiedTime: 1793220717311
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrdBonusProfi'

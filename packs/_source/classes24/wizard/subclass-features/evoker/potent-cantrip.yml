@@ -1,0 +1,53 @@
+_id: phbwzdPotentCant
+name: Potent Cantrip
+type: feat
+folder: ZHJ6ibjd1J4CSyNw
+img: icons/magic/earth/projectiles-fire-stone-salvo.webp
+system:
+  description:
+    value: >-
+      <p>Your damaging cantrips affect even creatures that avoid the brunt of
+      the effect. When you cast a cantrip at a creature and you miss with the
+      attack roll or the target succeeds on a saving throw against the cantrip,
+      the target takes half the cantrip's damage (if any) but suffers no
+      additional effect from the cantrip.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Evoker
+  activities: {}
+  enchant: {}
+  identifier: potent-cantrip
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793656988851
+  modifiedTime: 1793656988851
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbwzdPotentCant'

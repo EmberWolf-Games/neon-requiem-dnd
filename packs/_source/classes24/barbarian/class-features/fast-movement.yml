@@ -1,0 +1,108 @@
+_id: phbbrbFastMoveme
+name: Fast Movement
+type: feat
+img: icons/skills/movement/feet-winged-boots-brown.webp
+system:
+  description:
+    value: >-
+      <p>Your speed increases by 10 feet while you aren't wearing Heavy
+      armor.</p><section id="secret-6cmMiIJhUk5cpOGz"
+      class="secret"><p><strong>Foundry Note</strong></p><p>This feature
+      includes an Active Effect which will automatically increase your movement
+      speed. Disable the Fast Movement Active Effect if you're wearing Heavy
+      armor.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 3
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 5
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Barbarian
+  activities: {}
+  enchant: {}
+  identifier: fast-movement
+  advancement: {}
+  crewed: false
+effects:
+  - _id: Ln2upWfCALSwthX1
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.dnd5e.classes24.Item.phbbrbFastMoveme
+    transfer: true
+    flags:
+      dnd5e:
+        riders: {}
+    tint: '#ffffff'
+    name: Fast Movement
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792088967435
+      modifiedTime: 1792088967435
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    img: icons/skills/movement/feet-winged-boots-brown.webp
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.bonus
+          value: 10
+          priority: null
+          type: add
+          phase: initial
+          _id: zeh9ix2piaPtRv8X
+          conditions: '{}'
+          replacement: ''
+      rider:
+        statuses: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbbrbFastMoveme.Ln2upWfCALSwthX1'
+folder: p6WDpW0gzmKfhGad
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088967435
+  modifiedTime: 1792088967435
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbFastMoveme'

@@ -1,0 +1,49 @@
+_id: phbsptBrave00000
+name: Brave
+type: feat
+img: icons/skills/melee/unarmed-punch-fist.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You have Advantage on saving throws you make to avoid or end the
+      &amp;Reference[Frightened apply=false] condition.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Halfling
+  identifier: brave
+  advancement: {}
+  crewed: false
+effects: []
+folder: zVLJosGQ7viZqH14
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791577895530
+  modifiedTime: 1791577895530
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbsptBrave00000'

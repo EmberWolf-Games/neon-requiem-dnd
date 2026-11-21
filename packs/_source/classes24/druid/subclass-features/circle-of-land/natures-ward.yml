@@ -1,0 +1,70 @@
+_id: phbdrdNaturesWar
+name: Nature's Ward
+type: feat
+folder: WJ4IXskgADlprLEA
+img: icons/magic/nature/root-vine-caduceus-healing.webp
+system:
+  description:
+    value: >-
+      <p>You are immune to the &amp;Reference[Poisoned apply=false] condition,
+      and you have &amp;Reference[Resistance] to a damage type associated with
+      your current land choice in the Circle Spells feature, as shown in the
+      Nature's Ward table.</p><table><caption><p>Nature's
+      Ward</p></caption><thead><tr><td><p>Land
+      Type</p></td><td><p>Resistance</p></td></tr></thead><tbody><tr><td><p>Arid</p></td><td><p>Fire</p></td></tr><tr><td><p>Polar</p></td><td><p>Cold</p></td></tr><tr><td><p>Temperate</p></td><td><p>Lightning</p></td></tr><tr><td><p>Tropical</p></td><td><p>Poison</p></td></tr></tbody></table>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 3
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 10
+    items: []
+    repeatable: false
+  properties:
+    - trait
+  requirements: Circle of Land
+  activities: {}
+  enchant: {}
+  identifier: natures-ward
+  advancement:
+    amFc8dQnolkg1wve:
+      type: Trait
+      _id: amFc8dQnolkg1wve
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - ci:poisoned
+        mode: default
+      flags: {}
+      level: 10
+      hint: ''
+      name: Poisoned Immunity
+      value: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793647063852
+  modifiedTime: 1793647063852
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 500000
+ownership:
+  default: 0
+_key: '!items!phbdrdNaturesWar'
