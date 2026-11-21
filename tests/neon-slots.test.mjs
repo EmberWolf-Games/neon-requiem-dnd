@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { AUGMENTATION_CATEGORIES, EQUIPMENT_POSITIONS, createSlotConfiguration, installAugmentation,
-  removeCyberware, assignEquipment } from "../module/neon/slots.mjs";
+  removeCyberware, assignEquipment, previewEquipmentAssignment } from "../module/neon/slots.mjs";
 
 test("body owns exactly the six approved category slots", () => {
   const c = createSlotConfiguration();
@@ -33,6 +33,15 @@ test("loadouts enforce positions, capacity and item identity without mutating in
   let quick = [];
   for ( let i = 0; i < 4; i++ ) quick = assignEquipment(quick, { itemId: `q${i}`, positions: ["quick-access"] });
   assert.throws(() => assignEquipment(quick, { itemId: "q4", positions: ["quick-access"] }), /capacity/);
+});
+
+test("dry-run reports assignment errors without modifying the source", () => {
+  const original = [{ itemId: "rifle", positions: ["left-hand", "right-hand"] }];
+  const result = previewEquipmentAssignment(original, { itemId: "shield", positions: ["right-hand"] });
+  assert.equal(result.ok, false);
+  assert.match(result.errors[0], /capacity/);
+  assert.deepEqual(original, [{ itemId: "rifle", positions: ["left-hand", "right-hand"] }]);
+  assert.equal(previewEquipmentAssignment(original, { itemId: "cap", positions: ["head"] }).ok, true);
 });
 
 test("physical capacities and attachment sockets remain separate from body slots", () => {
