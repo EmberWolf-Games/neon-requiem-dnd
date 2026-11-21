@@ -60,8 +60,8 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Problem:** The welcome presents the derivative as the official D&D 5e system and links to upstream issue reporting.
 - **Evidence:** Foundry 14.369 displayed the inherited D&D 5e welcome on creation of the disposable world.
 - **Attempted resolution:** Inspected the runtime behavior; no unrelated branding changes made in this sprint.
-- **Result:** Misleading copy remains.
-- **Next action:** Audit other translations separately before release. The revised English welcome and project support links were verified in Foundry 14.369.
+- **Result:** English welcome and project support links were corrected and verified in disposable Foundry 14.369. Other locales remain unaudited.
+- **Next action:** Audit non-English translations and inherited content links before release.
 - **Dependency:** Accurate derivative presentation before public distribution.
 
 ### TERRA-006
@@ -84,8 +84,8 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Problem:** The existing CI workflow does not trigger for this branch or a pull request targeting PR #7's branch.
 - **Evidence:** `.github/workflows/ci.yml` limits pull requests to `main` and pushes to `main` and `setup/**`; GitHub reported no workflow runs for the feature branch.
 - **Attempted resolution:** Checked the trigger and GitHub run list; all documented checks were run locally.
-- **Result:** Local validation passed, but GitHub-hosted CI is not yet verified for this draft.
-- **Next action:** Wave 2 `feature/**` push coverage ran successfully on commit `4d00eca`; PRs targeting other feature branches still do not independently trigger the pull-request event, so verify each updated feature head's push check.
+- **Result:** GitHub-hosted `feature/**` push validation passed on the final Wave 2 commit `42c919209bda523959fe80c333ee7af06d2d26f7` ([run 44957369490](https://github.com/EmberWolf-Games/neon-requiem-dnd/actions/runs/44957369490)). Dependent PR targets still do not trigger the pull_request event directly.
+- **Next action:** Continue validating every updated head via feature-branch push and repeat required checks after retargeting/merging the dependency chain.
 - **Dependency:** GitHub-hosted verification of the draft.
 
 ### TERRA-008
