@@ -20,7 +20,7 @@
 | Tool focus | Medicine, trauma care and medical technology (formal tool taxonomy TBD) |
 | Signature resource | Treatment Dice: limited-use medical intervention dice |
 
-**Subclasses** (conceptually approved, feature tables pending):
+**Subclasses** (feature drafts are in [Lifeline's subclass document](Neon_Requiem_GDD_Lifeline_Subclasses_1-40.md)):
 - **Trauma Tech:** Emergency care, surgery, stabilization and restoring combat readiness.
 - **Nanomedic:** Nanotechnology, regenerative support and gradual recovery.
 - **Combat Responder:** Mobile field medicine, extraction, protective interventions.
@@ -77,7 +77,7 @@
 | 39 | — | Subclass Mastery | — |
 | 40 | Last Lifeline | — | Choice |
 
-## 4. Approved conceptual features
+## 4. Base-class features
 
 ### Levels 1–10
 
@@ -145,4 +145,4 @@
 
 The accepted concepts must be reconciled with: universal level 21–40 proficiency bonus progression, ability-score cap, feat cadence, multiclass HP/proficiency rules, healing throughput, death saves, condition taxonomies, supply/rest economy, interaction with player/NPC Cyberware, and server-authoritative Foundry automation.
 
-**Status:** Concept approved. No completed gameplay implementation or numerical balance certification.
+The progression and subclass designs are approved working drafts. Medical eligibility, resources and healing throughput still need playtesting.
