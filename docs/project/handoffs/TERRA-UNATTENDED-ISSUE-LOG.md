@@ -55,13 +55,13 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 ### TERRA-005
 
 - **Severity:** Non-blocking
-- **Status:** Deferred
+- **Status:** Resolved in English; other locales deferred
 - **Area:** Inherited first-run welcome
 - **Problem:** The welcome presents the derivative as the official D&D 5e system and links to upstream issue reporting.
 - **Evidence:** Foundry 14.369 displayed the inherited D&D 5e welcome on creation of the disposable world.
 - **Attempted resolution:** Inspected the runtime behavior; no unrelated branding changes made in this sprint.
-- **Result:** Misleading copy remains.
-- **Next action:** Review welcome copy and support links in a separate scoped change, retaining upstream attribution.
+- **Result:** English welcome and project support links were corrected and verified in disposable Foundry 14.369. Other locales remain unaudited.
+- **Next action:** Audit non-English translations and inherited content links before release.
 - **Dependency:** Accurate derivative presentation before public distribution.
 
 ### TERRA-006
@@ -79,16 +79,78 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 ### TERRA-007
 
 - **Severity:** Non-blocking
-- **Status:** Open
+- **Status:** Resolved
 - **Area:** GitHub Actions on dependent draft PR
 - **Problem:** The existing CI workflow does not trigger for this branch or a pull request targeting PR #7's branch.
 - **Evidence:** `.github/workflows/ci.yml` limits pull requests to `main` and pushes to `main` and `setup/**`; GitHub reported no workflow runs for the feature branch.
 - **Attempted resolution:** Checked the trigger and GitHub run list; all documented checks were run locally.
-- **Result:** Local validation passed, but GitHub-hosted CI is not yet verified for this draft.
-- **Next action:** Arrange reviewable CI coverage for the dependent PR or verify required CI after retargeting to main once PR #7 is integrated. Do not bypass protected-branch checks.
+- **Result:** GitHub-hosted `feature/**` push validation passed on the final Wave 2 commit `42c919209bda523959fe80c333ee7af06d2d26f7` ([run 44957369490](https://github.com/EmberWolf-Games/neon-requiem-dnd/actions/runs/44957369490)). Dependent PR targets still do not trigger the pull_request event directly.
+- **Next action:** Continue validating every updated head via feature-branch push and repeat required checks after retargeting/merging the dependency chain.
 - **Dependency:** GitHub-hosted verification of the draft.
 
+### TERRA-008
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** E.
+- **Problem and evidence:** ESLint flagged a 121-character line in `assignEquipment` during the first lint pass.
+- **Attempted fix and result:** Split the conditional across lines; slot unit tests passed before the edit.
+- **Next action:** Confirm final lint; unrelated work can continue.
+
+### TERRA-009
+
+- **Severity:** Blocking; **Status:** Deferred; **Workstream:** D.
+- **Problem and evidence:** The inherited sheet has no reviewed Neon equipment-position relationship or persistent Cyberware/Hack schema; the prior runtime prototype displays examples only.
+- **Attempted fix and result:** Added labeled overview, combat, loadout and Hack guidance alongside the existing inherited inventory instead of inferring assignments or creating persistent fields. This remains a partial preview, not a separate comprehensive character-sheet mode.
+- **Next action:** Review the persistence proposal and design an opt-in sheet with real owned-inventory mapping after schema decisions. Other independent work can continue.
+
+### TERRA-010
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** C.
+- **Problem and evidence:** The Foundry settings sidebar labeled upstream D&D 5e release notes, issues, wiki and Discord as system links after the revised welcome loaded.
+- **Attempted fix and result:** Repointed notes, issues and documentation to the Neon Requiem repository and removed the misleading upstream Discord link. Upstream attribution remains elsewhere. This does not block other work.
+- **Next action:** Retain upstream attribution and review other locales before release. The rebuilt sidebar displayed the three intended project links in Foundry 14.369.
+
+### TERRA-011
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** D.
+- **Problem and evidence:** At 1024 × 768, the expanded preview took most of the visible inventory area, pushing inherited controls below the fold.
+- **Attempted fix and result:** Wrapped the preview in a native collapsed `details` element, keeping the original inventory readily accessible; no gameplay data changed.
+- **Next action:** Extend accessibility testing when a full sheet mode exists. At 1024 × 768 the rebuilt preview was collapsed by default, inventory controls appeared in the accessibility tree, and Enter expanded the preview.
+
+### TERRA-012
+
+- **Severity:** Non-blocking; **Status:** Open; **Workstream:** A.
+- **Problem and evidence:** A character token was placed in a new scene, but an attempted drag did not clearly show a position change; selecting the token darkened the blank canvas. Movement and persistence after restart were not established.
+- **Attempted fix and result:** Tried a drag and an arrow key; the visual result was inconclusive. No repeated speculative fixes or campaign data changes were attempted.
+- **Next action:** Use a lit disposable scene to verify movement and restart persistence; other independent work can continue.
+
+### TERRA-013
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** E.
+- **Problem and evidence:** The initial pure functions returned new arrays but shared untouched nested slot and position objects, so a caller could mutate a previous configuration through a later result.
+- **Attempted fix and result:** Copy all known nested model objects on install and removal; added tests that mutate the returned occupant and position and confirm the earlier configuration remains unchanged.
+- **Next action:** Keep future schema extensions included in the copy and immutability tests. Other work continues independently.
+
+### TERRA-014
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** validation.
+- **Problem and evidence:** A sandboxed `npm ci --ignore-scripts` stalled with no output during the final clean install.
+- **Attempted fix and result:** Interrupted that attempt and repeated the same locked install with approved network access; 218 packages installed and npm reported zero vulnerabilities.
+- **Next action:** Run final checks against the restored dependencies. Other work can continue.
+
+### TERRA-015
+
+- **Severity:** Non-blocking; **Status:** Open; **Workstream:** B.
+- **Problem and evidence:** The successful GitHub Actions run for `a4c7f74` annotated that `actions/checkout@v4` and `actions/setup-node@v4` target deprecated Node 20 and were forced to run on Node 24.
+- **Attempted fix and result:** Preserved existing action versions and permissions to keep this sprint's CI change narrowly scoped; all validation steps passed.
+- **Next action:** Review supported action upgrades and pinning in a separate CI maintenance change. Other work can continue.
+
 ## Completed Work
+
+- Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
+- Wave 2: English welcome identifies Neon Requiem D&D and EmberWolf Games, points to project support and documentation, and identifies upstream content as unverified for this derivative. JSON parsing and lint passed; live verification remains pending.
+- Wave 2: In-memory equipment assignment validates explicit multi-position occupancy, capacity, duplicate items, unknown positions, and retains independent prior arrays; unit tests passed.
+- Wave 2: Static metadata records the approved races, starting Cyberware counts, class/subclass names and milestones, hybrid prerequisites, backgrounds, and augmentation categories. Exact Ripperdoc tool names remain pending; isolated metadata tests passed.
+- Wave 2 runtime: Foundry 14.369 reopened the disposable world after a server start; revised welcome and project links displayed. Character inventory preview rendered at 1440 × 900 and 1024 × 768. A modern Equipment compendium opened, search found Rope, and the Rope item sheet rendered. A blank scene was created and a character token placed. The only captured browser errors were the initial 1280 × 720 minimum-viewport warnings, before resizing.
 
 - Created a separate branch from the verified PR #7 head and established this ledger before implementation.
 - Windows; Node `24.15.0`, npm `11.7.0`; licensed Foundry v14 executable is present. `npm ci --ignore-scripts`, `check:version`, `check:manifest`, `check:assets`, `npm test` (14 passed), `lint`, `build`, `package`, and `check:package` (732 entries) all passed at baseline.
