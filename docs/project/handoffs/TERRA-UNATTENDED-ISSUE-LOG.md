@@ -55,13 +55,13 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 ### TERRA-005
 
 - **Severity:** Non-blocking
-- **Status:** Deferred
+- **Status:** Resolved in English; runtime verification pending
 - **Area:** Inherited first-run welcome
 - **Problem:** The welcome presents the derivative as the official D&D 5e system and links to upstream issue reporting.
 - **Evidence:** Foundry 14.369 displayed the inherited D&D 5e welcome on creation of the disposable world.
 - **Attempted resolution:** Inspected the runtime behavior; no unrelated branding changes made in this sprint.
 - **Result:** Misleading copy remains.
-- **Next action:** Review welcome copy and support links in a separate scoped change, retaining upstream attribution.
+- **Next action:** Verify the revised welcome in Foundry; audit other translations separately before release.
 - **Dependency:** Accurate derivative presentation before public distribution.
 
 ### TERRA-006
@@ -91,6 +91,7 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 ## Completed Work
 
 - Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
+- Wave 2: English welcome identifies Neon Requiem D&D and EmberWolf Games, points to project support and documentation, and identifies upstream content as unverified for this derivative. JSON parsing and lint passed; live verification remains pending.
 
 - Created a separate branch from the verified PR #7 head and established this ledger before implementation.
 - Windows; Node `24.15.0`, npm `11.7.0`; licensed Foundry v14 executable is present. `npm ci --ignore-scripts`, `check:version`, `check:manifest`, `check:assets`, `npm test` (14 passed), `lint`, `build`, `package`, and `check:package` (732 entries) all passed at baseline.

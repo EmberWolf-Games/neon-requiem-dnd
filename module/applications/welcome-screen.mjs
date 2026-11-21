@@ -44,11 +44,11 @@ export default class WelcomeScreen extends Application5e {
    * @type {Record<string, string>}
    */
   static LINKS = {
-    changes: "https://github.com/foundryvtt/dnd5e/releases/latest",
+    changes: "https://github.com/EmberWolf-Games/neon-requiem-dnd/blob/main/CHANGELOG.md",
     discord: "https://discord.gg/foundryvtt",
-    issues: "https://github.com/foundryvtt/dnd5e/issues",
+    issues: "https://github.com/EmberWolf-Games/neon-requiem-dnd/issues",
     marketplace: "https://www.foundryvtt.store/systems/dnd5e",
-    wiki: "https://github.com/foundryvtt/dnd5e/wiki"
+    wiki: "https://github.com/EmberWolf-Games/neon-requiem-dnd/tree/main/docs"
   };
 
   /* -------------------------------------------- */
