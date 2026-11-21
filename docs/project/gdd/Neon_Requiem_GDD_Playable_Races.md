@@ -36,4 +36,4 @@ The approved number of races and the **one/two starting Cyberware** distinction 
 
 ## Backgrounds
 
-The owner also decided to **replace all inherited 5e backgrounds**, but no new Neon Requiem background list or background mechanics have been specified. The replacement is a design requirement, not a completed feature.
+The inherited 5e backgrounds are being replaced with [twelve Neon Requiem backgrounds approved for initial testing](Neon_Requiem_GDD_Backgrounds_Initial_Playtest.md). Their skill/tool selections and Background Edges are working designs; final starting equipment, monetary values and playtest balance are still open. Both races can select any background.
