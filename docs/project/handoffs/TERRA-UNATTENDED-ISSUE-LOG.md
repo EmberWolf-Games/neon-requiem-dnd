@@ -76,6 +76,18 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Next action:** Include smaller-display layout testing in future UI validation.
 - **Dependency:** Runtime visual testing.
 
+### TERRA-007
+
+- **Severity:** Non-blocking
+- **Status:** Open
+- **Area:** GitHub Actions on dependent draft PR
+- **Problem:** The existing CI workflow does not trigger for this branch or a pull request targeting PR #7's branch.
+- **Evidence:** `.github/workflows/ci.yml` limits pull requests to `main` and pushes to `main` and `setup/**`; GitHub reported no workflow runs for the feature branch.
+- **Attempted resolution:** Checked the trigger and GitHub run list; all documented checks were run locally.
+- **Result:** Local validation passed, but GitHub-hosted CI is not yet verified for this draft.
+- **Next action:** Arrange reviewable CI coverage for the dependent PR or verify required CI after retargeting to main once PR #7 is integrated. Do not bypass protected-branch checks.
+- **Dependency:** GitHub-hosted verification of the draft.
+
 ## Completed Work
 
 - Created a separate branch from the verified PR #7 head and established this ledger before implementation.

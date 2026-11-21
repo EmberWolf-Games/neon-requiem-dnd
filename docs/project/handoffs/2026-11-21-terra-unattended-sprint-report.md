@@ -13,7 +13,7 @@
 
 Windows, Node 24.15.0, npm 11.7.0; baseline `npm ci --ignore-scripts`, version, manifest and assets checks, tests (14), lint, build, package and package check passed. After changes all checks passed again, with 18 tests and 732 ZIP entries. `git diff --check` passed. No `build:clean` was run.
 
-A separate local Foundry 14.369 instance and new disposable world were used. Character, NPC and weapon sheets opened and a chat roll succeeded on the baseline; the rebuilt prototype displayed its positions, categories and example expansion after a browser reload, with no browser warnings or errors recorded after reload. This is a limited runtime check, not formal remote-install acceptance. Compendium opening, scene/token placement and full world restart with this prototype were not re-tested in this sprint. Existing campaigns were not used.
+A separate local Foundry 14.369 instance and new disposable world were used. Character, NPC and weapon sheets opened and a chat roll succeeded on the baseline; the rebuilt prototype displayed its positions, categories and example expansion after a browser reload, with no browser warnings or errors recorded after reload. This is a limited runtime check, not formal remote-install acceptance. Compendium opening, scene/token placement and full world restart with this prototype were not re-tested in this sprint. Existing campaigns were not used. The current workflow does not trigger on this dependent PR's base branch; GitHub CI has not run (see TERRA-007).
 
 ## Decisions and next actions
 
