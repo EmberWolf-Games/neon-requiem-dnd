@@ -137,6 +137,13 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Attempted fix and result:** Interrupted that attempt and repeated the same locked install with approved network access; 218 packages installed and npm reported zero vulnerabilities.
 - **Next action:** Run final checks against the restored dependencies. Other work can continue.
 
+### TERRA-015
+
+- **Severity:** Non-blocking; **Status:** Open; **Workstream:** B.
+- **Problem and evidence:** The successful GitHub Actions run for `a4c7f74` annotated that `actions/checkout@v4` and `actions/setup-node@v4` target deprecated Node 20 and were forced to run on Node 24.
+- **Attempted fix and result:** Preserved existing action versions and permissions to keep this sprint's CI change narrowly scoped; all validation steps passed.
+- **Next action:** Review supported action upgrades and pinning in a separate CI maintenance change. Other work can continue.
+
 ## Completed Work
 
 - Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
