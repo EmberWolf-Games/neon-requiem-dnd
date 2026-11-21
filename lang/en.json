@@ -6768,6 +6768,7 @@
     "Bugs": "<p>Report Neon Requiem issues on the <a href=\"{issues}\">project issue tracker</a>.</p>",
     "Changes": "<p>Read the project <a href=\"{changes}\">changelog</a> for development updates.</p>",
     "Content": "<p>The inherited content tab lists upstream D&D 5e content; compatibility with this derivative has not been established.</p>",
+    "CompatibilityNotice": "This upstream D&D 5e listing is provided for reference. Compatibility with Neon Requiem has not been established; availability and licensing are controlled by the original publishers.",
     "Documentation": "<p>Explore the <a href=\"{wiki}\">project documentation</a>.</p>",
     "Introduction": "<p>Welcome to <strong>Neon Requiem D&D — EmberWolf Games</strong>, an in-development game system derived from Foundry's D&D 5e system.</p>",
     "MoreContent": "<p>Find more Dungeons & Dragons Fifth Edition content on the official <a href=\"{marketplace}\">Foundry VTT Marketplace</a>.</p>"

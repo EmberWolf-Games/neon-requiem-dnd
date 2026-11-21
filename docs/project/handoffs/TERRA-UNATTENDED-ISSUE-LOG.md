@@ -144,7 +144,54 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Attempted fix and result:** Preserved existing action versions and permissions to keep this sprint's CI change narrowly scoped; all validation steps passed.
 - **Next action:** Review supported action upgrades and pinning in a separate CI maintenance change. Other work can continue.
 
+Wave 3 investigation: official action metadata for v5 declares Node 24. The CI-only action references are updated to v5, with no release workflow or permission change; GitHub-hosted testing is pending. Keep this issue open until that run succeeds without the warning.
+
+### TERRA-016
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** G.
+- **Problem and evidence:** Baseline `npm run lint` exits 0 but reports `no-useless-return` at `dnd5e.mjs:683` on main `0658889`.
+- **Attempted fix and result:** Removed only the redundant final return from the function; the preceding migration branches remain unchanged.
+- **Next action:** Run migration gate unit tests and lint. **Dependency:** Clean lint output; other work remains safe.
+
+### TERRA-017
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** C.
+- **Problem and evidence:** First lint run reported two missing JSDoc tags for the new projection.
+- **Attempted fix and result:** Added the parameter and return tags; projection tests passed.
+- **Next action:** Confirm final lint. **Dependency:** Code quality only.
+
+### TERRA-018
+
+- **Severity:** Non-blocking; **Status:** Deferred; **Workstream:** F.
+- **Problem and evidence:** The upstream-content welcome tab reads a bundled listing and attempts an upstream network listing; it includes store links and can enable installed modules on form submission. Compatibility and commercial entitlements for this derivative are unverified.
+- **Attempted fix and result:** Added a clear compatibility and licensing notice on the listing; did not install or enable content, change licenses or remove packs.
+- **Next action:** Review listing and activation behavior with rights holders and test content compatibility before public release. **Dependency:** Premium content support claims; independent work continues.
+
+### TERRA-019
+
+- **Severity:** Non-blocking; **Status:** Deferred; **Workstream:** F.
+- **Problem and evidence:** Only `lang/en.json` is bundled; other-language support and external localization overrides have not been audited for derivative branding.
+- **Attempted fix and result:** Inspected the language directory and retained English; no speculative translation introduced.
+- **Next action:** Audit supported translations and third-party overrides before localization release. **Dependency:** Non-English presentation only.
+
+### TERRA-020
+
+- **Severity:** Non-blocking; **Status:** Fix applied, limited runtime verification pending; **Workstream:** C.
+- **Problem and evidence:** Directly projecting an item name could reveal an unidentified item to a non-owner even if the inherited item is generally visible.
+- **Attempted fix and result:** Exclude unidentified items for non-owners in addition to Foundry's visibility and sheet filters; no documents are modified.
+- **Next action:** Verify with a non-owner user in a disposable world and extend permission regression tests. **Dependency:** Multi-user permission validation; other work continues.
+
+### TERRA-021
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Workstream:** A.
+- **Problem and evidence:** The previously used disposable server automatically reopened its old world; blank administrator credentials could not return it to Setup.
+- **Attempted fix and result:** Started a separate licensed Foundry 14.369 instance with a fresh test-only data directory and created a new world; no old world or credentials were modified.
+- **Next action:** Continue runtime testing only in the new disposable world. **Dependency:** Isolated runtime regression.
+
 ## Completed Work
+
+- Wave 3 baseline: Windows, Node 24.15.0, npm 11.7.0, base `0658889ba34f297aeb335a467fb6e4eadf85fca2`; clean `npm ci --ignore-scripts`, version, manifest, assets, 21 tests, lint (one pre-existing warning), build, package and package verification passed (exit 0; 732 entries).
+- Wave 3: Baseline `main` created and opened a character in a new disposable Foundry 14.369 world. The branch registered as an opt-in sheet, showed a real owned weapon and updated its inherited equipped state after the normal inventory button was clicked; browser error/warning log after the branch reload was empty.
 
 - Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
 - Wave 2: English welcome identifies Neon Requiem D&D and EmberWolf Games, points to project support and documentation, and identifies upstream content as unverified for this derivative. JSON parsing and lint passed; live verification remains pending.
