@@ -45,7 +45,7 @@ Augmentations are enhancements installed in **color-coded, type-specific slots**
 
 **Six is the baseline, not the character's absolute capacity.** Advanced Cyberware can supply additional slots.
 
-**To specify later:** the color/type categories, which colors appear in the baseline six, individual effects and stacking, how Augmentations are acquired or moved between slots, and which Cyberware prerequisites apply.
+**Initial category decision (approved for testing):** The six baseline slots are **Force (red), Mobility (amber), Interface (cyan), Sensory (violet), Recovery (green), and Defense (blue)** — one each. This decision was established in the later [Equipment and Slots GDD](https://github.com/EmberWolf-Games/neon-requiem-dnd/blob/docs/gdd-six-class-roster-20261121/docs/project/gdd/Neon_Requiem_GDD_Equipment_and_Slots.md). Individual Augmentation effects, stacking, acquisition, swapping and Cyberware prerequisites still need design.
 
 ## Cyberware: hardware
 
