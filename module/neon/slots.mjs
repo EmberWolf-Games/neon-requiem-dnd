@@ -144,5 +144,7 @@ export function assignEquipment(assignments, item) {
       occupancy.set(position, count);
     }
   }
-  return [...assignments, item].map(assignment => ({ itemId: assignment.itemId, positions: [...assignment.positions] }));
+  return [...assignments, item].map(assignment => ({
+    itemId: assignment.itemId, positions: [...assignment.positions]
+  }));
 }

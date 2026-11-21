@@ -102,12 +102,34 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Attempted fix and result:** Added labeled overview, combat, loadout and Hack guidance alongside the existing inherited inventory instead of inferring assignments or creating persistent fields. This remains a partial preview, not a separate comprehensive character-sheet mode.
 - **Next action:** Review the persistence proposal and design an opt-in sheet with real owned-inventory mapping after schema decisions. Other independent work can continue.
 
+### TERRA-010
+
+- **Severity:** Non-blocking; **Status:** Fix applied, runtime recheck pending; **Workstream:** C.
+- **Problem and evidence:** The Foundry settings sidebar labeled upstream D&D 5e release notes, issues, wiki and Discord as system links after the revised welcome loaded.
+- **Attempted fix and result:** Repointed notes, issues and documentation to the Neon Requiem repository and removed the misleading upstream Discord link. Upstream attribution remains elsewhere. This does not block other work.
+- **Next action:** Rebuild and verify the sidebar in the disposable world.
+
+### TERRA-011
+
+- **Severity:** Non-blocking; **Status:** Fix applied, runtime recheck pending; **Workstream:** D.
+- **Problem and evidence:** At 1024 × 768, the expanded preview took most of the visible inventory area, pushing inherited controls below the fold.
+- **Attempted fix and result:** Wrapped the preview in a native collapsed `details` element, keeping the original inventory readily accessible; no gameplay data changed.
+- **Next action:** Recheck keyboard access and compact layout in Foundry. Other work can continue.
+
+### TERRA-012
+
+- **Severity:** Non-blocking; **Status:** Open; **Workstream:** A.
+- **Problem and evidence:** A character token was placed in a new scene, but an attempted drag did not clearly show a position change; selecting the token darkened the blank canvas. Movement and persistence after restart were not established.
+- **Attempted fix and result:** Tried a drag and an arrow key; the visual result was inconclusive. No repeated speculative fixes or campaign data changes were attempted.
+- **Next action:** Use a lit disposable scene to verify movement and restart persistence; other independent work can continue.
+
 ## Completed Work
 
 - Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
 - Wave 2: English welcome identifies Neon Requiem D&D and EmberWolf Games, points to project support and documentation, and identifies upstream content as unverified for this derivative. JSON parsing and lint passed; live verification remains pending.
 - Wave 2: In-memory equipment assignment validates explicit multi-position occupancy, capacity, duplicate items, unknown positions, and retains independent prior arrays; unit tests passed.
 - Wave 2: Static metadata records the approved races, starting Cyberware counts, class/subclass names and milestones, hybrid prerequisites, backgrounds, and augmentation categories. Exact Ripperdoc tool names remain pending; isolated metadata tests passed.
+- Wave 2 runtime: Foundry 14.369 reopened the disposable world after a server start; revised welcome and project links displayed. Character inventory preview rendered at 1440 × 900 and 1024 × 768. A modern Equipment compendium opened, search found Rope, and the Rope item sheet rendered. A blank scene was created and a character token placed. The only captured browser errors were the initial 1280 × 720 minimum-viewport warnings, before resizing.
 
 - Created a separate branch from the verified PR #7 head and established this ledger before implementation.
 - Windows; Node `24.15.0`, npm `11.7.0`; licensed Foundry v14 executable is present. `npm ci --ignore-scripts`, `check:version`, `check:manifest`, `check:assets`, `npm test` (14 passed), `lint`, `build`, `package`, and `check:package` (732 entries) all passed at baseline.

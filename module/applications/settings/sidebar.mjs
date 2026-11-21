@@ -10,20 +10,15 @@ function _generateLinks() {
   links.classList.add("unlist", "links");
   links.innerHTML = `
     <li>
-      <a href="https://github.com/foundryvtt/dnd5e/releases/latest" target="_blank">
+      <a href="https://github.com/EmberWolf-Games/neon-requiem-dnd/blob/main/CHANGELOG.md" target="_blank">
         ${_loc("DND5E.Notes")}
       </a>
     </li>
     <li>
-      <a href="https://github.com/foundryvtt/dnd5e/issues" target="_blank">${_loc("DND5E.Issues")}</a>
+      <a href="https://github.com/EmberWolf-Games/neon-requiem-dnd/issues" target="_blank">${_loc("DND5E.Issues")}</a>
     </li>
     <li>
-      <a href="https://github.com/foundryvtt/dnd5e/wiki" target="_blank">${_loc("DND5E.Wiki")}</a>
-    </li>
-    <li>
-      <a href="https://discord.com/channels/170995199584108546/670336046164213761" target="_blank">
-        ${_loc("DND5E.Discord")}
-      </a>
+      <a href="https://github.com/EmberWolf-Games/neon-requiem-dnd/tree/main/docs" target="_blank">${_loc("DND5E.Wiki")}</a>
     </li>
   `;
   return links;
