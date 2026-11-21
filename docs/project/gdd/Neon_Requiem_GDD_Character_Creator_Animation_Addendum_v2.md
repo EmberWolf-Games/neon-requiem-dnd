@@ -6,12 +6,20 @@
 
 This is an appearance system, not a change to character abilities or 5e combat mechanics. Character selections and animation assets need to stay consistent across clients and remain usable without a media-generation service.
 
+### Equipment does not affect token appearance
+
+**Equipped or installed gear never changes the animated or static scene token.** Weapons, armor, clothing, backpacks, helmets, attachments and Cyberware have their normal gameplay effects, but the token retains the saved appearance produced by the Character Identity Creator. Equipment changes must not trigger artwork swaps, animated overlays, new sprite combinations or media regeneration.
+
+A character may wear a jacket or appear to carry gear in their *chosen visual art*, but this is not synchronized to their live inventory. Any optional appearance presets are cosmetic and independent of equipped items; they do not modify gameplay. The first creator still uses the four approved Human/Synth bases with head styles, skin colors and hair colors. A new personalized pack is created only for an authorized, deliberate appearance update or source-asset revision—not from gear changes.
+
+The matching [Equipment and Slots](Neon_Requiem_GDD_Equipment_and_Slots.md) addendum defines the mechanical loadout and item slots.
+
 ## Visual requirements
 
 1. Tokens must be **true 90-degree overhead / bird's-eye top-down**, not an oblique or isometric camera angle.
 2. **No facial features or face should be visible** from the token camera. The silhouette must make sense when the complete image is rotated to face any direction.
 3. Each character needs **one directional source orientation**, not eight separate direction-specific animations. The system rotates the complete token to match the movement vector and holds its last facing while stationary.
-4. Characters may differ in gender presentation, outfits, hair, gear and equipment, while all maintaining a consistent scale, center point, orientation reference and overhead camera.
+4. Characters may differ in gender presentation, hair and their chosen fixed art-base outfit, while all maintaining a consistent scale, center point, orientation reference and overhead camera. **The chosen outfit is independent of their equipped gear.**
 5. Prefer transparent **WebM** for scene animations; provide a static WebP fallback. Test codec/alpha support and performance in Foundry-supported clients.
 6. **Walking** is the initial locomotion animation (not running). Running is a possible later enhancement, not part of the first proof of concept.
 7. Animated tokens are **optional per token**. Static tokens remain supported without added configuration.
@@ -20,7 +28,7 @@ This is an appearance system, not a change to character abilities or 5e combat m
 
 | State | Visual behavior | Trigger / priority |
 |---|---|---|
-| Idle | Loop: breathing, slight weight/gear movement | Stationary, conscious, alive |
+| Idle | Loop: breathing, slight movement of the fixed artwork and clothing | Stationary, conscious, alive |
 | Walk | Loop: footsteps matching actual movement | Token is moving, conscious, alive |
 | Collapse | One-shot: standing to downed pose | Transition into unconscious/downed |
 | Unconscious | Loop: prone, faint breathing or minimal movement | Downed but not dead |
@@ -109,7 +117,7 @@ A detailed, face-visible portrait may exist separately on the character sheet; i
 - Preserve original lighting, highlights, texture, occlusion, and shading when recoloring; do **not** apply flat opaque blocks of color or tint the entire token.
 - Store colors in reproducible machine-readable form (e.g., validated six-digit hexadecimal sRGB), with an appearance/asset schema version.
 - Recolor consistently across **every** selected character animation state; include any static WebP fallback and thumbnail.
-- Optional future masks: cybernetic plating, emissive circuitry, jacket accents, equipment and armor. These are **not required for MVP**.
+- Optional future *cosmetic* masks might recolor fixed art-base accents, such as synthetic plating or jacket trim. These are **not required for MVP** and must never be driven by equipped armor, weapons, Cyberware or other inventory state.
 - For a Synth, skin color may affect synthetic skin or exposed synthetic material according to that art base's defined masks.
 - To avoid a combinatorial asset explosion, **do not pre-render every possible color combination**. Produce personalized animation outputs only for selected/finalized appearances, while keeping reusable source rigs, frames and masks.
 - Record asset provenance, ownership/license and source rig versions, allowing a personalized pack to be reproduced later.
@@ -182,8 +190,10 @@ The owner operates a server hosting the panel website and Foundry instances and 
 9. Walk state faces the true travel direction; idle, unconscious and dead media retain intended facing and transition correctly.
 10. Local export works without a remote media server; remote export may be implemented after local proof of concept.
 11. For remote generation, unauthorized calls cannot overwrite another Actor's media, escape designated paths, or exhaust worker resources.
-12. Token movement and state changes do not cause unnecessary video re-encoding. Encode only when appearance/assets change.
+12. Token movement and state changes do not cause unnecessary video re-encoding. Encode only when the **saved appearance is deliberately edited** or its source assets change; do not regenerate media for inventory or equipped-gear events.
 13. Bulk token stress tests establish an acceptable animation and video-decoding budget.
+14. Equipping or removing weapons, clothing, armor, headgear or tactical gear leaves the character's token artwork and media URLs unchanged.
+15. Installing, removing or replacing Cyberware changes game rules and slots where appropriate, but does not automatically change the token artwork.
 
 ## Suggested work packages
 
