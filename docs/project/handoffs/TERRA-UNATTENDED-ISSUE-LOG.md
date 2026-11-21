@@ -95,6 +95,13 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 - **Attempted fix and result:** Split the conditional across lines; slot unit tests passed before the edit.
 - **Next action:** Confirm final lint; unrelated work can continue.
 
+### TERRA-009
+
+- **Severity:** Blocking; **Status:** Deferred; **Workstream:** D.
+- **Problem and evidence:** The inherited sheet has no reviewed Neon equipment-position relationship or persistent Cyberware/Hack schema; the prior runtime prototype displays examples only.
+- **Attempted fix and result:** Added labeled overview, combat, loadout and Hack guidance alongside the existing inherited inventory instead of inferring assignments or creating persistent fields. This remains a partial preview, not a separate comprehensive character-sheet mode.
+- **Next action:** Review the persistence proposal and design an opt-in sheet with real owned-inventory mapping after schema decisions. Other independent work can continue.
+
 ## Completed Work
 
 - Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
