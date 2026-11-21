@@ -1,12 +1,9 @@
-# NEON REQUIEM — GDD Addendum: Vanguard Level 1–40 Progression
+# Vanguard — Base Class Progression (Levels 1–40)
 
-**Decision status:** OWNER-APPROVED PROGRESSION DRAFT (approved concept/cadence; detailed numerical balance pending)  
-**Decision date:** 2026-11-21  
-**Base class:** Vanguard  
-**Subclass roster:** Juggernaut, Reaver, Warden (approved in the six-class roster)  
-**Scope:** Complete level 1–40 base-class advancement placement, subclass milestone positions, and ASI/feat opportunities  
-**Implementation status:** NOT IMPLEMENTED. This document is for GDD tracking only; it does not authorize code changes or releases.  
-**Source:** Owner reviewed the proposed Vanguard level 1–40 feature table and descriptions and said, "looks good. next."
+**Status:** Approved design; numerical balance pending  
+**Recorded:** 21 Nov 2026  
+**Subclasses:** See [Vanguard subclass features](Neon_Requiem_GDD_Vanguard_Subclasses_1-40.md)  
+**Build status:** Design only; no game-system implementation yet.
 
 ## 1. Class concept and starting proposal
 
@@ -14,7 +11,7 @@
 - **5e mechanic references:** Fighter for fighting styles, Second Wind-like self-recovery, Action Surge-like action bursts, Extra Attack; Barbarian for endurance and damage mitigation; Paladin for the *protective martial role* without magic.
 - **Suggested starting chassis from the approved draft:** d12 Hit Die; Strength and Constitution as the major attributes; heavy-armor proficiency.
 - Magic, spell slots, divine abilities, and other traditional spellcasting remain excluded from Vanguard's feature concepts.
-- **ASI/Feat** refers to the 5e Ability Score Improvement / feat choice. The owner had earlier written "AGI/feat"; final project-wide terminology and rules are pending.
+- **ASI/Feat** refers to the 5e Ability Score Improvement / feat choice. The final ASI/feat terminology and caps will be set in the shared advancement rules.
 
 ## 2. Advancement table: levels 1–20
 
@@ -105,12 +102,12 @@
 ## 5. Reserved advancement and balance boundaries
 
 - **10 ASI/Feat opportunities:** levels 4, 8, 12, 16, 20, 24, 28, 32, 36, and 40.
-- **10 subclass milestones:** levels 3, 7, 11, 15, 19, 23, 27, 31, 35, and 39. They alternate subclass selection / major features and improvements; the exact Juggernaut/Reaver/Warden subclass feature text is **not yet designed or approved**.
+- **10 subclass milestones:** levels 3, 7, 11, 15, 19, 23, 27, 31, 35, and 39. They alternate subclass selection / major features and improvements; their individual feature tracks are recorded in the linked subclass document and remain open to tuning.
 - **Extra Attack milestones:** levels 5 (2 attacks), 13 (3), 29 (4). The accepted concept caps normal Vanguard Attack-action attacks at four through level 40, with later identity emerging from defense, control and versatility.
 - **No proficiency-bonus progression or ability-score caps are set here.** These must be designed consistently across all six classes as part of a system-wide 40-level math review.
 - **No hard-coded damage dice, DC formulas, exact Grit scaling, Pain Suppression resistance values, Defiant Recovery amounts, or exact action costs beyond the conceptual descriptions already listed.** These require separate mechanics/balance approval.
-- **All numbers not explicitly named in the accepted concept remain TBD.** This is approval of the design draft, not certification of playtested balance or Foundry v14 functionality.
+- **All numbers not explicitly named in the accepted concept remain TBD.** Balance and Foundry runtime behavior have not yet been verified.
 
-## 6. Next workflow
+## Next design work
 
-Vanguard's base-class milestone map is approved at this level of detail. Proceed to design Deadeye next as a **fresh proposal**, reserving comparable ASI/feat selections and subclass feature milestones; do not pre-approve the Deadeye table without owner review.
+Apply the shared level 21–40 proficiency, feat and encounter rules once approved, then tune this class against the other five. The associated subclass feature tables are ready for a mechanics and balance pass.
