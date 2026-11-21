@@ -6,7 +6,7 @@ The authoritative consolidated GDD has not yet been established. Until then, the
 
 ## Core design
 
-- [Technology systems](https://github.com/EmberWolf-Games/neon-requiem-dnd/pull/8): Cyberware is hardware, Augmentations are firmware, and Hacks are software. Includes slot ownership and removal rules. *(Separate PR awaiting review.)*
+- [Technology systems](Neon_Requiem_GDD_Technology_Systems_Foundation.md): Cyberware is hardware, Augmentations are firmware, and Hacks are software. Includes slot ownership, removal rules and the baseline type/color categories.
 - [Character Identity Creator and animated scene tokens](Neon_Requiem_GDD_Character_Creator_Animation_Addendum_v2.md): Four Human/Synth art bases, overhead tokens, appearance controls, video and fallback pipeline; equipped gear never changes token artwork.
 - [Equipment and slots](Neon_Requiem_GDD_Equipment_and_Slots.md): Physical loadout positions, six type-coded baseline Augmentation slots, Cyberware locations, item attachment sockets and gear-independent token visuals.
 - [Playable races](Neon_Requiem_GDD_Playable_Races.md): Human and Synth only; starting Cyberware and shared body slots recorded, individual racial traits pending.
