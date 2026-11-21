@@ -90,6 +90,7 @@ The release workflow is a manually controlled workflow. It validates the current
 | `scripts/`, `tests/` | Versioning, asset and manifest checks, packaging, and tests |
 | `.github/workflows/` | CI and controlled release automation |
 | `docs/` | Development, architecture, versioning, release, and upstream notes |
+| `docs/project/` | Project decisions, approved GDD addenda, team instructions, and handoffs ([index](docs/project/README.md)) |
 | `LICENSE`, `LICENSE.txt`, `LICENSES/`, asset `LICENSE` files | EmberWolf, upstream, and third-party license notices |
 
 ## Contributing
