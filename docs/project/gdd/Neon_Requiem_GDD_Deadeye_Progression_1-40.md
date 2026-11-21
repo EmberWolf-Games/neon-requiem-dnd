@@ -1,12 +1,9 @@
-# NEON REQUIEM — GDD Addendum: Deadeye Level 1–40 Progression
+# Deadeye — Base Class Progression (Levels 1–40)
 
-**Decision status:** OWNER-APPROVED PROGRESSION DRAFT (accepted concept/cadence; final numeric balance pending)  
-**Decision date:** 2026-11-21  
-**Base class:** Deadeye  
-**Approved subclass roster:** Longshot, Gunslinger, Demolitionist  
-**Scope:** Complete level 1–40 base-class advancement, ASI/feat choices, subclass milestones, conceptual features, Focus Dice progression  
-**Implementation status:** NOT IMPLEMENTED. No gameplay-code or release authorization.  
-**Approval provenance:** Owner reviewed the Deadeye v1 40-level proposal and explicitly replied "approved."
+**Status:** Approved design; numerical balance pending  
+**Recorded:** 21 Nov 2026  
+**Subclasses:** See [Deadeye subclass features](Neon_Requiem_GDD_Deadeye_Subclasses_1-40.md)  
+**Build status:** Design only; no game-system implementation yet.
 
 ## 1. Class foundation
 
@@ -142,6 +139,6 @@ The three subclass identities are **Longshot** (sniping/long-range precision), *
 ## 6. Design and implementation status
 
 - The **Deadeye v1 progression concept is approved**; it is documented rather than implemented or validated.
-- The three subclass feature tables still require separate design and approval.
+- The three subclass feature tables have since been drafted and pre-approved for refinement.
 - Do not alter Foundry dnd5e source or publish a system build based solely on this design approval.
 - **Next class for review: Ghost**, a stealth/infiltration/mobility specialist with subclasses **Phantom**, **Blade Dancer**, and **Saboteur**, using the same reserved ASI/feat and subclass milestone structure.
