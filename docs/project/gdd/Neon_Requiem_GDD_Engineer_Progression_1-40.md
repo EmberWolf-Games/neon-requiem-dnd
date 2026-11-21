@@ -19,7 +19,7 @@
 - **Technical tools:** Engineering, electronics and fabrication tools; exact proficiency names pending Neon Requiem skill/tool taxonomy.
 - **Signature mechanics:** **Gadget Schematics**, **Deployment Charges**, and physical **Deployables**.
 
-The three approved subclasses are:
+The three subclasses are:
 - **Rigger:** Drone specialist — reconnaissance, drone companions and remote operation.
 - **Fabricator:** Equipment specialist — weapon/armor/tool modification, crafting and repairs.
 - **Architect:** Battlefield construction — deployable turrets, barriers, traps and field control.
@@ -145,6 +145,6 @@ The Rigger, Fabricator and Architect feature tracks are documented separately; t
 
 ## 7. Approved hybrid addition — Ripperdoc
 
-The owner's deferred Engineer/Lifeline twist is resolved as the **Ripperdoc**: a dedicated, earned special hybrid class requiring **at least five class levels in Engineer and five in Lifeline**, along with proposed ability/tool prerequisites. Ripperdoc supports its own **20-level** advancement track within the **total level-40** cap. See [the approved Ripperdoc GDD addendum](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md).
+The Engineer/Lifeline hybrid is **Ripperdoc**: a dedicated, earned special hybrid class requiring **at least five class levels in Engineer and five in Lifeline**, along with proposed ability/tool prerequisites. Ripperdoc supports its own **20-level** advancement track within the **total level-40** cap. See [the Ripperdoc progression](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md).
 
-**This does not change Engineer's 1–40 base-class feature table.** Engineer does not become a generic healer; Lifeline remains the medical base class; Ripperdoc carries the integration/surgery role. Exact hybrid multiclass logic, resource interactions, implant procedures and universal medical rules remain for separate design/implementation review. No code changes are authorized.
+**This does not change Engineer's 1–40 base-class feature table.** Engineer does not become a generic healer; Lifeline remains the medical base class; Ripperdoc carries the integration/surgery role. Exact hybrid multiclass logic, resource interactions, implant procedures and universal medical rules remain for separate design/implementation review. No implementation has been undertaken.
