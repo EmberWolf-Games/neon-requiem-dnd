@@ -184,6 +184,11 @@ Hooks.once("init", function() {
     makeDefault: true,
     label: "DND5E.SheetClass.Character"
   });
+  DocumentSheetConfig.registerSheet(Actor, "neon-requiem-dnd", applications.actor.NeonCharacterSheet, {
+    types: ["character"],
+    makeDefault: false,
+    label: "Neon Requiem — Read-only Overview"
+  });
   DocumentSheetConfig.registerSheet(Actor, "dnd5e", applications.actor.NPCActorSheet, {
     types: ["npc"],
     makeDefault: true,
@@ -680,7 +685,6 @@ async function _handleMigration() {
     ui.notifications.warn("Neon Requiem found a missing or non-derivative world migration marker. "
       + "Upstream D&D 5e migrations have been disabled to protect world data.", { permanent: true });
   }
-  return;
 }
 
 /* -------------------------------------------- */

@@ -166,3 +166,16 @@ export function assignEquipment(assignments, item) {
     itemId: assignment.itemId, positions: [...assignment.positions]
   }));
 }
+
+/** Preview an explicit equipment assignment without changing the supplied loadout.
+ * @param {object[]} assignments Current fixture assignments.
+ * @param {object} item Proposed assignment.
+ * @returns {object} Validated preview or a descriptive error.
+ */
+export function previewEquipmentAssignment(assignments, item) {
+  try {
+    return { ok: true, assignments: assignEquipment(assignments, item), errors: [] };
+  } catch ( error ) {
+    return { ok: false, assignments: null, errors: [error.message] };
+  }
+}

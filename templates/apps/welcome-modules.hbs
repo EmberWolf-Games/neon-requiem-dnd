@@ -1,4 +1,5 @@
 <section class="tab scrollable {{~#if tab.active}} active{{/if}}" data-group="{{ tab.group }}" data-tab="{{ tab.id }}">
+    <p>{{ localize "DND5E.WELCOME.Message.CompatibilityNotice" }}</p>
     {{#each modules}}
     {{> ".section" }}
     {{/each}}
