@@ -1,6 +1,21 @@
-# NEON REQUIEM
+![Neon Requiem: a lone figure and futuristic car overlook a neon-lit city](docs/assets/branding/Neon_Requiem_Title.png)
 
-## A Cyberpunk-Fantasy D&D 5e Game System for Foundry VTT
+<h1 align="center">NEON REQUIEM</h1>
+<p align="center"><strong>A Cyberpunk-Fantasy D&D 5e Game System for Foundry VTT</strong><br>Where fantasy meets the neon skyline.</p>
+<p align="center">
+  <img alt="In development" src="https://img.shields.io/badge/status-in%20development-ec38a8?labelColor=191524">
+  <img alt="Foundry VTT v14 plus" src="https://img.shields.io/badge/Foundry%20VTT-v14%2B-9b5de5?labelColor=191524">
+  <img alt="Standalone game system" src="https://img.shields.io/badge/standalone-game%20system-00cfe3?labelColor=191524">
+  <img alt="Version 0.1.1.000" src="https://img.shields.io/badge/version-0.1.1.000-ec38a8?labelColor=191524">
+  <a href="https://github.com/EmberWolf-Games/neon-requiem-dnd/actions/workflows/ci.yml"><img alt="CI status" src="https://github.com/EmberWolf-Games/neon-requiem-dnd/actions/workflows/ci.yml/badge.svg"></a>
+</p>
+
+> [!IMPORTANT]
+> **In development and not yet publicly released.** The first live Foundry v14 smoke test is pending.
+
+<p align="center"><a href="#project-status">Status</a> · <a href="#project-vision--planned">Vision</a> · <a href="#installation">Installation</a> · <a href="#development-setup">Development</a> · <a href="#documentation">Documentation</a></p>
+
+---
 
 **EmberWolf Games** · [`neon-requiem-dnd`](https://github.com/EmberWolf-Games/neon-requiem-dnd)
 
@@ -18,6 +33,17 @@ This repository is in its initial engineering setup. The upstream source, build 
 | Four-part version utility, tests, documentation, and GitHub Actions workflows | Custom Neon Requiem setting and gameplay work |
 
 The repository contains inherited D&D 5e code and SRD source content, but this status does not claim that the derivative has passed in-app validation. No custom cyberpunk mechanics, character progression changes, or sheet redesigns are part of this setup phase.
+
+## Project vision — planned
+
+The following are design goals and approved requirements, not implemented functionality:
+
+- A cyberpunk-themed Foundry interface.
+- A Character Identity Creator with male and female Human and Synth body bases.
+- Selectable true-overhead hairstyles and mask-based skin and hair recoloring.
+- Personalized animated WebM scene tokens with idle, walking, unconscious, and death states.
+
+See the [approved Character Creator and Animation addendum](docs/project/gdd/Neon_Requiem_GDD_Character_Creator_Animation_Addendum_v2.md) for the design.
 
 ## System details
 
@@ -41,7 +67,7 @@ After a release is published, install it in Foundry from **Setup → Game System
 https://raw.githubusercontent.com/EmberWolf-Games/neon-requiem-dnd/stable/system.json
 ```
 
-For local development, build the package and copy the contents of `dist/package/` into the Foundry data folder at `systems/neon-requiem-dnd/`. The package ZIP also extracts with `system.json` at its root, without an extra enclosing directory.
+For local development, the build stages `dist/package/` and produces a ZIP with `system.json` at its root, without an extra enclosing directory. The owner's live acceptance test will install through the GitHub manifest. See the [smoke-test guide](docs/SMOKE-TESTING.md).
 
 ## Development setup
 
@@ -79,6 +105,15 @@ The initial version is `0.1.1.000`. A Major change requires explicit approval an
 Run `npm test`, `npm run lint`, the manifest and asset checks, then `npm run build` and the package checks before submitting changes. CI repeats these checks on pull requests and pushes.
 
 The release workflow is a manually controlled workflow. It validates the current system version and release tag, builds and verifies the package, publishes a GitHub Release, validates its public assets, then updates the stable manifest branch. No release is created as part of this repository setup. See [Releasing](docs/RELEASING.md).
+
+## Documentation
+
+| Explore | Reference |
+|---|---|
+| Project decisions and handoffs | [Project hub](docs/project/README.md) |
+| Local setup and builds | [Development](docs/DEVELOPMENT.md) · [Foundry v14 smoke test](docs/SMOKE-TESTING.md) |
+| Version and release policy | [Versioning](docs/VERSIONING.md) · [Releasing](docs/RELEASING.md) |
+| Working together and attribution | [Contributing](CONTRIBUTING.md) · [Third-party notices](THIRD-PARTY-NOTICES.md) |
 
 ## Repository layout
 
