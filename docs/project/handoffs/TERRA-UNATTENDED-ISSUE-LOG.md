@@ -79,16 +79,18 @@ Base: PR #7 `0df308a66ef1dd6a2cd5425d4c37f385310773c4`. Design references: PR #8
 ### TERRA-007
 
 - **Severity:** Non-blocking
-- **Status:** Open
+- **Status:** Resolved locally; hosted verification pending
 - **Area:** GitHub Actions on dependent draft PR
 - **Problem:** The existing CI workflow does not trigger for this branch or a pull request targeting PR #7's branch.
 - **Evidence:** `.github/workflows/ci.yml` limits pull requests to `main` and pushes to `main` and `setup/**`; GitHub reported no workflow runs for the feature branch.
 - **Attempted resolution:** Checked the trigger and GitHub run list; all documented checks were run locally.
 - **Result:** Local validation passed, but GitHub-hosted CI is not yet verified for this draft.
-- **Next action:** Arrange reviewable CI coverage for the dependent PR or verify required CI after retargeting to main once PR #7 is integrated. Do not bypass protected-branch checks.
+- **Next action:** The Wave 2 branch adds `feature/**` push coverage; verify its GitHub Actions run after pushing. PRs targeting other feature branches still do not independently trigger the pull-request event; push checks run on their feature heads.
 - **Dependency:** GitHub-hosted verification of the draft.
 
 ## Completed Work
+
+- Wave 2: CI is configured to run the unchanged validation job for pushes to `feature/**`; this does not change release workflows or grant additional permissions.
 
 - Created a separate branch from the verified PR #7 head and established this ledger before implementation.
 - Windows; Node `24.15.0`, npm `11.7.0`; licensed Foundry v14 executable is present. `npm ci --ignore-scripts`, `check:version`, `check:manifest`, `check:assets`, `npm test` (14 passed), `lint`, `build`, `package`, and `check:package` (732 entries) all passed at baseline.
