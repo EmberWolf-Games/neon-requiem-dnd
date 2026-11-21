@@ -5,6 +5,22 @@ const validId = value => typeof value === "string" && value.trim().length > 0;
 const categories = new Set(AUGMENTATION_CATEGORIES.map(category => category.id));
 const positions = new Map(EQUIPMENT_POSITIONS.map(position => [position.id, position.capacity]));
 
+/** Check JSON compatibility before any encoding to avoid silent data loss.
+ * @param {unknown} value Candidate value.
+ * @param {Set<object>} seen Current traversal path.
+ * @returns {boolean} Whether the value is losslessly JSON-compatible.
+ */
+function isPlainJson(value, seen = new Set()) {
+  if ( value === null || typeof value === "string" || typeof value === "boolean" ) return true;
+  if ( typeof value === "number" ) return Number.isFinite(value);
+  if ( typeof value !== "object" || seen.has(value) ) return false;
+  if ( !Array.isArray(value) && Object.getPrototypeOf(value) !== Object.prototype ) return false;
+  seen.add(value);
+  const valid = (Array.isArray(value) ? Array.from(value) : Object.values(value)).every(v => isPlainJson(v, seen));
+  seen.delete(value);
+  return valid;
+}
+
 /** Validate a proposed JSON fixture without discarding the supplied input.
  * @param {object} value Candidate JSON fixture.
  * @returns {string[]} Human-readable validation errors.
@@ -12,6 +28,7 @@ const positions = new Map(EQUIPMENT_POSITIONS.map(position => [position.id, posi
 export function validateFixture(value) {
   const errors = [];
   if ( !value || typeof value !== "object" || Array.isArray(value) ) return ["Fixture must be an object"];
+  if ( !isPlainJson(value) ) return ["Fixture must contain only plain JSON data"];
   if ( value.schemaVersion !== 1 ) errors.push("Unsupported schema version");
   if ( !validId(value.actorId) ) errors.push("Missing actor ID");
   if ( !Array.isArray(value.ownedItemIds) || !Array.isArray(value.assignments)
@@ -81,9 +98,21 @@ export function validateFixture(value) {
 export function previewFixtureChange(before, proposed) {
   const errors = [...validateFixture(before).map(e => `Before: ${e}`),
     ...validateFixture(proposed).map(e => `Proposed: ${e}`)];
+  if ( before?.actorId !== proposed?.actorId ) errors.push("Actor ID changes require explicit clone remapping");
   if ( errors.length ) return { ok: false, errors };
+  const keys = [...new Set([...Object.keys(before), ...Object.keys(proposed)])].sort();
+  const changedFields = keys.filter(key => JSON.stringify(before[key]) !== JSON.stringify(proposed[key]));
   return { ok: true, before: structuredClone(before), after: structuredClone(proposed),
-    changed: JSON.stringify(before) !== JSON.stringify(proposed) };
+    changed: changedFields.length > 0, changedFields };
+}
+
+/** Restore the pre-change JSON fixture from a successful dry run.
+ * @param {object} preview A successful dry-run result.
+ * @returns {object} Independent original fixture.
+ */
+export function rollbackFixtureChange(preview) {
+  if ( !preview?.ok || validateFixture(preview.before).length ) throw new Error("Invalid rollback snapshot");
+  return structuredClone(preview.before);
 }
 
 /** Encode only valid plain fixtures in deterministic key order.
