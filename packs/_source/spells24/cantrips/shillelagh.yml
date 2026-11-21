@@ -1,0 +1,707 @@
+name: Shillelagh
+system:
+  description:
+    value: >-
+      <p>A Club or Quarterstaff you are holding is imbued with nature's power.
+      For the duration, you can use your spellcasting ability instead of
+      Strength for the attack and damage rolls of melee attacks using that
+      weapon, and the weapon's damage die becomes a d8. If the attack deals
+      damage, it can be Force damage or the weapon's normal damage type (your
+      choice).</p><p>The spell ends early if you cast it again or if you let go
+      of the weapon.</p><p><strong>Cantrip Upgrade.</strong> The damage die
+      changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  activation:
+    type: bonus
+    condition: ''
+    value: null
+  duration:
+    value: '1'
+    units: minute
+    expiry: null
+  target:
+    affects:
+      choice: false
+      count: '1'
+      type: object
+      special: held Club or Quarterstaff
+    template:
+      units: ft
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  level: 0
+  school: trs
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: mistletoe
+    consumed: false
+    cost: 0
+    supply: 0
+  activities:
+    B4nxtIzrCEGEzq1T:
+      type: enchant
+      _id: B4nxtIzrCEGEzq1T
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: QPsqj6jfS0iXSrTs
+          level:
+            min: null
+            max: 4
+          riders:
+            activity: []
+            effect: []
+            item: []
+          uuid: null
+        - _id: Oy8fnNNzPmehxXio
+          level:
+            min: 5
+            max: 10
+          riders:
+            activity: []
+            effect: []
+            item: []
+          uuid: null
+        - _id: advnpQaBnsbuv02y
+          level:
+            min: 11
+            max: 16
+          riders:
+            activity: []
+            effect: []
+            item: []
+          uuid: null
+        - _id: X9xoN8qHUiCc4SZR
+          level:
+            min: 17
+            max: null
+          riders:
+            activity: []
+            effect: []
+            item: []
+          uuid: null
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: true
+        categories:
+          - simpleM
+        properties: []
+        type: weapon
+      name: Imbue Weapon
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  identifier: shillelagh
+  method: spell
+  prepared: 2
+_id: phbsplShillelagh
+type: spell
+img: icons/magic/nature/root-vine-coiled-crook.webp
+effects:
+  - type: enchantment
+    name: Shillelagh (1d8)
+    img: icons/magic/nature/root-vine-coiled-crook.webp
+    disabled: false
+    _id: QPsqj6jfS0iXSrTs
+    system:
+      changes:
+        - key: system.damage.base.denomination
+          value: 8
+          priority: null
+          type: override
+          phase: initial
+          _id: qut1TUVPlucSFEBN
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.types
+          value: force
+          priority: null
+          type: add
+          phase: initial
+          _id: 25piwaqzYNPwHzy9
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.number
+          value: 1
+          priority: null
+          type: override
+          phase: initial
+          _id: 8L9WBEb5LSgATc74
+          conditions: '{}'
+          replacement: ''
+        - key: name
+          value: '{} Shillelagh'
+          priority: null
+          type: override
+          phase: initial
+          _id: bmGbKqhf4qDUcYjt
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.custom.enabled
+          value: 0
+          priority: null
+          type: override
+          phase: initial
+          _id: 8jFmycAOxJwGEgk8
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.ability
+          value: none
+          priority: null
+          type: override
+          phase: initial
+          _id: Ha9y9MjEGoAjYnXH
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: fgTonLgdHHnhj1s6
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: XmRc4hN0iMJ4g6jd
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.denomination
+          value: 8
+          priority: null
+          type: override
+          phase: initial
+          _id: WaqiQygyR6sGLKc7
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.number
+          value: 1
+          priority: null
+          type: override
+          phase: initial
+          _id: YHhSCtRG4ELdehGG
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: x2TapTbEhdQEN9j6
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      rider:
+        activities: []
+        effects: []
+        items: []
+    duration:
+      value: 60
+      units: seconds
+      expiry: turnStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.370'
+      systemId: dnd5e
+      systemVersion: 6.1.0
+      createdTime: 1794260500215
+      modifiedTime: 1794260500215
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbsplShillelagh.QPsqj6jfS0iXSrTs'
+  - type: enchantment
+    name: Shillelagh (1d10)
+    img: icons/magic/nature/root-vine-coiled-crook.webp
+    disabled: false
+    system:
+      changes:
+        - key: system.damage.base.denomination
+          value: 10
+          priority: null
+          type: override
+          phase: initial
+          _id: 59xsA3cSgNoAC8D4
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.types
+          value: force
+          priority: null
+          type: add
+          phase: initial
+          _id: 3CiUidEMYrTUK9u7
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.number
+          value: 1
+          priority: null
+          type: override
+          phase: initial
+          _id: ggXhqcKoJDPwkEkw
+          conditions: '{}'
+          replacement: ''
+        - key: name
+          value: '{} (Shillelagh)'
+          priority: null
+          type: override
+          phase: initial
+          _id: XbUiUkiafnY9Le8V
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.custom.enabled
+          value: 0
+          priority: null
+          type: override
+          phase: initial
+          _id: ck8O3lSMw1ISSK8K
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.ability
+          value: none
+          priority: null
+          type: override
+          phase: initial
+          _id: nbeex0v4lruKDmwF
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: pM8je3uzXNRT0CgO
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: VfrjsTEGUKS5W3zG
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.denomination
+          value: 10
+          priority: null
+          type: override
+          phase: initial
+          _id: sBqktm5tmaAwdwmW
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.number
+          value: 1
+          priority: null
+          type: override
+          phase: initial
+          _id: T1ErFmSmtiVN4zla
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: 4FTlgVokQ8w3x2uU
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      rider:
+        activities: []
+        effects: []
+        items: []
+    duration:
+      value: 60
+      units: seconds
+      expiry: turnStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.370'
+      systemId: dnd5e
+      systemVersion: 6.1.0
+      createdTime: 1794260500215
+      modifiedTime: 1794260500215
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    _id: Oy8fnNNzPmehxXio
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbsplShillelagh.Oy8fnNNzPmehxXio'
+  - type: enchantment
+    name: Shillelagh (1d12)
+    img: icons/magic/nature/root-vine-coiled-crook.webp
+    disabled: false
+    system:
+      changes:
+        - key: system.damage.base.denomination
+          value: 12
+          priority: null
+          type: override
+          phase: initial
+          _id: NnqdEhKPyJGU8lnI
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.types
+          value: force
+          priority: null
+          type: add
+          phase: initial
+          _id: cUqs6yuwXEkgPjEy
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.number
+          value: 1
+          priority: null
+          type: override
+          phase: initial
+          _id: tdUIYWnagE9h3G7U
+          conditions: '{}'
+          replacement: ''
+        - key: name
+          value: '{} (Shillelagh)'
+          priority: null
+          type: override
+          phase: initial
+          _id: HFOdFBwhdr2esZWI
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.custom.enabled
+          value: 0
+          priority: null
+          type: override
+          phase: initial
+          _id: LFxm53ykNCX3J3fY
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.ability
+          value: none
+          priority: null
+          type: override
+          phase: initial
+          _id: ulgT5Ww1EXDE7DKw
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: vtLn7Ap0WXtxoJLM
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: Gy150wW979YKWQCC
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.denomination
+          value: 12
+          priority: null
+          type: override
+          phase: initial
+          _id: cCKZP7n87YYFG1o9
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.number
+          value: 1
+          priority: null
+          type: override
+          phase: initial
+          _id: OJVzs9WflToCBP6A
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: eWqH3uY7BOgJQFTc
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      rider:
+        activities: []
+        effects: []
+        items: []
+    duration:
+      value: 60
+      units: seconds
+      expiry: turnStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.370'
+      systemId: dnd5e
+      systemVersion: 6.1.0
+      createdTime: 1794260500215
+      modifiedTime: 1794260500215
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    _id: advnpQaBnsbuv02y
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbsplShillelagh.advnpQaBnsbuv02y'
+  - type: enchantment
+    name: Shillelagh (2d6)
+    img: icons/magic/nature/root-vine-coiled-crook.webp
+    disabled: false
+    system:
+      changes:
+        - key: system.damage.base.denomination
+          value: 6
+          priority: null
+          type: override
+          phase: initial
+          _id: QfPgdQI1zNLhYhBy
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.types
+          value: force
+          priority: null
+          type: add
+          phase: initial
+          _id: dGcfeSC8rtTqcHd3
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.number
+          value: 2
+          priority: null
+          type: override
+          phase: initial
+          _id: V8siD3MK2y3LzHWD
+          conditions: '{}'
+          replacement: ''
+        - key: name
+          value: '{} (Shillelagh)'
+          priority: null
+          type: override
+          phase: initial
+          _id: Et8QWAitYribkWUl
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.custom.enabled
+          value: 0
+          priority: null
+          type: override
+          phase: initial
+          _id: FFrqZfKeHTIkJ2hn
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.ability
+          value: none
+          priority: null
+          type: override
+          phase: initial
+          _id: qTSubVJl3mU89JzD
+          conditions: '{}'
+          replacement: ''
+        - key: activities[attack].attack.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: 9eOEzPl6EjGhFsZV
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.base.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: D4PyBV5CX87trgKX
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.denomination
+          value: 6
+          priority: null
+          type: override
+          phase: initial
+          _id: 3e0oarqPoFs1OBZk
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.number
+          value: 2
+          priority: null
+          type: override
+          phase: initial
+          _id: 0BQZQQoAme5hnlio
+          conditions: '{}'
+          replacement: ''
+        - key: system.damage.versatile.bonus
+          value: max(@abilities.str.mod, @attributes.spell.mod)
+          priority: null
+          type: add
+          phase: initial
+          _id: JS4LeUbpsyHpNCTm
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      rider:
+        activities: []
+        effects: []
+        items: []
+    duration:
+      value: 60
+      units: seconds
+      expiry: turnStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.370'
+      systemId: dnd5e
+      systemVersion: 6.1.0
+      createdTime: 1794260500215
+      modifiedTime: 1794260500215
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    _id: X9xoN8qHUiCc4SZR
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbsplShillelagh.X9xoN8qHUiCc4SZR'
+folder: 4FhsY9FJQd7h7MZb
+sort: 112500
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1794260500215
+  modifiedTime: 1794260500215
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbsplShillelagh'

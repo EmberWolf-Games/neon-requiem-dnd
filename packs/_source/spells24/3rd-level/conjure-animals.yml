@@ -1,0 +1,231 @@
+name: Conjure Animals
+system:
+  description:
+    value: >-
+      <p>You conjure nature spirits that appear as a Large pack of spectral,
+      intangible animals in an unoccupied space you can see within range. The
+      pack lasts for the duration, and you choose the spirits' animal form, such
+      as wolves, serpents, or birds.</p><p>You have Advantage on Strength saving
+      throws while you're within 5 feet of the pack, and when you move on your
+      turn, you can also move the pack up to 30 feet to an unoccupied space you
+      can see.</p><p>Whenever the pack moves within 10 feet of a creature you
+      can see and whenever a creature you can see enters a space within 10 feet
+      of the pack or ends its turn there, you can force that creature to make a
+      Dexterity saving throw. On a failed save, the creature takes 3d10 Slashing
+      damage. A creature makes this save only once per turn.</p><p><strong>Using
+      a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each
+      spell slot level above 3.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  activation:
+    type: action
+    condition: ''
+    value: null
+  duration:
+    value: '10'
+    units: minute
+    expiry: null
+  target:
+    affects:
+      type: space
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ft
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 3
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: summon
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+        expiry: null
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: (@item.level - 3)d10
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        saves: true
+        attacks: false
+        proficiency: false
+        disposition: false
+      profiles:
+        - count: ''
+          name: ''
+          _id: 8Ccc4gDx0Cf63Lk0
+          uuid: Compendium.dnd5e.actors24.Actor.phbSpectralAnima
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        mode: ''
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+      img: null
+      behaviors: []
+      effects: []
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+    dnd5eactivity100:
+      _id: dnd5eactivity100
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      damage:
+        onSave: none
+        parts:
+          - number: 3
+            denomination: 10
+            bonus: ''
+            types:
+              - slashing
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: 1
+              formula: ''
+            modifiers: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+        visible: true
+        bonus: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      name: ''
+  identifier: conjure-animals
+  method: spell
+  prepared: 0
+_id: phbsplConjureAni
+type: spell
+img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
+effects: []
+folder: HCovEE4VoPGlIbKi
+sort: 3100000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1794334504318
+  modifiedTime: 1794334504318
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbsplConjureAni'

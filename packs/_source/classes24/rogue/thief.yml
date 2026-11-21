@@ -1,0 +1,113 @@
+_id: phbrgeThief00000
+name: Thief
+type: subclass
+folder: JBKpeqLQWPp9Wt59
+img: systems/neon-requiem-dnd/icons/classes/thief.webp
+system:
+  description:
+    value: >-
+      <div class="item-entry-details"><p class="item-entry-tag">Hunt for
+      Treasure as a Classic Adventurer</p></div><p>A mix of burglar, treasure
+      hunter, and explorer, you are the epitome of an adventurer. In addition to
+      improving your agility and stealth, you gain abilities useful for delving
+      into ruins and getting maximum benefit from the magic items you find
+      there.</p><p
+      class="hide-in-embed"><em>@UUID[Compendium.dnd5e.content24.JournalEntry.phbRogue00000000.JournalEntryPage.BiqRuwpBfYi32N2p]{Subclass
+      Details}</em></p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  identifier: thief
+  classIdentifier: rogue
+  advancement:
+    52x82ltPXCgmrh1K:
+      _id: 52x82ltPXCgmrh1K
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbrgeFastHands0
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbrgeSecondstor
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 3
+      name: ''
+      flags: {}
+      hint: ''
+    MlEcUhyGRGitfiUJ:
+      _id: MlEcUhyGRGitfiUJ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbrgeSupremeSne
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 9
+      name: ''
+      flags: {}
+      hint: ''
+    aNcqA4J0puHsYiyv:
+      _id: aNcqA4J0puHsYiyv
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbrgeUseMagicDe
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 13
+      name: ''
+      flags: {}
+      hint: ''
+    Q45sJX4IS3NbsrtV:
+      _id: Q45sJX4IS3NbsrtV
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbrgeThiefsRefl
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 17
+      name: ''
+      flags: {}
+      hint: ''
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793387106482
+  modifiedTime: 1793387106482
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 700000
+ownership:
+  default: 0
+_key: '!items!phbrgeThief00000'

@@ -1,0 +1,112 @@
+name: Dragonborn
+system:
+  description:
+    value: >-
+      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDragonborn0
+      inline classes="free-rules-embed"]</p><h3
+      data-anchor="dragonborn-traits">Dragonborn Traits</h3><p><strong>Creature
+      Type: </strong>Humanoid<br><strong>Size: </strong>Medium (about 5–7 feet
+      tall)<br><strong>Speed:</strong> 30 feet</p><p>As a Dragonborn, you have
+      these special
+      traits.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptDraconiAnc
+      caption=false cite=false
+      nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptBreathWeap
+      caption=false cite=false nameStyle=inline]</p><p><em><strong>Damage
+      Resistance.</strong></em><strong> </strong>You have
+      &amp;Reference[Resistance] to the damage type determined by your Draconic
+      Ancestry trait.</p><p><em><strong>Darkvision.</strong></em> You have
+      &amp;Reference[Darkvision] with a range of 60
+      feet.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptDraconicFl
+      caption=false cite=false nameStyle=inline]</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  advancement:
+    65BqBxGcj6z4S803:
+      _id: 65BqBxGcj6z4S803
+      type: Size
+      configuration:
+        sizes:
+          - med
+      level: 0
+      hint: Medium (about 5–7 feet tall)
+      value: {}
+      name: ''
+      flags: {}
+    jOGAWKkPIAbshOpo:
+      _id: jOGAWKkPIAbshOpo
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptDraconiAnc
+          - uuid: Compendium.dnd5e.origins24.Item.phbsptBreathWeap
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: a
+      value: {}
+      level: 0
+      hint: ''
+      name: Dragonborn Traits
+      flags: {}
+    zD6p5SeE58pa4tGi:
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.dnd5e.origins24.Item.phbsptDraconicFl
+        optional: false
+        spell: null
+        sorting: a
+      value: {}
+      level: 5
+      hint: ''
+      name: Dragonborn Traits
+      flags: {}
+      _id: zD6p5SeE58pa4tGi
+  movement:
+    units: null
+    hover: false
+    speeds:
+      walk: '30'
+    ignoredDifficultTerrain: []
+  senses:
+    units: null
+    special: ''
+    ranges:
+      darkvision: 60
+      blindsight: null
+      tremorsense: null
+      truesight: null
+  type:
+    value: humanoid
+    custom: ''
+    subtype: ''
+  identifier: dragonborn
+_id: phbspDragonborn0
+type: race
+img: icons/creatures/eyes/lizard-single-slit-green.webp
+effects: []
+folder: Ulvo8nbygUegLa59
+sort: 200000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791576679013
+  modifiedTime: 1792693091501
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbspDragonborn0'

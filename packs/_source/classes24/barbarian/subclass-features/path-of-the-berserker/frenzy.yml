@@ -1,0 +1,138 @@
+_id: phbbrbFrenzy0000
+name: Frenzy
+type: feat
+img: icons/skills/melee/blood-slash-foam-red.webp
+system:
+  description:
+    value: >-
+      <p>If you use Reckless Attack while your Rage is active, you deal extra
+      damage to the first target you hit on your turn with a Strength-based
+      attack. To determine the extra damage, roll a number of d6s equal to your
+      Rage Damage bonus, and add them together. The damage has the same type as
+      the weapon or Unarmed Strike used for the attack.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Path of the Berserker
+  activities:
+    myPBq8xozti108Mc:
+      type: damage
+      _id: myPBq8xozti108Mc
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: true
+              formula: (@scale.barbarian.rage-damage)d6
+            number: null
+            denomination: 0
+            bonus: ''
+            types:
+              - bludgeoning
+              - piercing
+              - slashing
+              - acid
+              - cold
+              - fire
+              - force
+              - lightning
+              - necrotic
+              - poison
+              - psychic
+              - radiant
+              - thunder
+            modifiers: []
+            scaling:
+              number: 1
+      name: Extra Damage
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: frenzy
+  advancement: {}
+  crewed: false
+effects: []
+folder: bEMqmmgGROsTGe0J
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088970509
+  modifiedTime: 1792088970509
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbFrenzy0000'

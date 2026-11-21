@@ -1,0 +1,93 @@
+_id: phbdrdLandSpells
+name: Circle of the Land Spells
+type: feat
+img: icons/magic/nature/leaf-glow-triple-green.webp
+system:
+  description:
+    value: >-
+      <p>Whenever you finish a Long Rest, choose one type of land: arid, polar,
+      temperate, or tropical. Consult the table below that corresponds to the
+      chosen type; you have the spells listed for your Druid level and lower
+      prepared.</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdLandArid00
+      inline]</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdLandPolar0
+      inline]</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdLandTemper
+      inline]</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbdrdLandTropic
+      inline]</p><section id="secret-0B8V69GLRm5swkth"
+      class="secret"><p><strong>Foundry Note</strong></p><p>The selection can be
+      changed on a long rest by re-running the advancement on this feature and
+      selecting a different land type.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Circle of Land
+  activities: {}
+  enchant: {}
+  identifier: circle-of-the-land-spells
+  advancement:
+    QM7OFjZqyGG50Aj1:
+      name: Choose Land Type
+      type: ItemChoice
+      _id: QM7OFjZqyGG50Aj1
+      configuration:
+        allowDrops: false
+        choices:
+          '3':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.dnd5e.classes24.Item.phbdrdLandArid00
+          - sort: 0
+            uuid: Compendium.dnd5e.classes24.Item.phbdrdLandPolar0
+          - sort: 0
+            uuid: Compendium.dnd5e.classes24.Item.phbdrdLandTemper
+          - uuid: Compendium.dnd5e.classes24.Item.phbdrdLandTropic
+            sort: 0
+        restriction:
+          list: []
+          school: []
+          type: class
+        sorting: a
+        spell: null
+        type: feat
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: >-
+        <p>Whenever you finish a Long Rest, choose one type of land: arid,
+        polar, temperate, or tropical.</p>
+  crewed: false
+effects: []
+folder: WJ4IXskgADlprLEA
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793647063851
+  modifiedTime: 1793647063851
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 200000
+ownership:
+  default: 0
+_key: '!items!phbdrdLandSpells'

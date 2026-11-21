@@ -1,0 +1,19 @@
+{
+  "project": {
+    "type": "system",
+    "premium": false
+  },
+  "includes": [
+    "fonts/",
+    "icons/",
+    "json/",
+    "LICENSE",
+    "LICENSE.txt",
+    "LICENSES/",
+    "CONTRIBUTORS.md",
+    "THIRD-PARTY-NOTICES.md",
+    "README.md",
+    "dnd5e-compiled.mjs.map",
+    "templates/"
+  ]
+}

@@ -1,0 +1,265 @@
+_id: phbbrbRage000000
+name: Rage
+type: feat
+img: icons/creatures/abilities/mouth-teeth-human.webp
+system:
+  description:
+    value: >-
+      <p>You can imbue yourself with a primal power called Rage, a force that
+      grants you extraordinary might and resilience. You can enter it as a Bonus
+      Action if you aren't wearing Heavy armor.</p><p>You can enter your Rage
+      the number of times shown for your Barbarian level in the Rages column of
+      the Barbarian Features table. You regain one expended use when you finish
+      a Short Rest, and you regain all expended uses when you finish a Long
+      Rest.</p><p>While active, your Rage follows the rules
+      below.</p><p><strong>Damage Resistance.</strong> You have Resistance to
+      Bludgeoning, Piercing, and Slashing damage.</p><p><strong>Rage
+      Damage.</strong> When you make an attack using Strength—with either a
+      weapon or an Unarmed Strike—and deal damage to the target, you gain a
+      bonus to the damage that increases as you gain levels as a Barbarian, as
+      shown in the Rage Damage column of the Barbarian Features
+      table.</p><p><strong>Strength Advantage.</strong> You have Advantage on
+      Strength checks and Strength saving throws.</p><p><strong>No Concentration
+      or Spells.</strong> You can't maintain Concentration, and you can't cast
+      spells.</p><p><strong>Duration.</strong> The Rage lasts until the end of
+      your next turn, and it ends early if you don Heavy armor or have the
+      Incapacitated condition. If your Rage is still active on your next turn,
+      you can extend the Rage for another round by doing one of the
+      following:</p><ul><li><p>Make an attack roll against an
+      enemy.</p></li><li><p>Force an enemy to make a saving
+      throw.</p></li><li><p>Take a Bonus Action to extend your
+      Rage.</p></li></ul><p>Each time the Rage is extended, it lasts until the
+      end of your next turn. You can maintain a Rage for up to 10 minutes.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 3
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  uses:
+    max: '@scale.barbarian.rages'
+    recovery:
+      - period: lr
+        type: recoverAll
+      - period: sr
+        type: formula
+        formula: '1'
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 1
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Barbarian
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        value: '10'
+        units: minute
+        special: ''
+        override: false
+        concentration: false
+        expiry: null
+      effects:
+        - _id: G5XZTi4zYTFiHVll
+          uuid: null
+          level:
+            min: null
+            max: null
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+          stationary: false
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: false
+        override: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: Activate
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: rage
+  advancement: {}
+  crewed: false
+effects:
+  - _id: G5XZTi4zYTFiHVll
+    flags:
+      dnd5e:
+        riders: {}
+    disabled: true
+    duration:
+      value: 10
+      units: minutes
+      expiry: null
+      expired: false
+    origin: Compendium.dnd5e.classes24.Item.phbbrbRage000000
+    tint: '#ffffff'
+    transfer: true
+    name: Rage
+    description: >-
+      <p><strong>Damage Resistance.</strong> You have Resistance to Bludgeoning,
+      Piercing, and Slashing damage.</p><p><strong>Rage Damage.</strong> When
+      you make an attack using Strength—with either a weapon or an Unarmed
+      Strike—and deal damage to the target, you gain a bonus to the damage that
+      increases as you gain levels as a Barbarian, as shown in the Rage Damage
+      column of the Barbarian Features table.</p><p><strong>Strength
+      Advantage.</strong> You have Advantage on Strength checks and Strength
+      saving throws.</p>
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792692286449
+      modifiedTime: 1792692286449
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    img: icons/creatures/abilities/mouth-teeth-human.webp
+    type: base
+    system:
+      changes:
+        - key: system.rolls.damage.mwak.bonus
+          value: +@scale.barbarian.rage-damage
+          priority: null
+          type: add
+          phase: initial
+          _id: 8pe5DmqLcdO11THO
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          value: slashing
+          priority: null
+          type: add
+          phase: initial
+          _id: 2UPRBkSrbnjVP4y0
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          value: piercing
+          priority: null
+          type: add
+          phase: initial
+          _id: veMjUbYnE0l8vTzG
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          value: bludgeoning
+          priority: null
+          type: add
+          phase: initial
+          _id: zkc9c9TRInoXTKjX
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.str.check.roll.mode
+          value: 1
+          priority: null
+          type: add
+          phase: initial
+          _id: IZMecaZta9tZNJTy
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.str.save.roll.mode
+          value: 1
+          priority: null
+          type: add
+          phase: initial
+          _id: Ejxp4OZZqRten6NH
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.concentration.limit
+          type: override
+          value: 0
+          phase: initial
+          _id: 2jpT90tWpFerkxud
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      rider:
+        statuses: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbbrbRage000000.G5XZTi4zYTFiHVll'
+folder: p6WDpW0gzmKfhGad
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088967436
+  modifiedTime: 1792088967436
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbRage000000'

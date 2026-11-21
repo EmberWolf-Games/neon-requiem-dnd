@@ -1,0 +1,120 @@
+_id: phbscrSorceryInc
+name: Sorcery Incarnate
+type: feat
+folder: zm1kuLu4kdDhoOyL
+img: icons/magic/life/cross-area-circle-green-white.webp
+system:
+  description:
+    value: >-
+      <p>If you have no uses of Innate Sorcery left, you can use it if you spend
+      2 Sorcery Points when you take the Bonus Action to activate it.</p><p>In
+      addition, while your Innate Sorcery feature is active, you can use up to
+      two of your Metamagic options on each spell you cast.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 7
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Sorcerer
+  activities:
+    qSLk2DaH21SNZxve:
+      type: utility
+      name: Restore Innate Sorcery
+      _id: qSLk2DaH21SNZxve
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: feat:font-of-magic
+            scaling: {}
+          - type: itemUses
+            value: '-1'
+            target: feat:innate-sorcery
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      img: systems/neon-requiem-dnd/icons/svg/action/restore-use.svg
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: sorcery-incarnate
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792690435843
+  modifiedTime: 1792690435843
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbscrSorceryInc'

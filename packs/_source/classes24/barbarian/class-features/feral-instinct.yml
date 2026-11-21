@@ -1,0 +1,101 @@
+_id: phbbrbFeralInsti
+name: Feral Instinct
+type: feat
+img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
+system:
+  description:
+    value: >-
+      <p>Your instincts are so honed that you have Advantage on Initiative
+      rolls.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 7
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Barbarian
+  activities: {}
+  enchant: {}
+  identifier: feral-instinct
+  advancement: {}
+  crewed: false
+effects:
+  - _id: CaV1VYMaVjjPceJs
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.dnd5e.classes24.Item.phbbrbFeralInsti
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    name: Feral Instinct
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792088967436
+      modifiedTime: 1792088967436
+      lastModifiedBy: dnd5ebuilder0000
+      exportSource: null
+    img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
+    type: base
+    system:
+      changes:
+        - key: flags.dnd5e.initiativeAdv
+          value: true
+          priority: null
+          type: override
+          phase: initial
+          _id: 9f86hfkzOQ2xKI9j
+          conditions: '{}'
+          replacement: ''
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbbrbFeralInsti.CaV1VYMaVjjPceJs'
+folder: p6WDpW0gzmKfhGad
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792088967436
+  modifiedTime: 1792088967436
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbbrbFeralInsti'

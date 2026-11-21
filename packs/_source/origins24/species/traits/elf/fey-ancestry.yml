@@ -1,0 +1,49 @@
+_id: phbsptFeyAncestr
+name: Fey Ancestry
+type: feat
+img: icons/creatures/mammals/elk-moose-marked-green.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You have Advantage on saving throws you make to avoid or end the
+      &amp;Reference[Charmed apply=false] condition.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+  enchant: {}
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Elf
+  identifier: fey-ancestry
+  advancement: {}
+  crewed: false
+effects: []
+folder: 3uafOaOCZJQeUNtw
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791576272360
+  modifiedTime: 1791576272360
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbsptFeyAncestr'

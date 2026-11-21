@@ -1,0 +1,127 @@
+name: Adrenaline Rush
+system:
+  description:
+    value: >-
+      <p>You can take the &amp;Reference[Dash] action as a Bonus Action. When
+      you do so, you gain a number of Temporary Hit Points equal to your
+      Proficiency Bonus. You can use this trait a number of times equal to your
+      Proficiency Bonus, and you regain all expended uses when you finish a
+      Short or Long Rest.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    license: CC-BY-4.0
+    revision: 1
+  uses:
+    max: '@prof'
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+  type:
+    value: race
+    subtype: ''
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Orc
+  activities:
+    jN5Zo6mDXll3c4Cz:
+      type: heal
+      name: 'Adrenaline Rush: Dash'
+      _id: jN5Zo6mDXll3c4Cz
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: null
+        types:
+          - temphp
+        custom:
+          enabled: true
+          formula: '@prof'
+        scaling:
+          number: 1
+        bonus: ''
+        modifiers: []
+      img: systems/neon-requiem-dnd/icons/svg/action/dash.svg
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+  enchant: {}
+  identifier: adrenaline-rush
+  advancement: {}
+  crewed: false
+_id: phbsptAdrenaline
+type: feat
+folder: DDjuF7BenXS8Y8FL
+img: icons/skills/movement/arrow-upward-yellow.webp
+effects: []
+sort: 100000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791578061041
+  modifiedTime: 1791578061041
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+_key: '!items!phbsptAdrenaline'

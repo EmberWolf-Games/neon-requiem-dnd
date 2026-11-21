@@ -1,0 +1,50 @@
+_id: phbrgeImprovedCu
+name: Improved Cunning Strike
+type: feat
+folder: ymTkGscp5QEOwDlv
+img: icons/skills/melee/blade-tip-smoke-green.webp
+system:
+  description:
+    value: >-
+      <p>You can use up to two Cunning Strike effects when you deal Sneak Attack
+      damage, paying the die cost for each effect.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 11
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Rogue
+  activities: {}
+  enchant: {}
+  identifier: improved-cunning-strike
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793387103833
+  modifiedTime: 1793387103833
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbrgeImprovedCu'

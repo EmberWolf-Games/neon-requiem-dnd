@@ -1,0 +1,129 @@
+_id: phbftrChampion00
+name: Champion
+type: subclass
+folder: FCphxnvdYmavFNkr
+img: systems/neon-requiem-dnd/icons/classes/champion.webp
+system:
+  description:
+    value: >-
+      <div class="item-entry-details"><p class="item-entry-tag">Pursue Physical
+      Excellence in Combat</p></div><p>A Champion focuses on the development of
+      martial prowess in a relentless pursuit of victory. Champions combine
+      rigorous training with physical excellence to deal devastating blows,
+      withstand peril, and garner glory. Whether in athletic contests or bloody
+      battle, Champions strive for the crown of the victor.</p><p
+      class="hide-in-embed"><em>@UUID[Compendium.dnd5e.content24.JournalEntry.phbFighter000000.JournalEntryPage.oIre3TldjyfnGzQr]{Subclass
+      Details}</em></p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  identifier: champion
+  classIdentifier: fighter
+  advancement:
+    1uBHnM7yyltYiGYr:
+      _id: 1uBHnM7yyltYiGYr
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbftrImprovedCr
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbftrRemarkable
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 3
+      name: ''
+      flags: {}
+      hint: ''
+    WS2baKDHOKdTHvn4:
+      _id: WS2baKDHOKdTHvn4
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbftrAdditional
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 7
+      name: ''
+      flags: {}
+      hint: ''
+    ifmHcVXF9ZqyVhXa:
+      _id: ifmHcVXF9ZqyVhXa
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbftrHeroicWarr
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 10
+      name: ''
+      flags: {}
+      hint: ''
+    DNwHuSG5CFe5o94z:
+      _id: DNwHuSG5CFe5o94z
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbftrSuperiorCr
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 15
+      name: ''
+      flags: {}
+      hint: ''
+    nAg9H5fvgytySqaf:
+      _id: nAg9H5fvgytySqaf
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbftrSurvivor00
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 18
+      name: ''
+      flags: {}
+      hint: ''
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793299629724
+  modifiedTime: 1793299629724
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 300000
+ownership:
+  default: 0
+_key: '!items!phbftrChampion00'

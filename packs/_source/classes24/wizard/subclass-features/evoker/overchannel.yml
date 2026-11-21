@@ -1,0 +1,139 @@
+_id: phbwzdOverchanne
+name: Overchannel
+type: feat
+folder: ZHJ6ibjd1J4CSyNw
+img: icons/magic/acid/projectile-faceted-glob.webp
+system:
+  description:
+    value: >-
+      <p>You can increase the power of your spells. When you cast a Wizard spell
+      with a spell slot of levels 1–5 that deals damage, you can deal maximum
+      damage with that spell on the turn you cast it.</p><p>The first time you
+      do so, you suffer no adverse effect. If you use this feature again before
+      you finish a Long Rest, you take 2d12 Necrotic damage for each level of
+      the spell slot immediately after you cast it. This damage ignores
+      Resistance and Immunity.</p><p>Each time you use this feature again before
+      finishing a Long Rest, the Necrotic damage per spell level increases by
+      1d12.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: '20'
+    spent: 20
+    recovery:
+      - period: lr
+        type: loseAll
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+    items: []
+    repeatable: false
+  properties: []
+  requirements: Evoker
+  activities:
+    w09009Qtx2IuGeS9:
+      type: damage
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: >-
+          When you cast a Wizard spell with a spell slot of levels 1-5 that
+          deals damage
+      consumption:
+        scaling:
+          allowed: true
+          max: '5'
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: -300000
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: (sign(@item.uses.value - 1) * @scaling * @item.uses.value)d12
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - necrotic
+            scaling:
+              mode: ''
+              number: 1
+      name: Overchannel
+      _id: w09009Qtx2IuGeS9
+      img: systems/neon-requiem-dnd/icons/svg/action/magic.svg
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+  enchant: {}
+  identifier: overchannel
+  advancement: {}
+  crewed: false
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793666161941
+  modifiedTime: 1793666161941
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbwzdOverchanne'

@@ -1,0 +1,116 @@
+_id: phbwlkFiendPatro
+name: Fiend Patron
+type: subclass
+folder: gG4h5ERlpEXbmxIJ
+img: systems/neon-requiem-dnd/icons/classes/fiend.webp
+system:
+  description:
+    value: >-
+      <div class="item-entry-details"><p class="item-entry-tag">Make a Deal with
+      the Lower Planes</p></div><p>Your pact draws on the Lower Planes, the
+      realms of perdition. You might forge a bargain with a demon lord such as
+      Demogorgon or Orcus; an archdevil such as Asmodeus; or a pit fiend, balor,
+      yugoloth, or night hag that is especially mighty. That patron's aims are
+      evil—the corruption or destruction of all things, ultimately including
+      you—and your path is defined by the extent to which you strive against
+      those aims.</p><p
+      class="hide-in-embed"><em>@UUID[Compendium.dnd5e.content24.JournalEntry.phbWarlock000000.JournalEntryPage.4km6CWhHArWi0klF]{Subclass
+      Details}</em></p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 2
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+  identifier: fiend-patron
+  classIdentifier: warlock
+  advancement:
+    EyDjHPlaiU9pcKWc:
+      _id: EyDjHPlaiU9pcKWc
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwlkDarkOnesBl
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbwlkFiendSpell
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 3
+      name: ''
+      flags: {}
+      hint: ''
+    pkjDsDeyI1xHOSDb:
+      _id: pkjDsDeyI1xHOSDb
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwlkDarkOnesOw
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 6
+      name: ''
+      flags: {}
+      hint: ''
+    hEHLXeuzpfLUyPbb:
+      _id: hEHLXeuzpfLUyPbb
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwlkFiendishRe
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 10
+      name: ''
+      flags: {}
+      hint: ''
+    BXdX73NWYsGIrZyc:
+      _id: BXdX73NWYsGIrZyc
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbwlkHurlThroug
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 14
+      name: ''
+      flags: {}
+      hint: ''
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793665209034
+  modifiedTime: 1793665209034
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 400000
+ownership:
+  default: 0
+_key: '!items!phbwlkFiendPatro'

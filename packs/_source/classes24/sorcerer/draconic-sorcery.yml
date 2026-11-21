@@ -1,0 +1,115 @@
+_id: phbscrDraconicSo
+name: Draconic Sorcery
+type: subclass
+folder: 45fGQlR9VJAIreZA
+img: systems/neon-requiem-dnd/icons/classes/draconic.webp
+system:
+  description:
+    value: >-
+      <div class="item-entry-details"><p class="item-entry-tag">Breathe the
+      Magic of Dragons</p></div><p>Your innate magic comes from the gift of a
+      dragon. Perhaps an ancient dragon facing death bequeathed some of its
+      magical power to you or your ancestor. You might have absorbed magic from
+      a site infused with dragons' power. Or perhaps you handled a treasure
+      taken from a dragon's hoard that was steeped in draconic power. Or you
+      might have a dragon for an ancestor.</p><p
+      class="hide-in-embed"><em>@UUID[Compendium.dnd5e.content24.JournalEntry.phbSorcerer00000.JournalEntryPage.h9Qhn4HyJyAnK5b9]{Subclass
+      Details}</em></p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    book: ''
+    page: ''
+    license: CC-BY-4.0
+    revision: 2
+  identifier: draconic-sorcery
+  classIdentifier: sorcerer
+  advancement:
+    L6ggzptPm0jk4nxC:
+      _id: L6ggzptPm0jk4nxC
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbscrDraconicRe
+            optional: false
+            sort: 0
+          - uuid: Compendium.dnd5e.classes24.Item.phbscrDraconicSp
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 3
+      name: Subclass Features
+      flags: {}
+      hint: ''
+    3ptQZs8Z30J3e8MH:
+      _id: 3ptQZs8Z30J3e8MH
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbscrElementalA
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 6
+      name: Subclass Features
+      flags: {}
+      hint: ''
+    Rr3BfHIS9JdX6c5X:
+      _id: Rr3BfHIS9JdX6c5X
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbscrDragonWing
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 14
+      name: Subclass Features
+      flags: {}
+      hint: ''
+    zWNxZUTJugO6duSj:
+      _id: zWNxZUTJugO6duSj
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classes24.Item.phbscrDragonComp
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 18
+      name: Subclass Features
+      flags: {}
+      hint: ''
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792004148303
+  modifiedTime: 1792004148303
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 400000
+ownership:
+  default: 0
+_key: '!items!phbscrDraconicSo'

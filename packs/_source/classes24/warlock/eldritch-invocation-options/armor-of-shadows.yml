@@ -1,0 +1,111 @@
+_id: phbinvArmorofSha
+name: Armor of Shadows
+type: feat
+img: icons/magic/control/control-influence-rally-purple.webp
+system:
+  description:
+    value: >-
+      <p>You can cast
+      <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageArmor0]{Mage
+      Armor}</em> on yourself without expending a spell slot.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+    book: ''
+    license: CC-BY-4.0
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: eldritchInvocation
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  properties:
+    - mgc
+  requirements: ''
+  activities:
+    v3GceOoHJUQgfSWj:
+      type: cast
+      spell:
+        uuid: Compendium.dnd-players-handbook.spells.Item.phbsplMageArmor0
+        challenge:
+          override: false
+        properties: []
+        spellbook: true
+        ability: ''
+        level: 1
+      _id: v3GceOoHJUQgfSWj
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      range:
+        units: self
+        override: true
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      name: ''
+      img: ''
+      behaviors: []
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+  enchant: {}
+  identifier: armor-of-shadows
+  advancement: {}
+  crewed: false
+effects: []
+folder: BjeMHiqnKNWkWhox
+flags: {}
+_stats:
+  duplicateSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.1.0
+  createdTime: 1793665214341
+  modifiedTime: 1793665214341
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+sort: 0
+ownership:
+  default: 0
+_key: '!items!phbinvArmorofSha'
