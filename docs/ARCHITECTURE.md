@@ -31,7 +31,7 @@ The initial derivative change is limited to package identity, Foundry installati
 
 Some upstream code and content refer to the official dnd5e folder path. The asset adaptation script replaces specific source path prefixes; it does not replace every occurrence of the string `dnd5e`. Review each new path change before upstream updates.
 
-The standalone system has been exercised in a local Foundry v14 test world, but the full smoke test is not complete. In particular, remaining upstream compendium references require an audit, and derivative version migrations require a separate policy. Treat a complete live smoke test and the remote installation test as release gates. See the [preflight handoff](project/handoffs/2026-11-21-foundry-preflight-terra-to-luna.md).
+The standalone system has been exercised in a local Foundry v14 test world, but the full smoke test is not complete. In particular, remaining upstream compendium references require an audit, and all inherited upstream migrations are now blocked for missing, legacy, or mismatched derivative version markers; a distinct Neon Requiem migration policy must be designed before saved-data upgrades. Treat a complete live smoke test and the remote installation test as release gates. See the [preflight handoff](project/handoffs/2026-11-21-foundry-preflight-terra-to-luna.md).
 
 ## Data and licensing boundary
 
