@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { isDerivativeMigrationVersion, registerLegacyFlagScope } from "../module/neon-compatibility.mjs";
+import { adaptCompendiumReferences } from "../utils/compendium-references.mjs";
 
 test("preserves existing active scopes and registers the inherited namespace once", () => {
   const scopes = ["core", "world", "neon-requiem-dnd"];
@@ -9,6 +10,17 @@ test("preserves existing active scopes and registers the inherited namespace onc
   registerLegacyFlagScope(database);
   registerLegacyFlagScope(database);
   assert.deepEqual(scopes, ["core", "world", "neon-requiem-dnd", "dnd5e"]);
+});
+
+test("adapts only references to packs bundled with the derivative", () => {
+  const input = { description: "@UUID[Compendium.dnd5e.items.Item.abc]{Sword}",
+    options: ["Compendium.dnd5e.items.abc", "Compendium.dnd5e.items-extra.abc",
+      "Compendium.another.items.abc", "flags.dnd5e.items"] };
+  const output = adaptCompendiumReferences(input, new Set(["items"]));
+  assert.equal(output.description, "@UUID[Compendium.neon-requiem-dnd.items.Item.abc]{Sword}");
+  assert.deepEqual(output.options, ["Compendium.neon-requiem-dnd.items.abc", "Compendium.dnd5e.items-extra.abc",
+    "Compendium.another.items.abc", "flags.dnd5e.items"]);
+  assert.equal(input.options[0], "Compendium.dnd5e.items.abc");
 });
 
 test("distinguishes derivative versions from upstream migration versions", () => {

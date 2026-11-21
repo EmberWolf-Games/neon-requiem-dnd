@@ -21,6 +21,8 @@ The source starts from official Foundry D&D 5e v6.1.1. It retains the upstream e
 
 The upstream build uses Rollup for JavaScript, Less for CSS, and `@foundryvtt/foundryvtt-cli` through `utils/packs.mjs` for compendia. `npm run build` keeps that sequence. Generated CSS, compiled JavaScript, maps, and packed compendium data are ignored and created locally or in CI.
 
+During pack compilation, references to upstream `Compendium.dnd5e` packs are adapted only when the pack name exists in this system's manifest. Editable YAML remains unchanged. External and unrecognized pack references are not rewritten.
+
 `scripts/package.mjs` stages only files referenced by the system manifest and `foundryvtt.json`. It writes a deterministic ZIP with sorted root-relative paths and a fixed timestamp. The archive contains `system.json` at its root and does not include npm or Git metadata.
 
 ## Upstream adaptation boundary

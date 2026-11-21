@@ -21,10 +21,10 @@ Test the standalone inherited baseline in a disposable local world; keep the sys
 
 ## Changes and limits
 
-The branch experiments with a Foundry flag-scope compatibility bridge, prevents interpreting a four-part derivative migration version as an upstream version, and redirects selected upstream configuration UUIDs to the derivative's packs. The bridge depends on Foundry's current client backend scope list and needs compatibility review. The derivative migration policy is not implemented; mismatched derivative versions issue a warning and are not migrated. Upstream UUID references remain in other source and compendium data; these need a controlled audit and integration tests.
+The branch experiments with a Foundry flag-scope compatibility bridge, prevents interpreting a four-part derivative migration version as an upstream version, and redirects upstream configuration UUIDs to the derivative's packs. The bridge depends on Foundry's current client backend scope list and needs compatibility review. The derivative migration policy is not implemented; mismatched derivative versions issue a warning and are not migrated. Compendium build processing adapts references to declared local packs while leaving editable upstream YAML intact. A scan of the rebuilt declared packs found no remaining `Compendium.dnd5e` UUIDs, but the rebuilt pack data has not yet been tested in Foundry. Other identifier forms and external references still need an audit.
 
 The owner-approved live preflight is distinct from the [formal remote installation test](../../SMOKE-TESTING.md). No public release or stable manifest publication occurred.
 
 ## Next action
 
-Review the compatibility approach, complete the remaining pack-reference audit and scene/token/world-reload checks in a fresh disposable world, then document results before considering this baseline functional. Preserve all existing campaign worlds.
+Review the compatibility approach, test the rebuilt packs and full server/world restart in a fresh disposable world, then document results before considering this baseline functional. Preserve all existing campaign worlds.
