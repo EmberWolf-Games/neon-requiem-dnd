@@ -9,6 +9,7 @@ The authoritative consolidated GDD has not yet been established. Until then, the
 - [Technology systems](https://github.com/EmberWolf-Games/neon-requiem-dnd/pull/8): Cyberware is hardware, Augmentations are firmware, and Hacks are software. Includes slot ownership and removal rules. *(Separate PR awaiting review.)*
 - [Character Identity Creator and animated scene tokens](Neon_Requiem_GDD_Character_Creator_Animation_Addendum_v2.md): Four Human/Synth art bases, overhead tokens, appearance controls, video and fallback pipeline.
 - [Playable races](Neon_Requiem_GDD_Playable_Races.md): Human and Synth only; starting Cyberware and shared body slots recorded, individual racial traits pending.
+- [Backgrounds — initial playtest roster](Neon_Requiem_GDD_Backgrounds_Initial_Playtest.md): Twelve replacement backgrounds, with skills, tools, Background Edges, connections and complications; starting gear and balance pending.
 - [Playable class roster](Neon_Requiem_GDD_Six_Class_Roster.md): Six base classes, their party roles and all eighteen subclass names.
 - [Subclass milestone index](Neon_Requiem_GDD_Subclass_Index_1-40.md): Every subclass feature name by level, with links to the full rules.
 
