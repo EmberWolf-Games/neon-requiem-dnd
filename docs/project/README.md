@@ -20,6 +20,10 @@ This folder holds **project-owned design decisions, development instructions, an
 
 - [Visual direction](instructions/VISUAL-DIRECTION.md): owner-approved GitHub branding and a visual reference for future Foundry interface work.
 
+## Development handoffs
+
+- [Foundry v14 local preflight](handoffs/2026-11-21-foundry-preflight-terra-to-luna.md): runtime findings, experimental compatibility work, and outstanding checks.
+
 ## Working conventions
 
 1. **Read before acting.** Check this index and relevant `gdd/`, `instructions/`, and `handoffs/` files before related implementation work.

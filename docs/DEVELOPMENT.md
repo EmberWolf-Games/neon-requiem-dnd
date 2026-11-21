@@ -41,7 +41,7 @@ This runs the upstream steps in order:
 2. Less compiles `less/dnd5e.less` to `dnd5e.css`.
 3. The Foundry CLI compiles the YAML under `packs/_source/` into local pack data.
 
-Build output is ignored by Git. Run `npm run build:clean` to remove generated compendium output before rebuilding.
+Build output is ignored by Git. The upstream `npm run build:clean` command rewrites YAML files under `packs/_source/`; it does not remove generated compendium output. Do not use it as a build-output cleanup command.
 
 ## Create and verify a local package
 

@@ -67,7 +67,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityStrAbbr",
     type: "physical",
     fullKey: "strength",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nUPv6C66Ur64BIUH",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nUPv6C66Ur64BIUH",
     icon: "systems/neon-requiem-dnd/icons/svg/abilities/strength.svg"
   },
   dex: {
@@ -75,7 +75,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityDexAbbr",
     type: "physical",
     fullKey: "dexterity",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ER8CKDUWLsFXuARJ",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ER8CKDUWLsFXuARJ",
     icon: "systems/neon-requiem-dnd/icons/svg/abilities/dexterity.svg"
   },
   con: {
@@ -83,7 +83,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityConAbbr",
     type: "physical",
     fullKey: "constitution",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MpA4jnwD17Q0RPg7",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MpA4jnwD17Q0RPg7",
     icon: "systems/neon-requiem-dnd/icons/svg/abilities/constitution.svg"
   },
   int: {
@@ -91,7 +91,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityIntAbbr",
     type: "mental",
     fullKey: "intelligence",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WzWWcTIppki35YvF",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WzWWcTIppki35YvF",
     icon: "systems/neon-requiem-dnd/icons/svg/abilities/intelligence.svg",
     defaults: { vehicle: 0 }
   },
@@ -100,7 +100,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityWisAbbr",
     type: "mental",
     fullKey: "wisdom",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v3IPyTtqvXqN934s",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v3IPyTtqvXqN934s",
     icon: "systems/neon-requiem-dnd/icons/svg/abilities/wisdom.svg",
     defaults: { vehicle: 0 }
   },
@@ -109,7 +109,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityChaAbbr",
     type: "mental",
     fullKey: "charisma",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9FyghudYFV5QJOuG",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9FyghudYFV5QJOuG",
     icon: "systems/neon-requiem-dnd/icons/svg/abilities/charisma.svg",
     defaults: { vehicle: 0 }
   },
@@ -169,84 +169,84 @@ DND5E.skills = {
     label: "DND5E.SkillAcr",
     ability: "dex",
     fullKey: "acrobatics",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AvvBLEHNl7kuwPkN",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AvvBLEHNl7kuwPkN",
     icon: "icons/equipment/feet/shoes-simple-leaf-green.webp"
   },
   ani: {
     label: "DND5E.SkillAni",
     ability: "wis",
     fullKey: "animalHandling",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xb3MCjUvopOU4viE",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xb3MCjUvopOU4viE",
     icon: "icons/environment/creatures/horse-brown.webp"
   },
   arc: {
     label: "DND5E.SkillArc",
     ability: "int",
     fullKey: "arcana",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.h3bYSPge8IOqne1N",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.h3bYSPge8IOqne1N",
     icon: "icons/sundries/books/book-embossed-jewel-silver-green.webp"
   },
   ath: {
     label: "DND5E.SkillAth",
     ability: "str",
     fullKey: "athletics",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rIR7ttYDUpH3tMzv",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rIR7ttYDUpH3tMzv",
     icon: "icons/magic/control/buff-strength-muscle-damage-orange.webp"
   },
   dec: {
     label: "DND5E.SkillDec",
     ability: "cha",
     fullKey: "deception",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.mqVZ2fz0L7a9VeKJ",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.mqVZ2fz0L7a9VeKJ",
     icon: "icons/magic/control/mouth-smile-deception-purple.webp"
   },
   his: {
     label: "DND5E.SkillHis",
     ability: "int",
     fullKey: "history",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kRBZbdWMGW9K3wdY",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kRBZbdWMGW9K3wdY",
     icon: "icons/sundries/books/book-embossed-bound-brown.webp"
   },
   ins: {
     label: "DND5E.SkillIns",
     ability: "wis",
     fullKey: "insight",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8R5SMbAGbECNgO8z",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8R5SMbAGbECNgO8z",
     icon: "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
   },
   itm: {
     label: "DND5E.SkillItm",
     ability: "cha",
     fullKey: "intimidation",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4VHHI2gJ1jEsppfg",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4VHHI2gJ1jEsppfg",
     icon: "icons/skills/social/intimidation-impressing.webp"
   },
   inv: {
     label: "DND5E.SkillInv",
     ability: "int",
     fullKey: "investigation",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Y7nmbQAruWOs7WRM",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Y7nmbQAruWOs7WRM",
     icon: "icons/tools/scribal/magnifying-glass.webp"
   },
   med: {
     label: "DND5E.SkillMed",
     ability: "wis",
     fullKey: "medicine",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GeYmM7BVfSCAga4o",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GeYmM7BVfSCAga4o",
     icon: "icons/tools/cooking/mortar-herbs-yellow.webp"
   },
   nat: {
     label: "DND5E.SkillNat",
     ability: "int",
     fullKey: "nature",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ueMx3uF2PQlcye31",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ueMx3uF2PQlcye31",
     icon: "icons/magic/nature/plant-sprout-snow-green.webp"
   },
   prc: {
     label: "DND5E.SkillPrc",
     ability: "wis",
     fullKey: "perception",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zjEeHCUqfuprfzhY",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zjEeHCUqfuprfzhY",
     icon: "icons/magic/perception/eye-ringed-green.webp",
     pace: {
       advantage: new Set(["slow"]),
@@ -257,35 +257,35 @@ DND5E.skills = {
     label: "DND5E.SkillPrf",
     ability: "cha",
     fullKey: "performance",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hYT7Z06yDNBcMtGe",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hYT7Z06yDNBcMtGe",
     icon: "icons/tools/instruments/lute-gold-brown.webp"
   },
   per: {
     label: "DND5E.SkillPer",
     ability: "cha",
     fullKey: "persuasion",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4R5H8iIsdFQTsj3X",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4R5H8iIsdFQTsj3X",
     icon: "icons/skills/social/diplomacy-handshake.webp"
   },
   rel: {
     label: "DND5E.SkillRel",
     ability: "int",
     fullKey: "religion",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.CXVzERHdP4qLhJXM",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.CXVzERHdP4qLhJXM",
     icon: "icons/magic/holy/saint-glass-portrait-halo.webp"
   },
   slt: {
     label: "DND5E.SkillSlt",
     ability: "dex",
     fullKey: "sleightOfHand",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.yg6SRpGNVz9nDW0A",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.yg6SRpGNVz9nDW0A",
     icon: "icons/sundries/gaming/playing-cards.webp"
   },
   ste: {
     label: "DND5E.SkillSte",
     ability: "dex",
     fullKey: "stealth",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4MfrpERNiQXmvgCI",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4MfrpERNiQXmvgCI",
     icon: "icons/magic/perception/shadow-stealth-eyes-purple.webp",
     pace: {
       disadvantage: new Set(["normal", "fast"])
@@ -295,7 +295,7 @@ DND5E.skills = {
     label: "DND5E.SkillSur",
     ability: "wis",
     fullKey: "survival",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t3EzDU5b9BVAIEVi",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t3EzDU5b9BVAIEVi",
     icon: "icons/magic/fire/flame-burning-campfire-yellow-blue.webp",
     pace: {
       advantage: new Set(["slow"]),
@@ -388,35 +388,35 @@ preLocalize("weaponProficiencies");
 DND5E.weaponMasteries = {
   cleave: {
     label: "DND5E.WEAPON.Mastery.Cleave",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ULDpodOdTxTTiNEx"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ULDpodOdTxTTiNEx"
   },
   graze: {
     label: "DND5E.WEAPON.Mastery.Graze",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PPnaXKPsQvAZp0J4"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PPnaXKPsQvAZp0J4"
   },
   nick: {
     label: "DND5E.WEAPON.Mastery.Nick",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.l0uao3UVco5ptQso"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.l0uao3UVco5ptQso"
   },
   push: {
     label: "DND5E.WEAPON.Mastery.Push",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BPD7ScnLyuPwl145"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BPD7ScnLyuPwl145"
   },
   sap: {
     label: "DND5E.WEAPON.Mastery.Sap",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.fPkZQ7TkKCCA3nTc"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.fPkZQ7TkKCCA3nTc"
   },
   slow: {
     label: "DND5E.WEAPON.Mastery.Slow",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.OQQ7hAp6OAxX1rXY"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.OQQ7hAp6OAxX1rXY"
   },
   topple: {
     label: "DND5E.WEAPON.Mastery.Topple",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.IMnpuysdrSalmZJg"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.IMnpuysdrSalmZJg"
   },
   vex: {
     label: "DND5E.WEAPON.Mastery.Vex",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hg3adn9O1O5Z2QxL"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hg3adn9O1O5Z2QxL"
   }
 };
 preLocalize("weaponMasteries", { key: "label", sort: true });
@@ -466,44 +466,44 @@ DND5E.weaponTypeMap = {
  * @enum {string}
  */
 DND5E.weaponIds = {
-  battleaxe: "Compendium.dnd5e.equipment24.Item.phbwepBattleaxe0",
-  blowgun: "Compendium.dnd5e.equipment24.Item.phbwepBlowgun000",
-  club: "Compendium.dnd5e.equipment24.Item.phbwepClub000000",
-  dagger: "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
-  dart: "Compendium.dnd5e.equipment24.Item.phbwepDart000000",
-  flail: "Compendium.dnd5e.equipment24.Item.phbwepFlail00000",
-  glaive: "Compendium.dnd5e.equipment24.Item.phbwepGlaive0000",
-  greataxe: "Compendium.dnd5e.equipment24.Item.phbwepGreataxe00",
-  greatclub: "Compendium.dnd5e.equipment24.Item.phbwepGreatclub0",
-  greatsword: "Compendium.dnd5e.equipment24.Item.phbwepGreatsword",
-  halberd: "Compendium.dnd5e.equipment24.Item.phbwepHalberd000",
-  handaxe: "Compendium.dnd5e.equipment24.Item.phbwepHandaxe000",
-  handcrossbow: "Compendium.dnd5e.equipment24.Item.phbwepHandCrossb",
-  heavycrossbow: "Compendium.dnd5e.equipment24.Item.phbwepHeavyCross",
-  javelin: "Compendium.dnd5e.equipment24.Item.phbwepJavelin000",
-  lance: "Compendium.dnd5e.equipment24.Item.phbwepLance00000",
-  lightcrossbow: "Compendium.dnd5e.equipment24.Item.phbwepLightCross",
-  lighthammer: "Compendium.dnd5e.equipment24.Item.phbwepLightHamme",
-  longbow: "Compendium.dnd5e.equipment24.Item.phbwepLongbow000",
-  longsword: "Compendium.dnd5e.equipment24.Item.phbwepLongsword0",
-  mace: "Compendium.dnd5e.equipment24.Item.phbwepMace000000",
-  maul: "Compendium.dnd5e.equipment24.Item.phbwepMaul000000",
-  morningstar: "Compendium.dnd5e.equipment24.Item.phbwepMorningsta",
-  musket: "Compendium.dnd5e.equipment24.Item.phbwepMusket0000",
-  pike: "Compendium.dnd5e.equipment24.Item.phbwepPike000000",
-  pistol: "Compendium.dnd5e.equipment24.Item.phbwepPistol0000",
-  quarterstaff: "Compendium.dnd5e.equipment24.Item.phbwepQuartersta",
-  rapier: "Compendium.dnd5e.equipment24.Item.phbwepRapier0000",
-  scimitar: "Compendium.dnd5e.equipment24.Item.phbwepScimitar00",
-  shortsword: "Compendium.dnd5e.equipment24.Item.phbwepShortsword",
-  sickle: "Compendium.dnd5e.equipment24.Item.phbwepSickle0000",
-  spear: "Compendium.dnd5e.equipment24.Item.phbwepSpear00000",
-  shortbow: "Compendium.dnd5e.equipment24.Item.phbwepShortbow00",
-  sling: "Compendium.dnd5e.equipment24.Item.phbwepSling00000",
-  trident: "Compendium.dnd5e.equipment24.Item.phbwepTrident000",
-  warpick: "Compendium.dnd5e.equipment24.Item.phbwepWarPick000",
-  warhammer: "Compendium.dnd5e.equipment24.Item.phbwepWarhammer0",
-  whip: "Compendium.dnd5e.equipment24.Item.phbwepWhip000000"
+  battleaxe: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepBattleaxe0",
+  blowgun: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepBlowgun000",
+  club: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepClub000000",
+  dagger: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepDagger0000",
+  dart: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepDart000000",
+  flail: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepFlail00000",
+  glaive: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepGlaive0000",
+  greataxe: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepGreataxe00",
+  greatclub: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepGreatclub0",
+  greatsword: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepGreatsword",
+  halberd: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepHalberd000",
+  handaxe: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepHandaxe000",
+  handcrossbow: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepHandCrossb",
+  heavycrossbow: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepHeavyCross",
+  javelin: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepJavelin000",
+  lance: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepLance00000",
+  lightcrossbow: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepLightCross",
+  lighthammer: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepLightHamme",
+  longbow: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepLongbow000",
+  longsword: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepLongsword0",
+  mace: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepMace000000",
+  maul: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepMaul000000",
+  morningstar: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepMorningsta",
+  musket: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepMusket0000",
+  pike: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepPike000000",
+  pistol: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepPistol0000",
+  quarterstaff: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepQuartersta",
+  rapier: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepRapier0000",
+  scimitar: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepScimitar00",
+  shortsword: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepShortsword",
+  sickle: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepSickle0000",
+  spear: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepSpear00000",
+  shortbow: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepShortbow00",
+  sling: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepSling00000",
+  trident: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepTrident000",
+  warpick: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepWarPick000",
+  warhammer: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepWarhammer0",
+  whip: "Compendium.neon-requiem-dnd.equipment24.Item.phbwepWhip000000"
 };
 
 /* -------------------------------------------- */
@@ -513,11 +513,11 @@ DND5E.weaponIds = {
  * @enum {string}
  */
 DND5E.ammoIds = {
-  arrow: "Compendium.dnd5e.equipment24.Item.phbamoArrows0000",
-  blowgunNeedle: "Compendium.dnd5e.equipment24.Item.phbamoNeedles000",
-  crossbowBolt: "Compendium.dnd5e.equipment24.Item.phbamoBolts00000",
-  firearmBullet: "Compendium.dnd5e.equipment24.Item.phbamoBulletsFir",
-  slingBullet: "Compendium.dnd5e.equipment24.Item.phbamoBulletsSli"
+  arrow: "Compendium.neon-requiem-dnd.equipment24.Item.phbamoArrows0000",
+  blowgunNeedle: "Compendium.neon-requiem-dnd.equipment24.Item.phbamoNeedles000",
+  crossbowBolt: "Compendium.neon-requiem-dnd.equipment24.Item.phbamoBolts00000",
+  firearmBullet: "Compendium.neon-requiem-dnd.equipment24.Item.phbamoBulletsFir",
+  slingBullet: "Compendium.neon-requiem-dnd.equipment24.Item.phbamoBulletsSli"
 };
 
 /* -------------------------------------------- */
@@ -690,147 +690,147 @@ preLocalize("toolProficiencies", { sort: true });
 DND5E.tools = {
   alchemist: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulAlchemists"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulAlchemists"
   },
   bagpipes: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusBagpipes00"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusBagpipes00"
   },
   brewer: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulBrewersSup"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulBrewersSup"
   },
   calligrapher: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCalligraph"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulCalligraph"
   },
   card: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbgstPlayingcar"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbgstPlayingcar"
   },
   carpenter: {
     ability: "str",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCarpenters"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulCarpenters"
   },
   cartographer: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCartograph"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulCartograph"
   },
   chess: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbgstDragonches"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbgstDragonches"
   },
   cobbler: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCobblersTo"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulCobblersTo"
   },
   cook: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCooksUtens"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulCooksUtens"
   },
   dice: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbgstDice000000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbgstDice000000"
   },
   disg: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulDisguiseKi"
   },
   drum: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusDrum000000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusDrum000000"
   },
   dulcimer: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusDulcimer00"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusDulcimer00"
   },
   flute: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusFlute00000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusFlute00000"
   },
   forg: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulForgeryKit"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulForgeryKit"
   },
   glassblower: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulGlassblowe"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulGlassblowe"
   },
   herb: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulHerbalismK"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulHerbalismK"
   },
   horn: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusHorn000000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusHorn000000"
   },
   jeweler: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulJewelersTo"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulJewelersTo"
   },
   leatherworker: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulLeatherwor"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulLeatherwor"
   },
   lute: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusLute000000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusLute000000"
   },
   lyre: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusLyre000000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusLyre000000"
   },
   mason: {
     ability: "str",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulMasonsTool"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulMasonsTool"
   },
   navg: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulNavigators"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulNavigators"
   },
   painter: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulPaintersSu"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulPaintersSu"
   },
   panflute: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusPanflute00"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusPanflute00"
   },
   pois: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulPoisonersK"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulPoisonersK"
   },
   potter: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulPottersToo"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulPottersToo"
   },
   shawm: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusShawm00000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusShawm00000"
   },
   smith: {
     ability: "str",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulSmithsTool"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulSmithsTool"
   },
   thief: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulThievesToo"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulThievesToo"
   },
   tinker: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulTinkersToo"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulTinkersToo"
   },
   viol: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusViol000000"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbmusViol000000"
   },
   weaver: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulWeaversToo"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulWeaversToo"
   },
   woodcarver: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulWoodcarver"
+    id: "Compendium.neon-requiem-dnd.equipment24.Item.phbtulWoodcarver"
   }
 };
 
@@ -1343,90 +1343,90 @@ DND5E.creatureTypes = {
     label: "DND5E.CreatureAberration",
     plural: "DND5E.CreatureAberrationPl",
     icon: "icons/creatures/tentacles/tentacle-eyes-yellow-pink.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.yy50qVC1JhPHt4LC",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.yy50qVC1JhPHt4LC",
     detectAlignment: true
   },
   beast: {
     label: "DND5E.CreatureBeast",
     plural: "DND5E.CreatureBeastPl",
     icon: "icons/creatures/claws/claw-bear-paw-swipe-red.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6bTHn7pZek9YX2tv"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6bTHn7pZek9YX2tv"
   },
   celestial: {
     label: "DND5E.CreatureCelestial",
     plural: "DND5E.CreatureCelestialPl",
     icon: "icons/creatures/abilities/wings-birdlike-blue.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.T5CJwxjhBbi6oqaM",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.T5CJwxjhBbi6oqaM",
     detectAlignment: true
   },
   construct: {
     label: "DND5E.CreatureConstruct",
     plural: "DND5E.CreatureConstructPl",
     icon: "icons/creatures/magical/construct-stone-earth-gray.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jQGAJZBZTqDFod8d"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jQGAJZBZTqDFod8d"
   },
   dragon: {
     label: "DND5E.CreatureDragon",
     plural: "DND5E.CreatureDragonPl",
     icon: "icons/creatures/abilities/dragon-fire-breath-orange.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.k2IRXZwGk9W0PM2S"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.k2IRXZwGk9W0PM2S"
   },
   elemental: {
     label: "DND5E.CreatureElemental",
     plural: "DND5E.CreatureElementalPl",
     icon: "icons/creatures/magical/spirit-fire-orange.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.7z1LXGGkXpHuzkFh",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.7z1LXGGkXpHuzkFh",
     detectAlignment: true
   },
   fey: {
     label: "DND5E.CreatureFey",
     plural: "DND5E.CreatureFeyPl",
     icon: "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.OFsRUt3pWljgm8VC",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.OFsRUt3pWljgm8VC",
     detectAlignment: true
   },
   fiend: {
     label: "DND5E.CreatureFiend",
     plural: "DND5E.CreatureFiendPl",
     icon: "icons/magic/death/skull-horned-goat-pentagram-red.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ElHKBJeiJPC7gj6k",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ElHKBJeiJPC7gj6k",
     detectAlignment: true
   },
   giant: {
     label: "DND5E.CreatureGiant",
     plural: "DND5E.CreatureGiantPl",
     icon: "icons/creatures/magical/humanoid-giant-forest-blue.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.AOXn3Mv5vPZwo0Uf"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.AOXn3Mv5vPZwo0Uf"
   },
   humanoid: {
     label: "DND5E.CreatureHumanoid",
     plural: "DND5E.CreatureHumanoidPl",
     icon: "icons/environment/people/group.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.iFzQs4AenN8ALRvw"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.iFzQs4AenN8ALRvw"
   },
   monstrosity: {
     label: "DND5E.CreatureMonstrosity",
     plural: "DND5E.CreatureMonstrosityPl",
     icon: "icons/creatures/abilities/mouth-teeth-rows-red.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.TX0yPEFTn79AMZ8P"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.TX0yPEFTn79AMZ8P"
   },
   ooze: {
     label: "DND5E.CreatureOoze",
     plural: "DND5E.CreatureOozePl",
     icon: "icons/creatures/slimes/slime-movement-pseudopods-green.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.cgzIC1ecG03D97Fg"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.cgzIC1ecG03D97Fg"
   },
   plant: {
     label: "DND5E.CreaturePlant",
     plural: "DND5E.CreaturePlantPl",
     icon: "icons/magic/nature/tree-animated-strike.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.1oT7t6tHE4kZuSN1"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.1oT7t6tHE4kZuSN1"
   },
   undead: {
     label: "DND5E.CreatureUndead",
     plural: "DND5E.CreatureUndeadPl",
     icon: "icons/magic/death/skull-horned-worn-fire-blue.webp",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.D2BdqS1GeD5rcZ6q",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.D2BdqS1GeD5rcZ6q",
     detectAlignment: true
   }
 };
@@ -1617,18 +1617,18 @@ DND5E.armorSpeedReduction = 10;
  * @enum {string}
  */
 DND5E.armorIds = {
-  breastplate: "Compendium.dnd5e.equipment24.Item.phbarmBreastplat",
-  chainmail: "Compendium.dnd5e.equipment24.Item.phbarmChainMail0",
-  chainshirt: "Compendium.dnd5e.equipment24.Item.phbarmChainShirt",
-  halfplate: "Compendium.dnd5e.equipment24.Item.phbarmHalfPlateA",
-  hide: "Compendium.dnd5e.equipment24.Item.phbarmHideArmor0",
-  leather: "Compendium.dnd5e.equipment24.Item.phbarmLeatherArm",
-  padded: "Compendium.dnd5e.equipment24.Item.phbarmPaddedArmo",
-  plate: "Compendium.dnd5e.equipment24.Item.phbarmPlateArmor",
-  ringmail: "Compendium.dnd5e.equipment24.Item.phbarmRingMail00",
-  scalemail: "Compendium.dnd5e.equipment24.Item.phbarmScaleMail0",
-  splint: "Compendium.dnd5e.equipment24.Item.phbarmSplintArmo",
-  studded: "Compendium.dnd5e.equipment24.Item.phbarmStuddedLea"
+  breastplate: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmBreastplat",
+  chainmail: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmChainMail0",
+  chainshirt: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmChainShirt",
+  halfplate: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmHalfPlateA",
+  hide: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmHideArmor0",
+  leather: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmLeatherArm",
+  padded: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmPaddedArmo",
+  plate: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmPlateArmor",
+  ringmail: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmRingMail00",
+  scalemail: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmScaleMail0",
+  splint: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmSplintArmo",
+  studded: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmStuddedLea"
 };
 
 /* -------------------------------------------- */
@@ -1638,7 +1638,7 @@ DND5E.armorIds = {
  * @enum {string}
  */
 DND5E.shieldIds = {
-  shield: "Compendium.dnd5e.equipment24.Item.phbarmShield0000"
+  shield: "Compendium.neon-requiem-dnd.equipment24.Item.phbarmShield0000"
 };
 
 /* -------------------------------------------- */
@@ -1827,27 +1827,27 @@ DND5E.focusTypes = {
   arcane: {
     label: "DND5E.Focus.Arcane",
     itemIds: {
-      crystal: "Compendium.dnd5e.equipment24.Item.phbafcCrystal000",
-      orb: "Compendium.dnd5e.equipment24.Item.phbafcOrb0000000",
-      rod: "Compendium.dnd5e.equipment24.Item.phbafcRod0000000",
-      staff: "Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa",
-      wand: "Compendium.dnd5e.equipment24.Item.phbafcWand000000"
+      crystal: "Compendium.neon-requiem-dnd.equipment24.Item.phbafcCrystal000",
+      orb: "Compendium.neon-requiem-dnd.equipment24.Item.phbafcOrb0000000",
+      rod: "Compendium.neon-requiem-dnd.equipment24.Item.phbafcRod0000000",
+      staff: "Compendium.neon-requiem-dnd.equipment24.Item.phbafcStaffalsoa",
+      wand: "Compendium.neon-requiem-dnd.equipment24.Item.phbafcWand000000"
     }
   },
   druidic: {
     label: "DND5E.Focus.Druidic",
     itemIds: {
-      mistletoe: "Compendium.dnd5e.equipment24.Item.phbdfcSprigofmis",
-      woodenstaff: "Compendium.dnd5e.equipment24.Item.phbdfcWoodenstaf",
-      yewwand: "Compendium.dnd5e.equipment24.Item.phbdfcYewwand000"
+      mistletoe: "Compendium.neon-requiem-dnd.equipment24.Item.phbdfcSprigofmis",
+      woodenstaff: "Compendium.neon-requiem-dnd.equipment24.Item.phbdfcWoodenstaf",
+      yewwand: "Compendium.neon-requiem-dnd.equipment24.Item.phbdfcYewwand000"
     }
   },
   holy: {
     label: "DND5E.Focus.Holy",
     itemIds: {
-      amulet: "Compendium.dnd5e.equipment24.Item.phbhsyAmuletworn",
-      emblem: "Compendium.dnd5e.equipment24.Item.phbhsyEmblemborn",
-      reliquary: "Compendium.dnd5e.equipment24.Item.phbhsyReliquaryh"
+      amulet: "Compendium.neon-requiem-dnd.equipment24.Item.phbhsyAmuletworn",
+      emblem: "Compendium.neon-requiem-dnd.equipment24.Item.phbhsyEmblemborn",
+      reliquary: "Compendium.neon-requiem-dnd.equipment24.Item.phbhsyReliquaryh"
     }
   }
 };
@@ -1949,7 +1949,7 @@ DND5E.itemProperties = {
     label: "DND5E.ITEM.Property.Concentration",
     abbreviation: "DND5E.CONCENTRATION.Abbreviation",
     icon: "systems/neon-requiem-dnd/icons/svg/statuses/concentrating.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ow58p27ctAnr4VPH",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ow58p27ctAnr4VPH",
     isTag: true
   },
   fin: {
@@ -1979,7 +1979,7 @@ DND5E.itemProperties = {
   material: {
     label: "DND5E.ITEM.Property.Material",
     abbreviation: "DND5E.ComponentMaterialAbbr",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.AeH5eDS4YeM9RETC"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.AeH5eDS4YeM9RETC"
   },
   mgc: {
     label: "DND5E.ITEM.Property.Magical",
@@ -2002,7 +2002,7 @@ DND5E.itemProperties = {
     label: "DND5E.ITEM.Property.Ritual",
     abbreviation: "DND5E.RitualAbbr",
     icon: "systems/neon-requiem-dnd/icons/svg/items/spell.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA",
     isTag: true
   },
   sidekick: {
@@ -2015,7 +2015,7 @@ DND5E.itemProperties = {
   somatic: {
     label: "DND5E.ITEM.Property.Somatic",
     abbreviation: "DND5E.ComponentSomaticAbbr",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.qwUNgUNilEmZkSC9"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.qwUNgUNilEmZkSC9"
   },
   spc: {
     label: "DND5E.ITEM.Property.Special"
@@ -2041,7 +2041,7 @@ DND5E.itemProperties = {
   vocal: {
     label: "DND5E.ITEM.Property.Verbal",
     abbreviation: "DND5E.ComponentVerbalAbbr",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6UXTNWMCQ0nSlwwx"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6UXTNWMCQ0nSlwwx"
   },
   weightlessContents: {
     label: "DND5E.ITEM.Property.WeightlessContents"
@@ -2323,82 +2323,82 @@ DND5E.damageTypes = {
   acid: {
     label: "DND5E.DAMAGE.Type.Acid",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/acid.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IQhbKRPe1vCPdh8v",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IQhbKRPe1vCPdh8v",
     color: new Color(0x839D50)
   },
   bludgeoning: {
     label: "DND5E.DAMAGE.Type.Bludgeoning",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/bludgeoning.svg",
     isPhysical: true,
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.39LFrlef94JIYO8m",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.39LFrlef94JIYO8m",
     color: new Color(0x0000A0)
   },
   cold: {
     label: "DND5E.DAMAGE.Type.Cold",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/cold.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4xsFUooHDEdfhw6g",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4xsFUooHDEdfhw6g",
     color: new Color(0xADD8E6)
   },
   fire: {
     label: "DND5E.DAMAGE.Type.Fire",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/fire.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.f1S66aQJi4PmOng6",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.f1S66aQJi4PmOng6",
     color: new Color(0xFF4500)
   },
   force: {
     label: "DND5E.DAMAGE.Type.Force",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/force.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.eFTWzngD8dKWQuUR",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.eFTWzngD8dKWQuUR",
     color: new Color(0x800080)
   },
   lightning: {
     label: "DND5E.DAMAGE.Type.Lightning",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/lightning.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9SaxFJ9bM3SutaMC",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9SaxFJ9bM3SutaMC",
     color: new Color(0x1E90FF)
   },
   necrotic: {
     label: "DND5E.DAMAGE.Type.Necrotic",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/necrotic.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.klOVUV5G1U7iaKoG",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.klOVUV5G1U7iaKoG",
     color: new Color(0x006400)
   },
   piercing: {
     label: "DND5E.DAMAGE.Type.Piercing",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/piercing.svg",
     isPhysical: true,
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.95agSnEGTdAmKhyC",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.95agSnEGTdAmKhyC",
     color: new Color(0xC0C0C0)
   },
   poison: {
     label: "DND5E.DAMAGE.Type.Poison",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/poison.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.k5wOYXdWPzcWwds1",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.k5wOYXdWPzcWwds1",
     color: new Color(0x8A2BE2)
   },
   psychic: {
     label: "DND5E.DAMAGE.Type.Psychic",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/psychic.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.YIKbDv4zYqbE5teJ",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.YIKbDv4zYqbE5teJ",
     color: new Color(0xFF1493)
   },
   radiant: {
     label: "DND5E.DAMAGE.Type.Radiant",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/radiant.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.5tcK9buXWDOw8yHH",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.5tcK9buXWDOw8yHH",
     color: new Color(0xFFD700)
   },
   slashing: {
     label: "DND5E.DAMAGE.Type.Slashing",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/slashing.svg",
     isPhysical: true,
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.sz2XKQ5lgsdPEJOa",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.sz2XKQ5lgsdPEJOa",
     color: new Color(0x8B0000)
   },
   thunder: {
     label: "DND5E.DAMAGE.Type.Thunder",
     icon: "systems/neon-requiem-dnd/icons/svg/damage/thunder.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.iqsmMHk7FSpiNkQy",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.iqsmMHk7FSpiNkQy",
     color: new Color(0x708090)
   }
 };
@@ -2901,7 +2901,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Cone.Label",
     counted: "DND5E.TARGET.Type.Cone.Counted",
     template: "cone",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.DqqAOr5JnX71OCOw",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.DqqAOr5JnX71OCOw",
     sizes: ["length"],
     standard: true
   },
@@ -2909,7 +2909,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Cube.Label",
     counted: "DND5E.TARGET.Type.Cube.Counted",
     template: "rect",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.dRfDIwuaHmUQ06uA",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.dRfDIwuaHmUQ06uA",
     sizes: ["width"],
     standard: true
   },
@@ -2917,7 +2917,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Cylinder.Label",
     counted: "DND5E.TARGET.Type.Cylinder.Counted",
     template: "circle",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jZFp4R7tXsIqkiG3",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jZFp4R7tXsIqkiG3",
     sizes: ["radius", "height"],
     standard: true
   },
@@ -2925,7 +2925,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Line.Label",
     counted: "DND5E.TARGET.Type.Line.Counted",
     template: "ray",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6DOoBgg7okm9gBc6",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6DOoBgg7okm9gBc6",
     sizes: ["length", "width"],
     standard: true
   },
@@ -2945,7 +2945,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Sphere.Label",
     counted: "DND5E.TARGET.Type.Sphere.Counted",
     template: "circle",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.npdEWb2egUPnB5Fa",
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.npdEWb2egUPnB5Fa",
     sizes: ["radius"],
     standard: true
   },
@@ -3288,22 +3288,22 @@ preLocalize("spellPreparationStates", { key: "label" });
  * @type {string[]}
  */
 DND5E.SPELL_LISTS = Object.freeze([
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.wwia6Wwo4BgE9GSI",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.8yD9Jgp404hfZ9ie",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.5HnIk6HsrSxkvkz5",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.VfZ5mH2ZuyFq82Ga",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.sSzagq8GvYXpfmfs",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLife000000",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandArid00",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandPolar0",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTemper",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTropic",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDevotion00",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDraconic00",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsFiend00000"
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.wwia6Wwo4BgE9GSI",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.8yD9Jgp404hfZ9ie",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.5HnIk6HsrSxkvkz5",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.VfZ5mH2ZuyFq82Ga",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.sSzagq8GvYXpfmfs",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLife000000",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandArid00",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandPolar0",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTemper",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTropic",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDevotion00",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDraconic00",
+  "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsFiend00000"
 ]);
 
 /* -------------------------------------------- */
@@ -3350,49 +3350,49 @@ DND5E.spellSchools = {
     label: "DND5E.SchoolAbj",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "abjuration",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.849AYEWw9FHD6JNz"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.849AYEWw9FHD6JNz"
   },
   con: {
     label: "DND5E.SchoolCon",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "conjuration",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TWyKMhZJZGqQ6uls"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TWyKMhZJZGqQ6uls"
   },
   div: {
     label: "DND5E.SchoolDiv",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "divination",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HoD2MwzmVbMqj9se"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HoD2MwzmVbMqj9se"
   },
   enc: {
     label: "DND5E.SchoolEnc",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "enchantment",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.SehPXk24ySBVOwCZ"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.SehPXk24ySBVOwCZ"
   },
   evo: {
     label: "DND5E.SchoolEvo",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "evocation",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kGp1RNuxL2SELLRC"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kGp1RNuxL2SELLRC"
   },
   ill: {
     label: "DND5E.SchoolIll",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "illusion",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.smEk7kvVyslFozrB"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.smEk7kvVyslFozrB"
   },
   nec: {
     label: "DND5E.SchoolNec",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "necromancy",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.W0eyiV1FBmngb6Qh"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.W0eyiV1FBmngb6Qh"
   },
   trs: {
     label: "DND5E.SchoolTrs",
     icon: "systems/neon-requiem-dnd/icons/svg/spell-slot.svg",
     fullKey: "transmutation",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.IYWewSailtmv6qEb"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.IYWewSailtmv6qEb"
   }
 };
 preLocalize("spellSchools", { key: "label", sort: true });
@@ -3419,16 +3419,16 @@ preLocalize("spellListTypes");
  * @enum {string}
  */
 DND5E.spellScrollIds = {
-  0: "Compendium.dnd5e.equipment24.Item.dmgSpellScrollCa",
-  1: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll1s",
-  2: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll2n",
-  3: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll3r",
-  4: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll4t",
-  5: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll5t",
-  6: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll6t",
-  7: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll7t",
-  8: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll8t",
-  9: "Compendium.dnd5e.equipment24.Item.dmgSpellScroll9t"
+  0: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScrollCa",
+  1: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll1s",
+  2: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll2n",
+  3: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll3r",
+  4: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll4t",
+  5: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll5t",
+  6: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll6t",
+  7: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll7t",
+  8: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll8t",
+  9: "Compendium.neon-requiem-dnd.equipment24.Item.dmgSpellScroll9t"
 };
 
 /* -------------------------------------------- */
@@ -3453,10 +3453,10 @@ DND5E.spellScrollValues = {
  * @enum {string}
  */
 DND5E.sourcePacks = {
-  BACKGROUNDS: "dnd5e.backgrounds",
-  CLASSES: "dnd5e.classes",
-  ITEMS: "dnd5e.items",
-  RACES: "dnd5e.races"
+  BACKGROUNDS: "neon-requiem-dnd.backgrounds",
+  CLASSES: "neon-requiem-dnd.classes",
+  ITEMS: "neon-requiem-dnd.items",
+  RACES: "neon-requiem-dnd.races"
 };
 
 /* -------------------------------------------- */
@@ -3679,19 +3679,19 @@ DND5E.conditionTypes = {
   blinded: {
     name: "DND5E.ConBlinded",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/blinded.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.uDogReMO6QtH6NDw",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.uDogReMO6QtH6NDw",
     special: "BLIND"
   },
   burning: {
     name: "EFFECT.DND5E.StatusBurning",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/burning.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.mPBGM1vguT5IPzxT",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.mPBGM1vguT5IPzxT",
     pseudo: true
   },
   charmed: {
     name: "DND5E.ConCharmed",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/charmed.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.vLAsIUa0FhZNsyLk"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.vLAsIUa0FhZNsyLk"
   },
   cursed: {
     name: "EFFECT.DND5E.StatusCursed",
@@ -3701,24 +3701,24 @@ DND5E.conditionTypes = {
   dehydration: {
     name: "EFFECT.DND5E.StatusDehydration",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/dehydration.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.FZFvLNOX0lHaHZ1k",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.FZFvLNOX0lHaHZ1k",
     pseudo: true
   },
   deafened: {
     name: "DND5E.ConDeafened",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/deafened.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qlRw66tJhk0zLnwq"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qlRw66tJhk0zLnwq"
   },
   diseased: {
     name: "DND5E.ConDiseased",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/diseased.svg",
     pseudo: true,
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.oNQWvyRZkTOJ8PBq"
+    reference: "Compendium.neon-requiem-dnd.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.oNQWvyRZkTOJ8PBq"
   },
   exhaustion: {
     name: "DND5E.ConExhaustion",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/exhaustion.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.jSQtPgNm0i4f3Qi3",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.jSQtPgNm0i4f3Qi3",
     levels: 6,
     reduction: { rolls: 2, speed: 5 },
     conditions: {
@@ -3728,62 +3728,62 @@ DND5E.conditionTypes = {
   falling: {
     name: "EFFECT.DND5E.StatusFalling",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/falling.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
     pseudo: true
   },
   frightened: {
     name: "DND5E.ConFrightened",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/frightened.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.93uaingTESo8N1qL"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.93uaingTESo8N1qL"
   },
   grappled: {
     name: "DND5E.ConGrappled",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/grappled.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.KbQ1k0OIowtZeQgp"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.KbQ1k0OIowtZeQgp"
   },
   incapacitated: {
     name: "DND5E.ConIncapacitated",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/incapacitated.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4i3G895hy99piand",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4i3G895hy99piand",
     neverBlockMovement: true
   },
   invisible: {
     name: "DND5E.ConInvisible",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/invisible.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.MQIZ1zRLWRcNOtPN"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.MQIZ1zRLWRcNOtPN"
   },
   malnutrition: {
     name: "EFFECT.DND5E.StatusMalnutrition",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/malnutrition.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.earBo4vQPC1ti4g7",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.earBo4vQPC1ti4g7",
     pseudo: true
   },
   paralyzed: {
     name: "DND5E.ConParalyzed",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/paralyzed.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RnxZoTglPnLc6UPb",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RnxZoTglPnLc6UPb",
     statuses: ["incapacitated"]
   },
   petrified: {
     name: "DND5E.ConPetrified",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/petrified.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6vtLuQT9lwZ9N299",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6vtLuQT9lwZ9N299",
     statuses: ["incapacitated"]
   },
   poisoned: {
     name: "DND5E.ConPoisoned",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/poisoned.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.HWs8kEojffqwTSJz"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.HWs8kEojffqwTSJz"
   },
   prone: {
     name: "DND5E.ConProne",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/prone.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.QxCrRcgMdUd3gfzz"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.QxCrRcgMdUd3gfzz"
   },
   restrained: {
     name: "DND5E.ConRestrained",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/restrained.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.dqLeGdpHtb8FfcxX"
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.dqLeGdpHtb8FfcxX"
   },
   silenced: {
     name: "EFFECT.DND5E.StatusSilenced",
@@ -3793,13 +3793,13 @@ DND5E.conditionTypes = {
   stunned: {
     name: "DND5E.ConStunned",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/stunned.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.EjbXjvyQAMlDyANI",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.EjbXjvyQAMlDyANI",
     statuses: ["incapacitated"]
   },
   suffocation: {
     name: "EFFECT.DND5E.StatusSuffocation",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/suffocation.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.gAvV8TLyS8UGq00x",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.gAvV8TLyS8UGq00x",
     pseudo: true
   },
   surprised: {
@@ -3815,7 +3815,7 @@ DND5E.conditionTypes = {
   unconscious: {
     name: "DND5E.ConUnconscious",
     img: "systems/neon-requiem-dnd/icons/svg/statuses/unconscious.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fZCRaKEJd4KoQCqH",
+    reference: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fZCRaKEJd4KoQCqH",
     statuses: ["incapacitated"],
     riders: ["prone"]
   }
@@ -4964,181 +4964,181 @@ preLocalize("ruleTypes", { key: "label" });
  * @enum {string}
  */
 DND5E.rules = {
-  inspiration: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nkEPI89CiQnOaLYh",
-  heroicinspiration: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nkEPI89CiQnOaLYh",
-  carryingcapacity: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1PnjDBKbQJIVyc2t",
-  push: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
-  lift: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
-  drag: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
-  encumbrance: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JwqYf9qb6gJAWZKs",
-  hiding: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.plHuoNdS0j3umPNS",
-  passiveperception: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.988C2hQNyvqkdbND",
-  time: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eihqNjwpZ3HM4IqY",
-  speed: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HhqeIiSj8sE1v1qZ",
-  travelpace: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eFAISahBloR2X8MX",
-  forcedmarch: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uQWQpRKQ1kWhuvjZ",
-  difficultterrainpace: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hFW5BR2yHHwwgurD",
-  climbing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
-  swimming: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
-  longjump: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1U0myNrOvIVBUdJV",
-  highjump: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.raPwIkqKSv60ELmy",
-  falling: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
-  suffocating: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BIlnr0xYhqt4TGsi",
-  vision: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
-  light: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
-  lightlyobscured: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MAxtfJyvJV7EpzWN",
-  heavilyobscured: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wPFjfRruboxhtL4b",
-  brightlight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RnMokVPyKGbbL8vi",
-  dimlight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.n1Ocpbyhr6HhgbCG",
-  darkness: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4dfREIDjG5N4fvxd",
-  blindsight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.tdtmXZbUIOZGSnKT",
-  darkvision: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.7vQ1hLQ5fS6SSUqF",
-  tremorsense: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.r64UrNusMhwJVnxb",
-  truesight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.be7g0q1xBAwb8drv",
-  food: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jayo7XVgGnRCpTW0",
-  water: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iIEI87J7lr2sqtb5",
-  resting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.dpHJXYLigIdEseIb",
-  shortrest: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1s2swI3UsjUUgbt2",
-  longrest: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6cLtjbHn4KV2R7G9",
-  surprise: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.YmOt8HderKveA19K",
-  initiative: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RcwElV4GAcVXKWxo",
-  bonusaction: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2fu2CXsDg8gQmGGw",
-  reaction: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2VqLyxMyMxgXe2wC",
-  difficultterrain: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6tqz947qO8vPyxvD",
-  beingprone: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.bV8akkBdVUUG21CO",
-  droppingprone: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
-  standingup: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
-  crawling: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.VWG9qe8PUNtS28Pw",
-  movingaroundothercreatures: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9ZWCknaXCOdhyOrX",
-  flying: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.0B1fxfmw0a48tPsc",
-  size: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HWHRQVBVG7K0RVVW",
-  space: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WIA5bs3P45PmO3OS",
-  squeezing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wKtOwagDAiNfVoPS",
-  attack: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.f4fZHwBvpbpzRyn4",
-  castaspell: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.iIIDUsmSOkL0xNzF",
-  dash: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6l6nBKip4LqB1sCU",
-  disengage: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.w1AGsemFERfjqWNx",
-  dodge: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.3YJIuyCMmuUrfmuX",
-  help: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5S8i59qskkd9GGcJ",
-  hide: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.rqhOsUY4wWa1oHTy",
-  ready: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nI9tN6Oq7fCV7hcA",
-  search: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.ySj4gYZ4ADZoia7R",
-  useanobject: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.UDlogfdiT2uYEZz4",
-  attackrolls: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.W8uJrd1D8NeOuawp",
-  unseenattackers: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
-  unseentargets: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
-  rangedattacks: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.S9aclVOCbusLE3kC",
-  range: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HjKXuB8ndjcqOds7",
-  rangedattacksinclosecombat: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qEZvxW0NM7ixSQP5",
-  meleeattacks: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GTk6emvzNxl8Oosl",
-  reach: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hgZ5ZN4B3y7tmFlt",
-  unarmedstrike: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xJjJ4lhymAYXAOvO",
-  opportunityattacks: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.eNvzQabiTqTtfzis",
-  twoweaponfighting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FQTS08uH74A6psL2",
-  grappling: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.YSLWJcQCP6kzsPql",
-  grapple: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.YSLWJcQCP6kzsPql",
-  escapingagrapple: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2TZKy9YbMN3ZY3h8",
-  movingagrappledcreature: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.x5bUdhAD7u5Bt2rg",
-  shoving: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hrdqMF8hRXJdNzJx",
-  shove: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hrdqMF8hRXJdNzJx",
-  cover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.W7f7PcRubNUMIq2S",
-  halfcover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hv0J61IAfofuhy3Q",
-  threequarterscover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zAMStUjUrPV10dFm",
-  totalcover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BKUAxXuPEzxiEOeL",
-  hitpoints: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PFbzoMBviI2DD9QP",
-  damagerolls: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hd26AqKrCqtcQBWy",
-  criticalhits: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gFL1VhSEljL1zvje",
-  damagetypes: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jVOgf7DNEhkzYNIe",
-  damageresistance: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
-  damagevulnerability: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
-  healing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ICketFqbFslqKiX9",
-  instantdeath: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8BG05mA0mEzwmrHU",
-  deathsavingthrows: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
-  deathsaves: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
-  stabilizing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.r1CgZXLcqFop6Dlx",
-  knockingacreatureout: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.PjXBMVcEaWuKjder",
-  temporaryhitpoints: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qOKtJt8CB2qRaTNA",
-  temphp: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qOKtJt8CB2qRaTNA",
-  mounting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
-  dismounting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
-  controllingamount: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.khmR2xFk1NxoQUgZ",
-  underwatercombat: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6zVOeLyq4iMnrQT4",
-  spelllevel: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.A6k5fS0kFqPXTW3v",
-  knownspells: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
-  preparedspells: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
-  spellslots: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Su6wbb0O9UN4ZDIH",
-  castingatahigherlevel: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
-  upcasting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
-  castinginarmor: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.z4A8vHSK2pb8YA9X",
-  cantrips: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jZD5mCTnMPJ9jW67",
-  rituals: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FjWqT5iyJ89kohdA",
-  castingtime: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zRVW8Tvyk6BECjZD",
-  bonusactioncasting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RP1WL9FXI3aknlxZ",
-  reactioncasting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t62lCfinwU9H7Lji",
-  longercastingtimes: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gOAIRFCyPUx42axn",
-  spellrange: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RBYPyE5z5hAZSbH6",
-  components: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xeHthAF9lxfn2tII",
-  verbal: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6UXTNWMCQ0nSlwwx",
-  spellduration: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9mp0SRsptjvJcq1e",
-  instantaneous: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kdlgZOpRMB6bGCod",
-  concentrating: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ow58p27ctAnr4VPH",
-  spelltargets: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.G80AIQr04sxdVpw4",
-  areaofeffect: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wvtCeGHgnUmh0cuj",
-  pointoforigin: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8HxbRceQQUAhyWRt",
-  spellsavingthrows: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8DajfNll90eeKcmB",
-  spellattackrolls: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qAFzmGZKhVvAEUF3",
-  combiningmagicaleffects: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TMIN963hG773yZzO",
-  schoolsofmagic: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TeF6CKMDRpYpsLd4",
-  detectingtraps: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
-  disablingtraps: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
-  curingmadness: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6Icem7G3CICdNOkM",
-  damagethreshold: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9LJZhqvCburpags3",
-  poisontypes: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.I6OMMWUaYCWR9xip",
-  contactpoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kXnCEqqGUWRZeZDj",
-  ingestedpoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Y0vsJYSWeQcFpJ27",
-  inhaledpoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KUyN4eK1xTBzXsjP",
-  injurypoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.LUL48OUq6SJeMGc7",
-  attunement: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UQ65OwIyGK65eiOK",
-  wearingitems: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
-  wieldingitems: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
-  multipleitemsofthesamekind: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rLJdvz4Mde8GkEYQ",
-  paireditems: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rd9pCH8yFraSGN34",
-  commandword: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HiXixxLYesv6Ff3t",
-  consumables: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UEPAcZFzQ5x196zE",
-  itemspells: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DABoaeeF6w31UCsj",
-  charges: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.NLRXcgrpRCfsA5mO",
-  spellscroll: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gi8IKhtOlBVhMJrN",
-  creaturetags: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9jV1fFF163dr68vd",
-  telepathy: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.geTidcFIYWuUvD2L",
-  legendaryactions: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.C1awOyZh78pq1xmY",
-  lairactions: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.07PtjpMxiRIhkBEp",
-  regionaleffects: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uj8W27NKFyzygPUd",
-  disease: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oNQWvyRZkTOJ8PBq",
-  d20test: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nxPH59t3iNtWJxnU",
-  advantage: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.lvs9RRDi1UA1Lff8",
-  disadvantage: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fFrHBgqKUMY0Nnco",
-  difficultyclass: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.afnB0KZZk2hKtjv4",
-  armorclass: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.IL73rq9BlQowdon7",
-  abilitycheck: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.XBQqXCoTbvp5Dika",
-  savingthrow: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Vlri6Mp6grn9wt3g",
-  challengerating: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BMoxmXB8pX6bOBus",
-  expertise: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.69nu4Sk3V5O15GFf",
-  influence: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4V59Q1dlWjNhpJGo",
-  magic: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.iIIDUsmSOkL0xNzF",
-  study: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Nuz0Wx4a4aAPcC34",
-  utilize: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.UDlogfdiT2uYEZz4",
-  friendly: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RVcWSqblHIs7SUzn",
-  indifferent: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.eYX5eimGuYhHPoj4",
-  hostile: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BNxLbtJofbNGzjsp",
-  breakingobjects: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RXTLVpAwcGm1qtKf",
-  hazards: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5hyEitPd1Kb27fP5",
-  bloodied: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.shZaSIlFPpHufPFn",
-  jumping: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.aaJOlRhI1H6vAxt9",
-  immunity: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.vuK6Tth0DFgU74A6",
-  resistance: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Uk3xhCTvEfx8BN1O",
-  vulnerability: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.bCU0JHnmZsZf1SHp",
-  stable: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.klXWp4c90n7Kt5LB",
-  dead: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.OP0YhS6iOm4yfPIt"
+  inspiration: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nkEPI89CiQnOaLYh",
+  heroicinspiration: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nkEPI89CiQnOaLYh",
+  carryingcapacity: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1PnjDBKbQJIVyc2t",
+  push: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
+  lift: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
+  drag: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
+  encumbrance: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JwqYf9qb6gJAWZKs",
+  hiding: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.plHuoNdS0j3umPNS",
+  passiveperception: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.988C2hQNyvqkdbND",
+  time: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eihqNjwpZ3HM4IqY",
+  speed: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HhqeIiSj8sE1v1qZ",
+  travelpace: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eFAISahBloR2X8MX",
+  forcedmarch: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uQWQpRKQ1kWhuvjZ",
+  difficultterrainpace: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hFW5BR2yHHwwgurD",
+  climbing: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
+  swimming: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
+  longjump: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1U0myNrOvIVBUdJV",
+  highjump: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.raPwIkqKSv60ELmy",
+  falling: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
+  suffocating: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BIlnr0xYhqt4TGsi",
+  vision: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
+  light: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
+  lightlyobscured: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MAxtfJyvJV7EpzWN",
+  heavilyobscured: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wPFjfRruboxhtL4b",
+  brightlight: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RnMokVPyKGbbL8vi",
+  dimlight: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.n1Ocpbyhr6HhgbCG",
+  darkness: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4dfREIDjG5N4fvxd",
+  blindsight: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.tdtmXZbUIOZGSnKT",
+  darkvision: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.7vQ1hLQ5fS6SSUqF",
+  tremorsense: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.r64UrNusMhwJVnxb",
+  truesight: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.be7g0q1xBAwb8drv",
+  food: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jayo7XVgGnRCpTW0",
+  water: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iIEI87J7lr2sqtb5",
+  resting: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.dpHJXYLigIdEseIb",
+  shortrest: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1s2swI3UsjUUgbt2",
+  longrest: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6cLtjbHn4KV2R7G9",
+  surprise: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.YmOt8HderKveA19K",
+  initiative: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RcwElV4GAcVXKWxo",
+  bonusaction: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2fu2CXsDg8gQmGGw",
+  reaction: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2VqLyxMyMxgXe2wC",
+  difficultterrain: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6tqz947qO8vPyxvD",
+  beingprone: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.bV8akkBdVUUG21CO",
+  droppingprone: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
+  standingup: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
+  crawling: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.VWG9qe8PUNtS28Pw",
+  movingaroundothercreatures: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9ZWCknaXCOdhyOrX",
+  flying: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.0B1fxfmw0a48tPsc",
+  size: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HWHRQVBVG7K0RVVW",
+  space: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WIA5bs3P45PmO3OS",
+  squeezing: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wKtOwagDAiNfVoPS",
+  attack: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.f4fZHwBvpbpzRyn4",
+  castaspell: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.iIIDUsmSOkL0xNzF",
+  dash: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6l6nBKip4LqB1sCU",
+  disengage: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.w1AGsemFERfjqWNx",
+  dodge: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.3YJIuyCMmuUrfmuX",
+  help: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5S8i59qskkd9GGcJ",
+  hide: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.rqhOsUY4wWa1oHTy",
+  ready: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nI9tN6Oq7fCV7hcA",
+  search: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.ySj4gYZ4ADZoia7R",
+  useanobject: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.UDlogfdiT2uYEZz4",
+  attackrolls: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.W8uJrd1D8NeOuawp",
+  unseenattackers: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
+  unseentargets: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
+  rangedattacks: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.S9aclVOCbusLE3kC",
+  range: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HjKXuB8ndjcqOds7",
+  rangedattacksinclosecombat: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qEZvxW0NM7ixSQP5",
+  meleeattacks: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GTk6emvzNxl8Oosl",
+  reach: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hgZ5ZN4B3y7tmFlt",
+  unarmedstrike: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xJjJ4lhymAYXAOvO",
+  opportunityattacks: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.eNvzQabiTqTtfzis",
+  twoweaponfighting: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FQTS08uH74A6psL2",
+  grappling: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.YSLWJcQCP6kzsPql",
+  grapple: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.YSLWJcQCP6kzsPql",
+  escapingagrapple: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2TZKy9YbMN3ZY3h8",
+  movingagrappledcreature: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.x5bUdhAD7u5Bt2rg",
+  shoving: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hrdqMF8hRXJdNzJx",
+  shove: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hrdqMF8hRXJdNzJx",
+  cover: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.W7f7PcRubNUMIq2S",
+  halfcover: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hv0J61IAfofuhy3Q",
+  threequarterscover: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zAMStUjUrPV10dFm",
+  totalcover: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BKUAxXuPEzxiEOeL",
+  hitpoints: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PFbzoMBviI2DD9QP",
+  damagerolls: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hd26AqKrCqtcQBWy",
+  criticalhits: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gFL1VhSEljL1zvje",
+  damagetypes: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jVOgf7DNEhkzYNIe",
+  damageresistance: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
+  damagevulnerability: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
+  healing: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ICketFqbFslqKiX9",
+  instantdeath: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8BG05mA0mEzwmrHU",
+  deathsavingthrows: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
+  deathsaves: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
+  stabilizing: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.r1CgZXLcqFop6Dlx",
+  knockingacreatureout: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.PjXBMVcEaWuKjder",
+  temporaryhitpoints: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qOKtJt8CB2qRaTNA",
+  temphp: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qOKtJt8CB2qRaTNA",
+  mounting: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
+  dismounting: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
+  controllingamount: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.khmR2xFk1NxoQUgZ",
+  underwatercombat: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6zVOeLyq4iMnrQT4",
+  spelllevel: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.A6k5fS0kFqPXTW3v",
+  knownspells: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
+  preparedspells: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
+  spellslots: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Su6wbb0O9UN4ZDIH",
+  castingatahigherlevel: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
+  upcasting: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
+  castinginarmor: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.z4A8vHSK2pb8YA9X",
+  cantrips: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jZD5mCTnMPJ9jW67",
+  rituals: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FjWqT5iyJ89kohdA",
+  castingtime: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zRVW8Tvyk6BECjZD",
+  bonusactioncasting: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RP1WL9FXI3aknlxZ",
+  reactioncasting: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t62lCfinwU9H7Lji",
+  longercastingtimes: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gOAIRFCyPUx42axn",
+  spellrange: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RBYPyE5z5hAZSbH6",
+  components: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xeHthAF9lxfn2tII",
+  verbal: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6UXTNWMCQ0nSlwwx",
+  spellduration: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9mp0SRsptjvJcq1e",
+  instantaneous: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kdlgZOpRMB6bGCod",
+  concentrating: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ow58p27ctAnr4VPH",
+  spelltargets: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.G80AIQr04sxdVpw4",
+  areaofeffect: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wvtCeGHgnUmh0cuj",
+  pointoforigin: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8HxbRceQQUAhyWRt",
+  spellsavingthrows: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8DajfNll90eeKcmB",
+  spellattackrolls: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qAFzmGZKhVvAEUF3",
+  combiningmagicaleffects: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TMIN963hG773yZzO",
+  schoolsofmagic: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TeF6CKMDRpYpsLd4",
+  detectingtraps: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
+  disablingtraps: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
+  curingmadness: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6Icem7G3CICdNOkM",
+  damagethreshold: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9LJZhqvCburpags3",
+  poisontypes: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.I6OMMWUaYCWR9xip",
+  contactpoison: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kXnCEqqGUWRZeZDj",
+  ingestedpoison: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Y0vsJYSWeQcFpJ27",
+  inhaledpoison: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KUyN4eK1xTBzXsjP",
+  injurypoison: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.LUL48OUq6SJeMGc7",
+  attunement: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UQ65OwIyGK65eiOK",
+  wearingitems: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
+  wieldingitems: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
+  multipleitemsofthesamekind: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rLJdvz4Mde8GkEYQ",
+  paireditems: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rd9pCH8yFraSGN34",
+  commandword: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HiXixxLYesv6Ff3t",
+  consumables: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UEPAcZFzQ5x196zE",
+  itemspells: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DABoaeeF6w31UCsj",
+  charges: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.NLRXcgrpRCfsA5mO",
+  spellscroll: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gi8IKhtOlBVhMJrN",
+  creaturetags: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9jV1fFF163dr68vd",
+  telepathy: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.geTidcFIYWuUvD2L",
+  legendaryactions: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.C1awOyZh78pq1xmY",
+  lairactions: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.07PtjpMxiRIhkBEp",
+  regionaleffects: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uj8W27NKFyzygPUd",
+  disease: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oNQWvyRZkTOJ8PBq",
+  d20test: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nxPH59t3iNtWJxnU",
+  advantage: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.lvs9RRDi1UA1Lff8",
+  disadvantage: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fFrHBgqKUMY0Nnco",
+  difficultyclass: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.afnB0KZZk2hKtjv4",
+  armorclass: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.IL73rq9BlQowdon7",
+  abilitycheck: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.XBQqXCoTbvp5Dika",
+  savingthrow: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Vlri6Mp6grn9wt3g",
+  challengerating: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BMoxmXB8pX6bOBus",
+  expertise: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.69nu4Sk3V5O15GFf",
+  influence: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4V59Q1dlWjNhpJGo",
+  magic: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.iIIDUsmSOkL0xNzF",
+  study: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Nuz0Wx4a4aAPcC34",
+  utilize: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.UDlogfdiT2uYEZz4",
+  friendly: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RVcWSqblHIs7SUzn",
+  indifferent: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.eYX5eimGuYhHPoj4",
+  hostile: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BNxLbtJofbNGzjsp",
+  breakingobjects: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RXTLVpAwcGm1qtKf",
+  hazards: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5hyEitPd1Kb27fP5",
+  bloodied: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.shZaSIlFPpHufPFn",
+  jumping: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.aaJOlRhI1H6vAxt9",
+  immunity: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.vuK6Tth0DFgU74A6",
+  resistance: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Uk3xhCTvEfx8BN1O",
+  vulnerability: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.bCU0JHnmZsZf1SHp",
+  stable: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.klXWp4c90n7Kt5LB",
+  dead: "Compendium.neon-requiem-dnd.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.OP0YhS6iOm4yfPIt"
 };
 
 /* -------------------------------------------- */

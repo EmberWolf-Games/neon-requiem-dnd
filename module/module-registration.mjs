@@ -141,25 +141,25 @@ export function registerModuleRedirects() {
 
 const moduleRedirects = {
   "dnd-players-handbook": {
-    "Compendium.dnd-players-handbook.actors": "Compendium.dnd5e.actors24",
-    "Compendium.dnd-players-handbook.classes": "Compendium.dnd5e.classes24",
-    "Compendium.dnd-players-handbook.content": "Compendium.dnd5e.content24",
-    "Compendium.dnd-players-handbook.equipment": "Compendium.dnd5e.equipment24",
-    "Compendium.dnd-players-handbook.feats": "Compendium.dnd5e.feats24",
-    "Compendium.dnd-players-handbook.origins": "Compendium.dnd5e.origins24",
-    "Compendium.dnd-players-handbook.spells": "Compendium.dnd5e.spells24",
-    "Compendium.dnd-players-handbook.tables": "Compendium.dnd5e.tables24"
+    "Compendium.dnd-players-handbook.actors": "Compendium.neon-requiem-dnd.actors24",
+    "Compendium.dnd-players-handbook.classes": "Compendium.neon-requiem-dnd.classes24",
+    "Compendium.dnd-players-handbook.content": "Compendium.neon-requiem-dnd.content24",
+    "Compendium.dnd-players-handbook.equipment": "Compendium.neon-requiem-dnd.equipment24",
+    "Compendium.dnd-players-handbook.feats": "Compendium.neon-requiem-dnd.feats24",
+    "Compendium.dnd-players-handbook.origins": "Compendium.neon-requiem-dnd.origins24",
+    "Compendium.dnd-players-handbook.spells": "Compendium.neon-requiem-dnd.spells24",
+    "Compendium.dnd-players-handbook.tables": "Compendium.neon-requiem-dnd.tables24"
   },
   "dnd-dungeon-masters-guide": {
-    "Compendium.dnd-dungeon-masters-guide.actors": "Compendium.dnd5e.actors24",
-    "Compendium.dnd-dungeon-masters-guide.content": "Compendium.dnd5e.content24",
-    "Compendium.dnd-dungeon-masters-guide.equipment": "Compendium.dnd5e.equipment24",
-    "Compendium.dnd-dungeon-masters-guide.tables": "Compendium.dnd5e.tables24"
+    "Compendium.dnd-dungeon-masters-guide.actors": "Compendium.neon-requiem-dnd.actors24",
+    "Compendium.dnd-dungeon-masters-guide.content": "Compendium.neon-requiem-dnd.content24",
+    "Compendium.dnd-dungeon-masters-guide.equipment": "Compendium.neon-requiem-dnd.equipment24",
+    "Compendium.dnd-dungeon-masters-guide.tables": "Compendium.neon-requiem-dnd.tables24"
   },
   "dnd-monster-manual": {
-    "Compendium.dnd-monster-manual.actors": "Compendium.dnd5e.actors24",
-    "Compendium.dnd-monster-manual.content": "Compendium.dnd5e.content24",
-    "Compendium.dnd-monster-manual.features": "Compendium.dnd5e.monsterfeatures24",
-    "Compendium.dnd-monster-manual.tables": "Compendium.dnd5e.tables24"
+    "Compendium.dnd-monster-manual.actors": "Compendium.neon-requiem-dnd.actors24",
+    "Compendium.dnd-monster-manual.content": "Compendium.neon-requiem-dnd.content24",
+    "Compendium.dnd-monster-manual.features": "Compendium.neon-requiem-dnd.monsterfeatures24",
+    "Compendium.dnd-monster-manual.tables": "Compendium.neon-requiem-dnd.tables24"
   }
 };

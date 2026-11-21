@@ -11,6 +11,7 @@
 
 // Import Configuration
 import DND5E from "./module/config.mjs";
+import { isDerivativeMigrationVersion, registerLegacyFlagScope } from "./module/neon-compatibility.mjs";
 import {
   applyLegacyRules, disableExhaustionAutomation, registerDeferredSettings, registerSystemKeybindings,
   registerSystemSettings
@@ -59,6 +60,9 @@ globalThis.dnd5e = {
 /* -------------------------------------------- */
 
 Hooks.once("init", function() {
+  // Retain upstream document flags while Foundry validates the active system's flag scopes.
+  // This is a compatibility bridge for data inherited from dnd5e, not a module dependency.
+  registerLegacyFlagScope(CONFIG.DatabaseBackend);
   globalThis.dnd5e = game.dnd5e = Object.assign(game.system, globalThis.dnd5e);
   utils.log(`Initializing the D&D Fifth Game System - Version ${dnd5e.version}\n${DND5E.ASCII}`);
 
@@ -664,6 +668,16 @@ async function _handleMigration() {
   const cv = dnd5e.settings.systemMigrationVersion || game.world.flags.dnd5e?.version;
   const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
   if ( !cv && totalDocuments === 0 ) return game.settings.set("dnd5e", "systemMigrationVersion", game.system.version);
+  // Neon Requiem versions are independent of upstream dnd5e's migration versions.
+  // Never interpret a derivative version such as 0.1.1.000 as an ancient dnd5e world.
+  // A separate derivative migration policy is required before data migrations are introduced.
+  if ( isDerivativeMigrationVersion(cv) ) {
+    if ( cv !== game.system.version ) {
+      ui.notifications.warn("Neon Requiem data migration between system versions is not yet supported.",
+        { permanent: true });
+    }
+    return;
+  }
   if ( cv && !foundry.utils.isNewerVersion(game.system.flags.needsMigrationVersion, cv) ) return;
 
   // Compendium pack folder migration.
