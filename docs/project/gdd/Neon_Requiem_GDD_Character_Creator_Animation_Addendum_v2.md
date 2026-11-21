@@ -1,13 +1,12 @@
-# NEON REQUIEM — GDD Addendum: Character Identity Creator & Animated Scene Tokens
+# Character Identity Creator and Animated Scene Tokens
 
-**Decision status:** APPROVED DESIGN REQUIREMENT (implementation pending)  
-**Project:** Neon Requiem — Foundry VTT v14+ standalone D&D 5e-derived game system  
-**Scope:** In-Foundry character visual identity creator, modular assets, masked recoloring, and animated player/NPC tokens on scenes; no changes to D&D combat mechanics  
-**Decision date:** 2026-11-21  
-**Integration:** Incorporate into the canonical GDD once its authoritative location/version is confirmed. This addendum is not a claim that the repository GDD has been edited.
-**Revision:** 2 — adds user-approved Character Identity Creator, masked skin/hair customization, and the local-to-self-hosted export architecture.
+**Status:** Approved visual and technical design; implementation pending  
+**Recorded:** 21 Nov 2026 · Revision 2  
+**Scope:** Character appearance, overhead token assets, animation, and personalized media export for Foundry VTT v14+  
 
-## Locked visual and asset requirements
+This is an appearance system, not a change to character abilities or 5e combat mechanics. Character selections and animation assets need to stay consistent across clients and remain usable without a media-generation service.
+
+## Visual requirements
 
 1. Tokens must be **true 90-degree overhead / bird's-eye top-down**, not an oblique or isometric camera angle.
 2. **No facial features or face should be visible** from the token camera. The silhouette must make sense when the complete image is rotated to face any direction.
@@ -17,7 +16,7 @@
 6. **Walking** is the initial locomotion animation (not running). Running is a possible later enhancement, not part of the first proof of concept.
 7. Animated tokens are **optional per token**. Static tokens remain supported without added configuration.
 
-## Approved animation states
+## Animation states
 
 | State | Visual behavior | Trigger / priority |
 |---|---|---|
@@ -31,7 +30,7 @@
 
 **State priority:** Dead > Unconscious/Downed > Walk > Idle. In D&D 5e, zero HP does not by itself imply death: state decisions must account for the system's actor conditions, death saves and applicable creature rules.
 
-## Foundry v14 integration design
+## Foundry v14 integration
 
 - Implement a **system-owned token animation controller**, rather than a module dependency.
 - Use documented Foundry v14 movement and token APIs where available for movement, facing and rotation.
@@ -42,7 +41,7 @@
 - Preload assets when practical and release unused textures/decoders; enforce sensible resource budgets and static fallbacks for slower machines.
 - Validate interaction with Foundry grid movement, token rings, scene lighting, fog, token overlays and the combat tracker.
 
-## MVP implementation and test criteria
+## First playable proof of concept
 
 **Initial asset set:** One adult male-presenting and one adult female-presenting true-top-down base character, each with idle, walk, collapse, unconscious, death and dead pose assets; static WebP fallback per character. Character designs may draw from the approved Neon Requiem mascot/gear reference imagery but the in-game assets must be genuinely overhead.
 
@@ -57,18 +56,18 @@
 7. Static tokens continue operating normally when animation is disabled or video is unsupported.
 8. Measurable performance remains acceptable with multiple animated tokens; no runaway decoder, event or memory usage.
 
-## Explicit non-goals for the initial phase
+## Not part of the first phase
 
 - Eight-direction artwork per character.
 - Angled cameras, visible faces, isometric token sprites.
 - Running, attacking, reloading, aiming or weapon-specific animation sets.
 - New gameplay mechanics or changes to D&D movement and death rules.
 
-**Important:** Design approval does not mean the feature has been built or tested in Foundry v14.
+These requirements still need to be built and tested in Foundry v14.
 
 ---
 
-## Locked: Character Identity Creator
+## Character Identity Creator
 
 Neon Requiem will provide a **system-native Foundry VTT character-identity creator**. A player selects a base character type and an overhead head style, adjusts appearance colors, previews their character, and then finalizes/locks the selected appearance. This is a visual-character system distinct from D&D 5e mechanics.
 
@@ -79,7 +78,7 @@ Neon Requiem will provide a **system-native Foundry VTT character-identity creat
 3. **Male Synth**
 4. **Female Synth**
 
-These are the **four initial art/animation bases**, not a limitation on future character identities or appearances.
+These are the four initial **art and animation bases** for the two playable races, Human and Synth. They are not a limit on later appearance options.
 
 ### Head styles
 
@@ -103,7 +102,7 @@ These are the **four initial art/animation bases**, not a limitation on future c
 
 A detailed, face-visible portrait may exist separately on the character sheet; it is **not** used as the directional scene token.
 
-## Locked: Masked Skin and Hair Colorization
+## Skin and hair recoloring
 
 - **Independent color masks** for skin and hair are required. Color pickers affect only their respective masked regions.
 - A mask is part of the animation source pipeline and must be aligned **per frame** for each relevant pose. It must follow moving head/body pixels during walking, collapsing, and dying.
@@ -115,9 +114,9 @@ A detailed, face-visible portrait may exist separately on the character sheet; i
 - To avoid a combinatorial asset explosion, **do not pre-render every possible color combination**. Produce personalized animation outputs only for selected/finalized appearances, while keeping reusable source rigs, frames and masks.
 - Record asset provenance, ownership/license and source rig versions, allowing a personalized pack to be reproduced later.
 
-## Approved Architecture — Hybrid Preview + Personalized Media Export
+## Preview and personalized media export
 
-**Preferred route:**
+**Preferred approach:**
 
 1. **Source assets**: Four true-overhead body rigs, head-style overlays, and consistently aligned transparent animation frames, with per-frame skin/hair masks.
 2. **Interactive preview**: Foundry `ApplicationV2` character-creator interface, with client-side canvas/graphics compositing for responsive, mask-aware recoloring. This is a planned implementation, not a claim of an existing Foundry built-in color-mask editor.
@@ -126,7 +125,7 @@ A detailed, face-visible portrait may exist separately on the character sheet; i
 5. **Runtime playback**: The system-owned token state controller selects the correct finalized media for idle, walking, unconsciousness, and death, and rotates the complete true-overhead token to face movement.
 6. **Fallback**: If personalized video is not ready, unsupported, or too expensive on a client, use the correct personalized static WebP. Existing static-token behavior remains supported.
 
-**Alternative / contingency:** If encoding infrastructure or browser codec/alpha support becomes a blocker, evaluate real-time, mask-aware rendering on the token canvas. This is a **fallback engineering route**, not the preferred initial production approach. Validate against Foundry v14 rendering APIs before promising compatibility.
+**Fallback approach:** If encoding infrastructure or browser codec/alpha support becomes a blocker, evaluate real-time, mask-aware rendering on the token canvas. This is a **fallback engineering route**, not the preferred initial production approach. Validate against Foundry v14 rendering APIs before promising compatibility.
 
 **Asset count:** Each finalized character gets the required state media for **that selected appearance only**. Body rigs and style assets are reusable. Avoid multiplying four bases × all hairstyles × all color combinations × all state media in the published system.
 
@@ -140,7 +139,7 @@ A detailed, face-visible portrait may exist separately on the character sheet; i
 - Seamless loops for idle/walk/unconscious; one-shot collapse/death transition clips or equivalent state logic, then static/looped final state.
 - No requirement for players to install FFmpeg locally.
 
-## Hosting and Deployment — Approved Two-Stage Route
+## Local development and later hosting
 
 ### Stage A — Current: Local Windows PC + Local Foundry VTT v14
 
@@ -168,9 +167,9 @@ The owner operates a server hosting the panel website and Foundry instances and 
 - Treat the worker as **optional deployment infrastructure**: system gameplay and static tokens continue functioning when it is unavailable.
 - An external user-facing website is **not required** for the creator: it remains in Foundry. The existing server/panel may later manage worker deployment and storage, but those integrations require separate design.
 
-**Hosting choice is locked; exact directory paths, service transport, codec settings, and worker framework remain implementation decisions to be tested on the target host.**
+**Deployment direction:** Local validation comes first; the self-hosted encoder worker follows when needed. Paths, transport, codecs and worker tooling will be settled against the actual server.
 
-## Additional Acceptance Tests
+## Acceptance tests
 
 1. Four base choices can be selected and previewed; each exposes its approved head styles.
 2. No character reveals a face when the token is rotated through a full 360°.
@@ -186,7 +185,7 @@ The owner operates a server hosting the panel website and Foundry instances and 
 12. Token movement and state changes do not cause unnecessary video re-encoding. Encode only when appearance/assets change.
 13. Bulk token stress tests establish an acceptable animation and video-decoding budget.
 
-## Milestones / Recommended Assignment Boundaries
+## Suggested work packages
 
 **A. Foundry identity-creator prototype:** Native UI; four bases; selectable overhead heads; static masked skin/hair preview; Actor persistence and lock/GM override.
 
@@ -198,4 +197,4 @@ The owner operates a server hosting the panel website and Foundry instances and 
 
 **E. Optional later server automation:** Authenticated worker, job queue, scoped storage, panel integration and production operations.
 
-**Design vs. implementation:** These are approved requirements and preferred architecture, **not** an assertion that the creator, coloring compositor, FFmpeg worker, or animated tokens have been coded or tested.
+**Current state:** Requirements and architecture approved. The creator, compositing pipeline, encoding worker and animated tokens still require implementation and live testing.
