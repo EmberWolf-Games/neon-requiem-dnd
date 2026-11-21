@@ -59,7 +59,7 @@ foundry.utils.isNewerVersion("0.1.1.000", "0.1.1.001") === false
 foundry.utils.isNewerVersion("0.1.1.010", "0.1.1.009") === true
 ```
 
-The upstream minimum is Foundry `14.367`; the live comparison check remains pending. See the [Foundry v14 API documentation](https://foundryvtt.com/api/functions/foundry.utils.isNewerVersion.html).
+The upstream minimum is Foundry `14.367`; the live comparison check remains pending. See the [Foundry v14 utility API documentation](https://foundryvtt.com/api/v14/modules/foundry.utils.html).
 
 ## Published Build and release protections
 

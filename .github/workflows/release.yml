@@ -27,6 +27,11 @@ on:
         type: boolean
         required: true
         default: false
+      foundry_version_comparison_verified:
+        description: Confirm Foundry v14 compares four-part versions and zero-padded Builds correctly
+        type: boolean
+        required: true
+        default: false
       asset_provenance_reviewed:
         description: Confirm the packaged assets and attribution were reviewed for this release
         type: boolean
@@ -89,6 +94,7 @@ jobs:
           MAJOR_MINOR_DECISION: ${{ inputs.major_minor_decision }}
           PUBLISH_RELEASE: ${{ inputs.publish_release }}
           FOUNDRY_SMOKE_TEST_PASSED: ${{ inputs.foundry_smoke_test_passed }}
+          FOUNDRY_VERSION_COMPARISON_VERIFIED: ${{ inputs.foundry_version_comparison_verified }}
           ASSET_PROVENANCE_REVIEWED: ${{ inputs.asset_provenance_reviewed }}
         run: |
           set -euo pipefail
@@ -98,6 +104,10 @@ jobs:
           fi
           if [[ "${PUBLISH_RELEASE}" == "true" && "${FOUNDRY_SMOKE_TEST_PASSED}" != "true" ]]; then
             echo "Publishing requires confirmation of a passing Foundry v14 in-app smoke test." >&2
+            exit 1
+          fi
+          if [[ "${PUBLISH_RELEASE}" == "true" && "${FOUNDRY_VERSION_COMPARISON_VERIFIED}" != "true" ]]; then
+            echo "Publishing requires confirmation that Foundry v14 correctly compares four-part versions and zero-padded Builds." >&2
             exit 1
           fi
           if [[ "${PUBLISH_RELEASE}" == "true" && "${ASSET_PROVENANCE_REVIEWED}" != "true" ]]; then

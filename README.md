@@ -8,11 +8,11 @@ Neon Requiem is an independent Foundry VTT game system project built on the offi
 
 ## Project status
 
-This repository is in its initial engineering setup. The upstream source, build tooling, four-part version controls, CI, release workflow, and project documentation are being established. No Neon Requiem release has been published, and a live Foundry v14 smoke test has not been completed. The system is **not yet validated as playable or publicly installable**.
+This repository is in its initial engineering setup. The upstream source, build tooling, four-part version controls, CI, release workflow, and project documentation are being established. No Neon Requiem release has been published, and a live Foundry v14 smoke test and version-comparison check have not been completed. The system is **not yet validated as playable or publicly installable**.
 
 | Available in this repository | Still pending |
 |---|---|
-| Editable source from official `dnd5e` v6.1.1 (`release-6.1.1`, commit `bc1b2c921e2f306dc5079f8de883ad64607118a6`) | Live Foundry v14 installation and world smoke test |
+| Editable source from official `dnd5e` v6.1.1 (`release-6.1.1`, commit `bc1b2c921e2f306dc5079f8de883ad64607118a6`) | Live Foundry v14 installation, world smoke test, and four-part version comparison |
 | Foundry Game System manifest with ID `neon-requiem-dnd` | Confirmation of every inherited workflow under the renamed system ID |
 | Upstream Rollup, Less, and compendium build tools | Replacement or separate clearance for excluded upstream artwork |
 | Four-part version utility, tests, documentation, and GitHub Actions workflows | Custom Neon Requiem setting and gameplay work |

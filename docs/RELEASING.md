@@ -26,9 +26,9 @@ The package includes the production build and required licenses/attributions. It
 ## Release steps
 
 1. Complete the version decision and update `system.json` with the version helper. For the first release, use the initialized `0.1.1.000` without incrementing it.
-2. Verify that the source has passed CI, package validation, an in-app Foundry v14 smoke test, and the current asset-license review.
+2. Verify that the source has passed CI, package validation, an in-app Foundry v14 smoke test, the Foundry version-comparison check, and the current asset-license review.
 3. Dispatch **Release** from the repository's `main` branch. Leave `publish_release` false for a dry run. Set it true only when explicitly authorizing publication.
-4. Before publication, confirm the exact candidate passed a clean Foundry v14 in-app smoke test and that the release asset/provenance review is complete. The workflow blocks publication unless both confirmations are set.
+4. Before publication, confirm the exact candidate passed a clean Foundry v14 in-app smoke test. In that runtime, verify `foundry.utils.isNewerVersion("0.1.1.001", "0.1.1.000")`, the reverse comparison, and the `010` versus `009` Build comparison shown in [Versioning](VERSIONING.md). Confirm the release asset/provenance review is complete. The workflow blocks publication unless all three confirmations are set.
 5. Supply Major approval and the `carry`/`reset` Minor choice only for a Major transition.
 6. The workflow checks the version/tag, compares against published releases, serializes release work, builds the package, validates its structure, and creates/uploads the release assets.
 7. It checks public asset URLs and verifies the stable manifest after updating the `stable` branch.
