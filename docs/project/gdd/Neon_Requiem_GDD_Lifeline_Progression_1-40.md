@@ -1,12 +1,9 @@
-# NEON REQUIEM — GDD Addendum: Lifeline Level 1–40 Progression
+# Lifeline — Base Class Progression (Levels 1–40)
 
-**Decision status:** OWNER-APPROVED PROGRESSION DRAFT (concepts and milestone map approved; balance and medical-system rules pending)  
-**Decision date:** 2026-11-21  
-**Class:** Lifeline  
-**Approved subclass roster:** Trauma Tech, Nanomedic, Combat Responder  
-**Scope:** Complete level 1–40 base-class progression, Treatment Dice, medical interventions, subclass/ASI positions, and conceptual capstone  
-**Implementation status:** NOT IMPLEMENTED. No permission to alter gameplay code, release or bump version.  
-**Approval provenance:** After receiving the full Lifeline draft and proposed Ripperdoc hybrid, owner responded **"approved, next class"**. Both proposals are recorded as approved conceptual designs.
+**Status:** Approved design; numerical balance pending  
+**Recorded:** 21 Nov 2026  
+**Subclasses:** See [Lifeline subclass features](Neon_Requiem_GDD_Lifeline_Subclasses_1-40.md)  
+**Build status:** Design only; no game-system implementation yet.
 
 ## 1. Class chassis
 
@@ -133,7 +130,7 @@
 | 30 | 10d12 | 4 |
 
 - **ASI/feat choices:** 4, 8, 12, 16, 20, 24, 28, 32, 36, 40.
-- **Subclass advancement reservations:** 3, 7, 11, 15, 19, 23, 27, 31, 35, 39. Exact Trauma Tech / Nanomedic / Combat Responder subclass feature tables remain to be designed.
+- **Subclass advancement reservations:** 3, 7, 11, 15, 19, 23, 27, 31, 35, 39. Trauma Tech, Nanomedic and Combat Responder feature tables are documented separately and await playtesting.
 - Rest/resource supply math, supply economy, exact healing and condition recovery are subject to 1–40 playtesting and finalized universal medicine rules.
 
 ## 6. Compatibility and hybrid boundary
