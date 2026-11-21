@@ -9,7 +9,7 @@
 
 **Cipher** is the premier specialist in Hacks, electronic warfare, network intelligence, and tactical communications/coordination. Its original 5e mechanical inspirations include Wizard's technical versatility, Warlock's specialization, and Bard's support role—but **not spell slots or magic**.
 
-The approved conceptual class chassis is:
+The class chassis:
 
 | Attribute | Accepted draft proposal |
 | --- | --- |
@@ -87,7 +87,7 @@ Subclass identities:
 
 - **Interface Training (1):** Proficiency in suitable technical tools and skills used to interact with electronics. Expertise in one appropriate technical proficiency. Exact skill/tool naming awaits the Neon Requiem skill taxonomy.
 - **Signature Program (1):** Designate one compatible Hack that the character has learned and installed as a signature program; gain a modest execution benefit with it. Does **not** grant extra installed program storage or exempt Cyberware prerequisites.
-- **Tactical Uplink (2):** As a Bonus Action, grant a visible or communicating ally within **30 ft** a **d4 support die** usable on one attack roll or ability check before the start of your next turn. Proposed uses **INT modifier per Long Rest (minimum one)**. Conceptual rule accepted pending final balance.
+- **Tactical Uplink (2):** As a Bonus Action, grant a visible or communicating ally within **30 ft** a **d4 support die** usable on one attack roll or ability check before the start of your next turn. Uses: **INT modifier per Long Rest (minimum one)**. Final balance is pending.
 - **Rapid Execution (5):** **Once per Short Rest**, execute an eligible Hack that normally requires an action as a Bonus Action, preserving all ordinary compatibility, resource and execution costs.
 - **Cyber-Defense (6):** **Once per Short Rest**, use a Reaction to add a **d6** to a qualifying defense against a hostile Hack targeting you.
 - **Threat Telemetry (9):** After successful interaction with enemy Cyberware or a connected security system, relay verified diagnostics such as a camera-alarm connection or the presence of identifiable cybernetic components. Does not reveal hidden systems or protected data automatically.
@@ -124,7 +124,7 @@ Subclass identities:
 
 ## 5. Ten subclass milestone positions
 
-The approved progression reserves **one subclass selection and nine later feature or improvement milestones** at levels **3, 7, 11, 15, 19, 23, 27, 31, 35, 39**.
+The progression has **one subclass selection and nine later feature or improvement milestones** at levels **3, 7, 11, 15, 19, 23, 27, 31, 35, 39**.
 
 | Level | Intruder direction | Puppeteer direction | Handler direction |
 | ---: | --- | --- | --- |
@@ -155,6 +155,6 @@ The system-wide level 21–40 proficiency bonus progression, ability-score caps,
 4. Exact resource costs, checks, save DCs, action economy, targeting, range, cooldowns and feature stacking are not fully implemented rules.
 5. No game code, test validation, balancing certification, or release is claimed by this GDD record.
 
-## 7. Next class for design review
+## Balance review
 
-Proceed to draft **Engineer**, specializing in gadgets, drones, fabrication and battlefield equipment. Proposed subclasses are **Rigger, Fabricator and Architect**. Their detailed class feature table and rules are **not** approved by the Cipher decision.
+Cipher's strongest features depend on the shared Hack execution rules. Once those are settled, test Rapid Execution and Root Access with the Intruder, Puppeteer and Handler paths to make sure multiple Bonus Action options do not produce extra turns.
