@@ -13,4 +13,6 @@
 - Do not commit generated personalized token media, server secrets, private user data, or unreviewed restricted artwork.
 - Keep deployment decisions explicit: current tests are on the owner's local Foundry v14 PC; a future owner-controlled server will run Foundry instances and may host an authenticated separate media worker.
 
+The [approved visual direction](VISUAL-DIRECTION.md) records the GitHub branding and reference for future Foundry interface work.
+
 For scoped implementation notes, link the exact approved addendum rather than duplicating its design text.
