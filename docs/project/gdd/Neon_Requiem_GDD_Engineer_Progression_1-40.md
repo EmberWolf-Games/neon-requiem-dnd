@@ -1,14 +1,9 @@
-# NEON REQUIEM — GDD Addendum: Engineer Level 1–40 Progression
+# Engineer — Base Class Progression (Levels 1–40)
 
-**Decision status:** OWNER-APPROVED PROGRESSION DRAFT — deferred hybrid addition now disclosed and approved  
-**Decision date:** 2026-11-21  
-**Class:** Engineer  
-**Approved subclass roster:** Rigger, Fabricator, Architect  
-**Scope:** Proposed 1–40 Engineer base-class features, gadget/deployable mechanics, ASI/feat and subclass milestones  
-**Implementation status:** NOT IMPLEMENTED. No authorization to change gameplay code, publish, or bump the system version.  
-**Approval provenance:** After reviewing Engineer v1, the owner replied: **"approved... with a twist.. but the twist needs to wait till the lifeline class is done"**.
-
-> **Update — owner-approved twist:** The deferred addition has been revealed as **Ripperdoc**, a special prestige-style hybrid class requiring **Engineer 5 + Lifeline 5**, with its own 20-level progression within the overall 40-level cap. See [Ripperdoc Hybrid Class](Neon_Requiem_GDD_Ripperdoc_Hybrid_Progression_1-20.md). The original Engineer v1 progression remains accepted and independent; no gameplay implementation is yet authorized.
+**Status:** Approved design; numerical balance pending  
+**Recorded:** 21 Nov 2026  
+**Subclasses:** See [Engineer subclass features](Neon_Requiem_GDD_Engineer_Subclasses_1-40.md)  
+**Build status:** Design only; no game-system implementation yet.
 
 ## 1. Class foundation
 
@@ -129,7 +124,7 @@ This class grants technical deployment expertise; it does **not** automatically 
 
 **Ten subclass feature/improvement milestones:** 3, 7, 11, 15, 19, 23, 27, 31, 35, 39.
 
-The **actual Rigger, Fabricator and Architect subclass abilities** are only conceptual and have not been approved as detailed subclass feature tables.
+The Rigger, Fabricator and Architect feature tracks are documented separately; their mechanics are provisional pending testing.
 
 ## 6. Resource progression and constraints
 
