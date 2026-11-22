@@ -1,3 +1,34 @@
+/** Filter snapshots using explicit Foundry visibility evidence, including container ancestry.
+ * @param {object[]} snapshot Sanitized item and permission snapshots.
+ * @returns {object[]} Independent eligible snapshots.
+ */
+export function filterVisibleInventory(snapshot) {
+  if ( !Array.isArray(snapshot) ) return [];
+  const byId = new Map();
+  const duplicates = new Set();
+  for ( const item of snapshot ) {
+    if ( typeof item?.id !== "string" || !item.id.trim() ) continue;
+    if ( byId.has(item.id) ) duplicates.add(item.id);
+    else byId.set(item.id, item);
+  }
+  const permitted = item => item?.visible === true && item.sheetVisible === true
+    && (item.isOwner === true || item.identified === true);
+  const canShow = item => {
+    const seen = new Set();
+    let current = item;
+    while ( current ) {
+      if ( !permitted(current) || duplicates.has(current.id) || seen.has(current.id) ) return false;
+      seen.add(current.id);
+      if ( current.containerId === null || current.containerId === undefined || current.containerId === "" ) return true;
+      if ( typeof current.containerId !== "string" ) return false;
+      current = byId.get(current.containerId);
+      if ( !current || current.type !== "container" ) return false;
+    }
+    return false;
+  };
+  return snapshot.filter(item => item?.physical === true && canShow(item)).map(item => ({ ...item }));
+}
+
 /** Project explicitly visible, sanitized embedded-item snapshots without writes.
  * @param {object[]} snapshot Sanitized item snapshots.
  * @returns {object[]} Independent display records.

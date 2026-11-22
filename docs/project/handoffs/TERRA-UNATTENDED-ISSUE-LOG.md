@@ -216,6 +216,48 @@ Wave 3 investigation: official action metadata for v5 declares Node 24. The CI-o
 - **Attempted fix and result:** Built plain-JSON validation, explicit clone remap and before/after dry-run snapshots without touching Foundry documents.
 - **Next action:** Review and approve those data lifecycle decisions before persistent schema or migration implementation. **Dependency:** Persistent loadouts and migrations; read-only presentation can continue.
 
+### TERRA-026
+
+- **Severity:** Blocking; **Status:** Open; **Area:** Wave 3.5 compatibility runtime.
+- **Problem and evidence:** The accessible installation identifies itself as Foundry 14.369. A search of the Foundry installation directory and Downloads found no licensed 14.370+ executable or installer.
+- **Attempted resolution:** Inspected installed `resources/app/package.json` and available installers; no software was updated or installed.
+- **Next action:** Test an independently available licensed 14.370+ installation with fresh disposable worlds before deciding the minimum. **Dependency:** Workstreams A/B newer-runtime acceptance; static audits and independent tests can continue.
+
+### TERRA-027
+
+- **Severity:** Blocking; **Status:** Mitigated in projection; inherited behavior needs review; **Area:** Wave 3 inventory privacy.
+- **Problem and evidence:** Wave 3 filtered individual items but did not check whether an item's container ancestor was invisible, unidentified, missing or cyclic. A projected child's name could disclose the contents of an inaccessible container.
+- **Attempted resolution:** Added fail-closed ancestry and explicit ownership/identification checks to sanitized snapshots; added isolated tests for hidden ancestors, missing parents, duplicate IDs, cycles, malformed visibility and actor isolation.
+- **Next action:** Review inherited container behavior described in TERRA-031 and run broader permissions regression. A 14.369 disposable-world observer saw identified items, and after the GM marked the parent unidentified the projection hid both names. **Dependency:** Non-owner inventory safety; unrelated compatibility audit may continue.
+
+### TERRA-028
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Area:** Wave 3.5 audit tooling.
+- **Problem and evidence:** The first one-off audit failed because `js-yaml` has no default ES module export; a second retry used a sandbox temporary path that did not persist between commands.
+- **Attempted resolution:** Used the existing namespace import and a workspace audit script. Source, upstream and compiled-pack marker comparisons completed.
+- **Next action:** Validate and document the reproducible audit command. **Dependency:** Audit tooling only; other work remains safe.
+
+### TERRA-029
+
+- **Severity:** Non-blocking; **Status:** Resolved; **Area:** Audit tooling lint.
+- **Problem and evidence:** First lint on the audit tool reported a combined declaration and one long line.
+- **Attempted resolution:** Split declarations and wrapped the comparison.
+- **Next action:** Confirm clean final lint. **Dependency:** Audit tool style only.
+
+### TERRA-030
+
+- **Severity:** Blocking; **Status:** Needs Owner Decision; **Area:** Fixture role compatibility.
+- **Problem and evidence:** Fixture IDs do not include approved Item types. A single owned ID can currently appear as an augmentation occupant and as an attachment, because the validator cannot distinguish their actual item roles from identifiers alone.
+- **Attempted resolution:** Added an explicit regression test documenting the ambiguity; no unapproved persistent restriction or item taxonomy was invented.
+- **Next action:** Approve the Item-type model and whether cross-role relationships are prohibited, then validate against real owned Item definitions. **Dependency:** Persistent referential validation; isolated tests and documentation can continue.
+
+### TERRA-031
+
+- **Severity:** Non-blocking; **Status:** Needs Owner Decision; **Area:** Inherited container visibility.
+- **Problem and evidence:** In a 14.369 disposable world, an Observer opened Foundry's inherited `Unidentified Container` sheet and saw the name of an identified weapon inside it. The new Neon projection hid both the unidentified parent and its descendant. This is observed inherited behavior; whether identifying a container should restrict access to its identified contents is not specified by the approved project rules.
+- **Attempted resolution:** Preserved the inherited container controls and added conservative filtering to the new projection. No actor permissions or content rules were changed beyond the test world.
+- **Next action:** Decide whether to preserve Foundry's inherited behavior or define a separately authorized privacy rule; investigate before claiming all container content is private. **Dependency:** Comprehensive multi-user privacy acceptance; unrelated work can continue.
+
 ## Completed Work
 
 - Wave 3 baseline: Windows, Node 24.15.0, npm 11.7.0, base `0658889ba34f297aeb335a467fb6e4eadf85fca2`; clean `npm ci --ignore-scripts`, version, manifest, assets, 21 tests, lint (one pre-existing warning), build, package and package verification passed (exit 0; 732 entries).

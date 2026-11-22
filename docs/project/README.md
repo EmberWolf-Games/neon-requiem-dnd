@@ -31,5 +31,6 @@ The owner currently validates on a local Foundry v14 instance. The later hosting
 - [First unattended sprint](handoffs/2026-11-21-terra-unattended-sprint-report.md) and [issue ledger](handoffs/TERRA-UNATTENDED-ISSUE-LOG.md): prototype test evidence, known dependencies and deferred decisions.
 - [Wave 2 report](handoffs/2026-11-21-terra-wave-2-report.md) and [persistence proposal](handoffs/2026-11-21-persistence-migration-proposal.md): validation, technical recommendations and remaining design decisions.
 - [Wave 3 report](handoffs/2026-11-21-terra-wave-3-report.md): opt-in sheet, fixture-only validation, Foundry test evidence and compatibility blockers.
+- [Wave 3.5 compatibility report](handoffs/2026-11-21-terra-wave-3-5-report.md) and [affected records](handoffs/2026-11-21-wave-3-5-affected-records.md): upstream provenance, runtime matrix and the unresolved Foundry minimum decision.
 
 See the [agent working agreement](instructions/README.md) and [handoff format](handoffs/README.md). Technical build and release documentation remains under the repository's top-level `docs/`.
