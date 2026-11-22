@@ -5,10 +5,11 @@
     <p>Saved attributes, hit points, rolls, combat controls and biography remain available in the inherited sheet.</p>
     <p>Neon identity fields are planned; no new identity selections are saved by this view.</p>
     <h3>Owned items</h3>
-    <p>Current embedded items visible to you. Item names and inherited states are not Neon slot assignments.</p>
+    <p>Visible owned items are grouped by their inherited item type. Equipped and quantity values are inherited;
+      they do not indicate a Neon slot assignment.</p>
     {{#if neonOwnedGroups.length}}
     {{#each neonOwnedGroups}}
-    <h4>{{type}}</h4><ul class="neon-owned-items">
+    <h4>{{localize (concat "TYPES.Item." type)}}</h4><ul class="neon-owned-items">
       {{#each items}}
       <li><strong>{{name}}</strong>{{#if (eq equipped true)}} <span>Equipped (inherited)</span>{{/if}}
         {{#if (eq equipped false)}} <span>Not equipped (inherited)</span>{{/if}}
@@ -16,7 +17,7 @@
         {{#if (ne quantity null)}} <span>Quantity: {{quantity}}</span>{{/if}}</li>
       {{/each}}
     </ul>{{/each}}
-    {{else}}<p>No visible owned items.</p>{{/if}}
+    {{else}}<p>No visible owned items. Use the inherited inventory controls below to add or manage items.</p>{{/if}}
     <details><summary>Physical positions — not assigned</summary>
     <ul class="neon-slot-list">{{#each neonPrototype.positions}}<li>{{label}} — capacity {{capacity}}</li>{{/each}}</ul>
     </details>
