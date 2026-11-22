@@ -60,3 +60,29 @@ test("clone remap is explicit, complete, collision-checked and leaves original u
   assert.throws(() => remapFixture(original, "new", { gun: "g" }), /Missing remap/);
   assert.throws(() => remapFixture(original, "new", { ...mapping, aug: "c2" }), /duplicate/);
 });
+
+test("fixture validation detects deleted owners, invalid identities and independent sources", () => {
+  const original = fixture();
+  const second = { id: "other-slot", source: "cyberware", ownerId: "cyber2", category: "sensory", occupant: null };
+  original.ownedItemIds.push("cyber2");
+  original.slots.push(second);
+  assert.deepEqual(validateFixture(original), []);
+  const removed = structuredClone(original);
+  removed.ownedItemIds = removed.ownedItemIds.filter(id => id !== "cyber");
+  assert.ok(validateFixture(removed).includes("Unknown Cyberware owner"));
+  assert.equal(original.slots[6].ownerId, "cyber");
+  const duplicate = structuredClone(original);
+  duplicate.slots.push({ ...second });
+  assert.ok(validateFixture(duplicate).includes("Invalid or duplicate slot ID"));
+  const missing = structuredClone(original);
+  delete missing.slots[6].ownerId;
+  assert.ok(validateFixture(missing).includes("Unknown Cyberware owner"));
+});
+
+test("cross-role fixture ambiguity is retained for owner design review", () => {
+  const candidate = fixture();
+  candidate.attachments[0].itemId = "aug";
+  // The fixture alone has no approved item-type information to decide this relationship.
+  assert.deepEqual(validateFixture(candidate), []);
+  assert.deepEqual(decodeFixture(encodeFixture(candidate)), candidate);
+});
